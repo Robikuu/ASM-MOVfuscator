@@ -1,5 +1,5 @@
 # f = open("file.s", "r")
-g = open("mov.s", "w")  # intentionat scris cu vv
+g = open("mov.s", "w")
 
 def init():
     
