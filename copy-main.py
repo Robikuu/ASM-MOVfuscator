@@ -127,7 +127,11 @@ for line in fin:
     if line.startswith(".text"):
         complete_data()
     elif "add" in line:
-        src, dest = line.split("#")[0].strip(" addl").split(",")
-        add(src.strip(), dest.strip())
+        clean_line = line.split('#')[0].strip() 
+        parts = clean_line.replace("addl", "").strip().split(",")
+        if len(parts) == 2:
+            src = parts[0].strip()
+            dest = parts[1].strip()
+            add(src, dest)
     else:
         g.write(line)
