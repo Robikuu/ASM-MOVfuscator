@@ -89,3 +89,14 @@ def add(src, dest):
 def pop(dest):
     g.write(f"\tmovl 0(%esp), {dest}")
     add("$4", "%esp")
+    
+def sub(src, dest):
+    not_function(src)
+    add("$1",src)
+    add(src,dest)
+    
+def inc(src):
+    add("$1",src)
+    
+def dec(src):
+    add("$-1",src)
