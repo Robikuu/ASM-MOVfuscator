@@ -100,3 +100,7 @@ def inc(src):
     
 def dec(src):
     add("$-1",src)
+    
+def loop(src):
+    jmp(src)
+    dec("%ecx")
