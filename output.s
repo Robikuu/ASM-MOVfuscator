@@ -1,6 +1,6 @@
 .data
-    x: .long 3
-    y: .long 4
+    x: .long -32
+    y: .long -16
     printf_format: .asciz "%d\n"
 
 	copy_eax: .space 4
@@ -11,13 +11,8 @@
 	copy_edi: .space 4
 	copy_esp: .space 4
 	copy_ebp: .space 4
-	_eax: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	_ebx: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	_ecx: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	_edx: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	_esi: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	_edi: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	_src_tmp: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	src: .space 32
+	dest: .space 32
 	xor_row_0: .byte 0, 1
 	xor_row_1: .byte 1, 0
 	and_row_0: .byte 0, 0
@@ -27,9 +22,7 @@
 	table_not: .byte 1, 0
 	.align 4
 	table_xor: .long xor_row_0, xor_row_1
-	.align 4
 	table_and: .long and_row_0, and_row_1
-	.align 4
 	table_or: .long or_row_0, or_row_1
 
 .text
@@ -37,8 +30,8 @@
 .global main
 
 main:
-    movl x, %eax
-    movl y, %ebx
+    movl x, %ecx
+    movl y, %edx
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -46,273 +39,273 @@ main:
 	movl %esi, copy_esi
 	movl %edi, copy_edi
 	movl %ebp, copy_ebp
-	movl copy_ebx, %edx
+	movl %ecx, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 0
+	movb %al, src + 0
 	movl %edx, %eax
 	shrl $1, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 1
+	movb %al, src + 1
 	movl %edx, %eax
 	shrl $2, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 2
+	movb %al, src + 2
 	movl %edx, %eax
 	shrl $3, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 3
+	movb %al, src + 3
 	movl %edx, %eax
 	shrl $4, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 4
+	movb %al, src + 4
 	movl %edx, %eax
 	shrl $5, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 5
+	movb %al, src + 5
 	movl %edx, %eax
 	shrl $6, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 6
+	movb %al, src + 6
 	movl %edx, %eax
 	shrl $7, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 7
+	movb %al, src + 7
 	movl %edx, %eax
 	shrl $8, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 8
+	movb %al, src + 8
 	movl %edx, %eax
 	shrl $9, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 9
+	movb %al, src + 9
 	movl %edx, %eax
 	shrl $10, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 10
+	movb %al, src + 10
 	movl %edx, %eax
 	shrl $11, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 11
+	movb %al, src + 11
 	movl %edx, %eax
 	shrl $12, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 12
+	movb %al, src + 12
 	movl %edx, %eax
 	shrl $13, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 13
+	movb %al, src + 13
 	movl %edx, %eax
 	shrl $14, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 14
+	movb %al, src + 14
 	movl %edx, %eax
 	shrl $15, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 15
+	movb %al, src + 15
 	movl %edx, %eax
 	shrl $16, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 16
+	movb %al, src + 16
 	movl %edx, %eax
 	shrl $17, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 17
+	movb %al, src + 17
 	movl %edx, %eax
 	shrl $18, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 18
+	movb %al, src + 18
 	movl %edx, %eax
 	shrl $19, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 19
+	movb %al, src + 19
 	movl %edx, %eax
 	shrl $20, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 20
+	movb %al, src + 20
 	movl %edx, %eax
 	shrl $21, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 21
+	movb %al, src + 21
 	movl %edx, %eax
 	shrl $22, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 22
+	movb %al, src + 22
 	movl %edx, %eax
 	shrl $23, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 23
+	movb %al, src + 23
 	movl %edx, %eax
 	shrl $24, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 24
+	movb %al, src + 24
 	movl %edx, %eax
 	shrl $25, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 25
+	movb %al, src + 25
 	movl %edx, %eax
 	shrl $26, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 26
+	movb %al, src + 26
 	movl %edx, %eax
 	shrl $27, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 27
+	movb %al, src + 27
 	movl %edx, %eax
 	shrl $28, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 28
+	movb %al, src + 28
 	movl %edx, %eax
 	shrl $29, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 29
+	movb %al, src + 29
 	movl %edx, %eax
 	shrl $30, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 30
+	movb %al, src + 30
 	movl %edx, %eax
 	shrl $31, %eax
 	andl $1, %eax
-	movb %al, _src_tmp + 31
-	movl copy_eax, %edx
+	movb %al, src + 31
+	movl copy_edx, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	andl $1, %eax
-	movb %al, _eax + 0
+	movb %al, dest + 0
 	movl %edx, %eax
 	shrl $1, %eax
 	andl $1, %eax
-	movb %al, _eax + 1
+	movb %al, dest + 1
 	movl %edx, %eax
 	shrl $2, %eax
 	andl $1, %eax
-	movb %al, _eax + 2
+	movb %al, dest + 2
 	movl %edx, %eax
 	shrl $3, %eax
 	andl $1, %eax
-	movb %al, _eax + 3
+	movb %al, dest + 3
 	movl %edx, %eax
 	shrl $4, %eax
 	andl $1, %eax
-	movb %al, _eax + 4
+	movb %al, dest + 4
 	movl %edx, %eax
 	shrl $5, %eax
 	andl $1, %eax
-	movb %al, _eax + 5
+	movb %al, dest + 5
 	movl %edx, %eax
 	shrl $6, %eax
 	andl $1, %eax
-	movb %al, _eax + 6
+	movb %al, dest + 6
 	movl %edx, %eax
 	shrl $7, %eax
 	andl $1, %eax
-	movb %al, _eax + 7
+	movb %al, dest + 7
 	movl %edx, %eax
 	shrl $8, %eax
 	andl $1, %eax
-	movb %al, _eax + 8
+	movb %al, dest + 8
 	movl %edx, %eax
 	shrl $9, %eax
 	andl $1, %eax
-	movb %al, _eax + 9
+	movb %al, dest + 9
 	movl %edx, %eax
 	shrl $10, %eax
 	andl $1, %eax
-	movb %al, _eax + 10
+	movb %al, dest + 10
 	movl %edx, %eax
 	shrl $11, %eax
 	andl $1, %eax
-	movb %al, _eax + 11
+	movb %al, dest + 11
 	movl %edx, %eax
 	shrl $12, %eax
 	andl $1, %eax
-	movb %al, _eax + 12
+	movb %al, dest + 12
 	movl %edx, %eax
 	shrl $13, %eax
 	andl $1, %eax
-	movb %al, _eax + 13
+	movb %al, dest + 13
 	movl %edx, %eax
 	shrl $14, %eax
 	andl $1, %eax
-	movb %al, _eax + 14
+	movb %al, dest + 14
 	movl %edx, %eax
 	shrl $15, %eax
 	andl $1, %eax
-	movb %al, _eax + 15
+	movb %al, dest + 15
 	movl %edx, %eax
 	shrl $16, %eax
 	andl $1, %eax
-	movb %al, _eax + 16
+	movb %al, dest + 16
 	movl %edx, %eax
 	shrl $17, %eax
 	andl $1, %eax
-	movb %al, _eax + 17
+	movb %al, dest + 17
 	movl %edx, %eax
 	shrl $18, %eax
 	andl $1, %eax
-	movb %al, _eax + 18
+	movb %al, dest + 18
 	movl %edx, %eax
 	shrl $19, %eax
 	andl $1, %eax
-	movb %al, _eax + 19
+	movb %al, dest + 19
 	movl %edx, %eax
 	shrl $20, %eax
 	andl $1, %eax
-	movb %al, _eax + 20
+	movb %al, dest + 20
 	movl %edx, %eax
 	shrl $21, %eax
 	andl $1, %eax
-	movb %al, _eax + 21
+	movb %al, dest + 21
 	movl %edx, %eax
 	shrl $22, %eax
 	andl $1, %eax
-	movb %al, _eax + 22
+	movb %al, dest + 22
 	movl %edx, %eax
 	shrl $23, %eax
 	andl $1, %eax
-	movb %al, _eax + 23
+	movb %al, dest + 23
 	movl %edx, %eax
 	shrl $24, %eax
 	andl $1, %eax
-	movb %al, _eax + 24
+	movb %al, dest + 24
 	movl %edx, %eax
 	shrl $25, %eax
 	andl $1, %eax
-	movb %al, _eax + 25
+	movb %al, dest + 25
 	movl %edx, %eax
 	shrl $26, %eax
 	andl $1, %eax
-	movb %al, _eax + 26
+	movb %al, dest + 26
 	movl %edx, %eax
 	shrl $27, %eax
 	andl $1, %eax
-	movb %al, _eax + 27
+	movb %al, dest + 27
 	movl %edx, %eax
 	shrl $28, %eax
 	andl $1, %eax
-	movb %al, _eax + 28
+	movb %al, dest + 28
 	movl %edx, %eax
 	shrl $29, %eax
 	andl $1, %eax
-	movb %al, _eax + 29
+	movb %al, dest + 29
 	movl %edx, %eax
 	shrl $30, %eax
 	andl $1, %eax
-	movb %al, _eax + 30
+	movb %al, dest + 30
 	movl %edx, %eax
 	shrl $31, %eax
 	andl $1, %eax
-	movb %al, _eax + 31
+	movb %al, dest + 31
 	movl $0, %ecx
-	movzbl _eax + 0, %eax
-	movzbl _src_tmp + 0, %ebx
+	movzbl dest + 0, %eax
+	movzbl src + 0, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 0, %eax
-	movzbl _src_tmp + 0, %ebx
+	movzbl dest + 0, %eax
+	movzbl src + 0, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -324,15 +317,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 0
-	movzbl _eax + 1, %eax
-	movzbl _src_tmp + 1, %ebx
+	movb %al, dest + 0
+	movzbl dest + 1, %eax
+	movzbl src + 1, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 1, %eax
-	movzbl _src_tmp + 1, %ebx
+	movzbl dest + 1, %eax
+	movzbl src + 1, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -344,15 +337,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 1
-	movzbl _eax + 2, %eax
-	movzbl _src_tmp + 2, %ebx
+	movb %al, dest + 1
+	movzbl dest + 2, %eax
+	movzbl src + 2, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 2, %eax
-	movzbl _src_tmp + 2, %ebx
+	movzbl dest + 2, %eax
+	movzbl src + 2, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -364,15 +357,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 2
-	movzbl _eax + 3, %eax
-	movzbl _src_tmp + 3, %ebx
+	movb %al, dest + 2
+	movzbl dest + 3, %eax
+	movzbl src + 3, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 3, %eax
-	movzbl _src_tmp + 3, %ebx
+	movzbl dest + 3, %eax
+	movzbl src + 3, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -384,15 +377,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 3
-	movzbl _eax + 4, %eax
-	movzbl _src_tmp + 4, %ebx
+	movb %al, dest + 3
+	movzbl dest + 4, %eax
+	movzbl src + 4, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 4, %eax
-	movzbl _src_tmp + 4, %ebx
+	movzbl dest + 4, %eax
+	movzbl src + 4, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -404,15 +397,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 4
-	movzbl _eax + 5, %eax
-	movzbl _src_tmp + 5, %ebx
+	movb %al, dest + 4
+	movzbl dest + 5, %eax
+	movzbl src + 5, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 5, %eax
-	movzbl _src_tmp + 5, %ebx
+	movzbl dest + 5, %eax
+	movzbl src + 5, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -424,15 +417,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 5
-	movzbl _eax + 6, %eax
-	movzbl _src_tmp + 6, %ebx
+	movb %al, dest + 5
+	movzbl dest + 6, %eax
+	movzbl src + 6, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 6, %eax
-	movzbl _src_tmp + 6, %ebx
+	movzbl dest + 6, %eax
+	movzbl src + 6, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -444,15 +437,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 6
-	movzbl _eax + 7, %eax
-	movzbl _src_tmp + 7, %ebx
+	movb %al, dest + 6
+	movzbl dest + 7, %eax
+	movzbl src + 7, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 7, %eax
-	movzbl _src_tmp + 7, %ebx
+	movzbl dest + 7, %eax
+	movzbl src + 7, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -464,15 +457,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 7
-	movzbl _eax + 8, %eax
-	movzbl _src_tmp + 8, %ebx
+	movb %al, dest + 7
+	movzbl dest + 8, %eax
+	movzbl src + 8, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 8, %eax
-	movzbl _src_tmp + 8, %ebx
+	movzbl dest + 8, %eax
+	movzbl src + 8, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -484,15 +477,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 8
-	movzbl _eax + 9, %eax
-	movzbl _src_tmp + 9, %ebx
+	movb %al, dest + 8
+	movzbl dest + 9, %eax
+	movzbl src + 9, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 9, %eax
-	movzbl _src_tmp + 9, %ebx
+	movzbl dest + 9, %eax
+	movzbl src + 9, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -504,15 +497,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 9
-	movzbl _eax + 10, %eax
-	movzbl _src_tmp + 10, %ebx
+	movb %al, dest + 9
+	movzbl dest + 10, %eax
+	movzbl src + 10, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 10, %eax
-	movzbl _src_tmp + 10, %ebx
+	movzbl dest + 10, %eax
+	movzbl src + 10, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -524,15 +517,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 10
-	movzbl _eax + 11, %eax
-	movzbl _src_tmp + 11, %ebx
+	movb %al, dest + 10
+	movzbl dest + 11, %eax
+	movzbl src + 11, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 11, %eax
-	movzbl _src_tmp + 11, %ebx
+	movzbl dest + 11, %eax
+	movzbl src + 11, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -544,15 +537,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 11
-	movzbl _eax + 12, %eax
-	movzbl _src_tmp + 12, %ebx
+	movb %al, dest + 11
+	movzbl dest + 12, %eax
+	movzbl src + 12, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 12, %eax
-	movzbl _src_tmp + 12, %ebx
+	movzbl dest + 12, %eax
+	movzbl src + 12, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -564,15 +557,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 12
-	movzbl _eax + 13, %eax
-	movzbl _src_tmp + 13, %ebx
+	movb %al, dest + 12
+	movzbl dest + 13, %eax
+	movzbl src + 13, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 13, %eax
-	movzbl _src_tmp + 13, %ebx
+	movzbl dest + 13, %eax
+	movzbl src + 13, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -584,15 +577,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 13
-	movzbl _eax + 14, %eax
-	movzbl _src_tmp + 14, %ebx
+	movb %al, dest + 13
+	movzbl dest + 14, %eax
+	movzbl src + 14, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 14, %eax
-	movzbl _src_tmp + 14, %ebx
+	movzbl dest + 14, %eax
+	movzbl src + 14, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -604,15 +597,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 14
-	movzbl _eax + 15, %eax
-	movzbl _src_tmp + 15, %ebx
+	movb %al, dest + 14
+	movzbl dest + 15, %eax
+	movzbl src + 15, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 15, %eax
-	movzbl _src_tmp + 15, %ebx
+	movzbl dest + 15, %eax
+	movzbl src + 15, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -624,15 +617,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 15
-	movzbl _eax + 16, %eax
-	movzbl _src_tmp + 16, %ebx
+	movb %al, dest + 15
+	movzbl dest + 16, %eax
+	movzbl src + 16, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 16, %eax
-	movzbl _src_tmp + 16, %ebx
+	movzbl dest + 16, %eax
+	movzbl src + 16, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -644,15 +637,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 16
-	movzbl _eax + 17, %eax
-	movzbl _src_tmp + 17, %ebx
+	movb %al, dest + 16
+	movzbl dest + 17, %eax
+	movzbl src + 17, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 17, %eax
-	movzbl _src_tmp + 17, %ebx
+	movzbl dest + 17, %eax
+	movzbl src + 17, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -664,15 +657,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 17
-	movzbl _eax + 18, %eax
-	movzbl _src_tmp + 18, %ebx
+	movb %al, dest + 17
+	movzbl dest + 18, %eax
+	movzbl src + 18, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 18, %eax
-	movzbl _src_tmp + 18, %ebx
+	movzbl dest + 18, %eax
+	movzbl src + 18, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -684,15 +677,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 18
-	movzbl _eax + 19, %eax
-	movzbl _src_tmp + 19, %ebx
+	movb %al, dest + 18
+	movzbl dest + 19, %eax
+	movzbl src + 19, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 19, %eax
-	movzbl _src_tmp + 19, %ebx
+	movzbl dest + 19, %eax
+	movzbl src + 19, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -704,15 +697,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 19
-	movzbl _eax + 20, %eax
-	movzbl _src_tmp + 20, %ebx
+	movb %al, dest + 19
+	movzbl dest + 20, %eax
+	movzbl src + 20, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 20, %eax
-	movzbl _src_tmp + 20, %ebx
+	movzbl dest + 20, %eax
+	movzbl src + 20, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -724,15 +717,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 20
-	movzbl _eax + 21, %eax
-	movzbl _src_tmp + 21, %ebx
+	movb %al, dest + 20
+	movzbl dest + 21, %eax
+	movzbl src + 21, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 21, %eax
-	movzbl _src_tmp + 21, %ebx
+	movzbl dest + 21, %eax
+	movzbl src + 21, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -744,15 +737,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 21
-	movzbl _eax + 22, %eax
-	movzbl _src_tmp + 22, %ebx
+	movb %al, dest + 21
+	movzbl dest + 22, %eax
+	movzbl src + 22, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 22, %eax
-	movzbl _src_tmp + 22, %ebx
+	movzbl dest + 22, %eax
+	movzbl src + 22, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -764,15 +757,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 22
-	movzbl _eax + 23, %eax
-	movzbl _src_tmp + 23, %ebx
+	movb %al, dest + 22
+	movzbl dest + 23, %eax
+	movzbl src + 23, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 23, %eax
-	movzbl _src_tmp + 23, %ebx
+	movzbl dest + 23, %eax
+	movzbl src + 23, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -784,15 +777,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 23
-	movzbl _eax + 24, %eax
-	movzbl _src_tmp + 24, %ebx
+	movb %al, dest + 23
+	movzbl dest + 24, %eax
+	movzbl src + 24, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 24, %eax
-	movzbl _src_tmp + 24, %ebx
+	movzbl dest + 24, %eax
+	movzbl src + 24, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -804,15 +797,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 24
-	movzbl _eax + 25, %eax
-	movzbl _src_tmp + 25, %ebx
+	movb %al, dest + 24
+	movzbl dest + 25, %eax
+	movzbl src + 25, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 25, %eax
-	movzbl _src_tmp + 25, %ebx
+	movzbl dest + 25, %eax
+	movzbl src + 25, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -824,15 +817,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 25
-	movzbl _eax + 26, %eax
-	movzbl _src_tmp + 26, %ebx
+	movb %al, dest + 25
+	movzbl dest + 26, %eax
+	movzbl src + 26, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 26, %eax
-	movzbl _src_tmp + 26, %ebx
+	movzbl dest + 26, %eax
+	movzbl src + 26, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -844,15 +837,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 26
-	movzbl _eax + 27, %eax
-	movzbl _src_tmp + 27, %ebx
+	movb %al, dest + 26
+	movzbl dest + 27, %eax
+	movzbl src + 27, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 27, %eax
-	movzbl _src_tmp + 27, %ebx
+	movzbl dest + 27, %eax
+	movzbl src + 27, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -864,15 +857,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 27
-	movzbl _eax + 28, %eax
-	movzbl _src_tmp + 28, %ebx
+	movb %al, dest + 27
+	movzbl dest + 28, %eax
+	movzbl src + 28, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 28, %eax
-	movzbl _src_tmp + 28, %ebx
+	movzbl dest + 28, %eax
+	movzbl src + 28, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -884,15 +877,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 28
-	movzbl _eax + 29, %eax
-	movzbl _src_tmp + 29, %ebx
+	movb %al, dest + 28
+	movzbl dest + 29, %eax
+	movzbl src + 29, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 29, %eax
-	movzbl _src_tmp + 29, %ebx
+	movzbl dest + 29, %eax
+	movzbl src + 29, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -904,15 +897,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 29
-	movzbl _eax + 30, %eax
-	movzbl _src_tmp + 30, %ebx
+	movb %al, dest + 29
+	movzbl dest + 30, %eax
+	movzbl src + 30, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 30, %eax
-	movzbl _src_tmp + 30, %ebx
+	movzbl dest + 30, %eax
+	movzbl src + 30, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -924,15 +917,15 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 30
-	movzbl _eax + 31, %eax
-	movzbl _src_tmp + 31, %ebx
+	movb %al, dest + 30
+	movzbl dest + 31, %eax
+	movzbl src + 31, %ebx
 	movl %ecx, %ebp
 	movl table_xor(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %esi
-	movzbl _eax + 31, %eax
-	movzbl _src_tmp + 31, %ebx
+	movzbl dest + 31, %eax
+	movzbl src + 31, %ebx
 	movl table_and(,%eax,4), %edi
 	movb (%edi, %ebx, 1), %al
 	movzbl %al, %edx
@@ -944,115 +937,113 @@ main:
 	movzbl %al, %ecx
 	movl table_xor(,%esi,4), %edi
 	movb (%edi, %ebp, 1), %al
-	movb %al, _eax + 31
+	movb %al, dest + 31
 	movl $0, %edx
-	movzbl _eax + 0, %eax
+	movzbl dest + 0, %eax
 	shll $0, %eax
 	orl %eax, %edx
-	movzbl _eax + 1, %eax
+	movzbl dest + 1, %eax
 	shll $1, %eax
 	orl %eax, %edx
-	movzbl _eax + 2, %eax
+	movzbl dest + 2, %eax
 	shll $2, %eax
 	orl %eax, %edx
-	movzbl _eax + 3, %eax
+	movzbl dest + 3, %eax
 	shll $3, %eax
 	orl %eax, %edx
-	movzbl _eax + 4, %eax
+	movzbl dest + 4, %eax
 	shll $4, %eax
 	orl %eax, %edx
-	movzbl _eax + 5, %eax
+	movzbl dest + 5, %eax
 	shll $5, %eax
 	orl %eax, %edx
-	movzbl _eax + 6, %eax
+	movzbl dest + 6, %eax
 	shll $6, %eax
 	orl %eax, %edx
-	movzbl _eax + 7, %eax
+	movzbl dest + 7, %eax
 	shll $7, %eax
 	orl %eax, %edx
-	movzbl _eax + 8, %eax
+	movzbl dest + 8, %eax
 	shll $8, %eax
 	orl %eax, %edx
-	movzbl _eax + 9, %eax
+	movzbl dest + 9, %eax
 	shll $9, %eax
 	orl %eax, %edx
-	movzbl _eax + 10, %eax
+	movzbl dest + 10, %eax
 	shll $10, %eax
 	orl %eax, %edx
-	movzbl _eax + 11, %eax
+	movzbl dest + 11, %eax
 	shll $11, %eax
 	orl %eax, %edx
-	movzbl _eax + 12, %eax
+	movzbl dest + 12, %eax
 	shll $12, %eax
 	orl %eax, %edx
-	movzbl _eax + 13, %eax
+	movzbl dest + 13, %eax
 	shll $13, %eax
 	orl %eax, %edx
-	movzbl _eax + 14, %eax
+	movzbl dest + 14, %eax
 	shll $14, %eax
 	orl %eax, %edx
-	movzbl _eax + 15, %eax
+	movzbl dest + 15, %eax
 	shll $15, %eax
 	orl %eax, %edx
-	movzbl _eax + 16, %eax
+	movzbl dest + 16, %eax
 	shll $16, %eax
 	orl %eax, %edx
-	movzbl _eax + 17, %eax
+	movzbl dest + 17, %eax
 	shll $17, %eax
 	orl %eax, %edx
-	movzbl _eax + 18, %eax
+	movzbl dest + 18, %eax
 	shll $18, %eax
 	orl %eax, %edx
-	movzbl _eax + 19, %eax
+	movzbl dest + 19, %eax
 	shll $19, %eax
 	orl %eax, %edx
-	movzbl _eax + 20, %eax
+	movzbl dest + 20, %eax
 	shll $20, %eax
 	orl %eax, %edx
-	movzbl _eax + 21, %eax
+	movzbl dest + 21, %eax
 	shll $21, %eax
 	orl %eax, %edx
-	movzbl _eax + 22, %eax
+	movzbl dest + 22, %eax
 	shll $22, %eax
 	orl %eax, %edx
-	movzbl _eax + 23, %eax
+	movzbl dest + 23, %eax
 	shll $23, %eax
 	orl %eax, %edx
-	movzbl _eax + 24, %eax
+	movzbl dest + 24, %eax
 	shll $24, %eax
 	orl %eax, %edx
-	movzbl _eax + 25, %eax
+	movzbl dest + 25, %eax
 	shll $25, %eax
 	orl %eax, %edx
-	movzbl _eax + 26, %eax
+	movzbl dest + 26, %eax
 	shll $26, %eax
 	orl %eax, %edx
-	movzbl _eax + 27, %eax
+	movzbl dest + 27, %eax
 	shll $27, %eax
 	orl %eax, %edx
-	movzbl _eax + 28, %eax
+	movzbl dest + 28, %eax
 	shll $28, %eax
 	orl %eax, %edx
-	movzbl _eax + 29, %eax
+	movzbl dest + 29, %eax
 	shll $29, %eax
 	orl %eax, %edx
-	movzbl _eax + 30, %eax
+	movzbl dest + 30, %eax
 	shll $30, %eax
 	orl %eax, %edx
-	movzbl _eax + 31, %eax
+	movzbl dest + 31, %eax
 	shll $31, %eax
 	orl %eax, %edx
-	pushl %edx
+	movl %edx, %edx
 	movl copy_eax, %eax
 	movl copy_ebx, %ebx
 	movl copy_ecx, %ecx
-	movl copy_edx, %edx
 	movl copy_esi, %esi
 	movl copy_edi, %edi
 	movl copy_ebp, %ebp
-	popl %eax
 
-    pushl %eax
+    pushl %edx
     pushl $printf_format
     call printf
     pop %eax

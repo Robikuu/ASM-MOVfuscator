@@ -1,6 +1,6 @@
 .data
-    x: .long 3
-    y: .long 4
+    x: .long -32
+    y: .long -16
     printf_format: .asciz "%d\n"
 
 .text
@@ -8,11 +8,11 @@
 .global main
 
 main:
-    movl x, %eax
-    movl y, %ebx
-    addl %ebx, %eax
+    movl x, %ecx
+    movl y, %edx
+    addl %ecx, %edx
 
-    pushl %eax
+    pushl %edx
     pushl $printf_format
     call printf
     pop %eax
