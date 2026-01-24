@@ -1,117 +1,57 @@
-fin = open("input.s", "r")
-g = open("output.s", "w")
+import functions
+import sys
 
-def complete_data():
-    registers = ["eax", "ebx", "ecx", "edx", "esi", "edi", "esp", "ebp"]
-    for reg in registers:
-        g.write(f"\tcopy_{reg}: .space 4\n")
+if len(sys.argv) != 3:
+    print("Programul de ruleaza folosind ./main.py [INPUT_FILE] [OUTPUT_FILE]")
+    sys.exit(1)
 
-    g.write(f"\tsrc: .space 32\n")
-    g.write(f"\tdest: .space 32\n")
-    g.write("\txor_row_0: .byte 0, 1\n")
-    g.write("\txor_row_1: .byte 1, 0\n")
-    g.write("\tand_row_0: .byte 0, 0\n")
-    g.write("\tand_row_1: .byte 0, 1\n")
-    g.write("\tor_row_0: .byte 0, 1\n")
-    g.write("\tor_row_1: .byte 1, 1\n")
-    g.write("\ttable_not: .byte 1, 0\n")
-    g.write("\t.align 4\n")
-    g.write("\ttable_xor: .long xor_row_0, xor_row_1\n")
-    g.write("\ttable_and: .long and_row_0, and_row_1\n")
-    g.write("\ttable_or: .long or_row_0, or_row_1\n")
-    g.write("\n.text\n")
+inputf = sys.argv[1]
+outpuf = sys.argv[2]
 
-def add(src, dest):
-    registers = ["eax", "ebx", "ecx", "edx", "esi", "edi", "ebp"]
-    for reg in registers:
-        g.write(f"\tmovl %{reg}, copy_{reg}\n")
+fin = open(inputf, "r")
+functions.init(outpuf)
 
-    g.write(f"\tmovl {src}, %edx\n")
-    for i in range(32):
-        g.write(f"\tmovl %edx, %eax\n")
-        g.write(f"\tshrl ${i}, %eax\n")
-        g.write(f"\tandl $1, %eax\n")
-        g.write(f"\tmovb %al, src + {i}\n")
-
-    g.write(f"\tmovl copy_{dest[1:]}, %edx\n")
-    for i in range(32):
-        g.write(f"\tmovl %edx, %eax\n")
-        g.write(f"\tshrl ${i}, %eax\n")
-        g.write(f"\tandl $1, %eax\n")
-        g.write(f"\tmovb %al, dest + {i}\n")
-    
-    g.write("\tmovl $0, %ecx\n")
-    for i in range(32):
-        # -- Citire operanzi din buffer-ele universale --
-        g.write(f"\tmovzbl dest + {i}, %eax\n") # A
-        g.write(f"\tmovzbl src + {i}, %ebx\n")  # B
-        g.write("\tmovl %ecx, %ebp\n") # Salvăm Carry vechi
-
-        # -- Calcul A XOR B --
-        g.write("\tmovl table_xor(,%eax,4), %edi\n")
-        g.write("\tmovb (%edi, %ebx, 1), %al\n")
-        g.write("\tmovzbl %al, %esi\n") # esi = A XOR B
-
-        # -- Calcul CARRY NOU --
-        # 1. (A AND B)
-        g.write(f"\tmovzbl dest + {i}, %eax\n")
-        g.write(f"\tmovzbl src + {i}, %ebx\n") 
-        g.write("\tmovl table_and(,%eax,4), %edi\n")
-        g.write("\tmovb (%edi, %ebx, 1), %al\n")
-        g.write("\tmovzbl %al, %edx\n") # edx = A AND B
-
-        # 2. Carry_vechi AND (A XOR B)
-        g.write("\tmovl table_and(,%ebp,4), %edi\n")
-        g.write("\tmovb (%edi, %esi, 1), %al\n")
-        g.write("\tmovzbl %al, %eax\n") 
-
-        # 3. Final Carry = edx OR eax
-        g.write("\tmovl table_or(,%edx,4), %edi\n")
-        g.write("\tmovb (%edi, %eax, 1), %al\n")
-        g.write("\tmovzbl %al, %ecx\n")
-
-        # -- Calcul SUMA FINALA --
-        g.write("\tmovl table_xor(,%esi,4), %edi\n")
-        g.write("\tmovb (%edi, %ebp, 1), %al\n")
-        g.write(f"\tmovb %al, dest + {i}\n")
-
-    # 5. RECONSTRUCȚIA REGISTRULUI
-    g.write("\tmovl $0, %edx\n")
-    for i in range(32):
-        g.write(f"\tmovzbl dest + {i}, %eax\n")
-        g.write(f"\tshll ${i}, %eax\n") 
-        g.write("\torl %eax, %edx\n")
-    g.write(f"\tmovl %edx, {dest}\n")
-
-    registers.remove(dest[1:])
-    for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %{reg}\n")
-
+loop_counter=0
+j_counter=0
 for line in fin:
     if line.startswith(".text"):
-        complete_data()
+        functions.complete_data()
     elif "add" in line:
         src, dest = line.split("#")[0].strip(" addl").split(",")
-        add(src.strip(), dest.strip())
+        functions.add(src.strip(), dest.strip())
     elif "xorl" in line:
         line=line.split("#")[0].strip()
         info=line.replace("xorl", "", 1).strip()
         src, dest=[x.strip() for x in info.split(",")]
-        operatori_logici(src.strip(), dest.strip(), "table_xor")
+        functions.operatori_logici(src.strip(), dest.strip(), "table_xor")
     elif "andl" in line:
         info=line.replace("andl", "", 1)
         src, dest=[x.strip() for x in info.split(",")]
-        operatori_logici(src.strip(), dest.strip(), "table_and")
+        functions.operatori_logici(src.strip(), dest.strip(), "table_and")
     elif "orl" in line:
         info=line.replace("orl", "", 1)
         src, dest=[x.strip() for x in info.split(",")]
-        operatori_logici(src.strip(), dest.strip(), "table_or")
+        functions.operatori_logici(src.strip(), dest.strip(), "table_or")
     elif "notl" in line:
         dest = line.split("#")[0].strip().replace("notl", "")
-        not_operator(dest.strip())
+        functions.not_operator(dest.strip())
     elif "lea" in line:
         info=line.split("#")[0].strip().replace("lea", "")
         base, dest = [x.strip() for x in info.split(',')]
-        lea_operator(base,dest)
+        functions.lea_operator(base,dest)
+    elif "jmp" in line or line.strip().startswith("j"):
+        line = line.split("#")[0].strip().split(" ")
+        if line[0] == "jmp":
+            functions.jmp(line[1])
+        else:
+            suf = line[0][1:]
+            functions.j(line[1],suf,j_counter)
+            j_counter += 1
+    elif "loop" in line:
+        line = line.split("#")[0].strip().split(" ")
+        functions.loop(line[1])
     else:
-        g.write(line)
+        functions.g.write(line)
+
+fin.close()
+functions.close()

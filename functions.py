@@ -1,5 +1,14 @@
-g = open("output.s", "w")
+g = None
 
+def init(filename):
+    global g
+    g = open(filename, "w")
+
+def close():
+    global g
+    if g:
+        g.close()
+        
 def complete_data():
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi", "esp", "ebp"]
     for reg in registers:
