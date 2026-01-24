@@ -90,8 +90,12 @@ def pop(dest):
     g.write(f"\tmovl 0(%esp), {dest}")
     add("$4", "%esp")
     
+def push(dest):
+    add("$-4", "%esp")
+    g.write(f"\tmovl {dest}, 0(%esp)")
+    
 def sub(src, dest):
-    not_function(src)
+    not_operator(src)
     add("$1",src)
     add(src,dest)
     
@@ -101,10 +105,51 @@ def inc(src):
 def dec(src):
     add("$-1",src)
     
-def loop(src):
-    jmp(src)
-
+#JMPS SI LOOPS
+def loop(src,loop_counter):
     dec("%ecx")
+
+    #mutam adresa sursa si adresa de exit
+    g.write(f"\tmovl %eax, copy_eax")
+    g.write(f"\tmovl %ebx, copy_ebx")
+    g.write(f"\tmovl ${src}, %eax")
+    g.write(f"\tmovl $labell{loop_counter}, %ebx")
+    
+    g.write("\tcmp $0, %ecx") #verificam cand se termina comanda loop din asm
+    g.write("\tcmovne %eax, %ebx")
+    push("%ebx")
+    
+    g.write(f"\tmovl copy_eax, %eax")
+    g.write(f"\tmovl copy_ebx, %ebx")
+    #restauram registrii
+    
+    g.write("\tret")
+    g.write(f"labell{loop_counter}:")
+    
+def jmp(src): #punem in eax adresa src, dupa o plasam pe stiva si facem jmp folosind ret
+    g.write(f"\tmovl %eax, copy_eax")
+    g.write(f"\tmovl ${src}, %eax")
+    push("%eax")
+    
+    g.write(f"\tmovl copy_eax, %eax")
+    g.write(f"\tret")
+
+def j(src,suf,j_counter): #suf=sufixul jmpului conditionat/j_counter=nr de jmpuri conditionate pentru a nu sari la aceasi adresa de memorie in cazul in care exista mai multe
+    #copiem registri
+    g.write(f"\tmovl %eax, copy_eax")
+    g.write(f"\tmovl %ebx, copy_ebx")
+    g.write(f"\tmovl ${src}, %eax") #eax are adresa src
+    g.write(f"\tmovl $labelj{j_counter}, %ebx") #ebx are adresa fix de dupa jmp daca acesta nu indeplineste conditia de jmp
+    
+    g.write(f"\tcmov{suf} %eax, %ebx") #se va muta adresa src (eax) in ebx doar daca conditia de jmp este indeplinita
+    
+    push("%ebx")
+    
+    g.write(f"\tmovl copy_eax, %eax")
+    g.write(f"\tmovl copy_ebx, %ebx") #restauram registri
+    g.write(f"\tret")
+    g.write(f"labelj{j_counter}:")
+    
 
 def operatori_logici(src, dest, table_name):
     dest= dest.replace("%", "").strip()
@@ -170,7 +215,7 @@ def not_operator(dest):
     g.write(f"\tmovl %edx, %{dest}\n")
     if dest != "eax":
         g.write("\tmovl copy_eax, %eax\n")
-    if  dest !="edx":
+    if dest != "edx":
         g.write("\tmovl copy_edx, %edx\n")
 
 def lea_operator(base,dest):
