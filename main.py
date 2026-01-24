@@ -2,7 +2,7 @@ import functions
 import sys
 
 if len(sys.argv) != 3:
-    print("Programul de ruleaza folosind ./main.py [INPUT_FILE] [OUTPUT_FILE]")
+    print("Programul se ruleaza folosind ./main.py [INPUT_FILE] [OUTPUT_FILE]")
     sys.exit(1)
 
 inputf = sys.argv[1]
@@ -49,7 +49,8 @@ for line in fin:
             j_counter += 1
     elif "loop" in line:
         line = line.split("#")[0].strip().split(" ")
-        functions.loop(line[1])
+        functions.loop(line[1],loop_counter)
+        loop_counter += 1
     else:
         functions.g.write(line)
 
