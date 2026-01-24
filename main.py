@@ -93,5 +93,25 @@ for line in fin:
     elif "add" in line:
         src, dest = line.split("#")[0].strip(" addl").split(",")
         add(src.strip(), dest.strip())
+    elif "xorl" in line:
+        line=line.split("#")[0].strip()
+        info=line.replace("xorl", "", 1).strip()
+        src, dest=[x.strip() for x in info.split(",")]
+        operatori_logici(src.strip(), dest.strip(), "table_xor")
+    elif "andl" in line:
+        info=line.replace("andl", "", 1)
+        src, dest=[x.strip() for x in info.split(",")]
+        operatori_logici(src.strip(), dest.strip(), "table_and")
+    elif "orl" in line:
+        info=line.replace("orl", "", 1)
+        src, dest=[x.strip() for x in info.split(",")]
+        operatori_logici(src.strip(), dest.strip(), "table_or")
+    elif "notl" in line:
+        dest = line.split("#")[0].strip().replace("notl", "")
+        not_operator(dest.strip())
+    elif "lea" in line:
+        info=line.split("#")[0].strip().replace("lea", "")
+        base, dest = [x.strip() for x in info.split(',')]
+        lea_operator(base,dest)
     else:
         g.write(line)
