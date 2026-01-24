@@ -103,4 +103,87 @@ def dec(src):
     
 def loop(src):
     jmp(src)
+
     dec("%ecx")
+
+def operatori_logici(src, dest, table_name):
+    dest= dest.replace("%", "").strip()
+    registers = ["eax","ebx", "edx", "edi"]
+    for r in registers:
+        g.write(f"\tmovl %{r}, copy_{r}\n")
+        
+    g.write(f"\tmovl {src}, %edx\n")
+    for i in range(32):
+        g.write("\tmovl %edx, %eax\n")
+        g.write(f"\tshrl ${i}, %eax\n")
+        g.write("\tandl $1, %eax\n")
+        g.write(f"\tmovb %al, src+{i}\n")
+    
+    g.write(f"\tmovl copy_{dest}, %edx\n")
+    for i in range(32):
+        g.write("\tmovl %edx, %eax\n")
+        g.write(f"\tshrl ${i}, %eax\n")
+        g.write("\tandl $1, %eax\n")
+        g.write(f"\tmovb %al, dest+{i}\n")
+
+    for i in range(32):
+        g.write(f"\tmovzbl dest+{i}, %eax\n")
+        g.write(f"\tmovzbl src+{i}, %ebx\n")
+        g.write(f"\tmovl {table_name}(,%eax,4), %edi\n")
+        g.write("\tmovb (%edi,%ebx,1), %al\n")
+        g.write(f"\tmovb %al, dest+{i}\n")
+    
+    g.write("\tmovl $0, %edx\n")
+    for i in range(32):
+        g.write(f"\tmovzbl dest+{i}, %eax\n")
+        g.write(f"\tshll ${i}, %eax\n")
+        g.write("\torl %eax, %edx\n")
+        
+    g.write(f"\tmovl %edx, %{dest}\n")
+    for r in registers:
+        if dest!=r:
+            g.write(f"\tmovl copy_{r}, %{r}\n")
+
+
+def not_operator(dest):
+    dest= dest.replace("%", "").strip()
+    g.write("\tmovl %eax, copy_eax\n")
+    g.write("\tmovl %edx, copy_edx\n")
+    g.write(f"\tmovl %{dest}, %edx\n")
+    for i in range(32):
+        g.write(f"\tmovl %edx, %eax\n")
+        g.write(f"\tshrl ${i}, %eax\n")
+        g.write(f"\tandl $1, %eax\n")
+        g.write(f"\tmovb %al, dest + {i}\n")
+
+    for i in range(32):
+        g.write(f"\tmovzbl dest+{i}, %eax\n")
+        g.write(f"\tmovb table_not(%eax), %al\n")
+        g.write(f"\tmovb %al, dest+{i}\n")
+    
+    g.write("\tmovl $0, %edx\n")
+    for i in range(32):
+        g.write(f"\tmovzbl dest+{i}, %eax\n")
+        g.write(f"\tshll ${i}, %eax\n")
+        g.write("\torl %eax, %edx\n")
+    
+    g.write(f"\tmovl %edx, %{dest}\n")
+    if dest != "eax":
+        g.write("\tmovl copy_eax, %eax\n")
+    if  dest !="edx":
+        g.write("\tmovl copy_edx, %edx\n")
+
+def lea_operator(base,dest):
+    base=base.replace(" ", "")
+    if '(' in base:
+        offset = base.split('(')[0].strip()
+        base = base.split('(')[1].replace(')', '').strip()
+        if "%" not in base: 
+            base = f"%{base}"
+            
+        g.write(f"\tmovl {base}, {dest}\n")
+        
+        if offset!='0' and offset:
+            add(f"${offset}", dest)
+    else:
+        g.write(f"\tmovl ${base}, {dest}\n")
