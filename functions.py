@@ -34,6 +34,7 @@ def add(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
+    # Extragem bitii din sursa
     g.write(f"\tmovl {src}, %edx\n")
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
@@ -41,6 +42,7 @@ def add(src, dest):
         g.write(f"\tandl $1, %eax\n")
         g.write(f"\tmovb %al, src + {i}\n")
 
+    # extragem bitii din destinatie
     g.write(f"\tmovl copy_{dest[1:]}, %edx\n")
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
@@ -48,19 +50,19 @@ def add(src, dest):
         g.write(f"\tandl $1, %eax\n")
         g.write(f"\tmovb %al, dest + {i}\n")
     
-    g.write("\tmovl $0, %ecx\n")
+    g.write("\tmovl $0, %ecx\n") # carry initial = 0
     for i in range(32):
-        # -- Citire operanzi din buffer-ele universale --
+        # Citire operanzi din buffere
         g.write(f"\tmovzbl dest + {i}, %eax\n") # A
         g.write(f"\tmovzbl src + {i}, %ebx\n")  # B
         g.write("\tmovl %ecx, %ebp\n") # Salvăm Carry vechi
 
-        # -- Calcul A XOR B --
+        # Calcul A XOR B
         g.write("\tmovl table_xor(,%eax,4), %edi\n")
         g.write("\tmovb (%edi, %ebx, 1), %al\n")
         g.write("\tmovzbl %al, %esi\n") # esi = A XOR B
 
-        # -- Calcul CARRY NOU --
+        # Calcul Carry nou
         # 1. (A AND B)
         g.write(f"\tmovzbl dest + {i}, %eax\n")
         g.write(f"\tmovzbl src + {i}, %ebx\n") 
@@ -68,7 +70,7 @@ def add(src, dest):
         g.write("\tmovb (%edi, %ebx, 1), %al\n")
         g.write("\tmovzbl %al, %edx\n") # edx = A AND B
 
-        # 2. Carry_vechi AND (A XOR B)
+        # 2. Carry vechi AND (A XOR B)
         g.write("\tmovl table_and(,%ebp,4), %edi\n")
         g.write("\tmovb (%edi, %esi, 1), %al\n")
         g.write("\tmovzbl %al, %eax\n") 
@@ -78,12 +80,12 @@ def add(src, dest):
         g.write("\tmovb (%edi, %eax, 1), %al\n")
         g.write("\tmovzbl %al, %ecx\n")
 
-        # -- Calcul SUMA FINALA --
+        # Calcul suma finala
         g.write("\tmovl table_xor(,%esi,4), %edi\n")
         g.write("\tmovb (%edi, %ebp, 1), %al\n")
         g.write(f"\tmovb %al, dest + {i}\n")
 
-    # 5. RECONSTRUCȚIA REGISTRULUI
+    # 5. Reconstructia registrului destinatie
     g.write("\tmovl $0, %edx\n")
     for i in range(32):
         g.write(f"\tmovzbl dest + {i}, %eax\n")
@@ -91,153 +93,160 @@ def add(src, dest):
         g.write("\torl %eax, %edx\n")
     g.write(f"\tmovl %edx, {dest}\n")
 
+    # Restaurarea registrilor
     registers.remove(dest[1:])
     for reg in registers:
         g.write(f"\tmovl copy_{reg}, %{reg}\n")
 
 def pop(dest):
-    g.write(f"\tmovl 0(%esp), {dest}")
+    g.write(f"\tmovl 0(%esp), {dest}\n")
     add("$4", "%esp")
     
 def push(dest):
     add("$-4", "%esp")
-    g.write(f"\tmovl {dest}, 0(%esp)")
+    g.write(f"\tmovl {dest}, 0(%esp)\n")
     
 def sub(src, dest):
     not_operator(src)
     add("$1",src)
-    add(src,dest)
+    add(src, dest)
     
 def inc(src):
-    add("$1",src)
+    add("$1", src)
     
 def dec(src):
-    add("$-1",src)
+    add("$-1", src)
     
 #JMPS SI LOOPS
 def loop(src,loop_counter):
-    dec("%ecx")
+    dec("%ecx\n")
 
     #mutam adresa sursa si adresa de exit
-    g.write(f"\tmovl %eax, copy_eax")
-    g.write(f"\tmovl %ebx, copy_ebx")
-    g.write(f"\tmovl ${src}, %eax")
-    g.write(f"\tmovl $labell{loop_counter}, %ebx")
+    g.write(f"\tmovl %eax, copy_eax\n")
+    g.write(f"\tmovl %ebx, copy_ebx\n")
+    g.write(f"\tmovl ${src}, %eax\n")
+    g.write(f"\tmovl $labell{loop_counter}, %ebx\n")
     
-    g.write("\tcmp $0, %ecx") #verificam cand se termina comanda loop din asm
-    g.write("\tcmovne %eax, %ebx")
+    g.write("\tcmp $0, %ecx\n") #verificam cand se termina comanda loop din asm
+    g.write("\tcmovne %eax, %ebx\n")
     push("%ebx")
     
-    g.write(f"\tmovl copy_eax, %eax")
-    g.write(f"\tmovl copy_ebx, %ebx")
+    g.write(f"\tmovl copy_eax, %eax\n")
+    g.write(f"\tmovl copy_ebx, %ebx\n")
     #restauram registrii
     
-    g.write("\tret")
-    g.write(f"labell{loop_counter}:")
+    g.write("\tret\n")
+    g.write(f"labell{loop_counter}:\n")
     
 def jmp(src): #punem in eax adresa src, dupa o plasam pe stiva si facem jmp folosind ret
-    g.write(f"\tmovl %eax, copy_eax")
-    g.write(f"\tmovl ${src}, %eax")
+    g.write(f"\tmovl %eax, copy_eax\n")
+    g.write(f"\tmovl ${src}, %eax\n")
     push("%eax")
     
-    g.write(f"\tmovl copy_eax, %eax")
-    g.write(f"\tret")
+    g.write(f"\tmovl copy_eax, %eax\n")
+    g.write(f"\tret\n")
 
-def j(src,suf,j_counter): #suf=sufixul jmpului conditionat/j_counter=nr de jmpuri conditionate pentru a nu sari la aceasi adresa de memorie in cazul in care exista mai multe
+def j(src,suf,j_counter): #suf = sufixul jmpului conditionat/j_counter=nr de jmpuri conditionate pentru a nu sari la aceasi adresa de memorie in cazul in care exista mai multe
     #copiem registri
-    g.write(f"\tmovl %eax, copy_eax")
-    g.write(f"\tmovl %ebx, copy_ebx")
-    g.write(f"\tmovl ${src}, %eax") #eax are adresa src
-    g.write(f"\tmovl $labelj{j_counter}, %ebx") #ebx are adresa fix de dupa jmp daca acesta nu indeplineste conditia de jmp
+    g.write(f"\tmovl %eax, copy_eax\n")
+    g.write(f"\tmovl %ebx, copy_ebx\n")
+    g.write(f"\tmovl ${src}, %eax\n") #eax are adresa src
+    g.write(f"\tmovl $labelj{j_counter}, %ebx\n") #ebx are adresa fix de dupa jmp daca acesta nu indeplineste conditia de jmp
     
-    g.write(f"\tcmov{suf} %eax, %ebx") #se va muta adresa src (eax) in ebx doar daca conditia de jmp este indeplinita
+    g.write(f"\tcmov{suf} %eax, %ebx\n") #se va muta adresa src (eax) in ebx doar daca conditia de jmp este indeplinita
     
     push("%ebx")
     
-    g.write(f"\tmovl copy_eax, %eax")
-    g.write(f"\tmovl copy_ebx, %ebx") #restauram registri
-    g.write(f"\tret")
-    g.write(f"labelj{j_counter}:")
-    
+    g.write(f"\tmovl copy_eax, %eax\n")
+    g.write(f"\tmovl copy_ebx, %ebx\n") #restauram registrii
+    g.write(f"\tret\n")
+    g.write(f"labelj{j_counter}:\n")
 
 def operatori_logici(src, dest, table_name):
-    dest= dest.replace("%", "").strip()
-    registers = ["eax","ebx", "edx", "edi"]
-    for r in registers:
+    dest = dest.replace("%", "").strip()
+    
+    registers = ["eax", "ebx", "edx", "edi"]
+    for r in registers:                       #salvează valorile registrilor eax, ebx, edx, edi în variabile temporare precum copy_eax, copy_ebx etc.
         g.write(f"\tmovl %{r}, copy_{r}\n")
-        
-    g.write(f"\tmovl {src}, %edx\n")
+
+    g.write(f"\tmovl {src}, %edx\n")    #ia valoarea din src si o muta in %edx
     for i in range(32):
-        g.write("\tmovl %edx, %eax\n")
-        g.write(f"\tshrl ${i}, %eax\n")
+        g.write("\tmovl %edx, %eax\n") 
+        g.write(f"\tshrl ${i}, %eax\n")        #pentru fiecare bit i: - se deplaseaza bitul pe pozitia 0 - se izoleaza - se salveaza in src[i]
         g.write("\tandl $1, %eax\n")
         g.write(f"\tmovb %al, src+{i}\n")
-    
-    g.write(f"\tmovl copy_{dest}, %edx\n")
+
+    g.write(f"\tmovl copy_{dest}, %edx\n")    #ia valoarea din dest si o muta in %edx
     for i in range(32):
         g.write("\tmovl %edx, %eax\n")
-        g.write(f"\tshrl ${i}, %eax\n")
+        g.write(f"\tshrl ${i}, %eax\n")        #pentru fiecare bit i: - se deplaseaza bitul pe pozitia 0 - se izoleaza - se salveaza in dest[i]
         g.write("\tandl $1, %eax\n")
         g.write(f"\tmovb %al, dest+{i}\n")
 
     for i in range(32):
-        g.write(f"\tmovzbl dest+{i}, %eax\n")
-        g.write(f"\tmovzbl src+{i}, %ebx\n")
-        g.write(f"\tmovl {table_name}(,%eax,4), %edi\n")
+        g.write(f"\tmovzbl dest+{i}, %eax\n")       # %eax=bitul de pe pozitia i din dest
+        g.write(f"\tmovzbl src+{i}, %ebx\n")        # %ebx=bitul de pe pozitia i din src
+        g.write(f"\tmovl {table_name}(,%eax,4), %edi\n")    # edi= table_name[%eax][%ebx] (table_name = lookup table pentru and, or, xor)
         g.write("\tmovb (%edi,%ebx,1), %al\n")
-        g.write(f"\tmovb %al, dest+{i}\n")
-    
-    g.write("\tmovl $0, %edx\n")
-    for i in range(32):
+        g.write(f"\tmovb %al, dest+{i}\n")    #rezultatul se stocheaza in dest[i]
+
+    g.write("\tmovl $0, %edx\n")    
+    for i in range(32):                            #reconstruire pe 32 de biti al rezultatului dorit
         g.write(f"\tmovzbl dest+{i}, %eax\n")
         g.write(f"\tshll ${i}, %eax\n")
-        g.write("\torl %eax, %edx\n")
-        
-    g.write(f"\tmovl %edx, %{dest}\n")
+        g.write("\torl %eax, %edx\n")            #se stocheaza in %edx pe rand bitii, fiecare pe pozitia lui
+
+    g.write(f"\tmovl %edx, %{dest}\n")        #se muta valoarea din %edx in dest
+
+    #se restaureaza registrii folositi in aceasta functie
     for r in registers:
-        if dest!=r:
+        if dest != r:
             g.write(f"\tmovl copy_{r}, %{r}\n")
 
-
 def not_operator(dest):
-    dest= dest.replace("%", "").strip()
-    g.write("\tmovl %eax, copy_eax\n")
+    dest = dest.replace("%", "").strip()
+    g.write("\tmovl %eax, copy_eax\n")        #se salveaza registrii eax, edx in variabile temporale copy_eax, respectiv, copy_edx
     g.write("\tmovl %edx, copy_edx\n")
-    g.write(f"\tmovl %{dest}, %edx\n")
+    
+    g.write(f"\tmovl %{dest}, %edx\n")        #se muta valoarea din dest in %edx
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
-        g.write(f"\tshrl ${i}, %eax\n")
+        g.write(f"\tshrl ${i}, %eax\n")        #pentru fiecare bit i: - se deplaseaza bitul pe pozitia 0 - se izoleaza - se salveaza in dest[i]
         g.write(f"\tandl $1, %eax\n")
         g.write(f"\tmovb %al, dest + {i}\n")
 
     for i in range(32):
         g.write(f"\tmovzbl dest+{i}, %eax\n")
-        g.write(f"\tmovb table_not(%eax), %al\n")
-        g.write(f"\tmovb %al, dest+{i}\n")
+        g.write(f"\tmovb table_not(%eax), %al\n")    #ia fiecare bit(0 sau 1) - il foloseste ca index in table_not 
+        g.write(f"\tmovb %al, dest+{i}\n")        #se retine rezultatul bitiilor in dest[i] in functie de pozitia pe care se afla
     
     g.write("\tmovl $0, %edx\n")
     for i in range(32):
-        g.write(f"\tmovzbl dest+{i}, %eax\n")
+        g.write(f"\tmovzbl dest+{i}, %eax\n")     #reconstruire pe 32 de biti al rezultatului dorit
         g.write(f"\tshll ${i}, %eax\n")
         g.write("\torl %eax, %edx\n")
     
-    g.write(f"\tmovl %edx, %{dest}\n")
+    g.write(f"\tmovl %edx, %{dest}\n")     #se muta valoarea din %edx in dest
+    
     if dest != "eax":
-        g.write("\tmovl copy_eax, %eax\n")
+        g.write("\tmovl copy_eax, %eax\n")        #se restaureaza registrul folosit in aceasta functie doar daca nu coincide dest cu eax/edx
     if dest != "edx":
         g.write("\tmovl copy_edx, %edx\n")
 
-def lea_operator(base,dest):
-    base=base.replace(" ", "")
-    if '(' in base:
-        offset = base.split('(')[0].strip()
+def lea_operator(base,dest):      #calculează o adresă efectivă de forma offset(base) și o pune în dest
+    base = base.replace(" ", "")
+    if '(' in base:  # verificare forma offset(base)
+        offset = base.split('(')[0].strip()                    #separarea offsetului de registru
         base = base.split('(')[1].replace(')', '').strip()
+        
         if "%" not in base: 
             base = f"%{base}"
             
-        g.write(f"\tmovl {base}, {dest}\n")
+        g.write(f"\tmovl {base}, {dest}\n")    #dest = base
         
-        if offset!='0' and offset:
-            add(f"${offset}", dest)
+        if offset != '0' and offset:
+            add(f"${offset}", dest)    #dest = base + offset
     else:
-        g.write(f"\tmovl ${base}, {dest}\n")
+        g.write(f"\tmovl ${base}, {dest}\n")    #pentru instructiuni de forma lea v, %edi (lea dest, base)
+                                                #devine dest=base
+
