@@ -164,7 +164,7 @@ def operatori_logici(src, dest, table_name):
     dest= dest.replace("%", "").strip()
     
     registers = ["eax","ebx", "edx", "edi"]
-    for r in registers:                       #salvează valorile registrelor eax, ebx, edx, edi în variabile temporare precum copy_eax, copy_ebx etc.
+    for r in registers:                       #salvează valorile registrilor eax, ebx, edx, edi în variabile temporare precum copy_eax, copy_ebx etc.
         g.write(f"\tmovl %{r}, copy_{r}\n")
         
     g.write(f"\tmovl {src}, %edx\n")    #ia valoarea din src si o muta in %edx
@@ -184,9 +184,9 @@ def operatori_logici(src, dest, table_name):
     for i in range(32):
         g.write(f"\tmovzbl dest+{i}, %eax\n")       # %eax=bitul de pe pozitia i din dest
         g.write(f"\tmovzbl src+{i}, %ebx\n")        # %ebx=bitul de pe pozitia i din src
-        g.write(f"\tmovl {table_name}(,%eax,4), %edi\n")    # edi= table_name[%eax][%ebx] (lookup tables)
+        g.write(f"\tmovl {table_name}(,%eax,4), %edi\n")    # edi= table_name[%eax][%ebx] (table_name = lookup table pentru and, or, xor)
         g.write("\tmovb (%edi,%ebx,1), %al\n")
-        g.write(f"\tmovb %al, dest+{i}\n")    #rezultatul se stocheaza intr-un final in dest[i]
+        g.write(f"\tmovb %al, dest+{i}\n")    #rezultatul se stocheaza in dest[i]
     
     g.write("\tmovl $0, %edx\n")    
     for i in range(32):                            #reconstruire pe 32 de biti al rezultatului dorit
@@ -248,4 +248,5 @@ def lea_operator(base,dest):      #calculează o adresă efectivă de forma offs
     else:
         g.write(f"\tmovl ${base}, {dest}\n")    #pentru instructiuni de forma lea v, %edi (lea dest, base)
                                                 #devine dest=base
+
 
