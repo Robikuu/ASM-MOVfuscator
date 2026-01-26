@@ -163,20 +163,19 @@ def j(src,suf,j_counter): #suf = sufixul jmpului conditionat/j_counter=nr de jmp
     g.write(f"labelj{j_counter}:\n")
 
 def operatori_logici(src, dest, table_name):
-    dest = dest.replace("%", "").strip()
-    
-    registers = ["eax", "ebx", "edx", "edi"]
-    for r in registers:                       #salvează valorile registrilor eax, ebx, edx, edi în variabile temporare precum copy_eax, copy_ebx etc.
+    dest= dest.replace("%", "").strip()
+    registers = ["eax","ebx", "edx", "edi"]
+    for r in registers:
         g.write(f"\tmovl %{r}, copy_{r}\n")
-
-    g.write(f"\tmovl {src}, %edx\n")    #ia valoarea din src si o muta in %edx
+        
+    g.write(f"\tmovl {src}, %edx\n")
     for i in range(32):
         g.write("\tmovl %edx, %eax\n") 
         g.write(f"\tshrl ${i}, %eax\n")        #pentru fiecare bit i: - se deplaseaza bitul pe pozitia 0 - se izoleaza - se salveaza in src[i]
         g.write("\tandl $1, %eax\n")
         g.write(f"\tmovb %al, src+{i}\n")
-
-    g.write(f"\tmovl copy_{dest}, %edx\n")    #ia valoarea din dest si o muta in %edx
+    
+    g.write(f"\tmovl copy_{dest}, %edx\n")
     for i in range(32):
         g.write("\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")        #pentru fiecare bit i: - se deplaseaza bitul pe pozitia 0 - se izoleaza - se salveaza in dest[i]
@@ -188,24 +187,22 @@ def operatori_logici(src, dest, table_name):
         g.write(f"\tmovzbl src+{i}, %ebx\n")        # %ebx=bitul de pe pozitia i din src
         g.write(f"\tmovl {table_name}(,%eax,4), %edi\n")    # edi= table_name[%eax][%ebx] (table_name = lookup table pentru and, or, xor)
         g.write("\tmovb (%edi,%ebx,1), %al\n")
-        g.write(f"\tmovb %al, dest+{i}\n")    #rezultatul se stocheaza in dest[i]
-
-    g.write("\tmovl $0, %edx\n")    
-    for i in range(32):                            #reconstruire pe 32 de biti al rezultatului dorit
+        g.write(f"\tmovb %al, dest+{i}\n")
+    
+    g.write("\tmovl $0, %edx\n")
+    for i in range(32):
         g.write(f"\tmovzbl dest+{i}, %eax\n")
         g.write(f"\tshll ${i}, %eax\n")
-        g.write("\torl %eax, %edx\n")            #se stocheaza in %edx pe rand bitii, fiecare pe pozitia lui
-
-    g.write(f"\tmovl %edx, %{dest}\n")        #se muta valoarea din %edx in dest
-
-    #se restaureaza registrii folositi in aceasta functie
+        g.write("\torl %eax, %edx\n")
+        
+    g.write(f"\tmovl %edx, %{dest}\n")
     for r in registers:
         if dest != r:
             g.write(f"\tmovl copy_{r}, %{r}\n")
 
 def not_operator(dest):
-    dest = dest.replace("%", "").strip()
-    g.write("\tmovl %eax, copy_eax\n")        #se salveaza registrii eax, edx in variabile temporale copy_eax, respectiv, copy_edx
+    dest= dest.replace("%", "").strip()
+    g.write("\tmovl %eax, copy_eax\n")
     g.write("\tmovl %edx, copy_edx\n")
     
     g.write(f"\tmovl %{dest}, %edx\n")        #se muta valoarea din dest in %edx
@@ -233,10 +230,10 @@ def not_operator(dest):
     if dest != "edx":
         g.write("\tmovl copy_edx, %edx\n")
 
-def lea_operator(base,dest):      #calculează o adresă efectivă de forma offset(base) și o pune în dest
-    base = base.replace(" ", "")
-    if '(' in base:  # verificare forma offset(base)
-        offset = base.split('(')[0].strip()                    #separarea offsetului de registru
+def lea_operator(base,dest):
+    base=base.replace(" ", "")
+    if '(' in base:
+        offset = base.split('(')[0].strip()
         base = base.split('(')[1].replace(')', '').strip()
         
         if "%" not in base: 
@@ -244,9 +241,7 @@ def lea_operator(base,dest):      #calculează o adresă efectivă de forma offs
             
         g.write(f"\tmovl {base}, {dest}\n")    #dest = base
         
-        if offset != '0' and offset:
-            add(f"${offset}", dest)    #dest = base + offset
+        if offset!='0' and offset:
+            add(f"${offset}", dest)
     else:
-        g.write(f"\tmovl ${base}, {dest}\n")    #pentru instructiuni de forma lea v, %edi (lea dest, base)
-                                                #devine dest=base
-
+        g.write(f"\tmovl ${base}, {dest}\n")
