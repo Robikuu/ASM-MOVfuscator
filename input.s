@@ -1,23 +1,24 @@
 .data
-    x: .long 4
-    y: .long 2
-    printf_format: .asciz "%d\n"
-
+    a: .ascii "Assembly"
+    b: .word 0x25
+    c: .asciz "x86"
+    d: .asciz ";;;"
+    e: .long 0x15
 .text
 
 .global main
 
 main:
-    movl x, %eax
-    movl y, %ebx
+    mov $4, %eax
+    mov $1, %ebx
+    mov $a, %ecx
+    mov $b, %edi
+    sub %ecx, %edi
+    or %edi, e
+    mov e, %edx
+    movl $17, %edx
+    int $0x80
 
-    orl %eax, y
-
-    pushl %eax
-    pushl $printf_format
-    call printf
-    addl $8, %esp
-
-    movl $1, %eax
-    xorl %ebx, %ebx
+    mov $1, %eax
+    xor %ebx, %ebx
     int $0x80

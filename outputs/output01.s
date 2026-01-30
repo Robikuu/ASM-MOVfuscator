@@ -58,6 +58,7 @@
 	copy_div_esp: .space 4
 	copy_j_esp: .space 4
 	copy_loop_esp: .space 4
+	copy_dest: .space 4
 	copy_sub_ebp: .space 4
 	copy3_ecx: .space 4
 	old_carry: .space 4

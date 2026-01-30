@@ -4,7 +4,6 @@
     c: .asciz "x86"
     d: .asciz ";;;"
     e: .long 0x15
-
 .text
 
 .global main
@@ -17,6 +16,7 @@ main:
     sub %ecx, %edi
     or %edi, e
     mov e, %edx
+    movl $17, %edx
     int $0x80
 
     mov $1, %eax

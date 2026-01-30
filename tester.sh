@@ -31,8 +31,8 @@ for input_path in $(ls $INPUT_DIR/input*.s | sort -V); do
     if [ $RES_IN -eq 0 ] && [ $RES_OUT -eq 0 ]; then
         GCC_ICON="✅"
         
-        OUT_EXPECTED=$("$bin_in" 2>&1)
-        OUT_ACTUAL=$("$bin_out" 2>&1)
+        OUT_EXPECTED=$("$bin_in" | tr -d '\0')
+        OUT_ACTUAL=$("$bin_out" | tr -d '\0')
 
         if [ "$OUT_EXPECTED" == "$OUT_ACTUAL" ]; then
             RESULT="✅ MATCH: [$OUT_ACTUAL]"

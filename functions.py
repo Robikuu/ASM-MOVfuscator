@@ -50,7 +50,8 @@ def and_op(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
-    g.write(f"\tmovl {dest}, copy_dest\n")
+    g.write(f"\tmovl {dest}, %eax\n")
+    g.write(f"\tmovl %eax, copy_dest\n")
     g.write("\tmovl $0, %ecx\n")
     g.write(f"\tmovl {src}, src_op\n")
     # vom lua cei 4 bytes in ordine inversa pentru a fi mai usor sa concatenam rezultatele
@@ -113,7 +114,8 @@ def or_op(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
-    g.write(f"\tmovl {dest}, copy_dest\n")
+    g.write(f"\tmovl {dest}, %eax\n")
+    g.write(f"\tmovl %eax, copy_dest\n")
     g.write("\tmovl $0, %ecx\n")
     g.write(f"\tmovl {src}, src_op\n")
     # extragem byte-ul 3
@@ -176,7 +178,8 @@ def xor_op(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
-    g.write(f"\tmovl {dest}, copy_dest\n")
+    g.write(f"\tmovl {dest}, %eax\n")
+    g.write(f"\tmovl %eax, copy_dest\n")
     g.write("\tmovl $0, %ecx\n")
 
     # === extragere biti src ===
@@ -231,7 +234,7 @@ def xor_op(src, dest):
         g.write(f"\tmovb %cl, copy_dest + {byte_idx}\n")
 
     # mutăm valoarea finală reconstruită în registrul destinație
-    g.write(f"\tmovl copy_dest, %dest\n")
+    g.write(f"\tmovl copy_dest, {dest}\n")
 
     # restaurarea registrilor
     for reg in registers:
@@ -282,7 +285,7 @@ def add(src, dest):
         g.write(f"\tmovb %al, src + {i}\n")
 
     # extragem bitii din destinatie
-    g.write(f"\tmovl copy_add_dest, %edx\n")
+    g.write(f"\tmovl copy_add_{dest[1:]}, %edx\n")
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")
@@ -524,13 +527,3 @@ def lea(src, dest):
             add(f"${offset}", dest)
     else:
         g.write(f"\tmovl ${src}, {dest}\n")
-
-def test(src, src2):
-    g.write("\tmovl %eax, -4(%esp)\n")
-    g.write("\tmovl %ebx, -8(%esp)\n")
-    g.write("\tmovl {src}, %eax\n")
-    g.write("\tmovl {src2}, %ebx\n")
-    and_op("%eax","%ebx")
-    g.write("\tcmp $0, %ebx")
-    g.write("\tmovl -4(%esp), %eax")
-    g.write("\tmovl -8(%esp), %ebx")
