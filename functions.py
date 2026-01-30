@@ -17,8 +17,14 @@ def complete_data():
         g.write(f"\tcopy_add_{reg}: .space 4\n")
         g.write(f"\tcopy_mul_{reg}: .space 4\n")
         g.write(f"\tcopy_div_{reg}: .space 4\n")
-        g.write(f"\tcopy_j_{reg}: .space 4\n")
-        g.write(f"\tcopy_loop_{reg}: .space 4\n")
+        
+    g.write("\tcopy_push_eax: .space 4\n")
+    g.write("\tcopy_pop_eax: .space 4\n")
+    for i in range(40):
+        g.write(f"\tcopy_loop_eax{i}: .space 4\n")
+        g.write(f"\tcopy_loop_ebx{i}: .space 4\n")
+        g.write(f"\tcopy_j_eax{i}: .space 4\n")
+        g.write(f"\tcopy_j_ebx{i}: .space 4\n")
 
     g.write("\tcopy_dest: .space 4\n")
     g.write("\tcopy_sub_ebp: .space 4\n")
@@ -463,8 +469,11 @@ def pop(dest):
     add("$4", "%esp")
     
 def push(dest):
+    g.write("\tmovl %eax, copy_push_eax\n")
+    g.write(f"\tmovl {dest}, %eax\n")
     add("$-4", "%esp")
     g.write(f"\tmovl {dest}, 0(%esp)\n")
+    g.write("\tmovl copy_push_eax, %eax\n")
 
 def inc(dest):
     add("$1", dest)
@@ -476,8 +485,8 @@ def loop(src, loop_counter):
     dec("%ecx")
 
     #mutam adresa sursa si adresa de exit
-    g.write(f"\tmovl %eax, copy_loop_eax\n")
-    g.write(f"\tmovl %ebx, copy_loop_ebx\n")
+    g.write(f"\tmovl %eax, copy_loop_eax{loop_counter}\n")
+    g.write(f"\tmovl %ebx, copy_loop_ebx{loop_counter}\n")
     g.write(f"\tmovl ${src}, %eax\n")
     g.write(f"\tmovl $labell{loop_counter}, %ebx\n")
     
@@ -485,10 +494,9 @@ def loop(src, loop_counter):
     g.write("\tcmovne %eax, %ebx\n")
     push("%ebx")
     
-    g.write(f"\tmovl copy_loop_eax, %eax\n")
-    g.write(f"\tmovl copy_loop_ebx, %ebx\n")
     #restauram registrii
-    
+    g.write(f"\tmovl copy_loop_eax{loop_counter}, %eax\n")
+    g.write(f"\tmovl copy_loop_ebx{loop_counter}, %ebx\n")
     g.write("\tret\n")
     g.write(f"labell{loop_counter}:\n")
 
@@ -502,8 +510,8 @@ def jmp(src): #punem in eax adresa src, dupa o plasam pe stiva si facem jmp folo
 
 def j(src, suf, j_counter): #suf = sufixul jmpului conditionat/j_counter=nr de jmpuri conditionate pentru a nu sari la aceasi adresa de memorie in cazul in care exista mai multe
     #copiem registri
-    g.write(f"\tmovl %eax, copy_j_eax\n")
-    g.write(f"\tmovl %ebx, copy_j_ebx\n")
+    g.write(f"\tmovl %eax, copy_j_eax{j_counter}\n")
+    g.write(f"\tmovl %ebx, copy_j_ebx{j_counter}\n")
     g.write(f"\tmovl ${src}, %eax\n") #eax are adresa src
     g.write(f"\tmovl $labelj{j_counter}, %ebx\n") #ebx are adresa fix de dupa jmp daca acesta nu indeplineste conditia de jmp
     
@@ -511,8 +519,8 @@ def j(src, suf, j_counter): #suf = sufixul jmpului conditionat/j_counter=nr de j
 
     push("%ebx")
 
-    g.write(f"\tmovl copy_j_eax, %eax\n")
-    g.write(f"\tmovl copy_j_ebx, %ebx\n") #restauram registrii
+    g.write(f"\tmovl copy_j_eax{j_counter}, %eax\n")
+    g.write(f"\tmovl copy_j_ebx{j_counter}, %ebx\n") #restauram registrii
     g.write(f"\tret\n")
     g.write(f"labelj{j_counter}:\n")
 
