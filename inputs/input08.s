@@ -13,7 +13,7 @@ et_loop:
     mul %ecx
     loop et_loop
 
-    pushl %ecx
+    pushl %eax
     pushl $printf_format
     call printf
     addl $8, %esp

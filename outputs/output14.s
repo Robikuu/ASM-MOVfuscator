@@ -8223,6 +8223,8 @@
 	copy_loop_ebx4000: .space 4
 	copy_j_eax4000: .space 4
 	copy_j_ebx4000: .space 4
+	copy_test_eax: .space 4
+	copy_test_ebx: .space 4
 	copy_push_eax: .space 4
 	copy_dest: .space 4
 	copy_add_dest: .space 4
@@ -8777,6 +8779,7 @@
 	movl $-4, %edx
 	movl %edx, %eax
 	shrl $0, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -8787,7 +8790,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -8832,6 +8834,7 @@
 	movb %al, src + 0
 	movl %edx, %eax
 	shrl $1, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -8842,7 +8845,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -8887,6 +8889,7 @@
 	movb %al, src + 1
 	movl %edx, %eax
 	shrl $2, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -8897,7 +8900,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -8942,6 +8944,7 @@
 	movb %al, src + 2
 	movl %edx, %eax
 	shrl $3, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -8952,7 +8955,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -8997,6 +8999,7 @@
 	movb %al, src + 3
 	movl %edx, %eax
 	shrl $4, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9007,7 +9010,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9052,6 +9054,7 @@
 	movb %al, src + 4
 	movl %edx, %eax
 	shrl $5, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9062,7 +9065,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9107,6 +9109,7 @@
 	movb %al, src + 5
 	movl %edx, %eax
 	shrl $6, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9117,7 +9120,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9162,6 +9164,7 @@
 	movb %al, src + 6
 	movl %edx, %eax
 	shrl $7, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9172,7 +9175,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9217,6 +9219,7 @@
 	movb %al, src + 7
 	movl %edx, %eax
 	shrl $8, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9227,7 +9230,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9272,6 +9274,7 @@
 	movb %al, src + 8
 	movl %edx, %eax
 	shrl $9, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9282,7 +9285,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9327,6 +9329,7 @@
 	movb %al, src + 9
 	movl %edx, %eax
 	shrl $10, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9337,7 +9340,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9382,6 +9384,7 @@
 	movb %al, src + 10
 	movl %edx, %eax
 	shrl $11, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9392,7 +9395,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9437,6 +9439,7 @@
 	movb %al, src + 11
 	movl %edx, %eax
 	shrl $12, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9447,7 +9450,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9492,6 +9494,7 @@
 	movb %al, src + 12
 	movl %edx, %eax
 	shrl $13, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9502,7 +9505,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9547,6 +9549,7 @@
 	movb %al, src + 13
 	movl %edx, %eax
 	shrl $14, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9557,7 +9560,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9602,6 +9604,7 @@
 	movb %al, src + 14
 	movl %edx, %eax
 	shrl $15, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9612,7 +9615,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9657,6 +9659,7 @@
 	movb %al, src + 15
 	movl %edx, %eax
 	shrl $16, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9667,7 +9670,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9712,6 +9714,7 @@
 	movb %al, src + 16
 	movl %edx, %eax
 	shrl $17, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9722,7 +9725,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9767,6 +9769,7 @@
 	movb %al, src + 17
 	movl %edx, %eax
 	shrl $18, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9777,7 +9780,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9822,6 +9824,7 @@
 	movb %al, src + 18
 	movl %edx, %eax
 	shrl $19, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9832,7 +9835,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9877,6 +9879,7 @@
 	movb %al, src + 19
 	movl %edx, %eax
 	shrl $20, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9887,7 +9890,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9932,6 +9934,7 @@
 	movb %al, src + 20
 	movl %edx, %eax
 	shrl $21, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9942,7 +9945,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -9987,6 +9989,7 @@
 	movb %al, src + 21
 	movl %edx, %eax
 	shrl $22, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -9997,7 +10000,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10042,6 +10044,7 @@
 	movb %al, src + 22
 	movl %edx, %eax
 	shrl $23, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10052,7 +10055,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10097,6 +10099,7 @@
 	movb %al, src + 23
 	movl %edx, %eax
 	shrl $24, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10107,7 +10110,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10152,6 +10154,7 @@
 	movb %al, src + 24
 	movl %edx, %eax
 	shrl $25, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10162,7 +10165,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10207,6 +10209,7 @@
 	movb %al, src + 25
 	movl %edx, %eax
 	shrl $26, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10217,7 +10220,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10262,6 +10264,7 @@
 	movb %al, src + 26
 	movl %edx, %eax
 	shrl $27, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10272,7 +10275,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10317,6 +10319,7 @@
 	movb %al, src + 27
 	movl %edx, %eax
 	shrl $28, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10327,7 +10330,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10372,6 +10374,7 @@
 	movb %al, src + 28
 	movl %edx, %eax
 	shrl $29, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10382,7 +10385,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10427,6 +10429,7 @@
 	movb %al, src + 29
 	movl %edx, %eax
 	shrl $30, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10437,7 +10440,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10482,6 +10484,7 @@
 	movb %al, src + 30
 	movl %edx, %eax
 	shrl $31, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10492,7 +10495,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10538,6 +10540,7 @@
 	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10548,7 +10551,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10593,6 +10595,7 @@
 	movb %al, dest + 0
 	movl %edx, %eax
 	shrl $1, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10603,7 +10606,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10648,6 +10650,7 @@
 	movb %al, dest + 1
 	movl %edx, %eax
 	shrl $2, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10658,7 +10661,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10703,6 +10705,7 @@
 	movb %al, dest + 2
 	movl %edx, %eax
 	shrl $3, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10713,7 +10716,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10758,6 +10760,7 @@
 	movb %al, dest + 3
 	movl %edx, %eax
 	shrl $4, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10768,7 +10771,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10813,6 +10815,7 @@
 	movb %al, dest + 4
 	movl %edx, %eax
 	shrl $5, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10823,7 +10826,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10868,6 +10870,7 @@
 	movb %al, dest + 5
 	movl %edx, %eax
 	shrl $6, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10878,7 +10881,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10923,6 +10925,7 @@
 	movb %al, dest + 6
 	movl %edx, %eax
 	shrl $7, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10933,7 +10936,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -10978,6 +10980,7 @@
 	movb %al, dest + 7
 	movl %edx, %eax
 	shrl $8, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -10988,7 +10991,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11033,6 +11035,7 @@
 	movb %al, dest + 8
 	movl %edx, %eax
 	shrl $9, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11043,7 +11046,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11088,6 +11090,7 @@
 	movb %al, dest + 9
 	movl %edx, %eax
 	shrl $10, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11098,7 +11101,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11143,6 +11145,7 @@
 	movb %al, dest + 10
 	movl %edx, %eax
 	shrl $11, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11153,7 +11156,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11198,6 +11200,7 @@
 	movb %al, dest + 11
 	movl %edx, %eax
 	shrl $12, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11208,7 +11211,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11253,6 +11255,7 @@
 	movb %al, dest + 12
 	movl %edx, %eax
 	shrl $13, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11263,7 +11266,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11308,6 +11310,7 @@
 	movb %al, dest + 13
 	movl %edx, %eax
 	shrl $14, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11318,7 +11321,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11363,6 +11365,7 @@
 	movb %al, dest + 14
 	movl %edx, %eax
 	shrl $15, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11373,7 +11376,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11418,6 +11420,7 @@
 	movb %al, dest + 15
 	movl %edx, %eax
 	shrl $16, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11428,7 +11431,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11473,6 +11475,7 @@
 	movb %al, dest + 16
 	movl %edx, %eax
 	shrl $17, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11483,7 +11486,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11528,6 +11530,7 @@
 	movb %al, dest + 17
 	movl %edx, %eax
 	shrl $18, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11538,7 +11541,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11583,6 +11585,7 @@
 	movb %al, dest + 18
 	movl %edx, %eax
 	shrl $19, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11593,7 +11596,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11638,6 +11640,7 @@
 	movb %al, dest + 19
 	movl %edx, %eax
 	shrl $20, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11648,7 +11651,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11693,6 +11695,7 @@
 	movb %al, dest + 20
 	movl %edx, %eax
 	shrl $21, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11703,7 +11706,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11748,6 +11750,7 @@
 	movb %al, dest + 21
 	movl %edx, %eax
 	shrl $22, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11758,7 +11761,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11803,6 +11805,7 @@
 	movb %al, dest + 22
 	movl %edx, %eax
 	shrl $23, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11813,7 +11816,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11858,6 +11860,7 @@
 	movb %al, dest + 23
 	movl %edx, %eax
 	shrl $24, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11868,7 +11871,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11913,6 +11915,7 @@
 	movb %al, dest + 24
 	movl %edx, %eax
 	shrl $25, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11923,7 +11926,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -11968,6 +11970,7 @@
 	movb %al, dest + 25
 	movl %edx, %eax
 	shrl $26, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -11978,7 +11981,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -12023,6 +12025,7 @@
 	movb %al, dest + 26
 	movl %edx, %eax
 	shrl $27, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -12033,7 +12036,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -12078,6 +12080,7 @@
 	movb %al, dest + 27
 	movl %edx, %eax
 	shrl $28, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -12088,7 +12091,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -12133,6 +12135,7 @@
 	movb %al, dest + 28
 	movl %edx, %eax
 	shrl $29, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -12143,7 +12146,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -12188,6 +12190,7 @@
 	movb %al, dest + 29
 	movl %edx, %eax
 	shrl $30, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -12198,7 +12201,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -12243,6 +12245,7 @@
 	movb %al, dest + 30
 	movl %edx, %eax
 	shrl $31, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -12253,7 +12256,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13164,6 +13166,7 @@
 	movl $0, %edx
 	movzbl dest + 0, %eax
 	shll $0, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13174,7 +13177,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13218,6 +13220,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 1, %eax
 	shll $1, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13228,7 +13231,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13272,6 +13274,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 2, %eax
 	shll $2, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13282,7 +13285,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13326,6 +13328,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 3, %eax
 	shll $3, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13336,7 +13339,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13380,6 +13382,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 4, %eax
 	shll $4, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13390,7 +13393,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13434,6 +13436,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 5, %eax
 	shll $5, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13444,7 +13447,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13488,6 +13490,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 6, %eax
 	shll $6, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13498,7 +13501,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13542,6 +13544,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 7, %eax
 	shll $7, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13552,7 +13555,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13596,6 +13598,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 8, %eax
 	shll $8, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13606,7 +13609,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13650,6 +13652,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 9, %eax
 	shll $9, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13660,7 +13663,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13704,6 +13706,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 10, %eax
 	shll $10, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13714,7 +13717,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13758,6 +13760,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 11, %eax
 	shll $11, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13768,7 +13771,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13812,6 +13814,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 12, %eax
 	shll $12, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13822,7 +13825,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13866,6 +13868,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 13, %eax
 	shll $13, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13876,7 +13879,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13920,6 +13922,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 14, %eax
 	shll $14, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13930,7 +13933,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -13974,6 +13976,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 15, %eax
 	shll $15, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -13984,7 +13987,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14028,6 +14030,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 16, %eax
 	shll $16, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14038,7 +14041,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14082,6 +14084,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 17, %eax
 	shll $17, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14092,7 +14095,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14136,6 +14138,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 18, %eax
 	shll $18, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14146,7 +14149,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14190,6 +14192,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 19, %eax
 	shll $19, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14200,7 +14203,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14244,6 +14246,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 20, %eax
 	shll $20, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14254,7 +14257,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14298,6 +14300,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 21, %eax
 	shll $21, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14308,7 +14311,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14352,6 +14354,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 22, %eax
 	shll $22, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14362,7 +14365,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14406,6 +14408,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 23, %eax
 	shll $23, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14416,7 +14419,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14460,6 +14462,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 24, %eax
 	shll $24, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14470,7 +14473,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14514,6 +14516,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 25, %eax
 	shll $25, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14524,7 +14527,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14568,6 +14570,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 26, %eax
 	shll $26, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14578,7 +14581,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14622,6 +14624,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 27, %eax
 	shll $27, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14632,7 +14635,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14676,6 +14678,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 28, %eax
 	shll $28, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14686,7 +14689,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14730,6 +14732,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 29, %eax
 	shll $29, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14740,7 +14743,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14784,6 +14786,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 30, %eax
 	shll $30, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14794,7 +14797,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14838,6 +14840,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 31, %eax
 	shll $31, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14848,7 +14851,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14916,6 +14918,7 @@
 	movl $-4, %edx
 	movl %edx, %eax
 	shrl $0, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14926,7 +14929,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -14971,6 +14973,7 @@
 	movb %al, src + 0
 	movl %edx, %eax
 	shrl $1, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -14981,7 +14984,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15026,6 +15028,7 @@
 	movb %al, src + 1
 	movl %edx, %eax
 	shrl $2, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15036,7 +15039,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15081,6 +15083,7 @@
 	movb %al, src + 2
 	movl %edx, %eax
 	shrl $3, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15091,7 +15094,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15136,6 +15138,7 @@
 	movb %al, src + 3
 	movl %edx, %eax
 	shrl $4, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15146,7 +15149,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15191,6 +15193,7 @@
 	movb %al, src + 4
 	movl %edx, %eax
 	shrl $5, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15201,7 +15204,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15246,6 +15248,7 @@
 	movb %al, src + 5
 	movl %edx, %eax
 	shrl $6, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15256,7 +15259,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15301,6 +15303,7 @@
 	movb %al, src + 6
 	movl %edx, %eax
 	shrl $7, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15311,7 +15314,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15356,6 +15358,7 @@
 	movb %al, src + 7
 	movl %edx, %eax
 	shrl $8, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15366,7 +15369,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15411,6 +15413,7 @@
 	movb %al, src + 8
 	movl %edx, %eax
 	shrl $9, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15421,7 +15424,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15466,6 +15468,7 @@
 	movb %al, src + 9
 	movl %edx, %eax
 	shrl $10, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15476,7 +15479,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15521,6 +15523,7 @@
 	movb %al, src + 10
 	movl %edx, %eax
 	shrl $11, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15531,7 +15534,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15576,6 +15578,7 @@
 	movb %al, src + 11
 	movl %edx, %eax
 	shrl $12, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15586,7 +15589,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15631,6 +15633,7 @@
 	movb %al, src + 12
 	movl %edx, %eax
 	shrl $13, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15641,7 +15644,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15686,6 +15688,7 @@
 	movb %al, src + 13
 	movl %edx, %eax
 	shrl $14, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15696,7 +15699,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15741,6 +15743,7 @@
 	movb %al, src + 14
 	movl %edx, %eax
 	shrl $15, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15751,7 +15754,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15796,6 +15798,7 @@
 	movb %al, src + 15
 	movl %edx, %eax
 	shrl $16, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15806,7 +15809,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15851,6 +15853,7 @@
 	movb %al, src + 16
 	movl %edx, %eax
 	shrl $17, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15861,7 +15864,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15906,6 +15908,7 @@
 	movb %al, src + 17
 	movl %edx, %eax
 	shrl $18, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15916,7 +15919,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -15961,6 +15963,7 @@
 	movb %al, src + 18
 	movl %edx, %eax
 	shrl $19, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -15971,7 +15974,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16016,6 +16018,7 @@
 	movb %al, src + 19
 	movl %edx, %eax
 	shrl $20, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16026,7 +16029,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16071,6 +16073,7 @@
 	movb %al, src + 20
 	movl %edx, %eax
 	shrl $21, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16081,7 +16084,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16126,6 +16128,7 @@
 	movb %al, src + 21
 	movl %edx, %eax
 	shrl $22, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16136,7 +16139,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16181,6 +16183,7 @@
 	movb %al, src + 22
 	movl %edx, %eax
 	shrl $23, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16191,7 +16194,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16236,6 +16238,7 @@
 	movb %al, src + 23
 	movl %edx, %eax
 	shrl $24, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16246,7 +16249,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16291,6 +16293,7 @@
 	movb %al, src + 24
 	movl %edx, %eax
 	shrl $25, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16301,7 +16304,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16346,6 +16348,7 @@
 	movb %al, src + 25
 	movl %edx, %eax
 	shrl $26, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16356,7 +16359,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16401,6 +16403,7 @@
 	movb %al, src + 26
 	movl %edx, %eax
 	shrl $27, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16411,7 +16414,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16456,6 +16458,7 @@
 	movb %al, src + 27
 	movl %edx, %eax
 	shrl $28, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16466,7 +16469,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16511,6 +16513,7 @@
 	movb %al, src + 28
 	movl %edx, %eax
 	shrl $29, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16521,7 +16524,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16566,6 +16568,7 @@
 	movb %al, src + 29
 	movl %edx, %eax
 	shrl $30, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16576,7 +16579,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16621,6 +16623,7 @@
 	movb %al, src + 30
 	movl %edx, %eax
 	shrl $31, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16631,7 +16634,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16677,6 +16679,7 @@
 	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16687,7 +16690,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16732,6 +16734,7 @@
 	movb %al, dest + 0
 	movl %edx, %eax
 	shrl $1, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16742,7 +16745,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16787,6 +16789,7 @@
 	movb %al, dest + 1
 	movl %edx, %eax
 	shrl $2, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16797,7 +16800,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16842,6 +16844,7 @@
 	movb %al, dest + 2
 	movl %edx, %eax
 	shrl $3, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16852,7 +16855,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16897,6 +16899,7 @@
 	movb %al, dest + 3
 	movl %edx, %eax
 	shrl $4, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16907,7 +16910,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -16952,6 +16954,7 @@
 	movb %al, dest + 4
 	movl %edx, %eax
 	shrl $5, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -16962,7 +16965,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17007,6 +17009,7 @@
 	movb %al, dest + 5
 	movl %edx, %eax
 	shrl $6, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17017,7 +17020,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17062,6 +17064,7 @@
 	movb %al, dest + 6
 	movl %edx, %eax
 	shrl $7, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17072,7 +17075,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17117,6 +17119,7 @@
 	movb %al, dest + 7
 	movl %edx, %eax
 	shrl $8, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17127,7 +17130,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17172,6 +17174,7 @@
 	movb %al, dest + 8
 	movl %edx, %eax
 	shrl $9, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17182,7 +17185,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17227,6 +17229,7 @@
 	movb %al, dest + 9
 	movl %edx, %eax
 	shrl $10, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17237,7 +17240,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17282,6 +17284,7 @@
 	movb %al, dest + 10
 	movl %edx, %eax
 	shrl $11, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17292,7 +17295,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17337,6 +17339,7 @@
 	movb %al, dest + 11
 	movl %edx, %eax
 	shrl $12, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17347,7 +17350,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17392,6 +17394,7 @@
 	movb %al, dest + 12
 	movl %edx, %eax
 	shrl $13, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17402,7 +17405,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17447,6 +17449,7 @@
 	movb %al, dest + 13
 	movl %edx, %eax
 	shrl $14, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17457,7 +17460,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17502,6 +17504,7 @@
 	movb %al, dest + 14
 	movl %edx, %eax
 	shrl $15, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17512,7 +17515,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17557,6 +17559,7 @@
 	movb %al, dest + 15
 	movl %edx, %eax
 	shrl $16, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17567,7 +17570,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17612,6 +17614,7 @@
 	movb %al, dest + 16
 	movl %edx, %eax
 	shrl $17, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17622,7 +17625,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17667,6 +17669,7 @@
 	movb %al, dest + 17
 	movl %edx, %eax
 	shrl $18, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17677,7 +17680,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17722,6 +17724,7 @@
 	movb %al, dest + 18
 	movl %edx, %eax
 	shrl $19, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17732,7 +17735,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17777,6 +17779,7 @@
 	movb %al, dest + 19
 	movl %edx, %eax
 	shrl $20, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17787,7 +17790,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17832,6 +17834,7 @@
 	movb %al, dest + 20
 	movl %edx, %eax
 	shrl $21, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17842,7 +17845,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17887,6 +17889,7 @@
 	movb %al, dest + 21
 	movl %edx, %eax
 	shrl $22, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17897,7 +17900,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17942,6 +17944,7 @@
 	movb %al, dest + 22
 	movl %edx, %eax
 	shrl $23, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -17952,7 +17955,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -17997,6 +17999,7 @@
 	movb %al, dest + 23
 	movl %edx, %eax
 	shrl $24, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18007,7 +18010,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18052,6 +18054,7 @@
 	movb %al, dest + 24
 	movl %edx, %eax
 	shrl $25, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18062,7 +18065,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18107,6 +18109,7 @@
 	movb %al, dest + 25
 	movl %edx, %eax
 	shrl $26, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18117,7 +18120,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18162,6 +18164,7 @@
 	movb %al, dest + 26
 	movl %edx, %eax
 	shrl $27, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18172,7 +18175,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18217,6 +18219,7 @@
 	movb %al, dest + 27
 	movl %edx, %eax
 	shrl $28, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18227,7 +18230,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18272,6 +18274,7 @@
 	movb %al, dest + 28
 	movl %edx, %eax
 	shrl $29, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18282,7 +18285,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18327,6 +18329,7 @@
 	movb %al, dest + 29
 	movl %edx, %eax
 	shrl $30, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18337,7 +18340,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -18382,6 +18384,7 @@
 	movb %al, dest + 30
 	movl %edx, %eax
 	shrl $31, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -18392,7 +18395,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19303,6 +19305,7 @@
 	movl $0, %edx
 	movzbl dest + 0, %eax
 	shll $0, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19313,7 +19316,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19357,6 +19359,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 1, %eax
 	shll $1, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19367,7 +19370,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19411,6 +19413,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 2, %eax
 	shll $2, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19421,7 +19424,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19465,6 +19467,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 3, %eax
 	shll $3, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19475,7 +19478,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19519,6 +19521,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 4, %eax
 	shll $4, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19529,7 +19532,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19573,6 +19575,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 5, %eax
 	shll $5, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19583,7 +19586,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19627,6 +19629,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 6, %eax
 	shll $6, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19637,7 +19640,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19681,6 +19683,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 7, %eax
 	shll $7, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19691,7 +19694,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19735,6 +19737,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 8, %eax
 	shll $8, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19745,7 +19748,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19789,6 +19791,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 9, %eax
 	shll $9, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19799,7 +19802,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19843,6 +19845,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 10, %eax
 	shll $10, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19853,7 +19856,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19897,6 +19899,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 11, %eax
 	shll $11, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19907,7 +19910,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -19951,6 +19953,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 12, %eax
 	shll $12, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -19961,7 +19964,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20005,6 +20007,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 13, %eax
 	shll $13, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20015,7 +20018,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20059,6 +20061,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 14, %eax
 	shll $14, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20069,7 +20072,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20113,6 +20115,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 15, %eax
 	shll $15, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20123,7 +20126,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20167,6 +20169,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 16, %eax
 	shll $16, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20177,7 +20180,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20221,6 +20223,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 17, %eax
 	shll $17, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20231,7 +20234,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20275,6 +20277,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 18, %eax
 	shll $18, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20285,7 +20288,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20329,6 +20331,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 19, %eax
 	shll $19, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20339,7 +20342,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20383,6 +20385,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 20, %eax
 	shll $20, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20393,7 +20396,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20437,6 +20439,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 21, %eax
 	shll $21, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20447,7 +20450,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20491,6 +20493,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 22, %eax
 	shll $22, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20501,7 +20504,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20545,6 +20547,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 23, %eax
 	shll $23, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20555,7 +20558,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20599,6 +20601,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 24, %eax
 	shll $24, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20609,7 +20612,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20653,6 +20655,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 25, %eax
 	shll $25, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20663,7 +20666,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20707,6 +20709,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 26, %eax
 	shll $26, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20717,7 +20720,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20761,6 +20763,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 27, %eax
 	shll $27, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20771,7 +20774,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20815,6 +20817,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 28, %eax
 	shll $28, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20825,7 +20828,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20869,6 +20871,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 29, %eax
 	shll $29, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20879,7 +20882,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20923,6 +20925,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 30, %eax
 	shll $30, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20933,7 +20936,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -20977,6 +20979,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 31, %eax
 	shll $31, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -20987,7 +20990,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21054,6 +21056,7 @@
 	movl $8, %edx
 	movl %edx, %eax
 	shrl $0, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21064,7 +21067,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21109,6 +21111,7 @@
 	movb %al, src + 0
 	movl %edx, %eax
 	shrl $1, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21119,7 +21122,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21164,6 +21166,7 @@
 	movb %al, src + 1
 	movl %edx, %eax
 	shrl $2, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21174,7 +21177,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21219,6 +21221,7 @@
 	movb %al, src + 2
 	movl %edx, %eax
 	shrl $3, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21229,7 +21232,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21274,6 +21276,7 @@
 	movb %al, src + 3
 	movl %edx, %eax
 	shrl $4, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21284,7 +21287,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21329,6 +21331,7 @@
 	movb %al, src + 4
 	movl %edx, %eax
 	shrl $5, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21339,7 +21342,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21384,6 +21386,7 @@
 	movb %al, src + 5
 	movl %edx, %eax
 	shrl $6, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21394,7 +21397,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21439,6 +21441,7 @@
 	movb %al, src + 6
 	movl %edx, %eax
 	shrl $7, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21449,7 +21452,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21494,6 +21496,7 @@
 	movb %al, src + 7
 	movl %edx, %eax
 	shrl $8, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21504,7 +21507,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21549,6 +21551,7 @@
 	movb %al, src + 8
 	movl %edx, %eax
 	shrl $9, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21559,7 +21562,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21604,6 +21606,7 @@
 	movb %al, src + 9
 	movl %edx, %eax
 	shrl $10, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21614,7 +21617,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21659,6 +21661,7 @@
 	movb %al, src + 10
 	movl %edx, %eax
 	shrl $11, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21669,7 +21672,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21714,6 +21716,7 @@
 	movb %al, src + 11
 	movl %edx, %eax
 	shrl $12, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21724,7 +21727,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21769,6 +21771,7 @@
 	movb %al, src + 12
 	movl %edx, %eax
 	shrl $13, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21779,7 +21782,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21824,6 +21826,7 @@
 	movb %al, src + 13
 	movl %edx, %eax
 	shrl $14, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21834,7 +21837,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21879,6 +21881,7 @@
 	movb %al, src + 14
 	movl %edx, %eax
 	shrl $15, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21889,7 +21892,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21934,6 +21936,7 @@
 	movb %al, src + 15
 	movl %edx, %eax
 	shrl $16, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21944,7 +21947,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -21989,6 +21991,7 @@
 	movb %al, src + 16
 	movl %edx, %eax
 	shrl $17, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -21999,7 +22002,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22044,6 +22046,7 @@
 	movb %al, src + 17
 	movl %edx, %eax
 	shrl $18, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22054,7 +22057,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22099,6 +22101,7 @@
 	movb %al, src + 18
 	movl %edx, %eax
 	shrl $19, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22109,7 +22112,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22154,6 +22156,7 @@
 	movb %al, src + 19
 	movl %edx, %eax
 	shrl $20, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22164,7 +22167,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22209,6 +22211,7 @@
 	movb %al, src + 20
 	movl %edx, %eax
 	shrl $21, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22219,7 +22222,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22264,6 +22266,7 @@
 	movb %al, src + 21
 	movl %edx, %eax
 	shrl $22, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22274,7 +22277,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22319,6 +22321,7 @@
 	movb %al, src + 22
 	movl %edx, %eax
 	shrl $23, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22329,7 +22332,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22374,6 +22376,7 @@
 	movb %al, src + 23
 	movl %edx, %eax
 	shrl $24, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22384,7 +22387,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22429,6 +22431,7 @@
 	movb %al, src + 24
 	movl %edx, %eax
 	shrl $25, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22439,7 +22442,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22484,6 +22486,7 @@
 	movb %al, src + 25
 	movl %edx, %eax
 	shrl $26, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22494,7 +22497,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22539,6 +22541,7 @@
 	movb %al, src + 26
 	movl %edx, %eax
 	shrl $27, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22549,7 +22552,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22594,6 +22596,7 @@
 	movb %al, src + 27
 	movl %edx, %eax
 	shrl $28, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22604,7 +22607,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22649,6 +22651,7 @@
 	movb %al, src + 28
 	movl %edx, %eax
 	shrl $29, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22659,7 +22662,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22704,6 +22706,7 @@
 	movb %al, src + 29
 	movl %edx, %eax
 	shrl $30, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22714,7 +22717,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22759,6 +22761,7 @@
 	movb %al, src + 30
 	movl %edx, %eax
 	shrl $31, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22769,7 +22772,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22815,6 +22817,7 @@
 	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22825,7 +22828,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22870,6 +22872,7 @@
 	movb %al, dest + 0
 	movl %edx, %eax
 	shrl $1, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22880,7 +22883,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22925,6 +22927,7 @@
 	movb %al, dest + 1
 	movl %edx, %eax
 	shrl $2, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22935,7 +22938,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -22980,6 +22982,7 @@
 	movb %al, dest + 2
 	movl %edx, %eax
 	shrl $3, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -22990,7 +22993,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23035,6 +23037,7 @@
 	movb %al, dest + 3
 	movl %edx, %eax
 	shrl $4, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23045,7 +23048,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23090,6 +23092,7 @@
 	movb %al, dest + 4
 	movl %edx, %eax
 	shrl $5, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23100,7 +23103,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23145,6 +23147,7 @@
 	movb %al, dest + 5
 	movl %edx, %eax
 	shrl $6, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23155,7 +23158,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23200,6 +23202,7 @@
 	movb %al, dest + 6
 	movl %edx, %eax
 	shrl $7, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23210,7 +23213,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23255,6 +23257,7 @@
 	movb %al, dest + 7
 	movl %edx, %eax
 	shrl $8, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23265,7 +23268,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23310,6 +23312,7 @@
 	movb %al, dest + 8
 	movl %edx, %eax
 	shrl $9, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23320,7 +23323,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23365,6 +23367,7 @@
 	movb %al, dest + 9
 	movl %edx, %eax
 	shrl $10, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23375,7 +23378,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23420,6 +23422,7 @@
 	movb %al, dest + 10
 	movl %edx, %eax
 	shrl $11, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23430,7 +23433,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23475,6 +23477,7 @@
 	movb %al, dest + 11
 	movl %edx, %eax
 	shrl $12, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23485,7 +23488,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23530,6 +23532,7 @@
 	movb %al, dest + 12
 	movl %edx, %eax
 	shrl $13, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23540,7 +23543,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23585,6 +23587,7 @@
 	movb %al, dest + 13
 	movl %edx, %eax
 	shrl $14, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23595,7 +23598,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23640,6 +23642,7 @@
 	movb %al, dest + 14
 	movl %edx, %eax
 	shrl $15, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23650,7 +23653,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23695,6 +23697,7 @@
 	movb %al, dest + 15
 	movl %edx, %eax
 	shrl $16, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23705,7 +23708,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23750,6 +23752,7 @@
 	movb %al, dest + 16
 	movl %edx, %eax
 	shrl $17, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23760,7 +23763,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23805,6 +23807,7 @@
 	movb %al, dest + 17
 	movl %edx, %eax
 	shrl $18, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23815,7 +23818,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23860,6 +23862,7 @@
 	movb %al, dest + 18
 	movl %edx, %eax
 	shrl $19, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23870,7 +23873,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23915,6 +23917,7 @@
 	movb %al, dest + 19
 	movl %edx, %eax
 	shrl $20, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23925,7 +23928,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -23970,6 +23972,7 @@
 	movb %al, dest + 20
 	movl %edx, %eax
 	shrl $21, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -23980,7 +23983,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24025,6 +24027,7 @@
 	movb %al, dest + 21
 	movl %edx, %eax
 	shrl $22, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24035,7 +24038,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24080,6 +24082,7 @@
 	movb %al, dest + 22
 	movl %edx, %eax
 	shrl $23, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24090,7 +24093,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24135,6 +24137,7 @@
 	movb %al, dest + 23
 	movl %edx, %eax
 	shrl $24, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24145,7 +24148,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24190,6 +24192,7 @@
 	movb %al, dest + 24
 	movl %edx, %eax
 	shrl $25, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24200,7 +24203,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24245,6 +24247,7 @@
 	movb %al, dest + 25
 	movl %edx, %eax
 	shrl $26, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24255,7 +24258,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24300,6 +24302,7 @@
 	movb %al, dest + 26
 	movl %edx, %eax
 	shrl $27, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24310,7 +24313,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24355,6 +24357,7 @@
 	movb %al, dest + 27
 	movl %edx, %eax
 	shrl $28, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24365,7 +24368,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24410,6 +24412,7 @@
 	movb %al, dest + 28
 	movl %edx, %eax
 	shrl $29, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24420,7 +24423,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24465,6 +24467,7 @@
 	movb %al, dest + 29
 	movl %edx, %eax
 	shrl $30, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24475,7 +24478,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -24520,6 +24522,7 @@
 	movb %al, dest + 30
 	movl %edx, %eax
 	shrl $31, %eax
+	movl $1, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -24530,7 +24533,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl $1, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25441,6 +25443,7 @@
 	movl $0, %edx
 	movzbl dest + 0, %eax
 	shll $0, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25451,7 +25454,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25495,6 +25497,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 1, %eax
 	shll $1, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25505,7 +25508,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25549,6 +25551,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 2, %eax
 	shll $2, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25559,7 +25562,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25603,6 +25605,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 3, %eax
 	shll $3, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25613,7 +25616,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25657,6 +25659,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 4, %eax
 	shll $4, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25667,7 +25670,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25711,6 +25713,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 5, %eax
 	shll $5, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25721,7 +25724,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25765,6 +25767,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 6, %eax
 	shll $6, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25775,7 +25778,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25819,6 +25821,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 7, %eax
 	shll $7, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25829,7 +25832,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25873,6 +25875,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 8, %eax
 	shll $8, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25883,7 +25886,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25927,6 +25929,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 9, %eax
 	shll $9, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25937,7 +25940,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -25981,6 +25983,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 10, %eax
 	shll $10, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -25991,7 +25994,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26035,6 +26037,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 11, %eax
 	shll $11, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26045,7 +26048,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26089,6 +26091,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 12, %eax
 	shll $12, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26099,7 +26102,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26143,6 +26145,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 13, %eax
 	shll $13, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26153,7 +26156,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26197,6 +26199,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 14, %eax
 	shll $14, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26207,7 +26210,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26251,6 +26253,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 15, %eax
 	shll $15, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26261,7 +26264,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26305,6 +26307,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 16, %eax
 	shll $16, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26315,7 +26318,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26359,6 +26361,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 17, %eax
 	shll $17, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26369,7 +26372,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26413,6 +26415,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 18, %eax
 	shll $18, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26423,7 +26426,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26467,6 +26469,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 19, %eax
 	shll $19, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26477,7 +26480,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26521,6 +26523,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 20, %eax
 	shll $20, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26531,7 +26534,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26575,6 +26577,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 21, %eax
 	shll $21, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26585,7 +26588,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26629,6 +26631,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 22, %eax
 	shll $22, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26639,7 +26642,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26683,6 +26685,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 23, %eax
 	shll $23, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26693,7 +26696,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26737,6 +26739,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 24, %eax
 	shll $24, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26747,7 +26750,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26791,6 +26793,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 25, %eax
 	shll $25, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26801,7 +26804,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26845,6 +26847,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 26, %eax
 	shll $26, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26855,7 +26858,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26899,6 +26901,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 27, %eax
 	shll $27, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26909,7 +26912,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -26953,6 +26955,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 28, %eax
 	shll $28, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -26963,7 +26966,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -27007,6 +27009,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 29, %eax
 	shll $29, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -27017,7 +27020,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -27061,6 +27063,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 30, %eax
 	shll $30, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -27071,7 +27074,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax
@@ -27115,6 +27117,7 @@
 	movl copy_edi, %edi
 	movzbl dest + 31, %eax
 	shll $31, %eax
+	movl %eax, src_op
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
@@ -27125,7 +27128,6 @@
 	movl %eax, copy_dest
 	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %eax, src_op
 	movl src_op, %ebx
 	shrl $24, %ebx
 	movl copy_dest, %eax

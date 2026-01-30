@@ -1,6 +1,9 @@
-.text
+.data
     printf_format: .asciz "%d\n"
+
+.text
 .global main
+
 main:
     movl $0b11011111111110111111, %eax
     xorl %ebx, %ebx

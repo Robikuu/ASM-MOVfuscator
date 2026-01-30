@@ -32,6 +32,8 @@ def complete_data():
         g.write(f"\tcopy_j_eax{i}: .space 4\n")
         g.write(f"\tcopy_j_ebx{i}: .space 4\n")
 
+    g.write("\tcopy_test_eax: .space 4\n")
+    g.write("\tcopy_test_ebx: .space 4\n")
     g.write("\tcopy_push_eax: .space 4\n")
     g.write("\tcopy_dest: .space 4\n")
     g.write("\tcopy_add_dest: .space 4\n")
@@ -61,6 +63,10 @@ def complete_data():
 
 def and_op(src, dest):
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
+    
+    if src != "src_op":
+        g.write(f"\tmovl {src}, src_op\n")
+    
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
@@ -68,7 +74,6 @@ def and_op(src, dest):
     g.write(f"\tmovl %eax, copy_dest\n")
     g.write("\tmovl copy_eax, %eax\n")
     g.write("\tmovl $0, %ecx\n")
-    g.write(f"\tmovl {src}, src_op\n")
     # vom lua cei 4 bytes in ordine inversa pentru a fi mai usor sa concatenam rezultatele
     # extragem byte-ul 3
     g.write(f"\tmovl src_op, %ebx\n")
@@ -126,6 +131,10 @@ def and_op(src, dest):
 
 def or_op(src, dest):
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
+    
+    if src != "src_op":
+        g.write(f"\tmovl {src}, src_op\n")
+    
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
@@ -133,7 +142,6 @@ def or_op(src, dest):
     g.write("\tmovl %eax, copy_dest\n")
     g.write("\tmovl copy_eax, %eax\n")
     g.write("\tmovl $0, %ecx\n")
-    g.write(f"\tmovl {src}, src_op\n")
 
     # extragem byte-ul 3
     g.write(f"\tmovl src_op, %ebx\n")
@@ -190,18 +198,24 @@ def or_op(src, dest):
             g.write(f"\tmovl copy_{reg}, %{reg}\n")
 
 def xor_op(src, dest):
-    # salvare registre
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
+    
+    g.write("\tmovl %edx, copy_edx\n")
+    
+    g.write(f"\tmovl {src}, %edx\n")
+    g.write("\tmovl %edx, src_op\n")
+    g.write(f"\tmovl {dest}, %edx\n")
+    g.write("\tmovl %edx, copy_dest\n")
+    
+    g.write("\tmovl copy_edx, %edx\n")
+    
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
-    g.write(f"\tmovl {dest}, %eax\n")
-    g.write(f"\tmovl %eax, copy_dest\n")
-    g.write("\tmovl copy_eax, %eax\n")
     g.write("\tmovl $0, %ecx\n")
 
     # === extragere biti src ===
-    g.write(f"\tmovl {src}, %edx\n")
+    g.write("\tmovl src_op, %edx\n")
     for i in range(32):
         g.write("\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")
@@ -552,11 +566,20 @@ def lea(src, dest):
         g.write(f"\tmovl ${src}, {dest}\n")
 
 def test(src0, src1):
-    g.write("\tmovl %eax, -4(%esp)\n")
-    g.write("\tmovl %ebx, -8(%esp)\n")
+    g.write("\tmovl %eax, copy_test_eax\n")
+    g.write("\tmovl %ebx, copy_test_ebx\n")
+    
+    g.write(f"\tmovl {src1}, %eax\n")
+    g.write("\tmovl %eax, src_op\n")
     g.write(f"\tmovl {src0}, %eax\n")
-    g.write(f"\tmovl {src1}, %ebx\n")
-    and_op("%eax","%ebx")
-    g.write("\tcmp $0, %ebx\n")
-    g.write("\tmovl -4(%esp), %eax\n")
-    g.write("\tmovl -8(%esp), %ebx\n")
+    g.write("\tmovl %eax, copy_dest\n")
+
+    g.write("\tmovl copy_test_eax, %eax\n")
+    g.write("\tmovl copy_test_ebx, %ebx\n")
+
+    and_op("src_op", "copy_dest")
+    
+    g.write("\tcmpl $0, copy_dest\n")
+    
+    g.write("\tmovl copy_test_eax, %eax\n")
+    g.write("\tmovl copy_test_ebx, %ebx\n")

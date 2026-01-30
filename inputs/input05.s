@@ -9,7 +9,7 @@ main:
     mov $2, %ebx
     div %ebx
 
-    pushl %ecx
+    pushl %edx
     pushl %eax
     pushl $printf_format
     call printf

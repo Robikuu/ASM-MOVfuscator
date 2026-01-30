@@ -8222,6 +8222,8 @@
 	copy_loop_ebx4000: .space 4
 	copy_j_eax4000: .space 4
 	copy_j_ebx4000: .space 4
+	copy_test_eax: .space 4
+	copy_test_ebx: .space 4
 	copy_push_eax: .space 4
 	copy_dest: .space 4
 	copy_add_dest: .space 4
@@ -8762,17 +8764,20 @@
 	
 	end:
 	movl $1, %eax
+	movl %edx, copy_edx
+	movl %ebx, %edx
+	movl %edx, src_op
+	movl %ebx, %edx
+	movl %edx, copy_dest
+	movl copy_edx, %edx
 	movl %eax, copy_eax
 	movl %ebx, copy_ebx
 	movl %ecx, copy_ecx
 	movl %edx, copy_edx
 	movl %esi, copy_esi
 	movl %edi, copy_edi
-	movl %ebx, %eax
-	movl %eax, copy_dest
-	movl copy_eax, %eax
 	movl $0, %ecx
-	movl %ebx, %edx
+	movl src_op, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	shll $31, %eax

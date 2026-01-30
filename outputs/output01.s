@@ -8222,6 +8222,8 @@
 	copy_loop_ebx4000: .space 4
 	copy_j_eax4000: .space 4
 	copy_j_ebx4000: .space 4
+	copy_test_eax: .space 4
+	copy_test_ebx: .space 4
 	copy_push_eax: .space 4
 	copy_dest: .space 4
 	copy_add_dest: .space 4
