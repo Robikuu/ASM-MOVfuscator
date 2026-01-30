@@ -523,3 +523,13 @@ def lea(src, dest):
             add(f"${offset}", dest)
     else:
         g.write(f"\tmovl ${src}, {dest}\n")
+
+def test(src, src2):
+    g.write("\tmovl %eax, -4(%esp)\n")
+    g.write("\tmovl %ebx, -8(%esp)\n")
+    g.write("\tmovl {src}, %eax\n")
+    g.write("\tmovl {src2}, %ebx\n")
+    and_op("%eax","%ebx")
+    g.write("\tcmp $0, %ebx")
+    g.write("\tmovl -4(%esp), %eax")
+    g.write("\tmovl -8(%esp), %ebx")
