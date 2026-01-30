@@ -43,7 +43,7 @@ et_egale:
     loop loop_ap
 
 et_exit:
-    pushl %edx
+    pushl ap
     pushl $printf_format
     call printf
     addl $8, %esp

@@ -7,58 +7,8224 @@
 	copy_add_eax: .space 4
 	copy_mul_eax: .space 4
 	copy_div_eax: .space 4
-	copy_j_eax: .space 4
 	copy_loop_eax: .space 4
+	copy_j_eax: .space 4
 	copy_ebx: .space 4
 	copy_not_ebx: .space 4
 	copy_add_ebx: .space 4
 	copy_mul_ebx: .space 4
 	copy_div_ebx: .space 4
-	copy_j_ebx: .space 4
 	copy_loop_ebx: .space 4
+	copy_j_ebx: .space 4
 	copy_ecx: .space 4
 	copy_not_ecx: .space 4
 	copy_add_ecx: .space 4
 	copy_mul_ecx: .space 4
 	copy_div_ecx: .space 4
-	copy_j_ecx: .space 4
 	copy_loop_ecx: .space 4
+	copy_j_ecx: .space 4
 	copy_edx: .space 4
 	copy_not_edx: .space 4
 	copy_add_edx: .space 4
 	copy_mul_edx: .space 4
 	copy_div_edx: .space 4
-	copy_j_edx: .space 4
 	copy_loop_edx: .space 4
+	copy_j_edx: .space 4
 	copy_esi: .space 4
 	copy_not_esi: .space 4
 	copy_add_esi: .space 4
 	copy_mul_esi: .space 4
 	copy_div_esi: .space 4
-	copy_j_esi: .space 4
 	copy_loop_esi: .space 4
+	copy_j_esi: .space 4
 	copy_edi: .space 4
 	copy_not_edi: .space 4
 	copy_add_edi: .space 4
 	copy_mul_edi: .space 4
 	copy_div_edi: .space 4
-	copy_j_edi: .space 4
 	copy_loop_edi: .space 4
+	copy_j_edi: .space 4
 	copy_ebp: .space 4
 	copy_not_ebp: .space 4
 	copy_add_ebp: .space 4
 	copy_mul_ebp: .space 4
 	copy_div_ebp: .space 4
-	copy_j_ebp: .space 4
 	copy_loop_ebp: .space 4
+	copy_j_ebp: .space 4
 	copy_esp: .space 4
 	copy_not_esp: .space 4
 	copy_add_esp: .space 4
 	copy_mul_esp: .space 4
 	copy_div_esp: .space 4
-	copy_j_esp: .space 4
 	copy_loop_esp: .space 4
+	copy_j_esp: .space 4
+	copy_loop_eax0: .space 4
+	copy_loop_ebx0: .space 4
+	copy_j_eax0: .space 4
+	copy_j_ebx0: .space 4
+	copy_loop_eax1: .space 4
+	copy_loop_ebx1: .space 4
+	copy_j_eax1: .space 4
+	copy_j_ebx1: .space 4
+	copy_loop_eax2: .space 4
+	copy_loop_ebx2: .space 4
+	copy_j_eax2: .space 4
+	copy_j_ebx2: .space 4
+	copy_loop_eax3: .space 4
+	copy_loop_ebx3: .space 4
+	copy_j_eax3: .space 4
+	copy_j_ebx3: .space 4
+	copy_loop_eax4: .space 4
+	copy_loop_ebx4: .space 4
+	copy_j_eax4: .space 4
+	copy_j_ebx4: .space 4
+	copy_loop_eax5: .space 4
+	copy_loop_ebx5: .space 4
+	copy_j_eax5: .space 4
+	copy_j_ebx5: .space 4
+	copy_loop_eax6: .space 4
+	copy_loop_ebx6: .space 4
+	copy_j_eax6: .space 4
+	copy_j_ebx6: .space 4
+	copy_loop_eax7: .space 4
+	copy_loop_ebx7: .space 4
+	copy_j_eax7: .space 4
+	copy_j_ebx7: .space 4
+	copy_loop_eax8: .space 4
+	copy_loop_ebx8: .space 4
+	copy_j_eax8: .space 4
+	copy_j_ebx8: .space 4
+	copy_loop_eax9: .space 4
+	copy_loop_ebx9: .space 4
+	copy_j_eax9: .space 4
+	copy_j_ebx9: .space 4
+	copy_loop_eax10: .space 4
+	copy_loop_ebx10: .space 4
+	copy_j_eax10: .space 4
+	copy_j_ebx10: .space 4
+	copy_loop_eax11: .space 4
+	copy_loop_ebx11: .space 4
+	copy_j_eax11: .space 4
+	copy_j_ebx11: .space 4
+	copy_loop_eax12: .space 4
+	copy_loop_ebx12: .space 4
+	copy_j_eax12: .space 4
+	copy_j_ebx12: .space 4
+	copy_loop_eax13: .space 4
+	copy_loop_ebx13: .space 4
+	copy_j_eax13: .space 4
+	copy_j_ebx13: .space 4
+	copy_loop_eax14: .space 4
+	copy_loop_ebx14: .space 4
+	copy_j_eax14: .space 4
+	copy_j_ebx14: .space 4
+	copy_loop_eax15: .space 4
+	copy_loop_ebx15: .space 4
+	copy_j_eax15: .space 4
+	copy_j_ebx15: .space 4
+	copy_loop_eax16: .space 4
+	copy_loop_ebx16: .space 4
+	copy_j_eax16: .space 4
+	copy_j_ebx16: .space 4
+	copy_loop_eax17: .space 4
+	copy_loop_ebx17: .space 4
+	copy_j_eax17: .space 4
+	copy_j_ebx17: .space 4
+	copy_loop_eax18: .space 4
+	copy_loop_ebx18: .space 4
+	copy_j_eax18: .space 4
+	copy_j_ebx18: .space 4
+	copy_loop_eax19: .space 4
+	copy_loop_ebx19: .space 4
+	copy_j_eax19: .space 4
+	copy_j_ebx19: .space 4
+	copy_loop_eax20: .space 4
+	copy_loop_ebx20: .space 4
+	copy_j_eax20: .space 4
+	copy_j_ebx20: .space 4
+	copy_loop_eax21: .space 4
+	copy_loop_ebx21: .space 4
+	copy_j_eax21: .space 4
+	copy_j_ebx21: .space 4
+	copy_loop_eax22: .space 4
+	copy_loop_ebx22: .space 4
+	copy_j_eax22: .space 4
+	copy_j_ebx22: .space 4
+	copy_loop_eax23: .space 4
+	copy_loop_ebx23: .space 4
+	copy_j_eax23: .space 4
+	copy_j_ebx23: .space 4
+	copy_loop_eax24: .space 4
+	copy_loop_ebx24: .space 4
+	copy_j_eax24: .space 4
+	copy_j_ebx24: .space 4
+	copy_loop_eax25: .space 4
+	copy_loop_ebx25: .space 4
+	copy_j_eax25: .space 4
+	copy_j_ebx25: .space 4
+	copy_loop_eax26: .space 4
+	copy_loop_ebx26: .space 4
+	copy_j_eax26: .space 4
+	copy_j_ebx26: .space 4
+	copy_loop_eax27: .space 4
+	copy_loop_ebx27: .space 4
+	copy_j_eax27: .space 4
+	copy_j_ebx27: .space 4
+	copy_loop_eax28: .space 4
+	copy_loop_ebx28: .space 4
+	copy_j_eax28: .space 4
+	copy_j_ebx28: .space 4
+	copy_loop_eax29: .space 4
+	copy_loop_ebx29: .space 4
+	copy_j_eax29: .space 4
+	copy_j_ebx29: .space 4
+	copy_loop_eax30: .space 4
+	copy_loop_ebx30: .space 4
+	copy_j_eax30: .space 4
+	copy_j_ebx30: .space 4
+	copy_loop_eax31: .space 4
+	copy_loop_ebx31: .space 4
+	copy_j_eax31: .space 4
+	copy_j_ebx31: .space 4
+	copy_loop_eax32: .space 4
+	copy_loop_ebx32: .space 4
+	copy_j_eax32: .space 4
+	copy_j_ebx32: .space 4
+	copy_loop_eax33: .space 4
+	copy_loop_ebx33: .space 4
+	copy_j_eax33: .space 4
+	copy_j_ebx33: .space 4
+	copy_loop_eax34: .space 4
+	copy_loop_ebx34: .space 4
+	copy_j_eax34: .space 4
+	copy_j_ebx34: .space 4
+	copy_loop_eax35: .space 4
+	copy_loop_ebx35: .space 4
+	copy_j_eax35: .space 4
+	copy_j_ebx35: .space 4
+	copy_loop_eax36: .space 4
+	copy_loop_ebx36: .space 4
+	copy_j_eax36: .space 4
+	copy_j_ebx36: .space 4
+	copy_loop_eax37: .space 4
+	copy_loop_ebx37: .space 4
+	copy_j_eax37: .space 4
+	copy_j_ebx37: .space 4
+	copy_loop_eax38: .space 4
+	copy_loop_ebx38: .space 4
+	copy_j_eax38: .space 4
+	copy_j_ebx38: .space 4
+	copy_loop_eax39: .space 4
+	copy_loop_ebx39: .space 4
+	copy_j_eax39: .space 4
+	copy_j_ebx39: .space 4
+	copy_loop_eax2000: .space 4
+	copy_loop_ebx2000: .space 4
+	copy_j_eax2000: .space 4
+	copy_j_ebx2000: .space 4
+	copy_loop_eax2001: .space 4
+	copy_loop_ebx2001: .space 4
+	copy_j_eax2001: .space 4
+	copy_j_ebx2001: .space 4
+	copy_loop_eax2002: .space 4
+	copy_loop_ebx2002: .space 4
+	copy_j_eax2002: .space 4
+	copy_j_ebx2002: .space 4
+	copy_loop_eax2003: .space 4
+	copy_loop_ebx2003: .space 4
+	copy_j_eax2003: .space 4
+	copy_j_ebx2003: .space 4
+	copy_loop_eax2004: .space 4
+	copy_loop_ebx2004: .space 4
+	copy_j_eax2004: .space 4
+	copy_j_ebx2004: .space 4
+	copy_loop_eax2005: .space 4
+	copy_loop_ebx2005: .space 4
+	copy_j_eax2005: .space 4
+	copy_j_ebx2005: .space 4
+	copy_loop_eax2006: .space 4
+	copy_loop_ebx2006: .space 4
+	copy_j_eax2006: .space 4
+	copy_j_ebx2006: .space 4
+	copy_loop_eax2007: .space 4
+	copy_loop_ebx2007: .space 4
+	copy_j_eax2007: .space 4
+	copy_j_ebx2007: .space 4
+	copy_loop_eax2008: .space 4
+	copy_loop_ebx2008: .space 4
+	copy_j_eax2008: .space 4
+	copy_j_ebx2008: .space 4
+	copy_loop_eax2009: .space 4
+	copy_loop_ebx2009: .space 4
+	copy_j_eax2009: .space 4
+	copy_j_ebx2009: .space 4
+	copy_loop_eax2010: .space 4
+	copy_loop_ebx2010: .space 4
+	copy_j_eax2010: .space 4
+	copy_j_ebx2010: .space 4
+	copy_loop_eax2011: .space 4
+	copy_loop_ebx2011: .space 4
+	copy_j_eax2011: .space 4
+	copy_j_ebx2011: .space 4
+	copy_loop_eax2012: .space 4
+	copy_loop_ebx2012: .space 4
+	copy_j_eax2012: .space 4
+	copy_j_ebx2012: .space 4
+	copy_loop_eax2013: .space 4
+	copy_loop_ebx2013: .space 4
+	copy_j_eax2013: .space 4
+	copy_j_ebx2013: .space 4
+	copy_loop_eax2014: .space 4
+	copy_loop_ebx2014: .space 4
+	copy_j_eax2014: .space 4
+	copy_j_ebx2014: .space 4
+	copy_loop_eax2015: .space 4
+	copy_loop_ebx2015: .space 4
+	copy_j_eax2015: .space 4
+	copy_j_ebx2015: .space 4
+	copy_loop_eax2016: .space 4
+	copy_loop_ebx2016: .space 4
+	copy_j_eax2016: .space 4
+	copy_j_ebx2016: .space 4
+	copy_loop_eax2017: .space 4
+	copy_loop_ebx2017: .space 4
+	copy_j_eax2017: .space 4
+	copy_j_ebx2017: .space 4
+	copy_loop_eax2018: .space 4
+	copy_loop_ebx2018: .space 4
+	copy_j_eax2018: .space 4
+	copy_j_ebx2018: .space 4
+	copy_loop_eax2019: .space 4
+	copy_loop_ebx2019: .space 4
+	copy_j_eax2019: .space 4
+	copy_j_ebx2019: .space 4
+	copy_loop_eax2020: .space 4
+	copy_loop_ebx2020: .space 4
+	copy_j_eax2020: .space 4
+	copy_j_ebx2020: .space 4
+	copy_loop_eax2021: .space 4
+	copy_loop_ebx2021: .space 4
+	copy_j_eax2021: .space 4
+	copy_j_ebx2021: .space 4
+	copy_loop_eax2022: .space 4
+	copy_loop_ebx2022: .space 4
+	copy_j_eax2022: .space 4
+	copy_j_ebx2022: .space 4
+	copy_loop_eax2023: .space 4
+	copy_loop_ebx2023: .space 4
+	copy_j_eax2023: .space 4
+	copy_j_ebx2023: .space 4
+	copy_loop_eax2024: .space 4
+	copy_loop_ebx2024: .space 4
+	copy_j_eax2024: .space 4
+	copy_j_ebx2024: .space 4
+	copy_loop_eax2025: .space 4
+	copy_loop_ebx2025: .space 4
+	copy_j_eax2025: .space 4
+	copy_j_ebx2025: .space 4
+	copy_loop_eax2026: .space 4
+	copy_loop_ebx2026: .space 4
+	copy_j_eax2026: .space 4
+	copy_j_ebx2026: .space 4
+	copy_loop_eax2027: .space 4
+	copy_loop_ebx2027: .space 4
+	copy_j_eax2027: .space 4
+	copy_j_ebx2027: .space 4
+	copy_loop_eax2028: .space 4
+	copy_loop_ebx2028: .space 4
+	copy_j_eax2028: .space 4
+	copy_j_ebx2028: .space 4
+	copy_loop_eax2029: .space 4
+	copy_loop_ebx2029: .space 4
+	copy_j_eax2029: .space 4
+	copy_j_ebx2029: .space 4
+	copy_loop_eax2030: .space 4
+	copy_loop_ebx2030: .space 4
+	copy_j_eax2030: .space 4
+	copy_j_ebx2030: .space 4
+	copy_loop_eax2031: .space 4
+	copy_loop_ebx2031: .space 4
+	copy_j_eax2031: .space 4
+	copy_j_ebx2031: .space 4
+	copy_loop_eax2032: .space 4
+	copy_loop_ebx2032: .space 4
+	copy_j_eax2032: .space 4
+	copy_j_ebx2032: .space 4
+	copy_loop_eax2033: .space 4
+	copy_loop_ebx2033: .space 4
+	copy_j_eax2033: .space 4
+	copy_j_ebx2033: .space 4
+	copy_loop_eax2034: .space 4
+	copy_loop_ebx2034: .space 4
+	copy_j_eax2034: .space 4
+	copy_j_ebx2034: .space 4
+	copy_loop_eax2035: .space 4
+	copy_loop_ebx2035: .space 4
+	copy_j_eax2035: .space 4
+	copy_j_ebx2035: .space 4
+	copy_loop_eax2036: .space 4
+	copy_loop_ebx2036: .space 4
+	copy_j_eax2036: .space 4
+	copy_j_ebx2036: .space 4
+	copy_loop_eax2037: .space 4
+	copy_loop_ebx2037: .space 4
+	copy_j_eax2037: .space 4
+	copy_j_ebx2037: .space 4
+	copy_loop_eax2038: .space 4
+	copy_loop_ebx2038: .space 4
+	copy_j_eax2038: .space 4
+	copy_j_ebx2038: .space 4
+	copy_loop_eax2039: .space 4
+	copy_loop_ebx2039: .space 4
+	copy_j_eax2039: .space 4
+	copy_j_ebx2039: .space 4
+	copy_loop_eax2040: .space 4
+	copy_loop_ebx2040: .space 4
+	copy_j_eax2040: .space 4
+	copy_j_ebx2040: .space 4
+	copy_loop_eax2041: .space 4
+	copy_loop_ebx2041: .space 4
+	copy_j_eax2041: .space 4
+	copy_j_ebx2041: .space 4
+	copy_loop_eax2042: .space 4
+	copy_loop_ebx2042: .space 4
+	copy_j_eax2042: .space 4
+	copy_j_ebx2042: .space 4
+	copy_loop_eax2043: .space 4
+	copy_loop_ebx2043: .space 4
+	copy_j_eax2043: .space 4
+	copy_j_ebx2043: .space 4
+	copy_loop_eax2044: .space 4
+	copy_loop_ebx2044: .space 4
+	copy_j_eax2044: .space 4
+	copy_j_ebx2044: .space 4
+	copy_loop_eax2045: .space 4
+	copy_loop_ebx2045: .space 4
+	copy_j_eax2045: .space 4
+	copy_j_ebx2045: .space 4
+	copy_loop_eax2046: .space 4
+	copy_loop_ebx2046: .space 4
+	copy_j_eax2046: .space 4
+	copy_j_ebx2046: .space 4
+	copy_loop_eax2047: .space 4
+	copy_loop_ebx2047: .space 4
+	copy_j_eax2047: .space 4
+	copy_j_ebx2047: .space 4
+	copy_loop_eax2048: .space 4
+	copy_loop_ebx2048: .space 4
+	copy_j_eax2048: .space 4
+	copy_j_ebx2048: .space 4
+	copy_loop_eax2049: .space 4
+	copy_loop_ebx2049: .space 4
+	copy_j_eax2049: .space 4
+	copy_j_ebx2049: .space 4
+	copy_loop_eax2050: .space 4
+	copy_loop_ebx2050: .space 4
+	copy_j_eax2050: .space 4
+	copy_j_ebx2050: .space 4
+	copy_loop_eax2051: .space 4
+	copy_loop_ebx2051: .space 4
+	copy_j_eax2051: .space 4
+	copy_j_ebx2051: .space 4
+	copy_loop_eax2052: .space 4
+	copy_loop_ebx2052: .space 4
+	copy_j_eax2052: .space 4
+	copy_j_ebx2052: .space 4
+	copy_loop_eax2053: .space 4
+	copy_loop_ebx2053: .space 4
+	copy_j_eax2053: .space 4
+	copy_j_ebx2053: .space 4
+	copy_loop_eax2054: .space 4
+	copy_loop_ebx2054: .space 4
+	copy_j_eax2054: .space 4
+	copy_j_ebx2054: .space 4
+	copy_loop_eax2055: .space 4
+	copy_loop_ebx2055: .space 4
+	copy_j_eax2055: .space 4
+	copy_j_ebx2055: .space 4
+	copy_loop_eax2056: .space 4
+	copy_loop_ebx2056: .space 4
+	copy_j_eax2056: .space 4
+	copy_j_ebx2056: .space 4
+	copy_loop_eax2057: .space 4
+	copy_loop_ebx2057: .space 4
+	copy_j_eax2057: .space 4
+	copy_j_ebx2057: .space 4
+	copy_loop_eax2058: .space 4
+	copy_loop_ebx2058: .space 4
+	copy_j_eax2058: .space 4
+	copy_j_ebx2058: .space 4
+	copy_loop_eax2059: .space 4
+	copy_loop_ebx2059: .space 4
+	copy_j_eax2059: .space 4
+	copy_j_ebx2059: .space 4
+	copy_loop_eax2060: .space 4
+	copy_loop_ebx2060: .space 4
+	copy_j_eax2060: .space 4
+	copy_j_ebx2060: .space 4
+	copy_loop_eax2061: .space 4
+	copy_loop_ebx2061: .space 4
+	copy_j_eax2061: .space 4
+	copy_j_ebx2061: .space 4
+	copy_loop_eax2062: .space 4
+	copy_loop_ebx2062: .space 4
+	copy_j_eax2062: .space 4
+	copy_j_ebx2062: .space 4
+	copy_loop_eax2063: .space 4
+	copy_loop_ebx2063: .space 4
+	copy_j_eax2063: .space 4
+	copy_j_ebx2063: .space 4
+	copy_loop_eax2064: .space 4
+	copy_loop_ebx2064: .space 4
+	copy_j_eax2064: .space 4
+	copy_j_ebx2064: .space 4
+	copy_loop_eax2065: .space 4
+	copy_loop_ebx2065: .space 4
+	copy_j_eax2065: .space 4
+	copy_j_ebx2065: .space 4
+	copy_loop_eax2066: .space 4
+	copy_loop_ebx2066: .space 4
+	copy_j_eax2066: .space 4
+	copy_j_ebx2066: .space 4
+	copy_loop_eax2067: .space 4
+	copy_loop_ebx2067: .space 4
+	copy_j_eax2067: .space 4
+	copy_j_ebx2067: .space 4
+	copy_loop_eax2068: .space 4
+	copy_loop_ebx2068: .space 4
+	copy_j_eax2068: .space 4
+	copy_j_ebx2068: .space 4
+	copy_loop_eax2069: .space 4
+	copy_loop_ebx2069: .space 4
+	copy_j_eax2069: .space 4
+	copy_j_ebx2069: .space 4
+	copy_loop_eax2070: .space 4
+	copy_loop_ebx2070: .space 4
+	copy_j_eax2070: .space 4
+	copy_j_ebx2070: .space 4
+	copy_loop_eax2071: .space 4
+	copy_loop_ebx2071: .space 4
+	copy_j_eax2071: .space 4
+	copy_j_ebx2071: .space 4
+	copy_loop_eax2072: .space 4
+	copy_loop_ebx2072: .space 4
+	copy_j_eax2072: .space 4
+	copy_j_ebx2072: .space 4
+	copy_loop_eax2073: .space 4
+	copy_loop_ebx2073: .space 4
+	copy_j_eax2073: .space 4
+	copy_j_ebx2073: .space 4
+	copy_loop_eax2074: .space 4
+	copy_loop_ebx2074: .space 4
+	copy_j_eax2074: .space 4
+	copy_j_ebx2074: .space 4
+	copy_loop_eax2075: .space 4
+	copy_loop_ebx2075: .space 4
+	copy_j_eax2075: .space 4
+	copy_j_ebx2075: .space 4
+	copy_loop_eax2076: .space 4
+	copy_loop_ebx2076: .space 4
+	copy_j_eax2076: .space 4
+	copy_j_ebx2076: .space 4
+	copy_loop_eax2077: .space 4
+	copy_loop_ebx2077: .space 4
+	copy_j_eax2077: .space 4
+	copy_j_ebx2077: .space 4
+	copy_loop_eax2078: .space 4
+	copy_loop_ebx2078: .space 4
+	copy_j_eax2078: .space 4
+	copy_j_ebx2078: .space 4
+	copy_loop_eax2079: .space 4
+	copy_loop_ebx2079: .space 4
+	copy_j_eax2079: .space 4
+	copy_j_ebx2079: .space 4
+	copy_loop_eax2080: .space 4
+	copy_loop_ebx2080: .space 4
+	copy_j_eax2080: .space 4
+	copy_j_ebx2080: .space 4
+	copy_loop_eax2081: .space 4
+	copy_loop_ebx2081: .space 4
+	copy_j_eax2081: .space 4
+	copy_j_ebx2081: .space 4
+	copy_loop_eax2082: .space 4
+	copy_loop_ebx2082: .space 4
+	copy_j_eax2082: .space 4
+	copy_j_ebx2082: .space 4
+	copy_loop_eax2083: .space 4
+	copy_loop_ebx2083: .space 4
+	copy_j_eax2083: .space 4
+	copy_j_ebx2083: .space 4
+	copy_loop_eax2084: .space 4
+	copy_loop_ebx2084: .space 4
+	copy_j_eax2084: .space 4
+	copy_j_ebx2084: .space 4
+	copy_loop_eax2085: .space 4
+	copy_loop_ebx2085: .space 4
+	copy_j_eax2085: .space 4
+	copy_j_ebx2085: .space 4
+	copy_loop_eax2086: .space 4
+	copy_loop_ebx2086: .space 4
+	copy_j_eax2086: .space 4
+	copy_j_ebx2086: .space 4
+	copy_loop_eax2087: .space 4
+	copy_loop_ebx2087: .space 4
+	copy_j_eax2087: .space 4
+	copy_j_ebx2087: .space 4
+	copy_loop_eax2088: .space 4
+	copy_loop_ebx2088: .space 4
+	copy_j_eax2088: .space 4
+	copy_j_ebx2088: .space 4
+	copy_loop_eax2089: .space 4
+	copy_loop_ebx2089: .space 4
+	copy_j_eax2089: .space 4
+	copy_j_ebx2089: .space 4
+	copy_loop_eax2090: .space 4
+	copy_loop_ebx2090: .space 4
+	copy_j_eax2090: .space 4
+	copy_j_ebx2090: .space 4
+	copy_loop_eax2091: .space 4
+	copy_loop_ebx2091: .space 4
+	copy_j_eax2091: .space 4
+	copy_j_ebx2091: .space 4
+	copy_loop_eax2092: .space 4
+	copy_loop_ebx2092: .space 4
+	copy_j_eax2092: .space 4
+	copy_j_ebx2092: .space 4
+	copy_loop_eax2093: .space 4
+	copy_loop_ebx2093: .space 4
+	copy_j_eax2093: .space 4
+	copy_j_ebx2093: .space 4
+	copy_loop_eax2094: .space 4
+	copy_loop_ebx2094: .space 4
+	copy_j_eax2094: .space 4
+	copy_j_ebx2094: .space 4
+	copy_loop_eax2095: .space 4
+	copy_loop_ebx2095: .space 4
+	copy_j_eax2095: .space 4
+	copy_j_ebx2095: .space 4
+	copy_loop_eax2096: .space 4
+	copy_loop_ebx2096: .space 4
+	copy_j_eax2096: .space 4
+	copy_j_ebx2096: .space 4
+	copy_loop_eax2097: .space 4
+	copy_loop_ebx2097: .space 4
+	copy_j_eax2097: .space 4
+	copy_j_ebx2097: .space 4
+	copy_loop_eax2098: .space 4
+	copy_loop_ebx2098: .space 4
+	copy_j_eax2098: .space 4
+	copy_j_ebx2098: .space 4
+	copy_loop_eax2099: .space 4
+	copy_loop_ebx2099: .space 4
+	copy_j_eax2099: .space 4
+	copy_j_ebx2099: .space 4
+	copy_loop_eax2100: .space 4
+	copy_loop_ebx2100: .space 4
+	copy_j_eax2100: .space 4
+	copy_j_ebx2100: .space 4
+	copy_loop_eax2101: .space 4
+	copy_loop_ebx2101: .space 4
+	copy_j_eax2101: .space 4
+	copy_j_ebx2101: .space 4
+	copy_loop_eax2102: .space 4
+	copy_loop_ebx2102: .space 4
+	copy_j_eax2102: .space 4
+	copy_j_ebx2102: .space 4
+	copy_loop_eax2103: .space 4
+	copy_loop_ebx2103: .space 4
+	copy_j_eax2103: .space 4
+	copy_j_ebx2103: .space 4
+	copy_loop_eax2104: .space 4
+	copy_loop_ebx2104: .space 4
+	copy_j_eax2104: .space 4
+	copy_j_ebx2104: .space 4
+	copy_loop_eax2105: .space 4
+	copy_loop_ebx2105: .space 4
+	copy_j_eax2105: .space 4
+	copy_j_ebx2105: .space 4
+	copy_loop_eax2106: .space 4
+	copy_loop_ebx2106: .space 4
+	copy_j_eax2106: .space 4
+	copy_j_ebx2106: .space 4
+	copy_loop_eax2107: .space 4
+	copy_loop_ebx2107: .space 4
+	copy_j_eax2107: .space 4
+	copy_j_ebx2107: .space 4
+	copy_loop_eax2108: .space 4
+	copy_loop_ebx2108: .space 4
+	copy_j_eax2108: .space 4
+	copy_j_ebx2108: .space 4
+	copy_loop_eax2109: .space 4
+	copy_loop_ebx2109: .space 4
+	copy_j_eax2109: .space 4
+	copy_j_ebx2109: .space 4
+	copy_loop_eax2110: .space 4
+	copy_loop_ebx2110: .space 4
+	copy_j_eax2110: .space 4
+	copy_j_ebx2110: .space 4
+	copy_loop_eax2111: .space 4
+	copy_loop_ebx2111: .space 4
+	copy_j_eax2111: .space 4
+	copy_j_ebx2111: .space 4
+	copy_loop_eax2112: .space 4
+	copy_loop_ebx2112: .space 4
+	copy_j_eax2112: .space 4
+	copy_j_ebx2112: .space 4
+	copy_loop_eax2113: .space 4
+	copy_loop_ebx2113: .space 4
+	copy_j_eax2113: .space 4
+	copy_j_ebx2113: .space 4
+	copy_loop_eax2114: .space 4
+	copy_loop_ebx2114: .space 4
+	copy_j_eax2114: .space 4
+	copy_j_ebx2114: .space 4
+	copy_loop_eax2115: .space 4
+	copy_loop_ebx2115: .space 4
+	copy_j_eax2115: .space 4
+	copy_j_ebx2115: .space 4
+	copy_loop_eax2116: .space 4
+	copy_loop_ebx2116: .space 4
+	copy_j_eax2116: .space 4
+	copy_j_ebx2116: .space 4
+	copy_loop_eax2117: .space 4
+	copy_loop_ebx2117: .space 4
+	copy_j_eax2117: .space 4
+	copy_j_ebx2117: .space 4
+	copy_loop_eax2118: .space 4
+	copy_loop_ebx2118: .space 4
+	copy_j_eax2118: .space 4
+	copy_j_ebx2118: .space 4
+	copy_loop_eax2119: .space 4
+	copy_loop_ebx2119: .space 4
+	copy_j_eax2119: .space 4
+	copy_j_ebx2119: .space 4
+	copy_loop_eax2120: .space 4
+	copy_loop_ebx2120: .space 4
+	copy_j_eax2120: .space 4
+	copy_j_ebx2120: .space 4
+	copy_loop_eax2121: .space 4
+	copy_loop_ebx2121: .space 4
+	copy_j_eax2121: .space 4
+	copy_j_ebx2121: .space 4
+	copy_loop_eax2122: .space 4
+	copy_loop_ebx2122: .space 4
+	copy_j_eax2122: .space 4
+	copy_j_ebx2122: .space 4
+	copy_loop_eax2123: .space 4
+	copy_loop_ebx2123: .space 4
+	copy_j_eax2123: .space 4
+	copy_j_ebx2123: .space 4
+	copy_loop_eax2124: .space 4
+	copy_loop_ebx2124: .space 4
+	copy_j_eax2124: .space 4
+	copy_j_ebx2124: .space 4
+	copy_loop_eax2125: .space 4
+	copy_loop_ebx2125: .space 4
+	copy_j_eax2125: .space 4
+	copy_j_ebx2125: .space 4
+	copy_loop_eax2126: .space 4
+	copy_loop_ebx2126: .space 4
+	copy_j_eax2126: .space 4
+	copy_j_ebx2126: .space 4
+	copy_loop_eax2127: .space 4
+	copy_loop_ebx2127: .space 4
+	copy_j_eax2127: .space 4
+	copy_j_ebx2127: .space 4
+	copy_loop_eax2128: .space 4
+	copy_loop_ebx2128: .space 4
+	copy_j_eax2128: .space 4
+	copy_j_ebx2128: .space 4
+	copy_loop_eax2129: .space 4
+	copy_loop_ebx2129: .space 4
+	copy_j_eax2129: .space 4
+	copy_j_ebx2129: .space 4
+	copy_loop_eax2130: .space 4
+	copy_loop_ebx2130: .space 4
+	copy_j_eax2130: .space 4
+	copy_j_ebx2130: .space 4
+	copy_loop_eax2131: .space 4
+	copy_loop_ebx2131: .space 4
+	copy_j_eax2131: .space 4
+	copy_j_ebx2131: .space 4
+	copy_loop_eax2132: .space 4
+	copy_loop_ebx2132: .space 4
+	copy_j_eax2132: .space 4
+	copy_j_ebx2132: .space 4
+	copy_loop_eax2133: .space 4
+	copy_loop_ebx2133: .space 4
+	copy_j_eax2133: .space 4
+	copy_j_ebx2133: .space 4
+	copy_loop_eax2134: .space 4
+	copy_loop_ebx2134: .space 4
+	copy_j_eax2134: .space 4
+	copy_j_ebx2134: .space 4
+	copy_loop_eax2135: .space 4
+	copy_loop_ebx2135: .space 4
+	copy_j_eax2135: .space 4
+	copy_j_ebx2135: .space 4
+	copy_loop_eax2136: .space 4
+	copy_loop_ebx2136: .space 4
+	copy_j_eax2136: .space 4
+	copy_j_ebx2136: .space 4
+	copy_loop_eax2137: .space 4
+	copy_loop_ebx2137: .space 4
+	copy_j_eax2137: .space 4
+	copy_j_ebx2137: .space 4
+	copy_loop_eax2138: .space 4
+	copy_loop_ebx2138: .space 4
+	copy_j_eax2138: .space 4
+	copy_j_ebx2138: .space 4
+	copy_loop_eax2139: .space 4
+	copy_loop_ebx2139: .space 4
+	copy_j_eax2139: .space 4
+	copy_j_ebx2139: .space 4
+	copy_loop_eax2140: .space 4
+	copy_loop_ebx2140: .space 4
+	copy_j_eax2140: .space 4
+	copy_j_ebx2140: .space 4
+	copy_loop_eax2141: .space 4
+	copy_loop_ebx2141: .space 4
+	copy_j_eax2141: .space 4
+	copy_j_ebx2141: .space 4
+	copy_loop_eax2142: .space 4
+	copy_loop_ebx2142: .space 4
+	copy_j_eax2142: .space 4
+	copy_j_ebx2142: .space 4
+	copy_loop_eax2143: .space 4
+	copy_loop_ebx2143: .space 4
+	copy_j_eax2143: .space 4
+	copy_j_ebx2143: .space 4
+	copy_loop_eax2144: .space 4
+	copy_loop_ebx2144: .space 4
+	copy_j_eax2144: .space 4
+	copy_j_ebx2144: .space 4
+	copy_loop_eax2145: .space 4
+	copy_loop_ebx2145: .space 4
+	copy_j_eax2145: .space 4
+	copy_j_ebx2145: .space 4
+	copy_loop_eax2146: .space 4
+	copy_loop_ebx2146: .space 4
+	copy_j_eax2146: .space 4
+	copy_j_ebx2146: .space 4
+	copy_loop_eax2147: .space 4
+	copy_loop_ebx2147: .space 4
+	copy_j_eax2147: .space 4
+	copy_j_ebx2147: .space 4
+	copy_loop_eax2148: .space 4
+	copy_loop_ebx2148: .space 4
+	copy_j_eax2148: .space 4
+	copy_j_ebx2148: .space 4
+	copy_loop_eax2149: .space 4
+	copy_loop_ebx2149: .space 4
+	copy_j_eax2149: .space 4
+	copy_j_ebx2149: .space 4
+	copy_loop_eax2150: .space 4
+	copy_loop_ebx2150: .space 4
+	copy_j_eax2150: .space 4
+	copy_j_ebx2150: .space 4
+	copy_loop_eax2151: .space 4
+	copy_loop_ebx2151: .space 4
+	copy_j_eax2151: .space 4
+	copy_j_ebx2151: .space 4
+	copy_loop_eax2152: .space 4
+	copy_loop_ebx2152: .space 4
+	copy_j_eax2152: .space 4
+	copy_j_ebx2152: .space 4
+	copy_loop_eax2153: .space 4
+	copy_loop_ebx2153: .space 4
+	copy_j_eax2153: .space 4
+	copy_j_ebx2153: .space 4
+	copy_loop_eax2154: .space 4
+	copy_loop_ebx2154: .space 4
+	copy_j_eax2154: .space 4
+	copy_j_ebx2154: .space 4
+	copy_loop_eax2155: .space 4
+	copy_loop_ebx2155: .space 4
+	copy_j_eax2155: .space 4
+	copy_j_ebx2155: .space 4
+	copy_loop_eax2156: .space 4
+	copy_loop_ebx2156: .space 4
+	copy_j_eax2156: .space 4
+	copy_j_ebx2156: .space 4
+	copy_loop_eax2157: .space 4
+	copy_loop_ebx2157: .space 4
+	copy_j_eax2157: .space 4
+	copy_j_ebx2157: .space 4
+	copy_loop_eax2158: .space 4
+	copy_loop_ebx2158: .space 4
+	copy_j_eax2158: .space 4
+	copy_j_ebx2158: .space 4
+	copy_loop_eax2159: .space 4
+	copy_loop_ebx2159: .space 4
+	copy_j_eax2159: .space 4
+	copy_j_ebx2159: .space 4
+	copy_loop_eax2160: .space 4
+	copy_loop_ebx2160: .space 4
+	copy_j_eax2160: .space 4
+	copy_j_ebx2160: .space 4
+	copy_loop_eax2161: .space 4
+	copy_loop_ebx2161: .space 4
+	copy_j_eax2161: .space 4
+	copy_j_ebx2161: .space 4
+	copy_loop_eax2162: .space 4
+	copy_loop_ebx2162: .space 4
+	copy_j_eax2162: .space 4
+	copy_j_ebx2162: .space 4
+	copy_loop_eax2163: .space 4
+	copy_loop_ebx2163: .space 4
+	copy_j_eax2163: .space 4
+	copy_j_ebx2163: .space 4
+	copy_loop_eax2164: .space 4
+	copy_loop_ebx2164: .space 4
+	copy_j_eax2164: .space 4
+	copy_j_ebx2164: .space 4
+	copy_loop_eax2165: .space 4
+	copy_loop_ebx2165: .space 4
+	copy_j_eax2165: .space 4
+	copy_j_ebx2165: .space 4
+	copy_loop_eax2166: .space 4
+	copy_loop_ebx2166: .space 4
+	copy_j_eax2166: .space 4
+	copy_j_ebx2166: .space 4
+	copy_loop_eax2167: .space 4
+	copy_loop_ebx2167: .space 4
+	copy_j_eax2167: .space 4
+	copy_j_ebx2167: .space 4
+	copy_loop_eax2168: .space 4
+	copy_loop_ebx2168: .space 4
+	copy_j_eax2168: .space 4
+	copy_j_ebx2168: .space 4
+	copy_loop_eax2169: .space 4
+	copy_loop_ebx2169: .space 4
+	copy_j_eax2169: .space 4
+	copy_j_ebx2169: .space 4
+	copy_loop_eax2170: .space 4
+	copy_loop_ebx2170: .space 4
+	copy_j_eax2170: .space 4
+	copy_j_ebx2170: .space 4
+	copy_loop_eax2171: .space 4
+	copy_loop_ebx2171: .space 4
+	copy_j_eax2171: .space 4
+	copy_j_ebx2171: .space 4
+	copy_loop_eax2172: .space 4
+	copy_loop_ebx2172: .space 4
+	copy_j_eax2172: .space 4
+	copy_j_ebx2172: .space 4
+	copy_loop_eax2173: .space 4
+	copy_loop_ebx2173: .space 4
+	copy_j_eax2173: .space 4
+	copy_j_ebx2173: .space 4
+	copy_loop_eax2174: .space 4
+	copy_loop_ebx2174: .space 4
+	copy_j_eax2174: .space 4
+	copy_j_ebx2174: .space 4
+	copy_loop_eax2175: .space 4
+	copy_loop_ebx2175: .space 4
+	copy_j_eax2175: .space 4
+	copy_j_ebx2175: .space 4
+	copy_loop_eax2176: .space 4
+	copy_loop_ebx2176: .space 4
+	copy_j_eax2176: .space 4
+	copy_j_ebx2176: .space 4
+	copy_loop_eax2177: .space 4
+	copy_loop_ebx2177: .space 4
+	copy_j_eax2177: .space 4
+	copy_j_ebx2177: .space 4
+	copy_loop_eax2178: .space 4
+	copy_loop_ebx2178: .space 4
+	copy_j_eax2178: .space 4
+	copy_j_ebx2178: .space 4
+	copy_loop_eax2179: .space 4
+	copy_loop_ebx2179: .space 4
+	copy_j_eax2179: .space 4
+	copy_j_ebx2179: .space 4
+	copy_loop_eax2180: .space 4
+	copy_loop_ebx2180: .space 4
+	copy_j_eax2180: .space 4
+	copy_j_ebx2180: .space 4
+	copy_loop_eax2181: .space 4
+	copy_loop_ebx2181: .space 4
+	copy_j_eax2181: .space 4
+	copy_j_ebx2181: .space 4
+	copy_loop_eax2182: .space 4
+	copy_loop_ebx2182: .space 4
+	copy_j_eax2182: .space 4
+	copy_j_ebx2182: .space 4
+	copy_loop_eax2183: .space 4
+	copy_loop_ebx2183: .space 4
+	copy_j_eax2183: .space 4
+	copy_j_ebx2183: .space 4
+	copy_loop_eax2184: .space 4
+	copy_loop_ebx2184: .space 4
+	copy_j_eax2184: .space 4
+	copy_j_ebx2184: .space 4
+	copy_loop_eax2185: .space 4
+	copy_loop_ebx2185: .space 4
+	copy_j_eax2185: .space 4
+	copy_j_ebx2185: .space 4
+	copy_loop_eax2186: .space 4
+	copy_loop_ebx2186: .space 4
+	copy_j_eax2186: .space 4
+	copy_j_ebx2186: .space 4
+	copy_loop_eax2187: .space 4
+	copy_loop_ebx2187: .space 4
+	copy_j_eax2187: .space 4
+	copy_j_ebx2187: .space 4
+	copy_loop_eax2188: .space 4
+	copy_loop_ebx2188: .space 4
+	copy_j_eax2188: .space 4
+	copy_j_ebx2188: .space 4
+	copy_loop_eax2189: .space 4
+	copy_loop_ebx2189: .space 4
+	copy_j_eax2189: .space 4
+	copy_j_ebx2189: .space 4
+	copy_loop_eax2190: .space 4
+	copy_loop_ebx2190: .space 4
+	copy_j_eax2190: .space 4
+	copy_j_ebx2190: .space 4
+	copy_loop_eax2191: .space 4
+	copy_loop_ebx2191: .space 4
+	copy_j_eax2191: .space 4
+	copy_j_ebx2191: .space 4
+	copy_loop_eax2192: .space 4
+	copy_loop_ebx2192: .space 4
+	copy_j_eax2192: .space 4
+	copy_j_ebx2192: .space 4
+	copy_loop_eax2193: .space 4
+	copy_loop_ebx2193: .space 4
+	copy_j_eax2193: .space 4
+	copy_j_ebx2193: .space 4
+	copy_loop_eax2194: .space 4
+	copy_loop_ebx2194: .space 4
+	copy_j_eax2194: .space 4
+	copy_j_ebx2194: .space 4
+	copy_loop_eax2195: .space 4
+	copy_loop_ebx2195: .space 4
+	copy_j_eax2195: .space 4
+	copy_j_ebx2195: .space 4
+	copy_loop_eax2196: .space 4
+	copy_loop_ebx2196: .space 4
+	copy_j_eax2196: .space 4
+	copy_j_ebx2196: .space 4
+	copy_loop_eax2197: .space 4
+	copy_loop_ebx2197: .space 4
+	copy_j_eax2197: .space 4
+	copy_j_ebx2197: .space 4
+	copy_loop_eax2198: .space 4
+	copy_loop_ebx2198: .space 4
+	copy_j_eax2198: .space 4
+	copy_j_ebx2198: .space 4
+	copy_loop_eax2199: .space 4
+	copy_loop_ebx2199: .space 4
+	copy_j_eax2199: .space 4
+	copy_j_ebx2199: .space 4
+	copy_loop_eax2200: .space 4
+	copy_loop_ebx2200: .space 4
+	copy_j_eax2200: .space 4
+	copy_j_ebx2200: .space 4
+	copy_loop_eax2201: .space 4
+	copy_loop_ebx2201: .space 4
+	copy_j_eax2201: .space 4
+	copy_j_ebx2201: .space 4
+	copy_loop_eax2202: .space 4
+	copy_loop_ebx2202: .space 4
+	copy_j_eax2202: .space 4
+	copy_j_ebx2202: .space 4
+	copy_loop_eax2203: .space 4
+	copy_loop_ebx2203: .space 4
+	copy_j_eax2203: .space 4
+	copy_j_ebx2203: .space 4
+	copy_loop_eax2204: .space 4
+	copy_loop_ebx2204: .space 4
+	copy_j_eax2204: .space 4
+	copy_j_ebx2204: .space 4
+	copy_loop_eax2205: .space 4
+	copy_loop_ebx2205: .space 4
+	copy_j_eax2205: .space 4
+	copy_j_ebx2205: .space 4
+	copy_loop_eax2206: .space 4
+	copy_loop_ebx2206: .space 4
+	copy_j_eax2206: .space 4
+	copy_j_ebx2206: .space 4
+	copy_loop_eax2207: .space 4
+	copy_loop_ebx2207: .space 4
+	copy_j_eax2207: .space 4
+	copy_j_ebx2207: .space 4
+	copy_loop_eax2208: .space 4
+	copy_loop_ebx2208: .space 4
+	copy_j_eax2208: .space 4
+	copy_j_ebx2208: .space 4
+	copy_loop_eax2209: .space 4
+	copy_loop_ebx2209: .space 4
+	copy_j_eax2209: .space 4
+	copy_j_ebx2209: .space 4
+	copy_loop_eax2210: .space 4
+	copy_loop_ebx2210: .space 4
+	copy_j_eax2210: .space 4
+	copy_j_ebx2210: .space 4
+	copy_loop_eax2211: .space 4
+	copy_loop_ebx2211: .space 4
+	copy_j_eax2211: .space 4
+	copy_j_ebx2211: .space 4
+	copy_loop_eax2212: .space 4
+	copy_loop_ebx2212: .space 4
+	copy_j_eax2212: .space 4
+	copy_j_ebx2212: .space 4
+	copy_loop_eax2213: .space 4
+	copy_loop_ebx2213: .space 4
+	copy_j_eax2213: .space 4
+	copy_j_ebx2213: .space 4
+	copy_loop_eax2214: .space 4
+	copy_loop_ebx2214: .space 4
+	copy_j_eax2214: .space 4
+	copy_j_ebx2214: .space 4
+	copy_loop_eax2215: .space 4
+	copy_loop_ebx2215: .space 4
+	copy_j_eax2215: .space 4
+	copy_j_ebx2215: .space 4
+	copy_loop_eax2216: .space 4
+	copy_loop_ebx2216: .space 4
+	copy_j_eax2216: .space 4
+	copy_j_ebx2216: .space 4
+	copy_loop_eax2217: .space 4
+	copy_loop_ebx2217: .space 4
+	copy_j_eax2217: .space 4
+	copy_j_ebx2217: .space 4
+	copy_loop_eax2218: .space 4
+	copy_loop_ebx2218: .space 4
+	copy_j_eax2218: .space 4
+	copy_j_ebx2218: .space 4
+	copy_loop_eax2219: .space 4
+	copy_loop_ebx2219: .space 4
+	copy_j_eax2219: .space 4
+	copy_j_ebx2219: .space 4
+	copy_loop_eax2220: .space 4
+	copy_loop_ebx2220: .space 4
+	copy_j_eax2220: .space 4
+	copy_j_ebx2220: .space 4
+	copy_loop_eax2221: .space 4
+	copy_loop_ebx2221: .space 4
+	copy_j_eax2221: .space 4
+	copy_j_ebx2221: .space 4
+	copy_loop_eax2222: .space 4
+	copy_loop_ebx2222: .space 4
+	copy_j_eax2222: .space 4
+	copy_j_ebx2222: .space 4
+	copy_loop_eax2223: .space 4
+	copy_loop_ebx2223: .space 4
+	copy_j_eax2223: .space 4
+	copy_j_ebx2223: .space 4
+	copy_loop_eax2224: .space 4
+	copy_loop_ebx2224: .space 4
+	copy_j_eax2224: .space 4
+	copy_j_ebx2224: .space 4
+	copy_loop_eax2225: .space 4
+	copy_loop_ebx2225: .space 4
+	copy_j_eax2225: .space 4
+	copy_j_ebx2225: .space 4
+	copy_loop_eax2226: .space 4
+	copy_loop_ebx2226: .space 4
+	copy_j_eax2226: .space 4
+	copy_j_ebx2226: .space 4
+	copy_loop_eax2227: .space 4
+	copy_loop_ebx2227: .space 4
+	copy_j_eax2227: .space 4
+	copy_j_ebx2227: .space 4
+	copy_loop_eax2228: .space 4
+	copy_loop_ebx2228: .space 4
+	copy_j_eax2228: .space 4
+	copy_j_ebx2228: .space 4
+	copy_loop_eax2229: .space 4
+	copy_loop_ebx2229: .space 4
+	copy_j_eax2229: .space 4
+	copy_j_ebx2229: .space 4
+	copy_loop_eax2230: .space 4
+	copy_loop_ebx2230: .space 4
+	copy_j_eax2230: .space 4
+	copy_j_ebx2230: .space 4
+	copy_loop_eax2231: .space 4
+	copy_loop_ebx2231: .space 4
+	copy_j_eax2231: .space 4
+	copy_j_ebx2231: .space 4
+	copy_loop_eax2232: .space 4
+	copy_loop_ebx2232: .space 4
+	copy_j_eax2232: .space 4
+	copy_j_ebx2232: .space 4
+	copy_loop_eax2233: .space 4
+	copy_loop_ebx2233: .space 4
+	copy_j_eax2233: .space 4
+	copy_j_ebx2233: .space 4
+	copy_loop_eax2234: .space 4
+	copy_loop_ebx2234: .space 4
+	copy_j_eax2234: .space 4
+	copy_j_ebx2234: .space 4
+	copy_loop_eax2235: .space 4
+	copy_loop_ebx2235: .space 4
+	copy_j_eax2235: .space 4
+	copy_j_ebx2235: .space 4
+	copy_loop_eax2236: .space 4
+	copy_loop_ebx2236: .space 4
+	copy_j_eax2236: .space 4
+	copy_j_ebx2236: .space 4
+	copy_loop_eax2237: .space 4
+	copy_loop_ebx2237: .space 4
+	copy_j_eax2237: .space 4
+	copy_j_ebx2237: .space 4
+	copy_loop_eax2238: .space 4
+	copy_loop_ebx2238: .space 4
+	copy_j_eax2238: .space 4
+	copy_j_ebx2238: .space 4
+	copy_loop_eax2239: .space 4
+	copy_loop_ebx2239: .space 4
+	copy_j_eax2239: .space 4
+	copy_j_ebx2239: .space 4
+	copy_loop_eax2240: .space 4
+	copy_loop_ebx2240: .space 4
+	copy_j_eax2240: .space 4
+	copy_j_ebx2240: .space 4
+	copy_loop_eax2241: .space 4
+	copy_loop_ebx2241: .space 4
+	copy_j_eax2241: .space 4
+	copy_j_ebx2241: .space 4
+	copy_loop_eax2242: .space 4
+	copy_loop_ebx2242: .space 4
+	copy_j_eax2242: .space 4
+	copy_j_ebx2242: .space 4
+	copy_loop_eax2243: .space 4
+	copy_loop_ebx2243: .space 4
+	copy_j_eax2243: .space 4
+	copy_j_ebx2243: .space 4
+	copy_loop_eax2244: .space 4
+	copy_loop_ebx2244: .space 4
+	copy_j_eax2244: .space 4
+	copy_j_ebx2244: .space 4
+	copy_loop_eax2245: .space 4
+	copy_loop_ebx2245: .space 4
+	copy_j_eax2245: .space 4
+	copy_j_ebx2245: .space 4
+	copy_loop_eax2246: .space 4
+	copy_loop_ebx2246: .space 4
+	copy_j_eax2246: .space 4
+	copy_j_ebx2246: .space 4
+	copy_loop_eax2247: .space 4
+	copy_loop_ebx2247: .space 4
+	copy_j_eax2247: .space 4
+	copy_j_ebx2247: .space 4
+	copy_loop_eax2248: .space 4
+	copy_loop_ebx2248: .space 4
+	copy_j_eax2248: .space 4
+	copy_j_ebx2248: .space 4
+	copy_loop_eax2249: .space 4
+	copy_loop_ebx2249: .space 4
+	copy_j_eax2249: .space 4
+	copy_j_ebx2249: .space 4
+	copy_loop_eax2250: .space 4
+	copy_loop_ebx2250: .space 4
+	copy_j_eax2250: .space 4
+	copy_j_ebx2250: .space 4
+	copy_loop_eax2251: .space 4
+	copy_loop_ebx2251: .space 4
+	copy_j_eax2251: .space 4
+	copy_j_ebx2251: .space 4
+	copy_loop_eax2252: .space 4
+	copy_loop_ebx2252: .space 4
+	copy_j_eax2252: .space 4
+	copy_j_ebx2252: .space 4
+	copy_loop_eax2253: .space 4
+	copy_loop_ebx2253: .space 4
+	copy_j_eax2253: .space 4
+	copy_j_ebx2253: .space 4
+	copy_loop_eax2254: .space 4
+	copy_loop_ebx2254: .space 4
+	copy_j_eax2254: .space 4
+	copy_j_ebx2254: .space 4
+	copy_loop_eax2255: .space 4
+	copy_loop_ebx2255: .space 4
+	copy_j_eax2255: .space 4
+	copy_j_ebx2255: .space 4
+	copy_loop_eax2256: .space 4
+	copy_loop_ebx2256: .space 4
+	copy_j_eax2256: .space 4
+	copy_j_ebx2256: .space 4
+	copy_loop_eax2257: .space 4
+	copy_loop_ebx2257: .space 4
+	copy_j_eax2257: .space 4
+	copy_j_ebx2257: .space 4
+	copy_loop_eax2258: .space 4
+	copy_loop_ebx2258: .space 4
+	copy_j_eax2258: .space 4
+	copy_j_ebx2258: .space 4
+	copy_loop_eax2259: .space 4
+	copy_loop_ebx2259: .space 4
+	copy_j_eax2259: .space 4
+	copy_j_ebx2259: .space 4
+	copy_loop_eax2260: .space 4
+	copy_loop_ebx2260: .space 4
+	copy_j_eax2260: .space 4
+	copy_j_ebx2260: .space 4
+	copy_loop_eax2261: .space 4
+	copy_loop_ebx2261: .space 4
+	copy_j_eax2261: .space 4
+	copy_j_ebx2261: .space 4
+	copy_loop_eax2262: .space 4
+	copy_loop_ebx2262: .space 4
+	copy_j_eax2262: .space 4
+	copy_j_ebx2262: .space 4
+	copy_loop_eax2263: .space 4
+	copy_loop_ebx2263: .space 4
+	copy_j_eax2263: .space 4
+	copy_j_ebx2263: .space 4
+	copy_loop_eax2264: .space 4
+	copy_loop_ebx2264: .space 4
+	copy_j_eax2264: .space 4
+	copy_j_ebx2264: .space 4
+	copy_loop_eax2265: .space 4
+	copy_loop_ebx2265: .space 4
+	copy_j_eax2265: .space 4
+	copy_j_ebx2265: .space 4
+	copy_loop_eax2266: .space 4
+	copy_loop_ebx2266: .space 4
+	copy_j_eax2266: .space 4
+	copy_j_ebx2266: .space 4
+	copy_loop_eax2267: .space 4
+	copy_loop_ebx2267: .space 4
+	copy_j_eax2267: .space 4
+	copy_j_ebx2267: .space 4
+	copy_loop_eax2268: .space 4
+	copy_loop_ebx2268: .space 4
+	copy_j_eax2268: .space 4
+	copy_j_ebx2268: .space 4
+	copy_loop_eax2269: .space 4
+	copy_loop_ebx2269: .space 4
+	copy_j_eax2269: .space 4
+	copy_j_ebx2269: .space 4
+	copy_loop_eax2270: .space 4
+	copy_loop_ebx2270: .space 4
+	copy_j_eax2270: .space 4
+	copy_j_ebx2270: .space 4
+	copy_loop_eax2271: .space 4
+	copy_loop_ebx2271: .space 4
+	copy_j_eax2271: .space 4
+	copy_j_ebx2271: .space 4
+	copy_loop_eax2272: .space 4
+	copy_loop_ebx2272: .space 4
+	copy_j_eax2272: .space 4
+	copy_j_ebx2272: .space 4
+	copy_loop_eax2273: .space 4
+	copy_loop_ebx2273: .space 4
+	copy_j_eax2273: .space 4
+	copy_j_ebx2273: .space 4
+	copy_loop_eax2274: .space 4
+	copy_loop_ebx2274: .space 4
+	copy_j_eax2274: .space 4
+	copy_j_ebx2274: .space 4
+	copy_loop_eax2275: .space 4
+	copy_loop_ebx2275: .space 4
+	copy_j_eax2275: .space 4
+	copy_j_ebx2275: .space 4
+	copy_loop_eax2276: .space 4
+	copy_loop_ebx2276: .space 4
+	copy_j_eax2276: .space 4
+	copy_j_ebx2276: .space 4
+	copy_loop_eax2277: .space 4
+	copy_loop_ebx2277: .space 4
+	copy_j_eax2277: .space 4
+	copy_j_ebx2277: .space 4
+	copy_loop_eax2278: .space 4
+	copy_loop_ebx2278: .space 4
+	copy_j_eax2278: .space 4
+	copy_j_ebx2278: .space 4
+	copy_loop_eax2279: .space 4
+	copy_loop_ebx2279: .space 4
+	copy_j_eax2279: .space 4
+	copy_j_ebx2279: .space 4
+	copy_loop_eax2280: .space 4
+	copy_loop_ebx2280: .space 4
+	copy_j_eax2280: .space 4
+	copy_j_ebx2280: .space 4
+	copy_loop_eax2281: .space 4
+	copy_loop_ebx2281: .space 4
+	copy_j_eax2281: .space 4
+	copy_j_ebx2281: .space 4
+	copy_loop_eax2282: .space 4
+	copy_loop_ebx2282: .space 4
+	copy_j_eax2282: .space 4
+	copy_j_ebx2282: .space 4
+	copy_loop_eax2283: .space 4
+	copy_loop_ebx2283: .space 4
+	copy_j_eax2283: .space 4
+	copy_j_ebx2283: .space 4
+	copy_loop_eax2284: .space 4
+	copy_loop_ebx2284: .space 4
+	copy_j_eax2284: .space 4
+	copy_j_ebx2284: .space 4
+	copy_loop_eax2285: .space 4
+	copy_loop_ebx2285: .space 4
+	copy_j_eax2285: .space 4
+	copy_j_ebx2285: .space 4
+	copy_loop_eax2286: .space 4
+	copy_loop_ebx2286: .space 4
+	copy_j_eax2286: .space 4
+	copy_j_ebx2286: .space 4
+	copy_loop_eax2287: .space 4
+	copy_loop_ebx2287: .space 4
+	copy_j_eax2287: .space 4
+	copy_j_ebx2287: .space 4
+	copy_loop_eax2288: .space 4
+	copy_loop_ebx2288: .space 4
+	copy_j_eax2288: .space 4
+	copy_j_ebx2288: .space 4
+	copy_loop_eax2289: .space 4
+	copy_loop_ebx2289: .space 4
+	copy_j_eax2289: .space 4
+	copy_j_ebx2289: .space 4
+	copy_loop_eax2290: .space 4
+	copy_loop_ebx2290: .space 4
+	copy_j_eax2290: .space 4
+	copy_j_ebx2290: .space 4
+	copy_loop_eax2291: .space 4
+	copy_loop_ebx2291: .space 4
+	copy_j_eax2291: .space 4
+	copy_j_ebx2291: .space 4
+	copy_loop_eax2292: .space 4
+	copy_loop_ebx2292: .space 4
+	copy_j_eax2292: .space 4
+	copy_j_ebx2292: .space 4
+	copy_loop_eax2293: .space 4
+	copy_loop_ebx2293: .space 4
+	copy_j_eax2293: .space 4
+	copy_j_ebx2293: .space 4
+	copy_loop_eax2294: .space 4
+	copy_loop_ebx2294: .space 4
+	copy_j_eax2294: .space 4
+	copy_j_ebx2294: .space 4
+	copy_loop_eax2295: .space 4
+	copy_loop_ebx2295: .space 4
+	copy_j_eax2295: .space 4
+	copy_j_ebx2295: .space 4
+	copy_loop_eax2296: .space 4
+	copy_loop_ebx2296: .space 4
+	copy_j_eax2296: .space 4
+	copy_j_ebx2296: .space 4
+	copy_loop_eax2297: .space 4
+	copy_loop_ebx2297: .space 4
+	copy_j_eax2297: .space 4
+	copy_j_ebx2297: .space 4
+	copy_loop_eax2298: .space 4
+	copy_loop_ebx2298: .space 4
+	copy_j_eax2298: .space 4
+	copy_j_ebx2298: .space 4
+	copy_loop_eax2299: .space 4
+	copy_loop_ebx2299: .space 4
+	copy_j_eax2299: .space 4
+	copy_j_ebx2299: .space 4
+	copy_loop_eax2300: .space 4
+	copy_loop_ebx2300: .space 4
+	copy_j_eax2300: .space 4
+	copy_j_ebx2300: .space 4
+	copy_loop_eax2301: .space 4
+	copy_loop_ebx2301: .space 4
+	copy_j_eax2301: .space 4
+	copy_j_ebx2301: .space 4
+	copy_loop_eax2302: .space 4
+	copy_loop_ebx2302: .space 4
+	copy_j_eax2302: .space 4
+	copy_j_ebx2302: .space 4
+	copy_loop_eax2303: .space 4
+	copy_loop_ebx2303: .space 4
+	copy_j_eax2303: .space 4
+	copy_j_ebx2303: .space 4
+	copy_loop_eax2304: .space 4
+	copy_loop_ebx2304: .space 4
+	copy_j_eax2304: .space 4
+	copy_j_ebx2304: .space 4
+	copy_loop_eax2305: .space 4
+	copy_loop_ebx2305: .space 4
+	copy_j_eax2305: .space 4
+	copy_j_ebx2305: .space 4
+	copy_loop_eax2306: .space 4
+	copy_loop_ebx2306: .space 4
+	copy_j_eax2306: .space 4
+	copy_j_ebx2306: .space 4
+	copy_loop_eax2307: .space 4
+	copy_loop_ebx2307: .space 4
+	copy_j_eax2307: .space 4
+	copy_j_ebx2307: .space 4
+	copy_loop_eax2308: .space 4
+	copy_loop_ebx2308: .space 4
+	copy_j_eax2308: .space 4
+	copy_j_ebx2308: .space 4
+	copy_loop_eax2309: .space 4
+	copy_loop_ebx2309: .space 4
+	copy_j_eax2309: .space 4
+	copy_j_ebx2309: .space 4
+	copy_loop_eax2310: .space 4
+	copy_loop_ebx2310: .space 4
+	copy_j_eax2310: .space 4
+	copy_j_ebx2310: .space 4
+	copy_loop_eax2311: .space 4
+	copy_loop_ebx2311: .space 4
+	copy_j_eax2311: .space 4
+	copy_j_ebx2311: .space 4
+	copy_loop_eax2312: .space 4
+	copy_loop_ebx2312: .space 4
+	copy_j_eax2312: .space 4
+	copy_j_ebx2312: .space 4
+	copy_loop_eax2313: .space 4
+	copy_loop_ebx2313: .space 4
+	copy_j_eax2313: .space 4
+	copy_j_ebx2313: .space 4
+	copy_loop_eax2314: .space 4
+	copy_loop_ebx2314: .space 4
+	copy_j_eax2314: .space 4
+	copy_j_ebx2314: .space 4
+	copy_loop_eax2315: .space 4
+	copy_loop_ebx2315: .space 4
+	copy_j_eax2315: .space 4
+	copy_j_ebx2315: .space 4
+	copy_loop_eax2316: .space 4
+	copy_loop_ebx2316: .space 4
+	copy_j_eax2316: .space 4
+	copy_j_ebx2316: .space 4
+	copy_loop_eax2317: .space 4
+	copy_loop_ebx2317: .space 4
+	copy_j_eax2317: .space 4
+	copy_j_ebx2317: .space 4
+	copy_loop_eax2318: .space 4
+	copy_loop_ebx2318: .space 4
+	copy_j_eax2318: .space 4
+	copy_j_ebx2318: .space 4
+	copy_loop_eax2319: .space 4
+	copy_loop_ebx2319: .space 4
+	copy_j_eax2319: .space 4
+	copy_j_ebx2319: .space 4
+	copy_loop_eax2320: .space 4
+	copy_loop_ebx2320: .space 4
+	copy_j_eax2320: .space 4
+	copy_j_ebx2320: .space 4
+	copy_loop_eax2321: .space 4
+	copy_loop_ebx2321: .space 4
+	copy_j_eax2321: .space 4
+	copy_j_ebx2321: .space 4
+	copy_loop_eax2322: .space 4
+	copy_loop_ebx2322: .space 4
+	copy_j_eax2322: .space 4
+	copy_j_ebx2322: .space 4
+	copy_loop_eax2323: .space 4
+	copy_loop_ebx2323: .space 4
+	copy_j_eax2323: .space 4
+	copy_j_ebx2323: .space 4
+	copy_loop_eax2324: .space 4
+	copy_loop_ebx2324: .space 4
+	copy_j_eax2324: .space 4
+	copy_j_ebx2324: .space 4
+	copy_loop_eax2325: .space 4
+	copy_loop_ebx2325: .space 4
+	copy_j_eax2325: .space 4
+	copy_j_ebx2325: .space 4
+	copy_loop_eax2326: .space 4
+	copy_loop_ebx2326: .space 4
+	copy_j_eax2326: .space 4
+	copy_j_ebx2326: .space 4
+	copy_loop_eax2327: .space 4
+	copy_loop_ebx2327: .space 4
+	copy_j_eax2327: .space 4
+	copy_j_ebx2327: .space 4
+	copy_loop_eax2328: .space 4
+	copy_loop_ebx2328: .space 4
+	copy_j_eax2328: .space 4
+	copy_j_ebx2328: .space 4
+	copy_loop_eax2329: .space 4
+	copy_loop_ebx2329: .space 4
+	copy_j_eax2329: .space 4
+	copy_j_ebx2329: .space 4
+	copy_loop_eax2330: .space 4
+	copy_loop_ebx2330: .space 4
+	copy_j_eax2330: .space 4
+	copy_j_ebx2330: .space 4
+	copy_loop_eax2331: .space 4
+	copy_loop_ebx2331: .space 4
+	copy_j_eax2331: .space 4
+	copy_j_ebx2331: .space 4
+	copy_loop_eax2332: .space 4
+	copy_loop_ebx2332: .space 4
+	copy_j_eax2332: .space 4
+	copy_j_ebx2332: .space 4
+	copy_loop_eax2333: .space 4
+	copy_loop_ebx2333: .space 4
+	copy_j_eax2333: .space 4
+	copy_j_ebx2333: .space 4
+	copy_loop_eax2334: .space 4
+	copy_loop_ebx2334: .space 4
+	copy_j_eax2334: .space 4
+	copy_j_ebx2334: .space 4
+	copy_loop_eax2335: .space 4
+	copy_loop_ebx2335: .space 4
+	copy_j_eax2335: .space 4
+	copy_j_ebx2335: .space 4
+	copy_loop_eax2336: .space 4
+	copy_loop_ebx2336: .space 4
+	copy_j_eax2336: .space 4
+	copy_j_ebx2336: .space 4
+	copy_loop_eax2337: .space 4
+	copy_loop_ebx2337: .space 4
+	copy_j_eax2337: .space 4
+	copy_j_ebx2337: .space 4
+	copy_loop_eax2338: .space 4
+	copy_loop_ebx2338: .space 4
+	copy_j_eax2338: .space 4
+	copy_j_ebx2338: .space 4
+	copy_loop_eax2339: .space 4
+	copy_loop_ebx2339: .space 4
+	copy_j_eax2339: .space 4
+	copy_j_ebx2339: .space 4
+	copy_loop_eax2340: .space 4
+	copy_loop_ebx2340: .space 4
+	copy_j_eax2340: .space 4
+	copy_j_ebx2340: .space 4
+	copy_loop_eax2341: .space 4
+	copy_loop_ebx2341: .space 4
+	copy_j_eax2341: .space 4
+	copy_j_ebx2341: .space 4
+	copy_loop_eax2342: .space 4
+	copy_loop_ebx2342: .space 4
+	copy_j_eax2342: .space 4
+	copy_j_ebx2342: .space 4
+	copy_loop_eax2343: .space 4
+	copy_loop_ebx2343: .space 4
+	copy_j_eax2343: .space 4
+	copy_j_ebx2343: .space 4
+	copy_loop_eax2344: .space 4
+	copy_loop_ebx2344: .space 4
+	copy_j_eax2344: .space 4
+	copy_j_ebx2344: .space 4
+	copy_loop_eax2345: .space 4
+	copy_loop_ebx2345: .space 4
+	copy_j_eax2345: .space 4
+	copy_j_ebx2345: .space 4
+	copy_loop_eax2346: .space 4
+	copy_loop_ebx2346: .space 4
+	copy_j_eax2346: .space 4
+	copy_j_ebx2346: .space 4
+	copy_loop_eax2347: .space 4
+	copy_loop_ebx2347: .space 4
+	copy_j_eax2347: .space 4
+	copy_j_ebx2347: .space 4
+	copy_loop_eax2348: .space 4
+	copy_loop_ebx2348: .space 4
+	copy_j_eax2348: .space 4
+	copy_j_ebx2348: .space 4
+	copy_loop_eax2349: .space 4
+	copy_loop_ebx2349: .space 4
+	copy_j_eax2349: .space 4
+	copy_j_ebx2349: .space 4
+	copy_loop_eax2350: .space 4
+	copy_loop_ebx2350: .space 4
+	copy_j_eax2350: .space 4
+	copy_j_ebx2350: .space 4
+	copy_loop_eax2351: .space 4
+	copy_loop_ebx2351: .space 4
+	copy_j_eax2351: .space 4
+	copy_j_ebx2351: .space 4
+	copy_loop_eax2352: .space 4
+	copy_loop_ebx2352: .space 4
+	copy_j_eax2352: .space 4
+	copy_j_ebx2352: .space 4
+	copy_loop_eax2353: .space 4
+	copy_loop_ebx2353: .space 4
+	copy_j_eax2353: .space 4
+	copy_j_ebx2353: .space 4
+	copy_loop_eax2354: .space 4
+	copy_loop_ebx2354: .space 4
+	copy_j_eax2354: .space 4
+	copy_j_ebx2354: .space 4
+	copy_loop_eax2355: .space 4
+	copy_loop_ebx2355: .space 4
+	copy_j_eax2355: .space 4
+	copy_j_ebx2355: .space 4
+	copy_loop_eax2356: .space 4
+	copy_loop_ebx2356: .space 4
+	copy_j_eax2356: .space 4
+	copy_j_ebx2356: .space 4
+	copy_loop_eax2357: .space 4
+	copy_loop_ebx2357: .space 4
+	copy_j_eax2357: .space 4
+	copy_j_ebx2357: .space 4
+	copy_loop_eax2358: .space 4
+	copy_loop_ebx2358: .space 4
+	copy_j_eax2358: .space 4
+	copy_j_ebx2358: .space 4
+	copy_loop_eax2359: .space 4
+	copy_loop_ebx2359: .space 4
+	copy_j_eax2359: .space 4
+	copy_j_ebx2359: .space 4
+	copy_loop_eax2360: .space 4
+	copy_loop_ebx2360: .space 4
+	copy_j_eax2360: .space 4
+	copy_j_ebx2360: .space 4
+	copy_loop_eax2361: .space 4
+	copy_loop_ebx2361: .space 4
+	copy_j_eax2361: .space 4
+	copy_j_ebx2361: .space 4
+	copy_loop_eax2362: .space 4
+	copy_loop_ebx2362: .space 4
+	copy_j_eax2362: .space 4
+	copy_j_ebx2362: .space 4
+	copy_loop_eax2363: .space 4
+	copy_loop_ebx2363: .space 4
+	copy_j_eax2363: .space 4
+	copy_j_ebx2363: .space 4
+	copy_loop_eax2364: .space 4
+	copy_loop_ebx2364: .space 4
+	copy_j_eax2364: .space 4
+	copy_j_ebx2364: .space 4
+	copy_loop_eax2365: .space 4
+	copy_loop_ebx2365: .space 4
+	copy_j_eax2365: .space 4
+	copy_j_ebx2365: .space 4
+	copy_loop_eax2366: .space 4
+	copy_loop_ebx2366: .space 4
+	copy_j_eax2366: .space 4
+	copy_j_ebx2366: .space 4
+	copy_loop_eax2367: .space 4
+	copy_loop_ebx2367: .space 4
+	copy_j_eax2367: .space 4
+	copy_j_ebx2367: .space 4
+	copy_loop_eax2368: .space 4
+	copy_loop_ebx2368: .space 4
+	copy_j_eax2368: .space 4
+	copy_j_ebx2368: .space 4
+	copy_loop_eax2369: .space 4
+	copy_loop_ebx2369: .space 4
+	copy_j_eax2369: .space 4
+	copy_j_ebx2369: .space 4
+	copy_loop_eax2370: .space 4
+	copy_loop_ebx2370: .space 4
+	copy_j_eax2370: .space 4
+	copy_j_ebx2370: .space 4
+	copy_loop_eax2371: .space 4
+	copy_loop_ebx2371: .space 4
+	copy_j_eax2371: .space 4
+	copy_j_ebx2371: .space 4
+	copy_loop_eax2372: .space 4
+	copy_loop_ebx2372: .space 4
+	copy_j_eax2372: .space 4
+	copy_j_ebx2372: .space 4
+	copy_loop_eax2373: .space 4
+	copy_loop_ebx2373: .space 4
+	copy_j_eax2373: .space 4
+	copy_j_ebx2373: .space 4
+	copy_loop_eax2374: .space 4
+	copy_loop_ebx2374: .space 4
+	copy_j_eax2374: .space 4
+	copy_j_ebx2374: .space 4
+	copy_loop_eax2375: .space 4
+	copy_loop_ebx2375: .space 4
+	copy_j_eax2375: .space 4
+	copy_j_ebx2375: .space 4
+	copy_loop_eax2376: .space 4
+	copy_loop_ebx2376: .space 4
+	copy_j_eax2376: .space 4
+	copy_j_ebx2376: .space 4
+	copy_loop_eax2377: .space 4
+	copy_loop_ebx2377: .space 4
+	copy_j_eax2377: .space 4
+	copy_j_ebx2377: .space 4
+	copy_loop_eax2378: .space 4
+	copy_loop_ebx2378: .space 4
+	copy_j_eax2378: .space 4
+	copy_j_ebx2378: .space 4
+	copy_loop_eax2379: .space 4
+	copy_loop_ebx2379: .space 4
+	copy_j_eax2379: .space 4
+	copy_j_ebx2379: .space 4
+	copy_loop_eax2380: .space 4
+	copy_loop_ebx2380: .space 4
+	copy_j_eax2380: .space 4
+	copy_j_ebx2380: .space 4
+	copy_loop_eax2381: .space 4
+	copy_loop_ebx2381: .space 4
+	copy_j_eax2381: .space 4
+	copy_j_ebx2381: .space 4
+	copy_loop_eax2382: .space 4
+	copy_loop_ebx2382: .space 4
+	copy_j_eax2382: .space 4
+	copy_j_ebx2382: .space 4
+	copy_loop_eax2383: .space 4
+	copy_loop_ebx2383: .space 4
+	copy_j_eax2383: .space 4
+	copy_j_ebx2383: .space 4
+	copy_loop_eax2384: .space 4
+	copy_loop_ebx2384: .space 4
+	copy_j_eax2384: .space 4
+	copy_j_ebx2384: .space 4
+	copy_loop_eax2385: .space 4
+	copy_loop_ebx2385: .space 4
+	copy_j_eax2385: .space 4
+	copy_j_ebx2385: .space 4
+	copy_loop_eax2386: .space 4
+	copy_loop_ebx2386: .space 4
+	copy_j_eax2386: .space 4
+	copy_j_ebx2386: .space 4
+	copy_loop_eax2387: .space 4
+	copy_loop_ebx2387: .space 4
+	copy_j_eax2387: .space 4
+	copy_j_ebx2387: .space 4
+	copy_loop_eax2388: .space 4
+	copy_loop_ebx2388: .space 4
+	copy_j_eax2388: .space 4
+	copy_j_ebx2388: .space 4
+	copy_loop_eax2389: .space 4
+	copy_loop_ebx2389: .space 4
+	copy_j_eax2389: .space 4
+	copy_j_ebx2389: .space 4
+	copy_loop_eax2390: .space 4
+	copy_loop_ebx2390: .space 4
+	copy_j_eax2390: .space 4
+	copy_j_ebx2390: .space 4
+	copy_loop_eax2391: .space 4
+	copy_loop_ebx2391: .space 4
+	copy_j_eax2391: .space 4
+	copy_j_ebx2391: .space 4
+	copy_loop_eax2392: .space 4
+	copy_loop_ebx2392: .space 4
+	copy_j_eax2392: .space 4
+	copy_j_ebx2392: .space 4
+	copy_loop_eax2393: .space 4
+	copy_loop_ebx2393: .space 4
+	copy_j_eax2393: .space 4
+	copy_j_ebx2393: .space 4
+	copy_loop_eax2394: .space 4
+	copy_loop_ebx2394: .space 4
+	copy_j_eax2394: .space 4
+	copy_j_ebx2394: .space 4
+	copy_loop_eax2395: .space 4
+	copy_loop_ebx2395: .space 4
+	copy_j_eax2395: .space 4
+	copy_j_ebx2395: .space 4
+	copy_loop_eax2396: .space 4
+	copy_loop_ebx2396: .space 4
+	copy_j_eax2396: .space 4
+	copy_j_ebx2396: .space 4
+	copy_loop_eax2397: .space 4
+	copy_loop_ebx2397: .space 4
+	copy_j_eax2397: .space 4
+	copy_j_ebx2397: .space 4
+	copy_loop_eax2398: .space 4
+	copy_loop_ebx2398: .space 4
+	copy_j_eax2398: .space 4
+	copy_j_ebx2398: .space 4
+	copy_loop_eax2399: .space 4
+	copy_loop_ebx2399: .space 4
+	copy_j_eax2399: .space 4
+	copy_j_ebx2399: .space 4
+	copy_loop_eax2400: .space 4
+	copy_loop_ebx2400: .space 4
+	copy_j_eax2400: .space 4
+	copy_j_ebx2400: .space 4
+	copy_loop_eax2401: .space 4
+	copy_loop_ebx2401: .space 4
+	copy_j_eax2401: .space 4
+	copy_j_ebx2401: .space 4
+	copy_loop_eax2402: .space 4
+	copy_loop_ebx2402: .space 4
+	copy_j_eax2402: .space 4
+	copy_j_ebx2402: .space 4
+	copy_loop_eax2403: .space 4
+	copy_loop_ebx2403: .space 4
+	copy_j_eax2403: .space 4
+	copy_j_ebx2403: .space 4
+	copy_loop_eax2404: .space 4
+	copy_loop_ebx2404: .space 4
+	copy_j_eax2404: .space 4
+	copy_j_ebx2404: .space 4
+	copy_loop_eax2405: .space 4
+	copy_loop_ebx2405: .space 4
+	copy_j_eax2405: .space 4
+	copy_j_ebx2405: .space 4
+	copy_loop_eax2406: .space 4
+	copy_loop_ebx2406: .space 4
+	copy_j_eax2406: .space 4
+	copy_j_ebx2406: .space 4
+	copy_loop_eax2407: .space 4
+	copy_loop_ebx2407: .space 4
+	copy_j_eax2407: .space 4
+	copy_j_ebx2407: .space 4
+	copy_loop_eax2408: .space 4
+	copy_loop_ebx2408: .space 4
+	copy_j_eax2408: .space 4
+	copy_j_ebx2408: .space 4
+	copy_loop_eax2409: .space 4
+	copy_loop_ebx2409: .space 4
+	copy_j_eax2409: .space 4
+	copy_j_ebx2409: .space 4
+	copy_loop_eax2410: .space 4
+	copy_loop_ebx2410: .space 4
+	copy_j_eax2410: .space 4
+	copy_j_ebx2410: .space 4
+	copy_loop_eax2411: .space 4
+	copy_loop_ebx2411: .space 4
+	copy_j_eax2411: .space 4
+	copy_j_ebx2411: .space 4
+	copy_loop_eax2412: .space 4
+	copy_loop_ebx2412: .space 4
+	copy_j_eax2412: .space 4
+	copy_j_ebx2412: .space 4
+	copy_loop_eax2413: .space 4
+	copy_loop_ebx2413: .space 4
+	copy_j_eax2413: .space 4
+	copy_j_ebx2413: .space 4
+	copy_loop_eax2414: .space 4
+	copy_loop_ebx2414: .space 4
+	copy_j_eax2414: .space 4
+	copy_j_ebx2414: .space 4
+	copy_loop_eax2415: .space 4
+	copy_loop_ebx2415: .space 4
+	copy_j_eax2415: .space 4
+	copy_j_ebx2415: .space 4
+	copy_loop_eax2416: .space 4
+	copy_loop_ebx2416: .space 4
+	copy_j_eax2416: .space 4
+	copy_j_ebx2416: .space 4
+	copy_loop_eax2417: .space 4
+	copy_loop_ebx2417: .space 4
+	copy_j_eax2417: .space 4
+	copy_j_ebx2417: .space 4
+	copy_loop_eax2418: .space 4
+	copy_loop_ebx2418: .space 4
+	copy_j_eax2418: .space 4
+	copy_j_ebx2418: .space 4
+	copy_loop_eax2419: .space 4
+	copy_loop_ebx2419: .space 4
+	copy_j_eax2419: .space 4
+	copy_j_ebx2419: .space 4
+	copy_loop_eax2420: .space 4
+	copy_loop_ebx2420: .space 4
+	copy_j_eax2420: .space 4
+	copy_j_ebx2420: .space 4
+	copy_loop_eax2421: .space 4
+	copy_loop_ebx2421: .space 4
+	copy_j_eax2421: .space 4
+	copy_j_ebx2421: .space 4
+	copy_loop_eax2422: .space 4
+	copy_loop_ebx2422: .space 4
+	copy_j_eax2422: .space 4
+	copy_j_ebx2422: .space 4
+	copy_loop_eax2423: .space 4
+	copy_loop_ebx2423: .space 4
+	copy_j_eax2423: .space 4
+	copy_j_ebx2423: .space 4
+	copy_loop_eax2424: .space 4
+	copy_loop_ebx2424: .space 4
+	copy_j_eax2424: .space 4
+	copy_j_ebx2424: .space 4
+	copy_loop_eax2425: .space 4
+	copy_loop_ebx2425: .space 4
+	copy_j_eax2425: .space 4
+	copy_j_ebx2425: .space 4
+	copy_loop_eax2426: .space 4
+	copy_loop_ebx2426: .space 4
+	copy_j_eax2426: .space 4
+	copy_j_ebx2426: .space 4
+	copy_loop_eax2427: .space 4
+	copy_loop_ebx2427: .space 4
+	copy_j_eax2427: .space 4
+	copy_j_ebx2427: .space 4
+	copy_loop_eax2428: .space 4
+	copy_loop_ebx2428: .space 4
+	copy_j_eax2428: .space 4
+	copy_j_ebx2428: .space 4
+	copy_loop_eax2429: .space 4
+	copy_loop_ebx2429: .space 4
+	copy_j_eax2429: .space 4
+	copy_j_ebx2429: .space 4
+	copy_loop_eax2430: .space 4
+	copy_loop_ebx2430: .space 4
+	copy_j_eax2430: .space 4
+	copy_j_ebx2430: .space 4
+	copy_loop_eax2431: .space 4
+	copy_loop_ebx2431: .space 4
+	copy_j_eax2431: .space 4
+	copy_j_ebx2431: .space 4
+	copy_loop_eax2432: .space 4
+	copy_loop_ebx2432: .space 4
+	copy_j_eax2432: .space 4
+	copy_j_ebx2432: .space 4
+	copy_loop_eax2433: .space 4
+	copy_loop_ebx2433: .space 4
+	copy_j_eax2433: .space 4
+	copy_j_ebx2433: .space 4
+	copy_loop_eax2434: .space 4
+	copy_loop_ebx2434: .space 4
+	copy_j_eax2434: .space 4
+	copy_j_ebx2434: .space 4
+	copy_loop_eax2435: .space 4
+	copy_loop_ebx2435: .space 4
+	copy_j_eax2435: .space 4
+	copy_j_ebx2435: .space 4
+	copy_loop_eax2436: .space 4
+	copy_loop_ebx2436: .space 4
+	copy_j_eax2436: .space 4
+	copy_j_ebx2436: .space 4
+	copy_loop_eax2437: .space 4
+	copy_loop_ebx2437: .space 4
+	copy_j_eax2437: .space 4
+	copy_j_ebx2437: .space 4
+	copy_loop_eax2438: .space 4
+	copy_loop_ebx2438: .space 4
+	copy_j_eax2438: .space 4
+	copy_j_ebx2438: .space 4
+	copy_loop_eax2439: .space 4
+	copy_loop_ebx2439: .space 4
+	copy_j_eax2439: .space 4
+	copy_j_ebx2439: .space 4
+	copy_loop_eax2440: .space 4
+	copy_loop_ebx2440: .space 4
+	copy_j_eax2440: .space 4
+	copy_j_ebx2440: .space 4
+	copy_loop_eax2441: .space 4
+	copy_loop_ebx2441: .space 4
+	copy_j_eax2441: .space 4
+	copy_j_ebx2441: .space 4
+	copy_loop_eax2442: .space 4
+	copy_loop_ebx2442: .space 4
+	copy_j_eax2442: .space 4
+	copy_j_ebx2442: .space 4
+	copy_loop_eax2443: .space 4
+	copy_loop_ebx2443: .space 4
+	copy_j_eax2443: .space 4
+	copy_j_ebx2443: .space 4
+	copy_loop_eax2444: .space 4
+	copy_loop_ebx2444: .space 4
+	copy_j_eax2444: .space 4
+	copy_j_ebx2444: .space 4
+	copy_loop_eax2445: .space 4
+	copy_loop_ebx2445: .space 4
+	copy_j_eax2445: .space 4
+	copy_j_ebx2445: .space 4
+	copy_loop_eax2446: .space 4
+	copy_loop_ebx2446: .space 4
+	copy_j_eax2446: .space 4
+	copy_j_ebx2446: .space 4
+	copy_loop_eax2447: .space 4
+	copy_loop_ebx2447: .space 4
+	copy_j_eax2447: .space 4
+	copy_j_ebx2447: .space 4
+	copy_loop_eax2448: .space 4
+	copy_loop_ebx2448: .space 4
+	copy_j_eax2448: .space 4
+	copy_j_ebx2448: .space 4
+	copy_loop_eax2449: .space 4
+	copy_loop_ebx2449: .space 4
+	copy_j_eax2449: .space 4
+	copy_j_ebx2449: .space 4
+	copy_loop_eax2450: .space 4
+	copy_loop_ebx2450: .space 4
+	copy_j_eax2450: .space 4
+	copy_j_ebx2450: .space 4
+	copy_loop_eax2451: .space 4
+	copy_loop_ebx2451: .space 4
+	copy_j_eax2451: .space 4
+	copy_j_ebx2451: .space 4
+	copy_loop_eax2452: .space 4
+	copy_loop_ebx2452: .space 4
+	copy_j_eax2452: .space 4
+	copy_j_ebx2452: .space 4
+	copy_loop_eax2453: .space 4
+	copy_loop_ebx2453: .space 4
+	copy_j_eax2453: .space 4
+	copy_j_ebx2453: .space 4
+	copy_loop_eax2454: .space 4
+	copy_loop_ebx2454: .space 4
+	copy_j_eax2454: .space 4
+	copy_j_ebx2454: .space 4
+	copy_loop_eax2455: .space 4
+	copy_loop_ebx2455: .space 4
+	copy_j_eax2455: .space 4
+	copy_j_ebx2455: .space 4
+	copy_loop_eax2456: .space 4
+	copy_loop_ebx2456: .space 4
+	copy_j_eax2456: .space 4
+	copy_j_ebx2456: .space 4
+	copy_loop_eax2457: .space 4
+	copy_loop_ebx2457: .space 4
+	copy_j_eax2457: .space 4
+	copy_j_ebx2457: .space 4
+	copy_loop_eax2458: .space 4
+	copy_loop_ebx2458: .space 4
+	copy_j_eax2458: .space 4
+	copy_j_ebx2458: .space 4
+	copy_loop_eax2459: .space 4
+	copy_loop_ebx2459: .space 4
+	copy_j_eax2459: .space 4
+	copy_j_ebx2459: .space 4
+	copy_loop_eax2460: .space 4
+	copy_loop_ebx2460: .space 4
+	copy_j_eax2460: .space 4
+	copy_j_ebx2460: .space 4
+	copy_loop_eax2461: .space 4
+	copy_loop_ebx2461: .space 4
+	copy_j_eax2461: .space 4
+	copy_j_ebx2461: .space 4
+	copy_loop_eax2462: .space 4
+	copy_loop_ebx2462: .space 4
+	copy_j_eax2462: .space 4
+	copy_j_ebx2462: .space 4
+	copy_loop_eax2463: .space 4
+	copy_loop_ebx2463: .space 4
+	copy_j_eax2463: .space 4
+	copy_j_ebx2463: .space 4
+	copy_loop_eax2464: .space 4
+	copy_loop_ebx2464: .space 4
+	copy_j_eax2464: .space 4
+	copy_j_ebx2464: .space 4
+	copy_loop_eax2465: .space 4
+	copy_loop_ebx2465: .space 4
+	copy_j_eax2465: .space 4
+	copy_j_ebx2465: .space 4
+	copy_loop_eax2466: .space 4
+	copy_loop_ebx2466: .space 4
+	copy_j_eax2466: .space 4
+	copy_j_ebx2466: .space 4
+	copy_loop_eax2467: .space 4
+	copy_loop_ebx2467: .space 4
+	copy_j_eax2467: .space 4
+	copy_j_ebx2467: .space 4
+	copy_loop_eax2468: .space 4
+	copy_loop_ebx2468: .space 4
+	copy_j_eax2468: .space 4
+	copy_j_ebx2468: .space 4
+	copy_loop_eax2469: .space 4
+	copy_loop_ebx2469: .space 4
+	copy_j_eax2469: .space 4
+	copy_j_ebx2469: .space 4
+	copy_loop_eax2470: .space 4
+	copy_loop_ebx2470: .space 4
+	copy_j_eax2470: .space 4
+	copy_j_ebx2470: .space 4
+	copy_loop_eax2471: .space 4
+	copy_loop_ebx2471: .space 4
+	copy_j_eax2471: .space 4
+	copy_j_ebx2471: .space 4
+	copy_loop_eax2472: .space 4
+	copy_loop_ebx2472: .space 4
+	copy_j_eax2472: .space 4
+	copy_j_ebx2472: .space 4
+	copy_loop_eax2473: .space 4
+	copy_loop_ebx2473: .space 4
+	copy_j_eax2473: .space 4
+	copy_j_ebx2473: .space 4
+	copy_loop_eax2474: .space 4
+	copy_loop_ebx2474: .space 4
+	copy_j_eax2474: .space 4
+	copy_j_ebx2474: .space 4
+	copy_loop_eax2475: .space 4
+	copy_loop_ebx2475: .space 4
+	copy_j_eax2475: .space 4
+	copy_j_ebx2475: .space 4
+	copy_loop_eax2476: .space 4
+	copy_loop_ebx2476: .space 4
+	copy_j_eax2476: .space 4
+	copy_j_ebx2476: .space 4
+	copy_loop_eax2477: .space 4
+	copy_loop_ebx2477: .space 4
+	copy_j_eax2477: .space 4
+	copy_j_ebx2477: .space 4
+	copy_loop_eax2478: .space 4
+	copy_loop_ebx2478: .space 4
+	copy_j_eax2478: .space 4
+	copy_j_ebx2478: .space 4
+	copy_loop_eax2479: .space 4
+	copy_loop_ebx2479: .space 4
+	copy_j_eax2479: .space 4
+	copy_j_ebx2479: .space 4
+	copy_loop_eax2480: .space 4
+	copy_loop_ebx2480: .space 4
+	copy_j_eax2480: .space 4
+	copy_j_ebx2480: .space 4
+	copy_loop_eax2481: .space 4
+	copy_loop_ebx2481: .space 4
+	copy_j_eax2481: .space 4
+	copy_j_ebx2481: .space 4
+	copy_loop_eax2482: .space 4
+	copy_loop_ebx2482: .space 4
+	copy_j_eax2482: .space 4
+	copy_j_ebx2482: .space 4
+	copy_loop_eax2483: .space 4
+	copy_loop_ebx2483: .space 4
+	copy_j_eax2483: .space 4
+	copy_j_ebx2483: .space 4
+	copy_loop_eax2484: .space 4
+	copy_loop_ebx2484: .space 4
+	copy_j_eax2484: .space 4
+	copy_j_ebx2484: .space 4
+	copy_loop_eax2485: .space 4
+	copy_loop_ebx2485: .space 4
+	copy_j_eax2485: .space 4
+	copy_j_ebx2485: .space 4
+	copy_loop_eax2486: .space 4
+	copy_loop_ebx2486: .space 4
+	copy_j_eax2486: .space 4
+	copy_j_ebx2486: .space 4
+	copy_loop_eax2487: .space 4
+	copy_loop_ebx2487: .space 4
+	copy_j_eax2487: .space 4
+	copy_j_ebx2487: .space 4
+	copy_loop_eax2488: .space 4
+	copy_loop_ebx2488: .space 4
+	copy_j_eax2488: .space 4
+	copy_j_ebx2488: .space 4
+	copy_loop_eax2489: .space 4
+	copy_loop_ebx2489: .space 4
+	copy_j_eax2489: .space 4
+	copy_j_ebx2489: .space 4
+	copy_loop_eax2490: .space 4
+	copy_loop_ebx2490: .space 4
+	copy_j_eax2490: .space 4
+	copy_j_ebx2490: .space 4
+	copy_loop_eax2491: .space 4
+	copy_loop_ebx2491: .space 4
+	copy_j_eax2491: .space 4
+	copy_j_ebx2491: .space 4
+	copy_loop_eax2492: .space 4
+	copy_loop_ebx2492: .space 4
+	copy_j_eax2492: .space 4
+	copy_j_ebx2492: .space 4
+	copy_loop_eax2493: .space 4
+	copy_loop_ebx2493: .space 4
+	copy_j_eax2493: .space 4
+	copy_j_ebx2493: .space 4
+	copy_loop_eax2494: .space 4
+	copy_loop_ebx2494: .space 4
+	copy_j_eax2494: .space 4
+	copy_j_ebx2494: .space 4
+	copy_loop_eax2495: .space 4
+	copy_loop_ebx2495: .space 4
+	copy_j_eax2495: .space 4
+	copy_j_ebx2495: .space 4
+	copy_loop_eax2496: .space 4
+	copy_loop_ebx2496: .space 4
+	copy_j_eax2496: .space 4
+	copy_j_ebx2496: .space 4
+	copy_loop_eax2497: .space 4
+	copy_loop_ebx2497: .space 4
+	copy_j_eax2497: .space 4
+	copy_j_ebx2497: .space 4
+	copy_loop_eax2498: .space 4
+	copy_loop_ebx2498: .space 4
+	copy_j_eax2498: .space 4
+	copy_j_ebx2498: .space 4
+	copy_loop_eax2499: .space 4
+	copy_loop_ebx2499: .space 4
+	copy_j_eax2499: .space 4
+	copy_j_ebx2499: .space 4
+	copy_loop_eax2500: .space 4
+	copy_loop_ebx2500: .space 4
+	copy_j_eax2500: .space 4
+	copy_j_ebx2500: .space 4
+	copy_loop_eax2501: .space 4
+	copy_loop_ebx2501: .space 4
+	copy_j_eax2501: .space 4
+	copy_j_ebx2501: .space 4
+	copy_loop_eax2502: .space 4
+	copy_loop_ebx2502: .space 4
+	copy_j_eax2502: .space 4
+	copy_j_ebx2502: .space 4
+	copy_loop_eax2503: .space 4
+	copy_loop_ebx2503: .space 4
+	copy_j_eax2503: .space 4
+	copy_j_ebx2503: .space 4
+	copy_loop_eax2504: .space 4
+	copy_loop_ebx2504: .space 4
+	copy_j_eax2504: .space 4
+	copy_j_ebx2504: .space 4
+	copy_loop_eax2505: .space 4
+	copy_loop_ebx2505: .space 4
+	copy_j_eax2505: .space 4
+	copy_j_ebx2505: .space 4
+	copy_loop_eax2506: .space 4
+	copy_loop_ebx2506: .space 4
+	copy_j_eax2506: .space 4
+	copy_j_ebx2506: .space 4
+	copy_loop_eax2507: .space 4
+	copy_loop_ebx2507: .space 4
+	copy_j_eax2507: .space 4
+	copy_j_ebx2507: .space 4
+	copy_loop_eax2508: .space 4
+	copy_loop_ebx2508: .space 4
+	copy_j_eax2508: .space 4
+	copy_j_ebx2508: .space 4
+	copy_loop_eax2509: .space 4
+	copy_loop_ebx2509: .space 4
+	copy_j_eax2509: .space 4
+	copy_j_ebx2509: .space 4
+	copy_loop_eax2510: .space 4
+	copy_loop_ebx2510: .space 4
+	copy_j_eax2510: .space 4
+	copy_j_ebx2510: .space 4
+	copy_loop_eax2511: .space 4
+	copy_loop_ebx2511: .space 4
+	copy_j_eax2511: .space 4
+	copy_j_ebx2511: .space 4
+	copy_loop_eax2512: .space 4
+	copy_loop_ebx2512: .space 4
+	copy_j_eax2512: .space 4
+	copy_j_ebx2512: .space 4
+	copy_loop_eax2513: .space 4
+	copy_loop_ebx2513: .space 4
+	copy_j_eax2513: .space 4
+	copy_j_ebx2513: .space 4
+	copy_loop_eax2514: .space 4
+	copy_loop_ebx2514: .space 4
+	copy_j_eax2514: .space 4
+	copy_j_ebx2514: .space 4
+	copy_loop_eax2515: .space 4
+	copy_loop_ebx2515: .space 4
+	copy_j_eax2515: .space 4
+	copy_j_ebx2515: .space 4
+	copy_loop_eax2516: .space 4
+	copy_loop_ebx2516: .space 4
+	copy_j_eax2516: .space 4
+	copy_j_ebx2516: .space 4
+	copy_loop_eax2517: .space 4
+	copy_loop_ebx2517: .space 4
+	copy_j_eax2517: .space 4
+	copy_j_ebx2517: .space 4
+	copy_loop_eax2518: .space 4
+	copy_loop_ebx2518: .space 4
+	copy_j_eax2518: .space 4
+	copy_j_ebx2518: .space 4
+	copy_loop_eax2519: .space 4
+	copy_loop_ebx2519: .space 4
+	copy_j_eax2519: .space 4
+	copy_j_ebx2519: .space 4
+	copy_loop_eax2520: .space 4
+	copy_loop_ebx2520: .space 4
+	copy_j_eax2520: .space 4
+	copy_j_ebx2520: .space 4
+	copy_loop_eax2521: .space 4
+	copy_loop_ebx2521: .space 4
+	copy_j_eax2521: .space 4
+	copy_j_ebx2521: .space 4
+	copy_loop_eax2522: .space 4
+	copy_loop_ebx2522: .space 4
+	copy_j_eax2522: .space 4
+	copy_j_ebx2522: .space 4
+	copy_loop_eax2523: .space 4
+	copy_loop_ebx2523: .space 4
+	copy_j_eax2523: .space 4
+	copy_j_ebx2523: .space 4
+	copy_loop_eax2524: .space 4
+	copy_loop_ebx2524: .space 4
+	copy_j_eax2524: .space 4
+	copy_j_ebx2524: .space 4
+	copy_loop_eax2525: .space 4
+	copy_loop_ebx2525: .space 4
+	copy_j_eax2525: .space 4
+	copy_j_ebx2525: .space 4
+	copy_loop_eax2526: .space 4
+	copy_loop_ebx2526: .space 4
+	copy_j_eax2526: .space 4
+	copy_j_ebx2526: .space 4
+	copy_loop_eax2527: .space 4
+	copy_loop_ebx2527: .space 4
+	copy_j_eax2527: .space 4
+	copy_j_ebx2527: .space 4
+	copy_loop_eax2528: .space 4
+	copy_loop_ebx2528: .space 4
+	copy_j_eax2528: .space 4
+	copy_j_ebx2528: .space 4
+	copy_loop_eax2529: .space 4
+	copy_loop_ebx2529: .space 4
+	copy_j_eax2529: .space 4
+	copy_j_ebx2529: .space 4
+	copy_loop_eax2530: .space 4
+	copy_loop_ebx2530: .space 4
+	copy_j_eax2530: .space 4
+	copy_j_ebx2530: .space 4
+	copy_loop_eax2531: .space 4
+	copy_loop_ebx2531: .space 4
+	copy_j_eax2531: .space 4
+	copy_j_ebx2531: .space 4
+	copy_loop_eax2532: .space 4
+	copy_loop_ebx2532: .space 4
+	copy_j_eax2532: .space 4
+	copy_j_ebx2532: .space 4
+	copy_loop_eax2533: .space 4
+	copy_loop_ebx2533: .space 4
+	copy_j_eax2533: .space 4
+	copy_j_ebx2533: .space 4
+	copy_loop_eax2534: .space 4
+	copy_loop_ebx2534: .space 4
+	copy_j_eax2534: .space 4
+	copy_j_ebx2534: .space 4
+	copy_loop_eax2535: .space 4
+	copy_loop_ebx2535: .space 4
+	copy_j_eax2535: .space 4
+	copy_j_ebx2535: .space 4
+	copy_loop_eax2536: .space 4
+	copy_loop_ebx2536: .space 4
+	copy_j_eax2536: .space 4
+	copy_j_ebx2536: .space 4
+	copy_loop_eax2537: .space 4
+	copy_loop_ebx2537: .space 4
+	copy_j_eax2537: .space 4
+	copy_j_ebx2537: .space 4
+	copy_loop_eax2538: .space 4
+	copy_loop_ebx2538: .space 4
+	copy_j_eax2538: .space 4
+	copy_j_ebx2538: .space 4
+	copy_loop_eax2539: .space 4
+	copy_loop_ebx2539: .space 4
+	copy_j_eax2539: .space 4
+	copy_j_ebx2539: .space 4
+	copy_loop_eax2540: .space 4
+	copy_loop_ebx2540: .space 4
+	copy_j_eax2540: .space 4
+	copy_j_ebx2540: .space 4
+	copy_loop_eax2541: .space 4
+	copy_loop_ebx2541: .space 4
+	copy_j_eax2541: .space 4
+	copy_j_ebx2541: .space 4
+	copy_loop_eax2542: .space 4
+	copy_loop_ebx2542: .space 4
+	copy_j_eax2542: .space 4
+	copy_j_ebx2542: .space 4
+	copy_loop_eax2543: .space 4
+	copy_loop_ebx2543: .space 4
+	copy_j_eax2543: .space 4
+	copy_j_ebx2543: .space 4
+	copy_loop_eax2544: .space 4
+	copy_loop_ebx2544: .space 4
+	copy_j_eax2544: .space 4
+	copy_j_ebx2544: .space 4
+	copy_loop_eax2545: .space 4
+	copy_loop_ebx2545: .space 4
+	copy_j_eax2545: .space 4
+	copy_j_ebx2545: .space 4
+	copy_loop_eax2546: .space 4
+	copy_loop_ebx2546: .space 4
+	copy_j_eax2546: .space 4
+	copy_j_ebx2546: .space 4
+	copy_loop_eax2547: .space 4
+	copy_loop_ebx2547: .space 4
+	copy_j_eax2547: .space 4
+	copy_j_ebx2547: .space 4
+	copy_loop_eax2548: .space 4
+	copy_loop_ebx2548: .space 4
+	copy_j_eax2548: .space 4
+	copy_j_ebx2548: .space 4
+	copy_loop_eax2549: .space 4
+	copy_loop_ebx2549: .space 4
+	copy_j_eax2549: .space 4
+	copy_j_ebx2549: .space 4
+	copy_loop_eax2550: .space 4
+	copy_loop_ebx2550: .space 4
+	copy_j_eax2550: .space 4
+	copy_j_ebx2550: .space 4
+	copy_loop_eax2551: .space 4
+	copy_loop_ebx2551: .space 4
+	copy_j_eax2551: .space 4
+	copy_j_ebx2551: .space 4
+	copy_loop_eax2552: .space 4
+	copy_loop_ebx2552: .space 4
+	copy_j_eax2552: .space 4
+	copy_j_ebx2552: .space 4
+	copy_loop_eax2553: .space 4
+	copy_loop_ebx2553: .space 4
+	copy_j_eax2553: .space 4
+	copy_j_ebx2553: .space 4
+	copy_loop_eax2554: .space 4
+	copy_loop_ebx2554: .space 4
+	copy_j_eax2554: .space 4
+	copy_j_ebx2554: .space 4
+	copy_loop_eax2555: .space 4
+	copy_loop_ebx2555: .space 4
+	copy_j_eax2555: .space 4
+	copy_j_ebx2555: .space 4
+	copy_loop_eax2556: .space 4
+	copy_loop_ebx2556: .space 4
+	copy_j_eax2556: .space 4
+	copy_j_ebx2556: .space 4
+	copy_loop_eax2557: .space 4
+	copy_loop_ebx2557: .space 4
+	copy_j_eax2557: .space 4
+	copy_j_ebx2557: .space 4
+	copy_loop_eax2558: .space 4
+	copy_loop_ebx2558: .space 4
+	copy_j_eax2558: .space 4
+	copy_j_ebx2558: .space 4
+	copy_loop_eax2559: .space 4
+	copy_loop_ebx2559: .space 4
+	copy_j_eax2559: .space 4
+	copy_j_ebx2559: .space 4
+	copy_loop_eax2560: .space 4
+	copy_loop_ebx2560: .space 4
+	copy_j_eax2560: .space 4
+	copy_j_ebx2560: .space 4
+	copy_loop_eax2561: .space 4
+	copy_loop_ebx2561: .space 4
+	copy_j_eax2561: .space 4
+	copy_j_ebx2561: .space 4
+	copy_loop_eax2562: .space 4
+	copy_loop_ebx2562: .space 4
+	copy_j_eax2562: .space 4
+	copy_j_ebx2562: .space 4
+	copy_loop_eax2563: .space 4
+	copy_loop_ebx2563: .space 4
+	copy_j_eax2563: .space 4
+	copy_j_ebx2563: .space 4
+	copy_loop_eax2564: .space 4
+	copy_loop_ebx2564: .space 4
+	copy_j_eax2564: .space 4
+	copy_j_ebx2564: .space 4
+	copy_loop_eax2565: .space 4
+	copy_loop_ebx2565: .space 4
+	copy_j_eax2565: .space 4
+	copy_j_ebx2565: .space 4
+	copy_loop_eax2566: .space 4
+	copy_loop_ebx2566: .space 4
+	copy_j_eax2566: .space 4
+	copy_j_ebx2566: .space 4
+	copy_loop_eax2567: .space 4
+	copy_loop_ebx2567: .space 4
+	copy_j_eax2567: .space 4
+	copy_j_ebx2567: .space 4
+	copy_loop_eax2568: .space 4
+	copy_loop_ebx2568: .space 4
+	copy_j_eax2568: .space 4
+	copy_j_ebx2568: .space 4
+	copy_loop_eax2569: .space 4
+	copy_loop_ebx2569: .space 4
+	copy_j_eax2569: .space 4
+	copy_j_ebx2569: .space 4
+	copy_loop_eax2570: .space 4
+	copy_loop_ebx2570: .space 4
+	copy_j_eax2570: .space 4
+	copy_j_ebx2570: .space 4
+	copy_loop_eax2571: .space 4
+	copy_loop_ebx2571: .space 4
+	copy_j_eax2571: .space 4
+	copy_j_ebx2571: .space 4
+	copy_loop_eax2572: .space 4
+	copy_loop_ebx2572: .space 4
+	copy_j_eax2572: .space 4
+	copy_j_ebx2572: .space 4
+	copy_loop_eax2573: .space 4
+	copy_loop_ebx2573: .space 4
+	copy_j_eax2573: .space 4
+	copy_j_ebx2573: .space 4
+	copy_loop_eax2574: .space 4
+	copy_loop_ebx2574: .space 4
+	copy_j_eax2574: .space 4
+	copy_j_ebx2574: .space 4
+	copy_loop_eax2575: .space 4
+	copy_loop_ebx2575: .space 4
+	copy_j_eax2575: .space 4
+	copy_j_ebx2575: .space 4
+	copy_loop_eax2576: .space 4
+	copy_loop_ebx2576: .space 4
+	copy_j_eax2576: .space 4
+	copy_j_ebx2576: .space 4
+	copy_loop_eax2577: .space 4
+	copy_loop_ebx2577: .space 4
+	copy_j_eax2577: .space 4
+	copy_j_ebx2577: .space 4
+	copy_loop_eax2578: .space 4
+	copy_loop_ebx2578: .space 4
+	copy_j_eax2578: .space 4
+	copy_j_ebx2578: .space 4
+	copy_loop_eax2579: .space 4
+	copy_loop_ebx2579: .space 4
+	copy_j_eax2579: .space 4
+	copy_j_ebx2579: .space 4
+	copy_loop_eax2580: .space 4
+	copy_loop_ebx2580: .space 4
+	copy_j_eax2580: .space 4
+	copy_j_ebx2580: .space 4
+	copy_loop_eax2581: .space 4
+	copy_loop_ebx2581: .space 4
+	copy_j_eax2581: .space 4
+	copy_j_ebx2581: .space 4
+	copy_loop_eax2582: .space 4
+	copy_loop_ebx2582: .space 4
+	copy_j_eax2582: .space 4
+	copy_j_ebx2582: .space 4
+	copy_loop_eax2583: .space 4
+	copy_loop_ebx2583: .space 4
+	copy_j_eax2583: .space 4
+	copy_j_ebx2583: .space 4
+	copy_loop_eax2584: .space 4
+	copy_loop_ebx2584: .space 4
+	copy_j_eax2584: .space 4
+	copy_j_ebx2584: .space 4
+	copy_loop_eax2585: .space 4
+	copy_loop_ebx2585: .space 4
+	copy_j_eax2585: .space 4
+	copy_j_ebx2585: .space 4
+	copy_loop_eax2586: .space 4
+	copy_loop_ebx2586: .space 4
+	copy_j_eax2586: .space 4
+	copy_j_ebx2586: .space 4
+	copy_loop_eax2587: .space 4
+	copy_loop_ebx2587: .space 4
+	copy_j_eax2587: .space 4
+	copy_j_ebx2587: .space 4
+	copy_loop_eax2588: .space 4
+	copy_loop_ebx2588: .space 4
+	copy_j_eax2588: .space 4
+	copy_j_ebx2588: .space 4
+	copy_loop_eax2589: .space 4
+	copy_loop_ebx2589: .space 4
+	copy_j_eax2589: .space 4
+	copy_j_ebx2589: .space 4
+	copy_loop_eax2590: .space 4
+	copy_loop_ebx2590: .space 4
+	copy_j_eax2590: .space 4
+	copy_j_ebx2590: .space 4
+	copy_loop_eax2591: .space 4
+	copy_loop_ebx2591: .space 4
+	copy_j_eax2591: .space 4
+	copy_j_ebx2591: .space 4
+	copy_loop_eax2592: .space 4
+	copy_loop_ebx2592: .space 4
+	copy_j_eax2592: .space 4
+	copy_j_ebx2592: .space 4
+	copy_loop_eax2593: .space 4
+	copy_loop_ebx2593: .space 4
+	copy_j_eax2593: .space 4
+	copy_j_ebx2593: .space 4
+	copy_loop_eax2594: .space 4
+	copy_loop_ebx2594: .space 4
+	copy_j_eax2594: .space 4
+	copy_j_ebx2594: .space 4
+	copy_loop_eax2595: .space 4
+	copy_loop_ebx2595: .space 4
+	copy_j_eax2595: .space 4
+	copy_j_ebx2595: .space 4
+	copy_loop_eax2596: .space 4
+	copy_loop_ebx2596: .space 4
+	copy_j_eax2596: .space 4
+	copy_j_ebx2596: .space 4
+	copy_loop_eax2597: .space 4
+	copy_loop_ebx2597: .space 4
+	copy_j_eax2597: .space 4
+	copy_j_ebx2597: .space 4
+	copy_loop_eax2598: .space 4
+	copy_loop_ebx2598: .space 4
+	copy_j_eax2598: .space 4
+	copy_j_ebx2598: .space 4
+	copy_loop_eax2599: .space 4
+	copy_loop_ebx2599: .space 4
+	copy_j_eax2599: .space 4
+	copy_j_ebx2599: .space 4
+	copy_loop_eax2600: .space 4
+	copy_loop_ebx2600: .space 4
+	copy_j_eax2600: .space 4
+	copy_j_ebx2600: .space 4
+	copy_loop_eax2601: .space 4
+	copy_loop_ebx2601: .space 4
+	copy_j_eax2601: .space 4
+	copy_j_ebx2601: .space 4
+	copy_loop_eax2602: .space 4
+	copy_loop_ebx2602: .space 4
+	copy_j_eax2602: .space 4
+	copy_j_ebx2602: .space 4
+	copy_loop_eax2603: .space 4
+	copy_loop_ebx2603: .space 4
+	copy_j_eax2603: .space 4
+	copy_j_ebx2603: .space 4
+	copy_loop_eax2604: .space 4
+	copy_loop_ebx2604: .space 4
+	copy_j_eax2604: .space 4
+	copy_j_ebx2604: .space 4
+	copy_loop_eax2605: .space 4
+	copy_loop_ebx2605: .space 4
+	copy_j_eax2605: .space 4
+	copy_j_ebx2605: .space 4
+	copy_loop_eax2606: .space 4
+	copy_loop_ebx2606: .space 4
+	copy_j_eax2606: .space 4
+	copy_j_ebx2606: .space 4
+	copy_loop_eax2607: .space 4
+	copy_loop_ebx2607: .space 4
+	copy_j_eax2607: .space 4
+	copy_j_ebx2607: .space 4
+	copy_loop_eax2608: .space 4
+	copy_loop_ebx2608: .space 4
+	copy_j_eax2608: .space 4
+	copy_j_ebx2608: .space 4
+	copy_loop_eax2609: .space 4
+	copy_loop_ebx2609: .space 4
+	copy_j_eax2609: .space 4
+	copy_j_ebx2609: .space 4
+	copy_loop_eax2610: .space 4
+	copy_loop_ebx2610: .space 4
+	copy_j_eax2610: .space 4
+	copy_j_ebx2610: .space 4
+	copy_loop_eax2611: .space 4
+	copy_loop_ebx2611: .space 4
+	copy_j_eax2611: .space 4
+	copy_j_ebx2611: .space 4
+	copy_loop_eax2612: .space 4
+	copy_loop_ebx2612: .space 4
+	copy_j_eax2612: .space 4
+	copy_j_ebx2612: .space 4
+	copy_loop_eax2613: .space 4
+	copy_loop_ebx2613: .space 4
+	copy_j_eax2613: .space 4
+	copy_j_ebx2613: .space 4
+	copy_loop_eax2614: .space 4
+	copy_loop_ebx2614: .space 4
+	copy_j_eax2614: .space 4
+	copy_j_ebx2614: .space 4
+	copy_loop_eax2615: .space 4
+	copy_loop_ebx2615: .space 4
+	copy_j_eax2615: .space 4
+	copy_j_ebx2615: .space 4
+	copy_loop_eax2616: .space 4
+	copy_loop_ebx2616: .space 4
+	copy_j_eax2616: .space 4
+	copy_j_ebx2616: .space 4
+	copy_loop_eax2617: .space 4
+	copy_loop_ebx2617: .space 4
+	copy_j_eax2617: .space 4
+	copy_j_ebx2617: .space 4
+	copy_loop_eax2618: .space 4
+	copy_loop_ebx2618: .space 4
+	copy_j_eax2618: .space 4
+	copy_j_ebx2618: .space 4
+	copy_loop_eax2619: .space 4
+	copy_loop_ebx2619: .space 4
+	copy_j_eax2619: .space 4
+	copy_j_ebx2619: .space 4
+	copy_loop_eax2620: .space 4
+	copy_loop_ebx2620: .space 4
+	copy_j_eax2620: .space 4
+	copy_j_ebx2620: .space 4
+	copy_loop_eax2621: .space 4
+	copy_loop_ebx2621: .space 4
+	copy_j_eax2621: .space 4
+	copy_j_ebx2621: .space 4
+	copy_loop_eax2622: .space 4
+	copy_loop_ebx2622: .space 4
+	copy_j_eax2622: .space 4
+	copy_j_ebx2622: .space 4
+	copy_loop_eax2623: .space 4
+	copy_loop_ebx2623: .space 4
+	copy_j_eax2623: .space 4
+	copy_j_ebx2623: .space 4
+	copy_loop_eax2624: .space 4
+	copy_loop_ebx2624: .space 4
+	copy_j_eax2624: .space 4
+	copy_j_ebx2624: .space 4
+	copy_loop_eax2625: .space 4
+	copy_loop_ebx2625: .space 4
+	copy_j_eax2625: .space 4
+	copy_j_ebx2625: .space 4
+	copy_loop_eax2626: .space 4
+	copy_loop_ebx2626: .space 4
+	copy_j_eax2626: .space 4
+	copy_j_ebx2626: .space 4
+	copy_loop_eax2627: .space 4
+	copy_loop_ebx2627: .space 4
+	copy_j_eax2627: .space 4
+	copy_j_ebx2627: .space 4
+	copy_loop_eax2628: .space 4
+	copy_loop_ebx2628: .space 4
+	copy_j_eax2628: .space 4
+	copy_j_ebx2628: .space 4
+	copy_loop_eax2629: .space 4
+	copy_loop_ebx2629: .space 4
+	copy_j_eax2629: .space 4
+	copy_j_ebx2629: .space 4
+	copy_loop_eax2630: .space 4
+	copy_loop_ebx2630: .space 4
+	copy_j_eax2630: .space 4
+	copy_j_ebx2630: .space 4
+	copy_loop_eax2631: .space 4
+	copy_loop_ebx2631: .space 4
+	copy_j_eax2631: .space 4
+	copy_j_ebx2631: .space 4
+	copy_loop_eax2632: .space 4
+	copy_loop_ebx2632: .space 4
+	copy_j_eax2632: .space 4
+	copy_j_ebx2632: .space 4
+	copy_loop_eax2633: .space 4
+	copy_loop_ebx2633: .space 4
+	copy_j_eax2633: .space 4
+	copy_j_ebx2633: .space 4
+	copy_loop_eax2634: .space 4
+	copy_loop_ebx2634: .space 4
+	copy_j_eax2634: .space 4
+	copy_j_ebx2634: .space 4
+	copy_loop_eax2635: .space 4
+	copy_loop_ebx2635: .space 4
+	copy_j_eax2635: .space 4
+	copy_j_ebx2635: .space 4
+	copy_loop_eax2636: .space 4
+	copy_loop_ebx2636: .space 4
+	copy_j_eax2636: .space 4
+	copy_j_ebx2636: .space 4
+	copy_loop_eax2637: .space 4
+	copy_loop_ebx2637: .space 4
+	copy_j_eax2637: .space 4
+	copy_j_ebx2637: .space 4
+	copy_loop_eax2638: .space 4
+	copy_loop_ebx2638: .space 4
+	copy_j_eax2638: .space 4
+	copy_j_ebx2638: .space 4
+	copy_loop_eax2639: .space 4
+	copy_loop_ebx2639: .space 4
+	copy_j_eax2639: .space 4
+	copy_j_ebx2639: .space 4
+	copy_loop_eax2640: .space 4
+	copy_loop_ebx2640: .space 4
+	copy_j_eax2640: .space 4
+	copy_j_ebx2640: .space 4
+	copy_loop_eax2641: .space 4
+	copy_loop_ebx2641: .space 4
+	copy_j_eax2641: .space 4
+	copy_j_ebx2641: .space 4
+	copy_loop_eax2642: .space 4
+	copy_loop_ebx2642: .space 4
+	copy_j_eax2642: .space 4
+	copy_j_ebx2642: .space 4
+	copy_loop_eax2643: .space 4
+	copy_loop_ebx2643: .space 4
+	copy_j_eax2643: .space 4
+	copy_j_ebx2643: .space 4
+	copy_loop_eax2644: .space 4
+	copy_loop_ebx2644: .space 4
+	copy_j_eax2644: .space 4
+	copy_j_ebx2644: .space 4
+	copy_loop_eax2645: .space 4
+	copy_loop_ebx2645: .space 4
+	copy_j_eax2645: .space 4
+	copy_j_ebx2645: .space 4
+	copy_loop_eax2646: .space 4
+	copy_loop_ebx2646: .space 4
+	copy_j_eax2646: .space 4
+	copy_j_ebx2646: .space 4
+	copy_loop_eax2647: .space 4
+	copy_loop_ebx2647: .space 4
+	copy_j_eax2647: .space 4
+	copy_j_ebx2647: .space 4
+	copy_loop_eax2648: .space 4
+	copy_loop_ebx2648: .space 4
+	copy_j_eax2648: .space 4
+	copy_j_ebx2648: .space 4
+	copy_loop_eax2649: .space 4
+	copy_loop_ebx2649: .space 4
+	copy_j_eax2649: .space 4
+	copy_j_ebx2649: .space 4
+	copy_loop_eax2650: .space 4
+	copy_loop_ebx2650: .space 4
+	copy_j_eax2650: .space 4
+	copy_j_ebx2650: .space 4
+	copy_loop_eax2651: .space 4
+	copy_loop_ebx2651: .space 4
+	copy_j_eax2651: .space 4
+	copy_j_ebx2651: .space 4
+	copy_loop_eax2652: .space 4
+	copy_loop_ebx2652: .space 4
+	copy_j_eax2652: .space 4
+	copy_j_ebx2652: .space 4
+	copy_loop_eax2653: .space 4
+	copy_loop_ebx2653: .space 4
+	copy_j_eax2653: .space 4
+	copy_j_ebx2653: .space 4
+	copy_loop_eax2654: .space 4
+	copy_loop_ebx2654: .space 4
+	copy_j_eax2654: .space 4
+	copy_j_ebx2654: .space 4
+	copy_loop_eax2655: .space 4
+	copy_loop_ebx2655: .space 4
+	copy_j_eax2655: .space 4
+	copy_j_ebx2655: .space 4
+	copy_loop_eax2656: .space 4
+	copy_loop_ebx2656: .space 4
+	copy_j_eax2656: .space 4
+	copy_j_ebx2656: .space 4
+	copy_loop_eax2657: .space 4
+	copy_loop_ebx2657: .space 4
+	copy_j_eax2657: .space 4
+	copy_j_ebx2657: .space 4
+	copy_loop_eax2658: .space 4
+	copy_loop_ebx2658: .space 4
+	copy_j_eax2658: .space 4
+	copy_j_ebx2658: .space 4
+	copy_loop_eax2659: .space 4
+	copy_loop_ebx2659: .space 4
+	copy_j_eax2659: .space 4
+	copy_j_ebx2659: .space 4
+	copy_loop_eax2660: .space 4
+	copy_loop_ebx2660: .space 4
+	copy_j_eax2660: .space 4
+	copy_j_ebx2660: .space 4
+	copy_loop_eax2661: .space 4
+	copy_loop_ebx2661: .space 4
+	copy_j_eax2661: .space 4
+	copy_j_ebx2661: .space 4
+	copy_loop_eax2662: .space 4
+	copy_loop_ebx2662: .space 4
+	copy_j_eax2662: .space 4
+	copy_j_ebx2662: .space 4
+	copy_loop_eax2663: .space 4
+	copy_loop_ebx2663: .space 4
+	copy_j_eax2663: .space 4
+	copy_j_ebx2663: .space 4
+	copy_loop_eax2664: .space 4
+	copy_loop_ebx2664: .space 4
+	copy_j_eax2664: .space 4
+	copy_j_ebx2664: .space 4
+	copy_loop_eax2665: .space 4
+	copy_loop_ebx2665: .space 4
+	copy_j_eax2665: .space 4
+	copy_j_ebx2665: .space 4
+	copy_loop_eax2666: .space 4
+	copy_loop_ebx2666: .space 4
+	copy_j_eax2666: .space 4
+	copy_j_ebx2666: .space 4
+	copy_loop_eax2667: .space 4
+	copy_loop_ebx2667: .space 4
+	copy_j_eax2667: .space 4
+	copy_j_ebx2667: .space 4
+	copy_loop_eax2668: .space 4
+	copy_loop_ebx2668: .space 4
+	copy_j_eax2668: .space 4
+	copy_j_ebx2668: .space 4
+	copy_loop_eax2669: .space 4
+	copy_loop_ebx2669: .space 4
+	copy_j_eax2669: .space 4
+	copy_j_ebx2669: .space 4
+	copy_loop_eax2670: .space 4
+	copy_loop_ebx2670: .space 4
+	copy_j_eax2670: .space 4
+	copy_j_ebx2670: .space 4
+	copy_loop_eax2671: .space 4
+	copy_loop_ebx2671: .space 4
+	copy_j_eax2671: .space 4
+	copy_j_ebx2671: .space 4
+	copy_loop_eax2672: .space 4
+	copy_loop_ebx2672: .space 4
+	copy_j_eax2672: .space 4
+	copy_j_ebx2672: .space 4
+	copy_loop_eax2673: .space 4
+	copy_loop_ebx2673: .space 4
+	copy_j_eax2673: .space 4
+	copy_j_ebx2673: .space 4
+	copy_loop_eax2674: .space 4
+	copy_loop_ebx2674: .space 4
+	copy_j_eax2674: .space 4
+	copy_j_ebx2674: .space 4
+	copy_loop_eax2675: .space 4
+	copy_loop_ebx2675: .space 4
+	copy_j_eax2675: .space 4
+	copy_j_ebx2675: .space 4
+	copy_loop_eax2676: .space 4
+	copy_loop_ebx2676: .space 4
+	copy_j_eax2676: .space 4
+	copy_j_ebx2676: .space 4
+	copy_loop_eax2677: .space 4
+	copy_loop_ebx2677: .space 4
+	copy_j_eax2677: .space 4
+	copy_j_ebx2677: .space 4
+	copy_loop_eax2678: .space 4
+	copy_loop_ebx2678: .space 4
+	copy_j_eax2678: .space 4
+	copy_j_ebx2678: .space 4
+	copy_loop_eax2679: .space 4
+	copy_loop_ebx2679: .space 4
+	copy_j_eax2679: .space 4
+	copy_j_ebx2679: .space 4
+	copy_loop_eax2680: .space 4
+	copy_loop_ebx2680: .space 4
+	copy_j_eax2680: .space 4
+	copy_j_ebx2680: .space 4
+	copy_loop_eax2681: .space 4
+	copy_loop_ebx2681: .space 4
+	copy_j_eax2681: .space 4
+	copy_j_ebx2681: .space 4
+	copy_loop_eax2682: .space 4
+	copy_loop_ebx2682: .space 4
+	copy_j_eax2682: .space 4
+	copy_j_ebx2682: .space 4
+	copy_loop_eax2683: .space 4
+	copy_loop_ebx2683: .space 4
+	copy_j_eax2683: .space 4
+	copy_j_ebx2683: .space 4
+	copy_loop_eax2684: .space 4
+	copy_loop_ebx2684: .space 4
+	copy_j_eax2684: .space 4
+	copy_j_ebx2684: .space 4
+	copy_loop_eax2685: .space 4
+	copy_loop_ebx2685: .space 4
+	copy_j_eax2685: .space 4
+	copy_j_ebx2685: .space 4
+	copy_loop_eax2686: .space 4
+	copy_loop_ebx2686: .space 4
+	copy_j_eax2686: .space 4
+	copy_j_ebx2686: .space 4
+	copy_loop_eax2687: .space 4
+	copy_loop_ebx2687: .space 4
+	copy_j_eax2687: .space 4
+	copy_j_ebx2687: .space 4
+	copy_loop_eax2688: .space 4
+	copy_loop_ebx2688: .space 4
+	copy_j_eax2688: .space 4
+	copy_j_ebx2688: .space 4
+	copy_loop_eax2689: .space 4
+	copy_loop_ebx2689: .space 4
+	copy_j_eax2689: .space 4
+	copy_j_ebx2689: .space 4
+	copy_loop_eax2690: .space 4
+	copy_loop_ebx2690: .space 4
+	copy_j_eax2690: .space 4
+	copy_j_ebx2690: .space 4
+	copy_loop_eax2691: .space 4
+	copy_loop_ebx2691: .space 4
+	copy_j_eax2691: .space 4
+	copy_j_ebx2691: .space 4
+	copy_loop_eax2692: .space 4
+	copy_loop_ebx2692: .space 4
+	copy_j_eax2692: .space 4
+	copy_j_ebx2692: .space 4
+	copy_loop_eax2693: .space 4
+	copy_loop_ebx2693: .space 4
+	copy_j_eax2693: .space 4
+	copy_j_ebx2693: .space 4
+	copy_loop_eax2694: .space 4
+	copy_loop_ebx2694: .space 4
+	copy_j_eax2694: .space 4
+	copy_j_ebx2694: .space 4
+	copy_loop_eax2695: .space 4
+	copy_loop_ebx2695: .space 4
+	copy_j_eax2695: .space 4
+	copy_j_ebx2695: .space 4
+	copy_loop_eax2696: .space 4
+	copy_loop_ebx2696: .space 4
+	copy_j_eax2696: .space 4
+	copy_j_ebx2696: .space 4
+	copy_loop_eax2697: .space 4
+	copy_loop_ebx2697: .space 4
+	copy_j_eax2697: .space 4
+	copy_j_ebx2697: .space 4
+	copy_loop_eax2698: .space 4
+	copy_loop_ebx2698: .space 4
+	copy_j_eax2698: .space 4
+	copy_j_ebx2698: .space 4
+	copy_loop_eax2699: .space 4
+	copy_loop_ebx2699: .space 4
+	copy_j_eax2699: .space 4
+	copy_j_ebx2699: .space 4
+	copy_loop_eax2700: .space 4
+	copy_loop_ebx2700: .space 4
+	copy_j_eax2700: .space 4
+	copy_j_ebx2700: .space 4
+	copy_loop_eax2701: .space 4
+	copy_loop_ebx2701: .space 4
+	copy_j_eax2701: .space 4
+	copy_j_ebx2701: .space 4
+	copy_loop_eax2702: .space 4
+	copy_loop_ebx2702: .space 4
+	copy_j_eax2702: .space 4
+	copy_j_ebx2702: .space 4
+	copy_loop_eax2703: .space 4
+	copy_loop_ebx2703: .space 4
+	copy_j_eax2703: .space 4
+	copy_j_ebx2703: .space 4
+	copy_loop_eax2704: .space 4
+	copy_loop_ebx2704: .space 4
+	copy_j_eax2704: .space 4
+	copy_j_ebx2704: .space 4
+	copy_loop_eax2705: .space 4
+	copy_loop_ebx2705: .space 4
+	copy_j_eax2705: .space 4
+	copy_j_ebx2705: .space 4
+	copy_loop_eax2706: .space 4
+	copy_loop_ebx2706: .space 4
+	copy_j_eax2706: .space 4
+	copy_j_ebx2706: .space 4
+	copy_loop_eax2707: .space 4
+	copy_loop_ebx2707: .space 4
+	copy_j_eax2707: .space 4
+	copy_j_ebx2707: .space 4
+	copy_loop_eax2708: .space 4
+	copy_loop_ebx2708: .space 4
+	copy_j_eax2708: .space 4
+	copy_j_ebx2708: .space 4
+	copy_loop_eax2709: .space 4
+	copy_loop_ebx2709: .space 4
+	copy_j_eax2709: .space 4
+	copy_j_ebx2709: .space 4
+	copy_loop_eax2710: .space 4
+	copy_loop_ebx2710: .space 4
+	copy_j_eax2710: .space 4
+	copy_j_ebx2710: .space 4
+	copy_loop_eax2711: .space 4
+	copy_loop_ebx2711: .space 4
+	copy_j_eax2711: .space 4
+	copy_j_ebx2711: .space 4
+	copy_loop_eax2712: .space 4
+	copy_loop_ebx2712: .space 4
+	copy_j_eax2712: .space 4
+	copy_j_ebx2712: .space 4
+	copy_loop_eax2713: .space 4
+	copy_loop_ebx2713: .space 4
+	copy_j_eax2713: .space 4
+	copy_j_ebx2713: .space 4
+	copy_loop_eax2714: .space 4
+	copy_loop_ebx2714: .space 4
+	copy_j_eax2714: .space 4
+	copy_j_ebx2714: .space 4
+	copy_loop_eax2715: .space 4
+	copy_loop_ebx2715: .space 4
+	copy_j_eax2715: .space 4
+	copy_j_ebx2715: .space 4
+	copy_loop_eax2716: .space 4
+	copy_loop_ebx2716: .space 4
+	copy_j_eax2716: .space 4
+	copy_j_ebx2716: .space 4
+	copy_loop_eax2717: .space 4
+	copy_loop_ebx2717: .space 4
+	copy_j_eax2717: .space 4
+	copy_j_ebx2717: .space 4
+	copy_loop_eax2718: .space 4
+	copy_loop_ebx2718: .space 4
+	copy_j_eax2718: .space 4
+	copy_j_ebx2718: .space 4
+	copy_loop_eax2719: .space 4
+	copy_loop_ebx2719: .space 4
+	copy_j_eax2719: .space 4
+	copy_j_ebx2719: .space 4
+	copy_loop_eax2720: .space 4
+	copy_loop_ebx2720: .space 4
+	copy_j_eax2720: .space 4
+	copy_j_ebx2720: .space 4
+	copy_loop_eax2721: .space 4
+	copy_loop_ebx2721: .space 4
+	copy_j_eax2721: .space 4
+	copy_j_ebx2721: .space 4
+	copy_loop_eax2722: .space 4
+	copy_loop_ebx2722: .space 4
+	copy_j_eax2722: .space 4
+	copy_j_ebx2722: .space 4
+	copy_loop_eax2723: .space 4
+	copy_loop_ebx2723: .space 4
+	copy_j_eax2723: .space 4
+	copy_j_ebx2723: .space 4
+	copy_loop_eax2724: .space 4
+	copy_loop_ebx2724: .space 4
+	copy_j_eax2724: .space 4
+	copy_j_ebx2724: .space 4
+	copy_loop_eax2725: .space 4
+	copy_loop_ebx2725: .space 4
+	copy_j_eax2725: .space 4
+	copy_j_ebx2725: .space 4
+	copy_loop_eax2726: .space 4
+	copy_loop_ebx2726: .space 4
+	copy_j_eax2726: .space 4
+	copy_j_ebx2726: .space 4
+	copy_loop_eax2727: .space 4
+	copy_loop_ebx2727: .space 4
+	copy_j_eax2727: .space 4
+	copy_j_ebx2727: .space 4
+	copy_loop_eax2728: .space 4
+	copy_loop_ebx2728: .space 4
+	copy_j_eax2728: .space 4
+	copy_j_ebx2728: .space 4
+	copy_loop_eax2729: .space 4
+	copy_loop_ebx2729: .space 4
+	copy_j_eax2729: .space 4
+	copy_j_ebx2729: .space 4
+	copy_loop_eax2730: .space 4
+	copy_loop_ebx2730: .space 4
+	copy_j_eax2730: .space 4
+	copy_j_ebx2730: .space 4
+	copy_loop_eax2731: .space 4
+	copy_loop_ebx2731: .space 4
+	copy_j_eax2731: .space 4
+	copy_j_ebx2731: .space 4
+	copy_loop_eax2732: .space 4
+	copy_loop_ebx2732: .space 4
+	copy_j_eax2732: .space 4
+	copy_j_ebx2732: .space 4
+	copy_loop_eax2733: .space 4
+	copy_loop_ebx2733: .space 4
+	copy_j_eax2733: .space 4
+	copy_j_ebx2733: .space 4
+	copy_loop_eax2734: .space 4
+	copy_loop_ebx2734: .space 4
+	copy_j_eax2734: .space 4
+	copy_j_ebx2734: .space 4
+	copy_loop_eax2735: .space 4
+	copy_loop_ebx2735: .space 4
+	copy_j_eax2735: .space 4
+	copy_j_ebx2735: .space 4
+	copy_loop_eax2736: .space 4
+	copy_loop_ebx2736: .space 4
+	copy_j_eax2736: .space 4
+	copy_j_ebx2736: .space 4
+	copy_loop_eax2737: .space 4
+	copy_loop_ebx2737: .space 4
+	copy_j_eax2737: .space 4
+	copy_j_ebx2737: .space 4
+	copy_loop_eax2738: .space 4
+	copy_loop_ebx2738: .space 4
+	copy_j_eax2738: .space 4
+	copy_j_ebx2738: .space 4
+	copy_loop_eax2739: .space 4
+	copy_loop_ebx2739: .space 4
+	copy_j_eax2739: .space 4
+	copy_j_ebx2739: .space 4
+	copy_loop_eax2740: .space 4
+	copy_loop_ebx2740: .space 4
+	copy_j_eax2740: .space 4
+	copy_j_ebx2740: .space 4
+	copy_loop_eax2741: .space 4
+	copy_loop_ebx2741: .space 4
+	copy_j_eax2741: .space 4
+	copy_j_ebx2741: .space 4
+	copy_loop_eax2742: .space 4
+	copy_loop_ebx2742: .space 4
+	copy_j_eax2742: .space 4
+	copy_j_ebx2742: .space 4
+	copy_loop_eax2743: .space 4
+	copy_loop_ebx2743: .space 4
+	copy_j_eax2743: .space 4
+	copy_j_ebx2743: .space 4
+	copy_loop_eax2744: .space 4
+	copy_loop_ebx2744: .space 4
+	copy_j_eax2744: .space 4
+	copy_j_ebx2744: .space 4
+	copy_loop_eax2745: .space 4
+	copy_loop_ebx2745: .space 4
+	copy_j_eax2745: .space 4
+	copy_j_ebx2745: .space 4
+	copy_loop_eax2746: .space 4
+	copy_loop_ebx2746: .space 4
+	copy_j_eax2746: .space 4
+	copy_j_ebx2746: .space 4
+	copy_loop_eax2747: .space 4
+	copy_loop_ebx2747: .space 4
+	copy_j_eax2747: .space 4
+	copy_j_ebx2747: .space 4
+	copy_loop_eax2748: .space 4
+	copy_loop_ebx2748: .space 4
+	copy_j_eax2748: .space 4
+	copy_j_ebx2748: .space 4
+	copy_loop_eax2749: .space 4
+	copy_loop_ebx2749: .space 4
+	copy_j_eax2749: .space 4
+	copy_j_ebx2749: .space 4
+	copy_loop_eax2750: .space 4
+	copy_loop_ebx2750: .space 4
+	copy_j_eax2750: .space 4
+	copy_j_ebx2750: .space 4
+	copy_loop_eax2751: .space 4
+	copy_loop_ebx2751: .space 4
+	copy_j_eax2751: .space 4
+	copy_j_ebx2751: .space 4
+	copy_loop_eax2752: .space 4
+	copy_loop_ebx2752: .space 4
+	copy_j_eax2752: .space 4
+	copy_j_ebx2752: .space 4
+	copy_loop_eax2753: .space 4
+	copy_loop_ebx2753: .space 4
+	copy_j_eax2753: .space 4
+	copy_j_ebx2753: .space 4
+	copy_loop_eax2754: .space 4
+	copy_loop_ebx2754: .space 4
+	copy_j_eax2754: .space 4
+	copy_j_ebx2754: .space 4
+	copy_loop_eax2755: .space 4
+	copy_loop_ebx2755: .space 4
+	copy_j_eax2755: .space 4
+	copy_j_ebx2755: .space 4
+	copy_loop_eax2756: .space 4
+	copy_loop_ebx2756: .space 4
+	copy_j_eax2756: .space 4
+	copy_j_ebx2756: .space 4
+	copy_loop_eax2757: .space 4
+	copy_loop_ebx2757: .space 4
+	copy_j_eax2757: .space 4
+	copy_j_ebx2757: .space 4
+	copy_loop_eax2758: .space 4
+	copy_loop_ebx2758: .space 4
+	copy_j_eax2758: .space 4
+	copy_j_ebx2758: .space 4
+	copy_loop_eax2759: .space 4
+	copy_loop_ebx2759: .space 4
+	copy_j_eax2759: .space 4
+	copy_j_ebx2759: .space 4
+	copy_loop_eax2760: .space 4
+	copy_loop_ebx2760: .space 4
+	copy_j_eax2760: .space 4
+	copy_j_ebx2760: .space 4
+	copy_loop_eax2761: .space 4
+	copy_loop_ebx2761: .space 4
+	copy_j_eax2761: .space 4
+	copy_j_ebx2761: .space 4
+	copy_loop_eax2762: .space 4
+	copy_loop_ebx2762: .space 4
+	copy_j_eax2762: .space 4
+	copy_j_ebx2762: .space 4
+	copy_loop_eax2763: .space 4
+	copy_loop_ebx2763: .space 4
+	copy_j_eax2763: .space 4
+	copy_j_ebx2763: .space 4
+	copy_loop_eax2764: .space 4
+	copy_loop_ebx2764: .space 4
+	copy_j_eax2764: .space 4
+	copy_j_ebx2764: .space 4
+	copy_loop_eax2765: .space 4
+	copy_loop_ebx2765: .space 4
+	copy_j_eax2765: .space 4
+	copy_j_ebx2765: .space 4
+	copy_loop_eax2766: .space 4
+	copy_loop_ebx2766: .space 4
+	copy_j_eax2766: .space 4
+	copy_j_ebx2766: .space 4
+	copy_loop_eax2767: .space 4
+	copy_loop_ebx2767: .space 4
+	copy_j_eax2767: .space 4
+	copy_j_ebx2767: .space 4
+	copy_loop_eax2768: .space 4
+	copy_loop_ebx2768: .space 4
+	copy_j_eax2768: .space 4
+	copy_j_ebx2768: .space 4
+	copy_loop_eax2769: .space 4
+	copy_loop_ebx2769: .space 4
+	copy_j_eax2769: .space 4
+	copy_j_ebx2769: .space 4
+	copy_loop_eax2770: .space 4
+	copy_loop_ebx2770: .space 4
+	copy_j_eax2770: .space 4
+	copy_j_ebx2770: .space 4
+	copy_loop_eax2771: .space 4
+	copy_loop_ebx2771: .space 4
+	copy_j_eax2771: .space 4
+	copy_j_ebx2771: .space 4
+	copy_loop_eax2772: .space 4
+	copy_loop_ebx2772: .space 4
+	copy_j_eax2772: .space 4
+	copy_j_ebx2772: .space 4
+	copy_loop_eax2773: .space 4
+	copy_loop_ebx2773: .space 4
+	copy_j_eax2773: .space 4
+	copy_j_ebx2773: .space 4
+	copy_loop_eax2774: .space 4
+	copy_loop_ebx2774: .space 4
+	copy_j_eax2774: .space 4
+	copy_j_ebx2774: .space 4
+	copy_loop_eax2775: .space 4
+	copy_loop_ebx2775: .space 4
+	copy_j_eax2775: .space 4
+	copy_j_ebx2775: .space 4
+	copy_loop_eax2776: .space 4
+	copy_loop_ebx2776: .space 4
+	copy_j_eax2776: .space 4
+	copy_j_ebx2776: .space 4
+	copy_loop_eax2777: .space 4
+	copy_loop_ebx2777: .space 4
+	copy_j_eax2777: .space 4
+	copy_j_ebx2777: .space 4
+	copy_loop_eax2778: .space 4
+	copy_loop_ebx2778: .space 4
+	copy_j_eax2778: .space 4
+	copy_j_ebx2778: .space 4
+	copy_loop_eax2779: .space 4
+	copy_loop_ebx2779: .space 4
+	copy_j_eax2779: .space 4
+	copy_j_ebx2779: .space 4
+	copy_loop_eax2780: .space 4
+	copy_loop_ebx2780: .space 4
+	copy_j_eax2780: .space 4
+	copy_j_ebx2780: .space 4
+	copy_loop_eax2781: .space 4
+	copy_loop_ebx2781: .space 4
+	copy_j_eax2781: .space 4
+	copy_j_ebx2781: .space 4
+	copy_loop_eax2782: .space 4
+	copy_loop_ebx2782: .space 4
+	copy_j_eax2782: .space 4
+	copy_j_ebx2782: .space 4
+	copy_loop_eax2783: .space 4
+	copy_loop_ebx2783: .space 4
+	copy_j_eax2783: .space 4
+	copy_j_ebx2783: .space 4
+	copy_loop_eax2784: .space 4
+	copy_loop_ebx2784: .space 4
+	copy_j_eax2784: .space 4
+	copy_j_ebx2784: .space 4
+	copy_loop_eax2785: .space 4
+	copy_loop_ebx2785: .space 4
+	copy_j_eax2785: .space 4
+	copy_j_ebx2785: .space 4
+	copy_loop_eax2786: .space 4
+	copy_loop_ebx2786: .space 4
+	copy_j_eax2786: .space 4
+	copy_j_ebx2786: .space 4
+	copy_loop_eax2787: .space 4
+	copy_loop_ebx2787: .space 4
+	copy_j_eax2787: .space 4
+	copy_j_ebx2787: .space 4
+	copy_loop_eax2788: .space 4
+	copy_loop_ebx2788: .space 4
+	copy_j_eax2788: .space 4
+	copy_j_ebx2788: .space 4
+	copy_loop_eax2789: .space 4
+	copy_loop_ebx2789: .space 4
+	copy_j_eax2789: .space 4
+	copy_j_ebx2789: .space 4
+	copy_loop_eax2790: .space 4
+	copy_loop_ebx2790: .space 4
+	copy_j_eax2790: .space 4
+	copy_j_ebx2790: .space 4
+	copy_loop_eax2791: .space 4
+	copy_loop_ebx2791: .space 4
+	copy_j_eax2791: .space 4
+	copy_j_ebx2791: .space 4
+	copy_loop_eax2792: .space 4
+	copy_loop_ebx2792: .space 4
+	copy_j_eax2792: .space 4
+	copy_j_ebx2792: .space 4
+	copy_loop_eax2793: .space 4
+	copy_loop_ebx2793: .space 4
+	copy_j_eax2793: .space 4
+	copy_j_ebx2793: .space 4
+	copy_loop_eax2794: .space 4
+	copy_loop_ebx2794: .space 4
+	copy_j_eax2794: .space 4
+	copy_j_ebx2794: .space 4
+	copy_loop_eax2795: .space 4
+	copy_loop_ebx2795: .space 4
+	copy_j_eax2795: .space 4
+	copy_j_ebx2795: .space 4
+	copy_loop_eax2796: .space 4
+	copy_loop_ebx2796: .space 4
+	copy_j_eax2796: .space 4
+	copy_j_ebx2796: .space 4
+	copy_loop_eax2797: .space 4
+	copy_loop_ebx2797: .space 4
+	copy_j_eax2797: .space 4
+	copy_j_ebx2797: .space 4
+	copy_loop_eax2798: .space 4
+	copy_loop_ebx2798: .space 4
+	copy_j_eax2798: .space 4
+	copy_j_ebx2798: .space 4
+	copy_loop_eax2799: .space 4
+	copy_loop_ebx2799: .space 4
+	copy_j_eax2799: .space 4
+	copy_j_ebx2799: .space 4
+	copy_loop_eax2800: .space 4
+	copy_loop_ebx2800: .space 4
+	copy_j_eax2800: .space 4
+	copy_j_ebx2800: .space 4
+	copy_loop_eax2801: .space 4
+	copy_loop_ebx2801: .space 4
+	copy_j_eax2801: .space 4
+	copy_j_ebx2801: .space 4
+	copy_loop_eax2802: .space 4
+	copy_loop_ebx2802: .space 4
+	copy_j_eax2802: .space 4
+	copy_j_ebx2802: .space 4
+	copy_loop_eax2803: .space 4
+	copy_loop_ebx2803: .space 4
+	copy_j_eax2803: .space 4
+	copy_j_ebx2803: .space 4
+	copy_loop_eax2804: .space 4
+	copy_loop_ebx2804: .space 4
+	copy_j_eax2804: .space 4
+	copy_j_ebx2804: .space 4
+	copy_loop_eax2805: .space 4
+	copy_loop_ebx2805: .space 4
+	copy_j_eax2805: .space 4
+	copy_j_ebx2805: .space 4
+	copy_loop_eax2806: .space 4
+	copy_loop_ebx2806: .space 4
+	copy_j_eax2806: .space 4
+	copy_j_ebx2806: .space 4
+	copy_loop_eax2807: .space 4
+	copy_loop_ebx2807: .space 4
+	copy_j_eax2807: .space 4
+	copy_j_ebx2807: .space 4
+	copy_loop_eax2808: .space 4
+	copy_loop_ebx2808: .space 4
+	copy_j_eax2808: .space 4
+	copy_j_ebx2808: .space 4
+	copy_loop_eax2809: .space 4
+	copy_loop_ebx2809: .space 4
+	copy_j_eax2809: .space 4
+	copy_j_ebx2809: .space 4
+	copy_loop_eax2810: .space 4
+	copy_loop_ebx2810: .space 4
+	copy_j_eax2810: .space 4
+	copy_j_ebx2810: .space 4
+	copy_loop_eax2811: .space 4
+	copy_loop_ebx2811: .space 4
+	copy_j_eax2811: .space 4
+	copy_j_ebx2811: .space 4
+	copy_loop_eax2812: .space 4
+	copy_loop_ebx2812: .space 4
+	copy_j_eax2812: .space 4
+	copy_j_ebx2812: .space 4
+	copy_loop_eax2813: .space 4
+	copy_loop_ebx2813: .space 4
+	copy_j_eax2813: .space 4
+	copy_j_ebx2813: .space 4
+	copy_loop_eax2814: .space 4
+	copy_loop_ebx2814: .space 4
+	copy_j_eax2814: .space 4
+	copy_j_ebx2814: .space 4
+	copy_loop_eax2815: .space 4
+	copy_loop_ebx2815: .space 4
+	copy_j_eax2815: .space 4
+	copy_j_ebx2815: .space 4
+	copy_loop_eax2816: .space 4
+	copy_loop_ebx2816: .space 4
+	copy_j_eax2816: .space 4
+	copy_j_ebx2816: .space 4
+	copy_loop_eax2817: .space 4
+	copy_loop_ebx2817: .space 4
+	copy_j_eax2817: .space 4
+	copy_j_ebx2817: .space 4
+	copy_loop_eax2818: .space 4
+	copy_loop_ebx2818: .space 4
+	copy_j_eax2818: .space 4
+	copy_j_ebx2818: .space 4
+	copy_loop_eax2819: .space 4
+	copy_loop_ebx2819: .space 4
+	copy_j_eax2819: .space 4
+	copy_j_ebx2819: .space 4
+	copy_loop_eax2820: .space 4
+	copy_loop_ebx2820: .space 4
+	copy_j_eax2820: .space 4
+	copy_j_ebx2820: .space 4
+	copy_loop_eax2821: .space 4
+	copy_loop_ebx2821: .space 4
+	copy_j_eax2821: .space 4
+	copy_j_ebx2821: .space 4
+	copy_loop_eax2822: .space 4
+	copy_loop_ebx2822: .space 4
+	copy_j_eax2822: .space 4
+	copy_j_ebx2822: .space 4
+	copy_loop_eax2823: .space 4
+	copy_loop_ebx2823: .space 4
+	copy_j_eax2823: .space 4
+	copy_j_ebx2823: .space 4
+	copy_loop_eax2824: .space 4
+	copy_loop_ebx2824: .space 4
+	copy_j_eax2824: .space 4
+	copy_j_ebx2824: .space 4
+	copy_loop_eax2825: .space 4
+	copy_loop_ebx2825: .space 4
+	copy_j_eax2825: .space 4
+	copy_j_ebx2825: .space 4
+	copy_loop_eax2826: .space 4
+	copy_loop_ebx2826: .space 4
+	copy_j_eax2826: .space 4
+	copy_j_ebx2826: .space 4
+	copy_loop_eax2827: .space 4
+	copy_loop_ebx2827: .space 4
+	copy_j_eax2827: .space 4
+	copy_j_ebx2827: .space 4
+	copy_loop_eax2828: .space 4
+	copy_loop_ebx2828: .space 4
+	copy_j_eax2828: .space 4
+	copy_j_ebx2828: .space 4
+	copy_loop_eax2829: .space 4
+	copy_loop_ebx2829: .space 4
+	copy_j_eax2829: .space 4
+	copy_j_ebx2829: .space 4
+	copy_loop_eax2830: .space 4
+	copy_loop_ebx2830: .space 4
+	copy_j_eax2830: .space 4
+	copy_j_ebx2830: .space 4
+	copy_loop_eax2831: .space 4
+	copy_loop_ebx2831: .space 4
+	copy_j_eax2831: .space 4
+	copy_j_ebx2831: .space 4
+	copy_loop_eax2832: .space 4
+	copy_loop_ebx2832: .space 4
+	copy_j_eax2832: .space 4
+	copy_j_ebx2832: .space 4
+	copy_loop_eax2833: .space 4
+	copy_loop_ebx2833: .space 4
+	copy_j_eax2833: .space 4
+	copy_j_ebx2833: .space 4
+	copy_loop_eax2834: .space 4
+	copy_loop_ebx2834: .space 4
+	copy_j_eax2834: .space 4
+	copy_j_ebx2834: .space 4
+	copy_loop_eax2835: .space 4
+	copy_loop_ebx2835: .space 4
+	copy_j_eax2835: .space 4
+	copy_j_ebx2835: .space 4
+	copy_loop_eax2836: .space 4
+	copy_loop_ebx2836: .space 4
+	copy_j_eax2836: .space 4
+	copy_j_ebx2836: .space 4
+	copy_loop_eax2837: .space 4
+	copy_loop_ebx2837: .space 4
+	copy_j_eax2837: .space 4
+	copy_j_ebx2837: .space 4
+	copy_loop_eax2838: .space 4
+	copy_loop_ebx2838: .space 4
+	copy_j_eax2838: .space 4
+	copy_j_ebx2838: .space 4
+	copy_loop_eax2839: .space 4
+	copy_loop_ebx2839: .space 4
+	copy_j_eax2839: .space 4
+	copy_j_ebx2839: .space 4
+	copy_loop_eax2840: .space 4
+	copy_loop_ebx2840: .space 4
+	copy_j_eax2840: .space 4
+	copy_j_ebx2840: .space 4
+	copy_loop_eax2841: .space 4
+	copy_loop_ebx2841: .space 4
+	copy_j_eax2841: .space 4
+	copy_j_ebx2841: .space 4
+	copy_loop_eax2842: .space 4
+	copy_loop_ebx2842: .space 4
+	copy_j_eax2842: .space 4
+	copy_j_ebx2842: .space 4
+	copy_loop_eax2843: .space 4
+	copy_loop_ebx2843: .space 4
+	copy_j_eax2843: .space 4
+	copy_j_ebx2843: .space 4
+	copy_loop_eax2844: .space 4
+	copy_loop_ebx2844: .space 4
+	copy_j_eax2844: .space 4
+	copy_j_ebx2844: .space 4
+	copy_loop_eax2845: .space 4
+	copy_loop_ebx2845: .space 4
+	copy_j_eax2845: .space 4
+	copy_j_ebx2845: .space 4
+	copy_loop_eax2846: .space 4
+	copy_loop_ebx2846: .space 4
+	copy_j_eax2846: .space 4
+	copy_j_ebx2846: .space 4
+	copy_loop_eax2847: .space 4
+	copy_loop_ebx2847: .space 4
+	copy_j_eax2847: .space 4
+	copy_j_ebx2847: .space 4
+	copy_loop_eax2848: .space 4
+	copy_loop_ebx2848: .space 4
+	copy_j_eax2848: .space 4
+	copy_j_ebx2848: .space 4
+	copy_loop_eax2849: .space 4
+	copy_loop_ebx2849: .space 4
+	copy_j_eax2849: .space 4
+	copy_j_ebx2849: .space 4
+	copy_loop_eax2850: .space 4
+	copy_loop_ebx2850: .space 4
+	copy_j_eax2850: .space 4
+	copy_j_ebx2850: .space 4
+	copy_loop_eax2851: .space 4
+	copy_loop_ebx2851: .space 4
+	copy_j_eax2851: .space 4
+	copy_j_ebx2851: .space 4
+	copy_loop_eax2852: .space 4
+	copy_loop_ebx2852: .space 4
+	copy_j_eax2852: .space 4
+	copy_j_ebx2852: .space 4
+	copy_loop_eax2853: .space 4
+	copy_loop_ebx2853: .space 4
+	copy_j_eax2853: .space 4
+	copy_j_ebx2853: .space 4
+	copy_loop_eax2854: .space 4
+	copy_loop_ebx2854: .space 4
+	copy_j_eax2854: .space 4
+	copy_j_ebx2854: .space 4
+	copy_loop_eax2855: .space 4
+	copy_loop_ebx2855: .space 4
+	copy_j_eax2855: .space 4
+	copy_j_ebx2855: .space 4
+	copy_loop_eax2856: .space 4
+	copy_loop_ebx2856: .space 4
+	copy_j_eax2856: .space 4
+	copy_j_ebx2856: .space 4
+	copy_loop_eax2857: .space 4
+	copy_loop_ebx2857: .space 4
+	copy_j_eax2857: .space 4
+	copy_j_ebx2857: .space 4
+	copy_loop_eax2858: .space 4
+	copy_loop_ebx2858: .space 4
+	copy_j_eax2858: .space 4
+	copy_j_ebx2858: .space 4
+	copy_loop_eax2859: .space 4
+	copy_loop_ebx2859: .space 4
+	copy_j_eax2859: .space 4
+	copy_j_ebx2859: .space 4
+	copy_loop_eax2860: .space 4
+	copy_loop_ebx2860: .space 4
+	copy_j_eax2860: .space 4
+	copy_j_ebx2860: .space 4
+	copy_loop_eax2861: .space 4
+	copy_loop_ebx2861: .space 4
+	copy_j_eax2861: .space 4
+	copy_j_ebx2861: .space 4
+	copy_loop_eax2862: .space 4
+	copy_loop_ebx2862: .space 4
+	copy_j_eax2862: .space 4
+	copy_j_ebx2862: .space 4
+	copy_loop_eax2863: .space 4
+	copy_loop_ebx2863: .space 4
+	copy_j_eax2863: .space 4
+	copy_j_ebx2863: .space 4
+	copy_loop_eax2864: .space 4
+	copy_loop_ebx2864: .space 4
+	copy_j_eax2864: .space 4
+	copy_j_ebx2864: .space 4
+	copy_loop_eax2865: .space 4
+	copy_loop_ebx2865: .space 4
+	copy_j_eax2865: .space 4
+	copy_j_ebx2865: .space 4
+	copy_loop_eax2866: .space 4
+	copy_loop_ebx2866: .space 4
+	copy_j_eax2866: .space 4
+	copy_j_ebx2866: .space 4
+	copy_loop_eax2867: .space 4
+	copy_loop_ebx2867: .space 4
+	copy_j_eax2867: .space 4
+	copy_j_ebx2867: .space 4
+	copy_loop_eax2868: .space 4
+	copy_loop_ebx2868: .space 4
+	copy_j_eax2868: .space 4
+	copy_j_ebx2868: .space 4
+	copy_loop_eax2869: .space 4
+	copy_loop_ebx2869: .space 4
+	copy_j_eax2869: .space 4
+	copy_j_ebx2869: .space 4
+	copy_loop_eax2870: .space 4
+	copy_loop_ebx2870: .space 4
+	copy_j_eax2870: .space 4
+	copy_j_ebx2870: .space 4
+	copy_loop_eax2871: .space 4
+	copy_loop_ebx2871: .space 4
+	copy_j_eax2871: .space 4
+	copy_j_ebx2871: .space 4
+	copy_loop_eax2872: .space 4
+	copy_loop_ebx2872: .space 4
+	copy_j_eax2872: .space 4
+	copy_j_ebx2872: .space 4
+	copy_loop_eax2873: .space 4
+	copy_loop_ebx2873: .space 4
+	copy_j_eax2873: .space 4
+	copy_j_ebx2873: .space 4
+	copy_loop_eax2874: .space 4
+	copy_loop_ebx2874: .space 4
+	copy_j_eax2874: .space 4
+	copy_j_ebx2874: .space 4
+	copy_loop_eax2875: .space 4
+	copy_loop_ebx2875: .space 4
+	copy_j_eax2875: .space 4
+	copy_j_ebx2875: .space 4
+	copy_loop_eax2876: .space 4
+	copy_loop_ebx2876: .space 4
+	copy_j_eax2876: .space 4
+	copy_j_ebx2876: .space 4
+	copy_loop_eax2877: .space 4
+	copy_loop_ebx2877: .space 4
+	copy_j_eax2877: .space 4
+	copy_j_ebx2877: .space 4
+	copy_loop_eax2878: .space 4
+	copy_loop_ebx2878: .space 4
+	copy_j_eax2878: .space 4
+	copy_j_ebx2878: .space 4
+	copy_loop_eax2879: .space 4
+	copy_loop_ebx2879: .space 4
+	copy_j_eax2879: .space 4
+	copy_j_ebx2879: .space 4
+	copy_loop_eax2880: .space 4
+	copy_loop_ebx2880: .space 4
+	copy_j_eax2880: .space 4
+	copy_j_ebx2880: .space 4
+	copy_loop_eax2881: .space 4
+	copy_loop_ebx2881: .space 4
+	copy_j_eax2881: .space 4
+	copy_j_ebx2881: .space 4
+	copy_loop_eax2882: .space 4
+	copy_loop_ebx2882: .space 4
+	copy_j_eax2882: .space 4
+	copy_j_ebx2882: .space 4
+	copy_loop_eax2883: .space 4
+	copy_loop_ebx2883: .space 4
+	copy_j_eax2883: .space 4
+	copy_j_ebx2883: .space 4
+	copy_loop_eax2884: .space 4
+	copy_loop_ebx2884: .space 4
+	copy_j_eax2884: .space 4
+	copy_j_ebx2884: .space 4
+	copy_loop_eax2885: .space 4
+	copy_loop_ebx2885: .space 4
+	copy_j_eax2885: .space 4
+	copy_j_ebx2885: .space 4
+	copy_loop_eax2886: .space 4
+	copy_loop_ebx2886: .space 4
+	copy_j_eax2886: .space 4
+	copy_j_ebx2886: .space 4
+	copy_loop_eax2887: .space 4
+	copy_loop_ebx2887: .space 4
+	copy_j_eax2887: .space 4
+	copy_j_ebx2887: .space 4
+	copy_loop_eax2888: .space 4
+	copy_loop_ebx2888: .space 4
+	copy_j_eax2888: .space 4
+	copy_j_ebx2888: .space 4
+	copy_loop_eax2889: .space 4
+	copy_loop_ebx2889: .space 4
+	copy_j_eax2889: .space 4
+	copy_j_ebx2889: .space 4
+	copy_loop_eax2890: .space 4
+	copy_loop_ebx2890: .space 4
+	copy_j_eax2890: .space 4
+	copy_j_ebx2890: .space 4
+	copy_loop_eax2891: .space 4
+	copy_loop_ebx2891: .space 4
+	copy_j_eax2891: .space 4
+	copy_j_ebx2891: .space 4
+	copy_loop_eax2892: .space 4
+	copy_loop_ebx2892: .space 4
+	copy_j_eax2892: .space 4
+	copy_j_ebx2892: .space 4
+	copy_loop_eax2893: .space 4
+	copy_loop_ebx2893: .space 4
+	copy_j_eax2893: .space 4
+	copy_j_ebx2893: .space 4
+	copy_loop_eax2894: .space 4
+	copy_loop_ebx2894: .space 4
+	copy_j_eax2894: .space 4
+	copy_j_ebx2894: .space 4
+	copy_loop_eax2895: .space 4
+	copy_loop_ebx2895: .space 4
+	copy_j_eax2895: .space 4
+	copy_j_ebx2895: .space 4
+	copy_loop_eax2896: .space 4
+	copy_loop_ebx2896: .space 4
+	copy_j_eax2896: .space 4
+	copy_j_ebx2896: .space 4
+	copy_loop_eax2897: .space 4
+	copy_loop_ebx2897: .space 4
+	copy_j_eax2897: .space 4
+	copy_j_ebx2897: .space 4
+	copy_loop_eax2898: .space 4
+	copy_loop_ebx2898: .space 4
+	copy_j_eax2898: .space 4
+	copy_j_ebx2898: .space 4
+	copy_loop_eax2899: .space 4
+	copy_loop_ebx2899: .space 4
+	copy_j_eax2899: .space 4
+	copy_j_ebx2899: .space 4
+	copy_loop_eax2900: .space 4
+	copy_loop_ebx2900: .space 4
+	copy_j_eax2900: .space 4
+	copy_j_ebx2900: .space 4
+	copy_loop_eax2901: .space 4
+	copy_loop_ebx2901: .space 4
+	copy_j_eax2901: .space 4
+	copy_j_ebx2901: .space 4
+	copy_loop_eax2902: .space 4
+	copy_loop_ebx2902: .space 4
+	copy_j_eax2902: .space 4
+	copy_j_ebx2902: .space 4
+	copy_loop_eax2903: .space 4
+	copy_loop_ebx2903: .space 4
+	copy_j_eax2903: .space 4
+	copy_j_ebx2903: .space 4
+	copy_loop_eax2904: .space 4
+	copy_loop_ebx2904: .space 4
+	copy_j_eax2904: .space 4
+	copy_j_ebx2904: .space 4
+	copy_loop_eax2905: .space 4
+	copy_loop_ebx2905: .space 4
+	copy_j_eax2905: .space 4
+	copy_j_ebx2905: .space 4
+	copy_loop_eax2906: .space 4
+	copy_loop_ebx2906: .space 4
+	copy_j_eax2906: .space 4
+	copy_j_ebx2906: .space 4
+	copy_loop_eax2907: .space 4
+	copy_loop_ebx2907: .space 4
+	copy_j_eax2907: .space 4
+	copy_j_ebx2907: .space 4
+	copy_loop_eax2908: .space 4
+	copy_loop_ebx2908: .space 4
+	copy_j_eax2908: .space 4
+	copy_j_ebx2908: .space 4
+	copy_loop_eax2909: .space 4
+	copy_loop_ebx2909: .space 4
+	copy_j_eax2909: .space 4
+	copy_j_ebx2909: .space 4
+	copy_loop_eax2910: .space 4
+	copy_loop_ebx2910: .space 4
+	copy_j_eax2910: .space 4
+	copy_j_ebx2910: .space 4
+	copy_loop_eax2911: .space 4
+	copy_loop_ebx2911: .space 4
+	copy_j_eax2911: .space 4
+	copy_j_ebx2911: .space 4
+	copy_loop_eax2912: .space 4
+	copy_loop_ebx2912: .space 4
+	copy_j_eax2912: .space 4
+	copy_j_ebx2912: .space 4
+	copy_loop_eax2913: .space 4
+	copy_loop_ebx2913: .space 4
+	copy_j_eax2913: .space 4
+	copy_j_ebx2913: .space 4
+	copy_loop_eax2914: .space 4
+	copy_loop_ebx2914: .space 4
+	copy_j_eax2914: .space 4
+	copy_j_ebx2914: .space 4
+	copy_loop_eax2915: .space 4
+	copy_loop_ebx2915: .space 4
+	copy_j_eax2915: .space 4
+	copy_j_ebx2915: .space 4
+	copy_loop_eax2916: .space 4
+	copy_loop_ebx2916: .space 4
+	copy_j_eax2916: .space 4
+	copy_j_ebx2916: .space 4
+	copy_loop_eax2917: .space 4
+	copy_loop_ebx2917: .space 4
+	copy_j_eax2917: .space 4
+	copy_j_ebx2917: .space 4
+	copy_loop_eax2918: .space 4
+	copy_loop_ebx2918: .space 4
+	copy_j_eax2918: .space 4
+	copy_j_ebx2918: .space 4
+	copy_loop_eax2919: .space 4
+	copy_loop_ebx2919: .space 4
+	copy_j_eax2919: .space 4
+	copy_j_ebx2919: .space 4
+	copy_loop_eax2920: .space 4
+	copy_loop_ebx2920: .space 4
+	copy_j_eax2920: .space 4
+	copy_j_ebx2920: .space 4
+	copy_loop_eax2921: .space 4
+	copy_loop_ebx2921: .space 4
+	copy_j_eax2921: .space 4
+	copy_j_ebx2921: .space 4
+	copy_loop_eax2922: .space 4
+	copy_loop_ebx2922: .space 4
+	copy_j_eax2922: .space 4
+	copy_j_ebx2922: .space 4
+	copy_loop_eax2923: .space 4
+	copy_loop_ebx2923: .space 4
+	copy_j_eax2923: .space 4
+	copy_j_ebx2923: .space 4
+	copy_loop_eax2924: .space 4
+	copy_loop_ebx2924: .space 4
+	copy_j_eax2924: .space 4
+	copy_j_ebx2924: .space 4
+	copy_loop_eax2925: .space 4
+	copy_loop_ebx2925: .space 4
+	copy_j_eax2925: .space 4
+	copy_j_ebx2925: .space 4
+	copy_loop_eax2926: .space 4
+	copy_loop_ebx2926: .space 4
+	copy_j_eax2926: .space 4
+	copy_j_ebx2926: .space 4
+	copy_loop_eax2927: .space 4
+	copy_loop_ebx2927: .space 4
+	copy_j_eax2927: .space 4
+	copy_j_ebx2927: .space 4
+	copy_loop_eax2928: .space 4
+	copy_loop_ebx2928: .space 4
+	copy_j_eax2928: .space 4
+	copy_j_ebx2928: .space 4
+	copy_loop_eax2929: .space 4
+	copy_loop_ebx2929: .space 4
+	copy_j_eax2929: .space 4
+	copy_j_ebx2929: .space 4
+	copy_loop_eax2930: .space 4
+	copy_loop_ebx2930: .space 4
+	copy_j_eax2930: .space 4
+	copy_j_ebx2930: .space 4
+	copy_loop_eax2931: .space 4
+	copy_loop_ebx2931: .space 4
+	copy_j_eax2931: .space 4
+	copy_j_ebx2931: .space 4
+	copy_loop_eax2932: .space 4
+	copy_loop_ebx2932: .space 4
+	copy_j_eax2932: .space 4
+	copy_j_ebx2932: .space 4
+	copy_loop_eax2933: .space 4
+	copy_loop_ebx2933: .space 4
+	copy_j_eax2933: .space 4
+	copy_j_ebx2933: .space 4
+	copy_loop_eax2934: .space 4
+	copy_loop_ebx2934: .space 4
+	copy_j_eax2934: .space 4
+	copy_j_ebx2934: .space 4
+	copy_loop_eax2935: .space 4
+	copy_loop_ebx2935: .space 4
+	copy_j_eax2935: .space 4
+	copy_j_ebx2935: .space 4
+	copy_loop_eax2936: .space 4
+	copy_loop_ebx2936: .space 4
+	copy_j_eax2936: .space 4
+	copy_j_ebx2936: .space 4
+	copy_loop_eax2937: .space 4
+	copy_loop_ebx2937: .space 4
+	copy_j_eax2937: .space 4
+	copy_j_ebx2937: .space 4
+	copy_loop_eax2938: .space 4
+	copy_loop_ebx2938: .space 4
+	copy_j_eax2938: .space 4
+	copy_j_ebx2938: .space 4
+	copy_loop_eax2939: .space 4
+	copy_loop_ebx2939: .space 4
+	copy_j_eax2939: .space 4
+	copy_j_ebx2939: .space 4
+	copy_loop_eax2940: .space 4
+	copy_loop_ebx2940: .space 4
+	copy_j_eax2940: .space 4
+	copy_j_ebx2940: .space 4
+	copy_loop_eax2941: .space 4
+	copy_loop_ebx2941: .space 4
+	copy_j_eax2941: .space 4
+	copy_j_ebx2941: .space 4
+	copy_loop_eax2942: .space 4
+	copy_loop_ebx2942: .space 4
+	copy_j_eax2942: .space 4
+	copy_j_ebx2942: .space 4
+	copy_loop_eax2943: .space 4
+	copy_loop_ebx2943: .space 4
+	copy_j_eax2943: .space 4
+	copy_j_ebx2943: .space 4
+	copy_loop_eax2944: .space 4
+	copy_loop_ebx2944: .space 4
+	copy_j_eax2944: .space 4
+	copy_j_ebx2944: .space 4
+	copy_loop_eax2945: .space 4
+	copy_loop_ebx2945: .space 4
+	copy_j_eax2945: .space 4
+	copy_j_ebx2945: .space 4
+	copy_loop_eax2946: .space 4
+	copy_loop_ebx2946: .space 4
+	copy_j_eax2946: .space 4
+	copy_j_ebx2946: .space 4
+	copy_loop_eax2947: .space 4
+	copy_loop_ebx2947: .space 4
+	copy_j_eax2947: .space 4
+	copy_j_ebx2947: .space 4
+	copy_loop_eax2948: .space 4
+	copy_loop_ebx2948: .space 4
+	copy_j_eax2948: .space 4
+	copy_j_ebx2948: .space 4
+	copy_loop_eax2949: .space 4
+	copy_loop_ebx2949: .space 4
+	copy_j_eax2949: .space 4
+	copy_j_ebx2949: .space 4
+	copy_loop_eax2950: .space 4
+	copy_loop_ebx2950: .space 4
+	copy_j_eax2950: .space 4
+	copy_j_ebx2950: .space 4
+	copy_loop_eax2951: .space 4
+	copy_loop_ebx2951: .space 4
+	copy_j_eax2951: .space 4
+	copy_j_ebx2951: .space 4
+	copy_loop_eax2952: .space 4
+	copy_loop_ebx2952: .space 4
+	copy_j_eax2952: .space 4
+	copy_j_ebx2952: .space 4
+	copy_loop_eax2953: .space 4
+	copy_loop_ebx2953: .space 4
+	copy_j_eax2953: .space 4
+	copy_j_ebx2953: .space 4
+	copy_loop_eax2954: .space 4
+	copy_loop_ebx2954: .space 4
+	copy_j_eax2954: .space 4
+	copy_j_ebx2954: .space 4
+	copy_loop_eax2955: .space 4
+	copy_loop_ebx2955: .space 4
+	copy_j_eax2955: .space 4
+	copy_j_ebx2955: .space 4
+	copy_loop_eax2956: .space 4
+	copy_loop_ebx2956: .space 4
+	copy_j_eax2956: .space 4
+	copy_j_ebx2956: .space 4
+	copy_loop_eax2957: .space 4
+	copy_loop_ebx2957: .space 4
+	copy_j_eax2957: .space 4
+	copy_j_ebx2957: .space 4
+	copy_loop_eax2958: .space 4
+	copy_loop_ebx2958: .space 4
+	copy_j_eax2958: .space 4
+	copy_j_ebx2958: .space 4
+	copy_loop_eax2959: .space 4
+	copy_loop_ebx2959: .space 4
+	copy_j_eax2959: .space 4
+	copy_j_ebx2959: .space 4
+	copy_loop_eax2960: .space 4
+	copy_loop_ebx2960: .space 4
+	copy_j_eax2960: .space 4
+	copy_j_ebx2960: .space 4
+	copy_loop_eax2961: .space 4
+	copy_loop_ebx2961: .space 4
+	copy_j_eax2961: .space 4
+	copy_j_ebx2961: .space 4
+	copy_loop_eax2962: .space 4
+	copy_loop_ebx2962: .space 4
+	copy_j_eax2962: .space 4
+	copy_j_ebx2962: .space 4
+	copy_loop_eax2963: .space 4
+	copy_loop_ebx2963: .space 4
+	copy_j_eax2963: .space 4
+	copy_j_ebx2963: .space 4
+	copy_loop_eax2964: .space 4
+	copy_loop_ebx2964: .space 4
+	copy_j_eax2964: .space 4
+	copy_j_ebx2964: .space 4
+	copy_loop_eax2965: .space 4
+	copy_loop_ebx2965: .space 4
+	copy_j_eax2965: .space 4
+	copy_j_ebx2965: .space 4
+	copy_loop_eax2966: .space 4
+	copy_loop_ebx2966: .space 4
+	copy_j_eax2966: .space 4
+	copy_j_ebx2966: .space 4
+	copy_loop_eax2967: .space 4
+	copy_loop_ebx2967: .space 4
+	copy_j_eax2967: .space 4
+	copy_j_ebx2967: .space 4
+	copy_loop_eax2968: .space 4
+	copy_loop_ebx2968: .space 4
+	copy_j_eax2968: .space 4
+	copy_j_ebx2968: .space 4
+	copy_loop_eax2969: .space 4
+	copy_loop_ebx2969: .space 4
+	copy_j_eax2969: .space 4
+	copy_j_ebx2969: .space 4
+	copy_loop_eax2970: .space 4
+	copy_loop_ebx2970: .space 4
+	copy_j_eax2970: .space 4
+	copy_j_ebx2970: .space 4
+	copy_loop_eax2971: .space 4
+	copy_loop_ebx2971: .space 4
+	copy_j_eax2971: .space 4
+	copy_j_ebx2971: .space 4
+	copy_loop_eax2972: .space 4
+	copy_loop_ebx2972: .space 4
+	copy_j_eax2972: .space 4
+	copy_j_ebx2972: .space 4
+	copy_loop_eax2973: .space 4
+	copy_loop_ebx2973: .space 4
+	copy_j_eax2973: .space 4
+	copy_j_ebx2973: .space 4
+	copy_loop_eax2974: .space 4
+	copy_loop_ebx2974: .space 4
+	copy_j_eax2974: .space 4
+	copy_j_ebx2974: .space 4
+	copy_loop_eax2975: .space 4
+	copy_loop_ebx2975: .space 4
+	copy_j_eax2975: .space 4
+	copy_j_ebx2975: .space 4
+	copy_loop_eax2976: .space 4
+	copy_loop_ebx2976: .space 4
+	copy_j_eax2976: .space 4
+	copy_j_ebx2976: .space 4
+	copy_loop_eax2977: .space 4
+	copy_loop_ebx2977: .space 4
+	copy_j_eax2977: .space 4
+	copy_j_ebx2977: .space 4
+	copy_loop_eax2978: .space 4
+	copy_loop_ebx2978: .space 4
+	copy_j_eax2978: .space 4
+	copy_j_ebx2978: .space 4
+	copy_loop_eax2979: .space 4
+	copy_loop_ebx2979: .space 4
+	copy_j_eax2979: .space 4
+	copy_j_ebx2979: .space 4
+	copy_loop_eax2980: .space 4
+	copy_loop_ebx2980: .space 4
+	copy_j_eax2980: .space 4
+	copy_j_ebx2980: .space 4
+	copy_loop_eax2981: .space 4
+	copy_loop_ebx2981: .space 4
+	copy_j_eax2981: .space 4
+	copy_j_ebx2981: .space 4
+	copy_loop_eax2982: .space 4
+	copy_loop_ebx2982: .space 4
+	copy_j_eax2982: .space 4
+	copy_j_ebx2982: .space 4
+	copy_loop_eax2983: .space 4
+	copy_loop_ebx2983: .space 4
+	copy_j_eax2983: .space 4
+	copy_j_ebx2983: .space 4
+	copy_loop_eax2984: .space 4
+	copy_loop_ebx2984: .space 4
+	copy_j_eax2984: .space 4
+	copy_j_ebx2984: .space 4
+	copy_loop_eax2985: .space 4
+	copy_loop_ebx2985: .space 4
+	copy_j_eax2985: .space 4
+	copy_j_ebx2985: .space 4
+	copy_loop_eax2986: .space 4
+	copy_loop_ebx2986: .space 4
+	copy_j_eax2986: .space 4
+	copy_j_ebx2986: .space 4
+	copy_loop_eax2987: .space 4
+	copy_loop_ebx2987: .space 4
+	copy_j_eax2987: .space 4
+	copy_j_ebx2987: .space 4
+	copy_loop_eax2988: .space 4
+	copy_loop_ebx2988: .space 4
+	copy_j_eax2988: .space 4
+	copy_j_ebx2988: .space 4
+	copy_loop_eax2989: .space 4
+	copy_loop_ebx2989: .space 4
+	copy_j_eax2989: .space 4
+	copy_j_ebx2989: .space 4
+	copy_loop_eax2990: .space 4
+	copy_loop_ebx2990: .space 4
+	copy_j_eax2990: .space 4
+	copy_j_ebx2990: .space 4
+	copy_loop_eax2991: .space 4
+	copy_loop_ebx2991: .space 4
+	copy_j_eax2991: .space 4
+	copy_j_ebx2991: .space 4
+	copy_loop_eax2992: .space 4
+	copy_loop_ebx2992: .space 4
+	copy_j_eax2992: .space 4
+	copy_j_ebx2992: .space 4
+	copy_loop_eax2993: .space 4
+	copy_loop_ebx2993: .space 4
+	copy_j_eax2993: .space 4
+	copy_j_ebx2993: .space 4
+	copy_loop_eax2994: .space 4
+	copy_loop_ebx2994: .space 4
+	copy_j_eax2994: .space 4
+	copy_j_ebx2994: .space 4
+	copy_loop_eax2995: .space 4
+	copy_loop_ebx2995: .space 4
+	copy_j_eax2995: .space 4
+	copy_j_ebx2995: .space 4
+	copy_loop_eax2996: .space 4
+	copy_loop_ebx2996: .space 4
+	copy_j_eax2996: .space 4
+	copy_j_ebx2996: .space 4
+	copy_loop_eax2997: .space 4
+	copy_loop_ebx2997: .space 4
+	copy_j_eax2997: .space 4
+	copy_j_ebx2997: .space 4
+	copy_loop_eax2998: .space 4
+	copy_loop_ebx2998: .space 4
+	copy_j_eax2998: .space 4
+	copy_j_ebx2998: .space 4
+	copy_loop_eax2999: .space 4
+	copy_loop_ebx2999: .space 4
+	copy_j_eax2999: .space 4
+	copy_j_ebx2999: .space 4
+	copy_loop_eax3000: .space 4
+	copy_loop_ebx3000: .space 4
+	copy_j_eax3000: .space 4
+	copy_j_ebx3000: .space 4
+	copy_loop_eax3001: .space 4
+	copy_loop_ebx3001: .space 4
+	copy_j_eax3001: .space 4
+	copy_j_ebx3001: .space 4
+	copy_loop_eax3002: .space 4
+	copy_loop_ebx3002: .space 4
+	copy_j_eax3002: .space 4
+	copy_j_ebx3002: .space 4
+	copy_loop_eax3003: .space 4
+	copy_loop_ebx3003: .space 4
+	copy_j_eax3003: .space 4
+	copy_j_ebx3003: .space 4
+	copy_loop_eax3004: .space 4
+	copy_loop_ebx3004: .space 4
+	copy_j_eax3004: .space 4
+	copy_j_ebx3004: .space 4
+	copy_loop_eax3005: .space 4
+	copy_loop_ebx3005: .space 4
+	copy_j_eax3005: .space 4
+	copy_j_ebx3005: .space 4
+	copy_loop_eax3006: .space 4
+	copy_loop_ebx3006: .space 4
+	copy_j_eax3006: .space 4
+	copy_j_ebx3006: .space 4
+	copy_loop_eax3007: .space 4
+	copy_loop_ebx3007: .space 4
+	copy_j_eax3007: .space 4
+	copy_j_ebx3007: .space 4
+	copy_loop_eax3008: .space 4
+	copy_loop_ebx3008: .space 4
+	copy_j_eax3008: .space 4
+	copy_j_ebx3008: .space 4
+	copy_loop_eax3009: .space 4
+	copy_loop_ebx3009: .space 4
+	copy_j_eax3009: .space 4
+	copy_j_ebx3009: .space 4
+	copy_loop_eax3010: .space 4
+	copy_loop_ebx3010: .space 4
+	copy_j_eax3010: .space 4
+	copy_j_ebx3010: .space 4
+	copy_loop_eax3011: .space 4
+	copy_loop_ebx3011: .space 4
+	copy_j_eax3011: .space 4
+	copy_j_ebx3011: .space 4
+	copy_loop_eax3012: .space 4
+	copy_loop_ebx3012: .space 4
+	copy_j_eax3012: .space 4
+	copy_j_ebx3012: .space 4
+	copy_loop_eax3013: .space 4
+	copy_loop_ebx3013: .space 4
+	copy_j_eax3013: .space 4
+	copy_j_ebx3013: .space 4
+	copy_loop_eax3014: .space 4
+	copy_loop_ebx3014: .space 4
+	copy_j_eax3014: .space 4
+	copy_j_ebx3014: .space 4
+	copy_loop_eax3015: .space 4
+	copy_loop_ebx3015: .space 4
+	copy_j_eax3015: .space 4
+	copy_j_ebx3015: .space 4
+	copy_loop_eax3016: .space 4
+	copy_loop_ebx3016: .space 4
+	copy_j_eax3016: .space 4
+	copy_j_ebx3016: .space 4
+	copy_loop_eax3017: .space 4
+	copy_loop_ebx3017: .space 4
+	copy_j_eax3017: .space 4
+	copy_j_ebx3017: .space 4
+	copy_loop_eax3018: .space 4
+	copy_loop_ebx3018: .space 4
+	copy_j_eax3018: .space 4
+	copy_j_ebx3018: .space 4
+	copy_loop_eax3019: .space 4
+	copy_loop_ebx3019: .space 4
+	copy_j_eax3019: .space 4
+	copy_j_ebx3019: .space 4
+	copy_loop_eax3020: .space 4
+	copy_loop_ebx3020: .space 4
+	copy_j_eax3020: .space 4
+	copy_j_ebx3020: .space 4
+	copy_loop_eax3021: .space 4
+	copy_loop_ebx3021: .space 4
+	copy_j_eax3021: .space 4
+	copy_j_ebx3021: .space 4
+	copy_loop_eax3022: .space 4
+	copy_loop_ebx3022: .space 4
+	copy_j_eax3022: .space 4
+	copy_j_ebx3022: .space 4
+	copy_loop_eax3023: .space 4
+	copy_loop_ebx3023: .space 4
+	copy_j_eax3023: .space 4
+	copy_j_ebx3023: .space 4
+	copy_loop_eax3024: .space 4
+	copy_loop_ebx3024: .space 4
+	copy_j_eax3024: .space 4
+	copy_j_ebx3024: .space 4
+	copy_loop_eax3025: .space 4
+	copy_loop_ebx3025: .space 4
+	copy_j_eax3025: .space 4
+	copy_j_ebx3025: .space 4
+	copy_loop_eax3026: .space 4
+	copy_loop_ebx3026: .space 4
+	copy_j_eax3026: .space 4
+	copy_j_ebx3026: .space 4
+	copy_loop_eax3027: .space 4
+	copy_loop_ebx3027: .space 4
+	copy_j_eax3027: .space 4
+	copy_j_ebx3027: .space 4
+	copy_loop_eax3028: .space 4
+	copy_loop_ebx3028: .space 4
+	copy_j_eax3028: .space 4
+	copy_j_ebx3028: .space 4
+	copy_loop_eax3029: .space 4
+	copy_loop_ebx3029: .space 4
+	copy_j_eax3029: .space 4
+	copy_j_ebx3029: .space 4
+	copy_loop_eax3030: .space 4
+	copy_loop_ebx3030: .space 4
+	copy_j_eax3030: .space 4
+	copy_j_ebx3030: .space 4
+	copy_loop_eax3031: .space 4
+	copy_loop_ebx3031: .space 4
+	copy_j_eax3031: .space 4
+	copy_j_ebx3031: .space 4
+	copy_loop_eax3032: .space 4
+	copy_loop_ebx3032: .space 4
+	copy_j_eax3032: .space 4
+	copy_j_ebx3032: .space 4
+	copy_loop_eax3033: .space 4
+	copy_loop_ebx3033: .space 4
+	copy_j_eax3033: .space 4
+	copy_j_ebx3033: .space 4
+	copy_loop_eax3034: .space 4
+	copy_loop_ebx3034: .space 4
+	copy_j_eax3034: .space 4
+	copy_j_ebx3034: .space 4
+	copy_loop_eax3035: .space 4
+	copy_loop_ebx3035: .space 4
+	copy_j_eax3035: .space 4
+	copy_j_ebx3035: .space 4
+	copy_loop_eax3036: .space 4
+	copy_loop_ebx3036: .space 4
+	copy_j_eax3036: .space 4
+	copy_j_ebx3036: .space 4
+	copy_loop_eax3037: .space 4
+	copy_loop_ebx3037: .space 4
+	copy_j_eax3037: .space 4
+	copy_j_ebx3037: .space 4
+	copy_loop_eax3038: .space 4
+	copy_loop_ebx3038: .space 4
+	copy_j_eax3038: .space 4
+	copy_j_ebx3038: .space 4
+	copy_loop_eax3039: .space 4
+	copy_loop_ebx3039: .space 4
+	copy_j_eax3039: .space 4
+	copy_j_ebx3039: .space 4
+	copy_loop_eax3040: .space 4
+	copy_loop_ebx3040: .space 4
+	copy_j_eax3040: .space 4
+	copy_j_ebx3040: .space 4
+	copy_loop_eax3041: .space 4
+	copy_loop_ebx3041: .space 4
+	copy_j_eax3041: .space 4
+	copy_j_ebx3041: .space 4
+	copy_loop_eax3042: .space 4
+	copy_loop_ebx3042: .space 4
+	copy_j_eax3042: .space 4
+	copy_j_ebx3042: .space 4
+	copy_loop_eax3043: .space 4
+	copy_loop_ebx3043: .space 4
+	copy_j_eax3043: .space 4
+	copy_j_ebx3043: .space 4
+	copy_loop_eax3044: .space 4
+	copy_loop_ebx3044: .space 4
+	copy_j_eax3044: .space 4
+	copy_j_ebx3044: .space 4
+	copy_loop_eax3045: .space 4
+	copy_loop_ebx3045: .space 4
+	copy_j_eax3045: .space 4
+	copy_j_ebx3045: .space 4
+	copy_loop_eax3046: .space 4
+	copy_loop_ebx3046: .space 4
+	copy_j_eax3046: .space 4
+	copy_j_ebx3046: .space 4
+	copy_loop_eax3047: .space 4
+	copy_loop_ebx3047: .space 4
+	copy_j_eax3047: .space 4
+	copy_j_ebx3047: .space 4
+	copy_loop_eax3048: .space 4
+	copy_loop_ebx3048: .space 4
+	copy_j_eax3048: .space 4
+	copy_j_ebx3048: .space 4
+	copy_loop_eax3049: .space 4
+	copy_loop_ebx3049: .space 4
+	copy_j_eax3049: .space 4
+	copy_j_ebx3049: .space 4
+	copy_loop_eax3050: .space 4
+	copy_loop_ebx3050: .space 4
+	copy_j_eax3050: .space 4
+	copy_j_ebx3050: .space 4
+	copy_loop_eax3051: .space 4
+	copy_loop_ebx3051: .space 4
+	copy_j_eax3051: .space 4
+	copy_j_ebx3051: .space 4
+	copy_loop_eax3052: .space 4
+	copy_loop_ebx3052: .space 4
+	copy_j_eax3052: .space 4
+	copy_j_ebx3052: .space 4
+	copy_loop_eax3053: .space 4
+	copy_loop_ebx3053: .space 4
+	copy_j_eax3053: .space 4
+	copy_j_ebx3053: .space 4
+	copy_loop_eax3054: .space 4
+	copy_loop_ebx3054: .space 4
+	copy_j_eax3054: .space 4
+	copy_j_ebx3054: .space 4
+	copy_loop_eax3055: .space 4
+	copy_loop_ebx3055: .space 4
+	copy_j_eax3055: .space 4
+	copy_j_ebx3055: .space 4
+	copy_loop_eax3056: .space 4
+	copy_loop_ebx3056: .space 4
+	copy_j_eax3056: .space 4
+	copy_j_ebx3056: .space 4
+	copy_loop_eax3057: .space 4
+	copy_loop_ebx3057: .space 4
+	copy_j_eax3057: .space 4
+	copy_j_ebx3057: .space 4
+	copy_loop_eax3058: .space 4
+	copy_loop_ebx3058: .space 4
+	copy_j_eax3058: .space 4
+	copy_j_ebx3058: .space 4
+	copy_loop_eax3059: .space 4
+	copy_loop_ebx3059: .space 4
+	copy_j_eax3059: .space 4
+	copy_j_ebx3059: .space 4
+	copy_loop_eax3060: .space 4
+	copy_loop_ebx3060: .space 4
+	copy_j_eax3060: .space 4
+	copy_j_ebx3060: .space 4
+	copy_loop_eax3061: .space 4
+	copy_loop_ebx3061: .space 4
+	copy_j_eax3061: .space 4
+	copy_j_ebx3061: .space 4
+	copy_loop_eax3062: .space 4
+	copy_loop_ebx3062: .space 4
+	copy_j_eax3062: .space 4
+	copy_j_ebx3062: .space 4
+	copy_loop_eax3063: .space 4
+	copy_loop_ebx3063: .space 4
+	copy_j_eax3063: .space 4
+	copy_j_ebx3063: .space 4
+	copy_loop_eax3064: .space 4
+	copy_loop_ebx3064: .space 4
+	copy_j_eax3064: .space 4
+	copy_j_ebx3064: .space 4
+	copy_loop_eax3065: .space 4
+	copy_loop_ebx3065: .space 4
+	copy_j_eax3065: .space 4
+	copy_j_ebx3065: .space 4
+	copy_loop_eax3066: .space 4
+	copy_loop_ebx3066: .space 4
+	copy_j_eax3066: .space 4
+	copy_j_ebx3066: .space 4
+	copy_loop_eax3067: .space 4
+	copy_loop_ebx3067: .space 4
+	copy_j_eax3067: .space 4
+	copy_j_ebx3067: .space 4
+	copy_loop_eax3068: .space 4
+	copy_loop_ebx3068: .space 4
+	copy_j_eax3068: .space 4
+	copy_j_ebx3068: .space 4
+	copy_loop_eax3069: .space 4
+	copy_loop_ebx3069: .space 4
+	copy_j_eax3069: .space 4
+	copy_j_ebx3069: .space 4
+	copy_loop_eax3070: .space 4
+	copy_loop_ebx3070: .space 4
+	copy_j_eax3070: .space 4
+	copy_j_ebx3070: .space 4
+	copy_loop_eax3071: .space 4
+	copy_loop_ebx3071: .space 4
+	copy_j_eax3071: .space 4
+	copy_j_ebx3071: .space 4
+	copy_loop_eax3072: .space 4
+	copy_loop_ebx3072: .space 4
+	copy_j_eax3072: .space 4
+	copy_j_ebx3072: .space 4
+	copy_loop_eax3073: .space 4
+	copy_loop_ebx3073: .space 4
+	copy_j_eax3073: .space 4
+	copy_j_ebx3073: .space 4
+	copy_loop_eax3074: .space 4
+	copy_loop_ebx3074: .space 4
+	copy_j_eax3074: .space 4
+	copy_j_ebx3074: .space 4
+	copy_loop_eax3075: .space 4
+	copy_loop_ebx3075: .space 4
+	copy_j_eax3075: .space 4
+	copy_j_ebx3075: .space 4
+	copy_loop_eax3076: .space 4
+	copy_loop_ebx3076: .space 4
+	copy_j_eax3076: .space 4
+	copy_j_ebx3076: .space 4
+	copy_loop_eax3077: .space 4
+	copy_loop_ebx3077: .space 4
+	copy_j_eax3077: .space 4
+	copy_j_ebx3077: .space 4
+	copy_loop_eax3078: .space 4
+	copy_loop_ebx3078: .space 4
+	copy_j_eax3078: .space 4
+	copy_j_ebx3078: .space 4
+	copy_loop_eax3079: .space 4
+	copy_loop_ebx3079: .space 4
+	copy_j_eax3079: .space 4
+	copy_j_ebx3079: .space 4
+	copy_loop_eax3080: .space 4
+	copy_loop_ebx3080: .space 4
+	copy_j_eax3080: .space 4
+	copy_j_ebx3080: .space 4
+	copy_loop_eax3081: .space 4
+	copy_loop_ebx3081: .space 4
+	copy_j_eax3081: .space 4
+	copy_j_ebx3081: .space 4
+	copy_loop_eax3082: .space 4
+	copy_loop_ebx3082: .space 4
+	copy_j_eax3082: .space 4
+	copy_j_ebx3082: .space 4
+	copy_loop_eax3083: .space 4
+	copy_loop_ebx3083: .space 4
+	copy_j_eax3083: .space 4
+	copy_j_ebx3083: .space 4
+	copy_loop_eax3084: .space 4
+	copy_loop_ebx3084: .space 4
+	copy_j_eax3084: .space 4
+	copy_j_ebx3084: .space 4
+	copy_loop_eax3085: .space 4
+	copy_loop_ebx3085: .space 4
+	copy_j_eax3085: .space 4
+	copy_j_ebx3085: .space 4
+	copy_loop_eax3086: .space 4
+	copy_loop_ebx3086: .space 4
+	copy_j_eax3086: .space 4
+	copy_j_ebx3086: .space 4
+	copy_loop_eax3087: .space 4
+	copy_loop_ebx3087: .space 4
+	copy_j_eax3087: .space 4
+	copy_j_ebx3087: .space 4
+	copy_loop_eax3088: .space 4
+	copy_loop_ebx3088: .space 4
+	copy_j_eax3088: .space 4
+	copy_j_ebx3088: .space 4
+	copy_loop_eax3089: .space 4
+	copy_loop_ebx3089: .space 4
+	copy_j_eax3089: .space 4
+	copy_j_ebx3089: .space 4
+	copy_loop_eax3090: .space 4
+	copy_loop_ebx3090: .space 4
+	copy_j_eax3090: .space 4
+	copy_j_ebx3090: .space 4
+	copy_loop_eax3091: .space 4
+	copy_loop_ebx3091: .space 4
+	copy_j_eax3091: .space 4
+	copy_j_ebx3091: .space 4
+	copy_loop_eax3092: .space 4
+	copy_loop_ebx3092: .space 4
+	copy_j_eax3092: .space 4
+	copy_j_ebx3092: .space 4
+	copy_loop_eax3093: .space 4
+	copy_loop_ebx3093: .space 4
+	copy_j_eax3093: .space 4
+	copy_j_ebx3093: .space 4
+	copy_loop_eax3094: .space 4
+	copy_loop_ebx3094: .space 4
+	copy_j_eax3094: .space 4
+	copy_j_ebx3094: .space 4
+	copy_loop_eax3095: .space 4
+	copy_loop_ebx3095: .space 4
+	copy_j_eax3095: .space 4
+	copy_j_ebx3095: .space 4
+	copy_loop_eax3096: .space 4
+	copy_loop_ebx3096: .space 4
+	copy_j_eax3096: .space 4
+	copy_j_ebx3096: .space 4
+	copy_loop_eax3097: .space 4
+	copy_loop_ebx3097: .space 4
+	copy_j_eax3097: .space 4
+	copy_j_ebx3097: .space 4
+	copy_loop_eax3098: .space 4
+	copy_loop_ebx3098: .space 4
+	copy_j_eax3098: .space 4
+	copy_j_ebx3098: .space 4
+	copy_loop_eax3099: .space 4
+	copy_loop_ebx3099: .space 4
+	copy_j_eax3099: .space 4
+	copy_j_ebx3099: .space 4
+	copy_loop_eax3100: .space 4
+	copy_loop_ebx3100: .space 4
+	copy_j_eax3100: .space 4
+	copy_j_ebx3100: .space 4
+	copy_loop_eax3101: .space 4
+	copy_loop_ebx3101: .space 4
+	copy_j_eax3101: .space 4
+	copy_j_ebx3101: .space 4
+	copy_loop_eax3102: .space 4
+	copy_loop_ebx3102: .space 4
+	copy_j_eax3102: .space 4
+	copy_j_ebx3102: .space 4
+	copy_loop_eax3103: .space 4
+	copy_loop_ebx3103: .space 4
+	copy_j_eax3103: .space 4
+	copy_j_ebx3103: .space 4
+	copy_loop_eax3104: .space 4
+	copy_loop_ebx3104: .space 4
+	copy_j_eax3104: .space 4
+	copy_j_ebx3104: .space 4
+	copy_loop_eax3105: .space 4
+	copy_loop_ebx3105: .space 4
+	copy_j_eax3105: .space 4
+	copy_j_ebx3105: .space 4
+	copy_loop_eax3106: .space 4
+	copy_loop_ebx3106: .space 4
+	copy_j_eax3106: .space 4
+	copy_j_ebx3106: .space 4
+	copy_loop_eax3107: .space 4
+	copy_loop_ebx3107: .space 4
+	copy_j_eax3107: .space 4
+	copy_j_ebx3107: .space 4
+	copy_loop_eax3108: .space 4
+	copy_loop_ebx3108: .space 4
+	copy_j_eax3108: .space 4
+	copy_j_ebx3108: .space 4
+	copy_loop_eax3109: .space 4
+	copy_loop_ebx3109: .space 4
+	copy_j_eax3109: .space 4
+	copy_j_ebx3109: .space 4
+	copy_loop_eax3110: .space 4
+	copy_loop_ebx3110: .space 4
+	copy_j_eax3110: .space 4
+	copy_j_ebx3110: .space 4
+	copy_loop_eax3111: .space 4
+	copy_loop_ebx3111: .space 4
+	copy_j_eax3111: .space 4
+	copy_j_ebx3111: .space 4
+	copy_loop_eax3112: .space 4
+	copy_loop_ebx3112: .space 4
+	copy_j_eax3112: .space 4
+	copy_j_ebx3112: .space 4
+	copy_loop_eax3113: .space 4
+	copy_loop_ebx3113: .space 4
+	copy_j_eax3113: .space 4
+	copy_j_ebx3113: .space 4
+	copy_loop_eax3114: .space 4
+	copy_loop_ebx3114: .space 4
+	copy_j_eax3114: .space 4
+	copy_j_ebx3114: .space 4
+	copy_loop_eax3115: .space 4
+	copy_loop_ebx3115: .space 4
+	copy_j_eax3115: .space 4
+	copy_j_ebx3115: .space 4
+	copy_loop_eax3116: .space 4
+	copy_loop_ebx3116: .space 4
+	copy_j_eax3116: .space 4
+	copy_j_ebx3116: .space 4
+	copy_loop_eax3117: .space 4
+	copy_loop_ebx3117: .space 4
+	copy_j_eax3117: .space 4
+	copy_j_ebx3117: .space 4
+	copy_loop_eax3118: .space 4
+	copy_loop_ebx3118: .space 4
+	copy_j_eax3118: .space 4
+	copy_j_ebx3118: .space 4
+	copy_loop_eax3119: .space 4
+	copy_loop_ebx3119: .space 4
+	copy_j_eax3119: .space 4
+	copy_j_ebx3119: .space 4
+	copy_loop_eax3120: .space 4
+	copy_loop_ebx3120: .space 4
+	copy_j_eax3120: .space 4
+	copy_j_ebx3120: .space 4
+	copy_loop_eax3121: .space 4
+	copy_loop_ebx3121: .space 4
+	copy_j_eax3121: .space 4
+	copy_j_ebx3121: .space 4
+	copy_loop_eax3122: .space 4
+	copy_loop_ebx3122: .space 4
+	copy_j_eax3122: .space 4
+	copy_j_ebx3122: .space 4
+	copy_loop_eax3123: .space 4
+	copy_loop_ebx3123: .space 4
+	copy_j_eax3123: .space 4
+	copy_j_ebx3123: .space 4
+	copy_loop_eax3124: .space 4
+	copy_loop_ebx3124: .space 4
+	copy_j_eax3124: .space 4
+	copy_j_ebx3124: .space 4
+	copy_loop_eax3125: .space 4
+	copy_loop_ebx3125: .space 4
+	copy_j_eax3125: .space 4
+	copy_j_ebx3125: .space 4
+	copy_loop_eax3126: .space 4
+	copy_loop_ebx3126: .space 4
+	copy_j_eax3126: .space 4
+	copy_j_ebx3126: .space 4
+	copy_loop_eax3127: .space 4
+	copy_loop_ebx3127: .space 4
+	copy_j_eax3127: .space 4
+	copy_j_ebx3127: .space 4
+	copy_loop_eax3128: .space 4
+	copy_loop_ebx3128: .space 4
+	copy_j_eax3128: .space 4
+	copy_j_ebx3128: .space 4
+	copy_loop_eax3129: .space 4
+	copy_loop_ebx3129: .space 4
+	copy_j_eax3129: .space 4
+	copy_j_ebx3129: .space 4
+	copy_loop_eax3130: .space 4
+	copy_loop_ebx3130: .space 4
+	copy_j_eax3130: .space 4
+	copy_j_ebx3130: .space 4
+	copy_loop_eax3131: .space 4
+	copy_loop_ebx3131: .space 4
+	copy_j_eax3131: .space 4
+	copy_j_ebx3131: .space 4
+	copy_loop_eax3132: .space 4
+	copy_loop_ebx3132: .space 4
+	copy_j_eax3132: .space 4
+	copy_j_ebx3132: .space 4
+	copy_loop_eax3133: .space 4
+	copy_loop_ebx3133: .space 4
+	copy_j_eax3133: .space 4
+	copy_j_ebx3133: .space 4
+	copy_loop_eax3134: .space 4
+	copy_loop_ebx3134: .space 4
+	copy_j_eax3134: .space 4
+	copy_j_ebx3134: .space 4
+	copy_loop_eax3135: .space 4
+	copy_loop_ebx3135: .space 4
+	copy_j_eax3135: .space 4
+	copy_j_ebx3135: .space 4
+	copy_loop_eax3136: .space 4
+	copy_loop_ebx3136: .space 4
+	copy_j_eax3136: .space 4
+	copy_j_ebx3136: .space 4
+	copy_loop_eax3137: .space 4
+	copy_loop_ebx3137: .space 4
+	copy_j_eax3137: .space 4
+	copy_j_ebx3137: .space 4
+	copy_loop_eax3138: .space 4
+	copy_loop_ebx3138: .space 4
+	copy_j_eax3138: .space 4
+	copy_j_ebx3138: .space 4
+	copy_loop_eax3139: .space 4
+	copy_loop_ebx3139: .space 4
+	copy_j_eax3139: .space 4
+	copy_j_ebx3139: .space 4
+	copy_loop_eax3140: .space 4
+	copy_loop_ebx3140: .space 4
+	copy_j_eax3140: .space 4
+	copy_j_ebx3140: .space 4
+	copy_loop_eax3141: .space 4
+	copy_loop_ebx3141: .space 4
+	copy_j_eax3141: .space 4
+	copy_j_ebx3141: .space 4
+	copy_loop_eax3142: .space 4
+	copy_loop_ebx3142: .space 4
+	copy_j_eax3142: .space 4
+	copy_j_ebx3142: .space 4
+	copy_loop_eax3143: .space 4
+	copy_loop_ebx3143: .space 4
+	copy_j_eax3143: .space 4
+	copy_j_ebx3143: .space 4
+	copy_loop_eax3144: .space 4
+	copy_loop_ebx3144: .space 4
+	copy_j_eax3144: .space 4
+	copy_j_ebx3144: .space 4
+	copy_loop_eax3145: .space 4
+	copy_loop_ebx3145: .space 4
+	copy_j_eax3145: .space 4
+	copy_j_ebx3145: .space 4
+	copy_loop_eax3146: .space 4
+	copy_loop_ebx3146: .space 4
+	copy_j_eax3146: .space 4
+	copy_j_ebx3146: .space 4
+	copy_loop_eax3147: .space 4
+	copy_loop_ebx3147: .space 4
+	copy_j_eax3147: .space 4
+	copy_j_ebx3147: .space 4
+	copy_loop_eax3148: .space 4
+	copy_loop_ebx3148: .space 4
+	copy_j_eax3148: .space 4
+	copy_j_ebx3148: .space 4
+	copy_loop_eax3149: .space 4
+	copy_loop_ebx3149: .space 4
+	copy_j_eax3149: .space 4
+	copy_j_ebx3149: .space 4
+	copy_loop_eax3150: .space 4
+	copy_loop_ebx3150: .space 4
+	copy_j_eax3150: .space 4
+	copy_j_ebx3150: .space 4
+	copy_loop_eax3151: .space 4
+	copy_loop_ebx3151: .space 4
+	copy_j_eax3151: .space 4
+	copy_j_ebx3151: .space 4
+	copy_loop_eax3152: .space 4
+	copy_loop_ebx3152: .space 4
+	copy_j_eax3152: .space 4
+	copy_j_ebx3152: .space 4
+	copy_loop_eax3153: .space 4
+	copy_loop_ebx3153: .space 4
+	copy_j_eax3153: .space 4
+	copy_j_ebx3153: .space 4
+	copy_loop_eax3154: .space 4
+	copy_loop_ebx3154: .space 4
+	copy_j_eax3154: .space 4
+	copy_j_ebx3154: .space 4
+	copy_loop_eax3155: .space 4
+	copy_loop_ebx3155: .space 4
+	copy_j_eax3155: .space 4
+	copy_j_ebx3155: .space 4
+	copy_loop_eax3156: .space 4
+	copy_loop_ebx3156: .space 4
+	copy_j_eax3156: .space 4
+	copy_j_ebx3156: .space 4
+	copy_loop_eax3157: .space 4
+	copy_loop_ebx3157: .space 4
+	copy_j_eax3157: .space 4
+	copy_j_ebx3157: .space 4
+	copy_loop_eax3158: .space 4
+	copy_loop_ebx3158: .space 4
+	copy_j_eax3158: .space 4
+	copy_j_ebx3158: .space 4
+	copy_loop_eax3159: .space 4
+	copy_loop_ebx3159: .space 4
+	copy_j_eax3159: .space 4
+	copy_j_ebx3159: .space 4
+	copy_loop_eax3160: .space 4
+	copy_loop_ebx3160: .space 4
+	copy_j_eax3160: .space 4
+	copy_j_ebx3160: .space 4
+	copy_loop_eax3161: .space 4
+	copy_loop_ebx3161: .space 4
+	copy_j_eax3161: .space 4
+	copy_j_ebx3161: .space 4
+	copy_loop_eax3162: .space 4
+	copy_loop_ebx3162: .space 4
+	copy_j_eax3162: .space 4
+	copy_j_ebx3162: .space 4
+	copy_loop_eax3163: .space 4
+	copy_loop_ebx3163: .space 4
+	copy_j_eax3163: .space 4
+	copy_j_ebx3163: .space 4
+	copy_loop_eax3164: .space 4
+	copy_loop_ebx3164: .space 4
+	copy_j_eax3164: .space 4
+	copy_j_ebx3164: .space 4
+	copy_loop_eax3165: .space 4
+	copy_loop_ebx3165: .space 4
+	copy_j_eax3165: .space 4
+	copy_j_ebx3165: .space 4
+	copy_loop_eax3166: .space 4
+	copy_loop_ebx3166: .space 4
+	copy_j_eax3166: .space 4
+	copy_j_ebx3166: .space 4
+	copy_loop_eax3167: .space 4
+	copy_loop_ebx3167: .space 4
+	copy_j_eax3167: .space 4
+	copy_j_ebx3167: .space 4
+	copy_loop_eax3168: .space 4
+	copy_loop_ebx3168: .space 4
+	copy_j_eax3168: .space 4
+	copy_j_ebx3168: .space 4
+	copy_loop_eax3169: .space 4
+	copy_loop_ebx3169: .space 4
+	copy_j_eax3169: .space 4
+	copy_j_ebx3169: .space 4
+	copy_loop_eax3170: .space 4
+	copy_loop_ebx3170: .space 4
+	copy_j_eax3170: .space 4
+	copy_j_ebx3170: .space 4
+	copy_loop_eax3171: .space 4
+	copy_loop_ebx3171: .space 4
+	copy_j_eax3171: .space 4
+	copy_j_ebx3171: .space 4
+	copy_loop_eax3172: .space 4
+	copy_loop_ebx3172: .space 4
+	copy_j_eax3172: .space 4
+	copy_j_ebx3172: .space 4
+	copy_loop_eax3173: .space 4
+	copy_loop_ebx3173: .space 4
+	copy_j_eax3173: .space 4
+	copy_j_ebx3173: .space 4
+	copy_loop_eax3174: .space 4
+	copy_loop_ebx3174: .space 4
+	copy_j_eax3174: .space 4
+	copy_j_ebx3174: .space 4
+	copy_loop_eax3175: .space 4
+	copy_loop_ebx3175: .space 4
+	copy_j_eax3175: .space 4
+	copy_j_ebx3175: .space 4
+	copy_loop_eax3176: .space 4
+	copy_loop_ebx3176: .space 4
+	copy_j_eax3176: .space 4
+	copy_j_ebx3176: .space 4
+	copy_loop_eax3177: .space 4
+	copy_loop_ebx3177: .space 4
+	copy_j_eax3177: .space 4
+	copy_j_ebx3177: .space 4
+	copy_loop_eax3178: .space 4
+	copy_loop_ebx3178: .space 4
+	copy_j_eax3178: .space 4
+	copy_j_ebx3178: .space 4
+	copy_loop_eax3179: .space 4
+	copy_loop_ebx3179: .space 4
+	copy_j_eax3179: .space 4
+	copy_j_ebx3179: .space 4
+	copy_loop_eax3180: .space 4
+	copy_loop_ebx3180: .space 4
+	copy_j_eax3180: .space 4
+	copy_j_ebx3180: .space 4
+	copy_loop_eax3181: .space 4
+	copy_loop_ebx3181: .space 4
+	copy_j_eax3181: .space 4
+	copy_j_ebx3181: .space 4
+	copy_loop_eax3182: .space 4
+	copy_loop_ebx3182: .space 4
+	copy_j_eax3182: .space 4
+	copy_j_ebx3182: .space 4
+	copy_loop_eax3183: .space 4
+	copy_loop_ebx3183: .space 4
+	copy_j_eax3183: .space 4
+	copy_j_ebx3183: .space 4
+	copy_loop_eax3184: .space 4
+	copy_loop_ebx3184: .space 4
+	copy_j_eax3184: .space 4
+	copy_j_ebx3184: .space 4
+	copy_loop_eax3185: .space 4
+	copy_loop_ebx3185: .space 4
+	copy_j_eax3185: .space 4
+	copy_j_ebx3185: .space 4
+	copy_loop_eax3186: .space 4
+	copy_loop_ebx3186: .space 4
+	copy_j_eax3186: .space 4
+	copy_j_ebx3186: .space 4
+	copy_loop_eax3187: .space 4
+	copy_loop_ebx3187: .space 4
+	copy_j_eax3187: .space 4
+	copy_j_ebx3187: .space 4
+	copy_loop_eax3188: .space 4
+	copy_loop_ebx3188: .space 4
+	copy_j_eax3188: .space 4
+	copy_j_ebx3188: .space 4
+	copy_loop_eax3189: .space 4
+	copy_loop_ebx3189: .space 4
+	copy_j_eax3189: .space 4
+	copy_j_ebx3189: .space 4
+	copy_loop_eax3190: .space 4
+	copy_loop_ebx3190: .space 4
+	copy_j_eax3190: .space 4
+	copy_j_ebx3190: .space 4
+	copy_loop_eax3191: .space 4
+	copy_loop_ebx3191: .space 4
+	copy_j_eax3191: .space 4
+	copy_j_ebx3191: .space 4
+	copy_loop_eax3192: .space 4
+	copy_loop_ebx3192: .space 4
+	copy_j_eax3192: .space 4
+	copy_j_ebx3192: .space 4
+	copy_loop_eax3193: .space 4
+	copy_loop_ebx3193: .space 4
+	copy_j_eax3193: .space 4
+	copy_j_ebx3193: .space 4
+	copy_loop_eax3194: .space 4
+	copy_loop_ebx3194: .space 4
+	copy_j_eax3194: .space 4
+	copy_j_ebx3194: .space 4
+	copy_loop_eax3195: .space 4
+	copy_loop_ebx3195: .space 4
+	copy_j_eax3195: .space 4
+	copy_j_ebx3195: .space 4
+	copy_loop_eax3196: .space 4
+	copy_loop_ebx3196: .space 4
+	copy_j_eax3196: .space 4
+	copy_j_ebx3196: .space 4
+	copy_loop_eax3197: .space 4
+	copy_loop_ebx3197: .space 4
+	copy_j_eax3197: .space 4
+	copy_j_ebx3197: .space 4
+	copy_loop_eax3198: .space 4
+	copy_loop_ebx3198: .space 4
+	copy_j_eax3198: .space 4
+	copy_j_ebx3198: .space 4
+	copy_loop_eax3199: .space 4
+	copy_loop_ebx3199: .space 4
+	copy_j_eax3199: .space 4
+	copy_j_ebx3199: .space 4
+	copy_loop_eax3200: .space 4
+	copy_loop_ebx3200: .space 4
+	copy_j_eax3200: .space 4
+	copy_j_ebx3200: .space 4
+	copy_loop_eax3201: .space 4
+	copy_loop_ebx3201: .space 4
+	copy_j_eax3201: .space 4
+	copy_j_ebx3201: .space 4
+	copy_loop_eax3202: .space 4
+	copy_loop_ebx3202: .space 4
+	copy_j_eax3202: .space 4
+	copy_j_ebx3202: .space 4
+	copy_loop_eax3203: .space 4
+	copy_loop_ebx3203: .space 4
+	copy_j_eax3203: .space 4
+	copy_j_ebx3203: .space 4
+	copy_loop_eax3204: .space 4
+	copy_loop_ebx3204: .space 4
+	copy_j_eax3204: .space 4
+	copy_j_ebx3204: .space 4
+	copy_loop_eax3205: .space 4
+	copy_loop_ebx3205: .space 4
+	copy_j_eax3205: .space 4
+	copy_j_ebx3205: .space 4
+	copy_loop_eax3206: .space 4
+	copy_loop_ebx3206: .space 4
+	copy_j_eax3206: .space 4
+	copy_j_ebx3206: .space 4
+	copy_loop_eax3207: .space 4
+	copy_loop_ebx3207: .space 4
+	copy_j_eax3207: .space 4
+	copy_j_ebx3207: .space 4
+	copy_loop_eax3208: .space 4
+	copy_loop_ebx3208: .space 4
+	copy_j_eax3208: .space 4
+	copy_j_ebx3208: .space 4
+	copy_loop_eax3209: .space 4
+	copy_loop_ebx3209: .space 4
+	copy_j_eax3209: .space 4
+	copy_j_ebx3209: .space 4
+	copy_loop_eax3210: .space 4
+	copy_loop_ebx3210: .space 4
+	copy_j_eax3210: .space 4
+	copy_j_ebx3210: .space 4
+	copy_loop_eax3211: .space 4
+	copy_loop_ebx3211: .space 4
+	copy_j_eax3211: .space 4
+	copy_j_ebx3211: .space 4
+	copy_loop_eax3212: .space 4
+	copy_loop_ebx3212: .space 4
+	copy_j_eax3212: .space 4
+	copy_j_ebx3212: .space 4
+	copy_loop_eax3213: .space 4
+	copy_loop_ebx3213: .space 4
+	copy_j_eax3213: .space 4
+	copy_j_ebx3213: .space 4
+	copy_loop_eax3214: .space 4
+	copy_loop_ebx3214: .space 4
+	copy_j_eax3214: .space 4
+	copy_j_ebx3214: .space 4
+	copy_loop_eax3215: .space 4
+	copy_loop_ebx3215: .space 4
+	copy_j_eax3215: .space 4
+	copy_j_ebx3215: .space 4
+	copy_loop_eax3216: .space 4
+	copy_loop_ebx3216: .space 4
+	copy_j_eax3216: .space 4
+	copy_j_ebx3216: .space 4
+	copy_loop_eax3217: .space 4
+	copy_loop_ebx3217: .space 4
+	copy_j_eax3217: .space 4
+	copy_j_ebx3217: .space 4
+	copy_loop_eax3218: .space 4
+	copy_loop_ebx3218: .space 4
+	copy_j_eax3218: .space 4
+	copy_j_ebx3218: .space 4
+	copy_loop_eax3219: .space 4
+	copy_loop_ebx3219: .space 4
+	copy_j_eax3219: .space 4
+	copy_j_ebx3219: .space 4
+	copy_loop_eax3220: .space 4
+	copy_loop_ebx3220: .space 4
+	copy_j_eax3220: .space 4
+	copy_j_ebx3220: .space 4
+	copy_loop_eax3221: .space 4
+	copy_loop_ebx3221: .space 4
+	copy_j_eax3221: .space 4
+	copy_j_ebx3221: .space 4
+	copy_loop_eax3222: .space 4
+	copy_loop_ebx3222: .space 4
+	copy_j_eax3222: .space 4
+	copy_j_ebx3222: .space 4
+	copy_loop_eax3223: .space 4
+	copy_loop_ebx3223: .space 4
+	copy_j_eax3223: .space 4
+	copy_j_ebx3223: .space 4
+	copy_loop_eax3224: .space 4
+	copy_loop_ebx3224: .space 4
+	copy_j_eax3224: .space 4
+	copy_j_ebx3224: .space 4
+	copy_loop_eax3225: .space 4
+	copy_loop_ebx3225: .space 4
+	copy_j_eax3225: .space 4
+	copy_j_ebx3225: .space 4
+	copy_loop_eax3226: .space 4
+	copy_loop_ebx3226: .space 4
+	copy_j_eax3226: .space 4
+	copy_j_ebx3226: .space 4
+	copy_loop_eax3227: .space 4
+	copy_loop_ebx3227: .space 4
+	copy_j_eax3227: .space 4
+	copy_j_ebx3227: .space 4
+	copy_loop_eax3228: .space 4
+	copy_loop_ebx3228: .space 4
+	copy_j_eax3228: .space 4
+	copy_j_ebx3228: .space 4
+	copy_loop_eax3229: .space 4
+	copy_loop_ebx3229: .space 4
+	copy_j_eax3229: .space 4
+	copy_j_ebx3229: .space 4
+	copy_loop_eax3230: .space 4
+	copy_loop_ebx3230: .space 4
+	copy_j_eax3230: .space 4
+	copy_j_ebx3230: .space 4
+	copy_loop_eax3231: .space 4
+	copy_loop_ebx3231: .space 4
+	copy_j_eax3231: .space 4
+	copy_j_ebx3231: .space 4
+	copy_loop_eax3232: .space 4
+	copy_loop_ebx3232: .space 4
+	copy_j_eax3232: .space 4
+	copy_j_ebx3232: .space 4
+	copy_loop_eax3233: .space 4
+	copy_loop_ebx3233: .space 4
+	copy_j_eax3233: .space 4
+	copy_j_ebx3233: .space 4
+	copy_loop_eax3234: .space 4
+	copy_loop_ebx3234: .space 4
+	copy_j_eax3234: .space 4
+	copy_j_ebx3234: .space 4
+	copy_loop_eax3235: .space 4
+	copy_loop_ebx3235: .space 4
+	copy_j_eax3235: .space 4
+	copy_j_ebx3235: .space 4
+	copy_loop_eax3236: .space 4
+	copy_loop_ebx3236: .space 4
+	copy_j_eax3236: .space 4
+	copy_j_ebx3236: .space 4
+	copy_loop_eax3237: .space 4
+	copy_loop_ebx3237: .space 4
+	copy_j_eax3237: .space 4
+	copy_j_ebx3237: .space 4
+	copy_loop_eax3238: .space 4
+	copy_loop_ebx3238: .space 4
+	copy_j_eax3238: .space 4
+	copy_j_ebx3238: .space 4
+	copy_loop_eax3239: .space 4
+	copy_loop_ebx3239: .space 4
+	copy_j_eax3239: .space 4
+	copy_j_ebx3239: .space 4
+	copy_loop_eax3240: .space 4
+	copy_loop_ebx3240: .space 4
+	copy_j_eax3240: .space 4
+	copy_j_ebx3240: .space 4
+	copy_loop_eax3241: .space 4
+	copy_loop_ebx3241: .space 4
+	copy_j_eax3241: .space 4
+	copy_j_ebx3241: .space 4
+	copy_loop_eax3242: .space 4
+	copy_loop_ebx3242: .space 4
+	copy_j_eax3242: .space 4
+	copy_j_ebx3242: .space 4
+	copy_loop_eax3243: .space 4
+	copy_loop_ebx3243: .space 4
+	copy_j_eax3243: .space 4
+	copy_j_ebx3243: .space 4
+	copy_loop_eax3244: .space 4
+	copy_loop_ebx3244: .space 4
+	copy_j_eax3244: .space 4
+	copy_j_ebx3244: .space 4
+	copy_loop_eax3245: .space 4
+	copy_loop_ebx3245: .space 4
+	copy_j_eax3245: .space 4
+	copy_j_ebx3245: .space 4
+	copy_loop_eax3246: .space 4
+	copy_loop_ebx3246: .space 4
+	copy_j_eax3246: .space 4
+	copy_j_ebx3246: .space 4
+	copy_loop_eax3247: .space 4
+	copy_loop_ebx3247: .space 4
+	copy_j_eax3247: .space 4
+	copy_j_ebx3247: .space 4
+	copy_loop_eax3248: .space 4
+	copy_loop_ebx3248: .space 4
+	copy_j_eax3248: .space 4
+	copy_j_ebx3248: .space 4
+	copy_loop_eax3249: .space 4
+	copy_loop_ebx3249: .space 4
+	copy_j_eax3249: .space 4
+	copy_j_ebx3249: .space 4
+	copy_loop_eax3250: .space 4
+	copy_loop_ebx3250: .space 4
+	copy_j_eax3250: .space 4
+	copy_j_ebx3250: .space 4
+	copy_loop_eax3251: .space 4
+	copy_loop_ebx3251: .space 4
+	copy_j_eax3251: .space 4
+	copy_j_ebx3251: .space 4
+	copy_loop_eax3252: .space 4
+	copy_loop_ebx3252: .space 4
+	copy_j_eax3252: .space 4
+	copy_j_ebx3252: .space 4
+	copy_loop_eax3253: .space 4
+	copy_loop_ebx3253: .space 4
+	copy_j_eax3253: .space 4
+	copy_j_ebx3253: .space 4
+	copy_loop_eax3254: .space 4
+	copy_loop_ebx3254: .space 4
+	copy_j_eax3254: .space 4
+	copy_j_ebx3254: .space 4
+	copy_loop_eax3255: .space 4
+	copy_loop_ebx3255: .space 4
+	copy_j_eax3255: .space 4
+	copy_j_ebx3255: .space 4
+	copy_loop_eax3256: .space 4
+	copy_loop_ebx3256: .space 4
+	copy_j_eax3256: .space 4
+	copy_j_ebx3256: .space 4
+	copy_loop_eax3257: .space 4
+	copy_loop_ebx3257: .space 4
+	copy_j_eax3257: .space 4
+	copy_j_ebx3257: .space 4
+	copy_loop_eax3258: .space 4
+	copy_loop_ebx3258: .space 4
+	copy_j_eax3258: .space 4
+	copy_j_ebx3258: .space 4
+	copy_loop_eax3259: .space 4
+	copy_loop_ebx3259: .space 4
+	copy_j_eax3259: .space 4
+	copy_j_ebx3259: .space 4
+	copy_loop_eax3260: .space 4
+	copy_loop_ebx3260: .space 4
+	copy_j_eax3260: .space 4
+	copy_j_ebx3260: .space 4
+	copy_loop_eax3261: .space 4
+	copy_loop_ebx3261: .space 4
+	copy_j_eax3261: .space 4
+	copy_j_ebx3261: .space 4
+	copy_loop_eax3262: .space 4
+	copy_loop_ebx3262: .space 4
+	copy_j_eax3262: .space 4
+	copy_j_ebx3262: .space 4
+	copy_loop_eax3263: .space 4
+	copy_loop_ebx3263: .space 4
+	copy_j_eax3263: .space 4
+	copy_j_ebx3263: .space 4
+	copy_loop_eax3264: .space 4
+	copy_loop_ebx3264: .space 4
+	copy_j_eax3264: .space 4
+	copy_j_ebx3264: .space 4
+	copy_loop_eax3265: .space 4
+	copy_loop_ebx3265: .space 4
+	copy_j_eax3265: .space 4
+	copy_j_ebx3265: .space 4
+	copy_loop_eax3266: .space 4
+	copy_loop_ebx3266: .space 4
+	copy_j_eax3266: .space 4
+	copy_j_ebx3266: .space 4
+	copy_loop_eax3267: .space 4
+	copy_loop_ebx3267: .space 4
+	copy_j_eax3267: .space 4
+	copy_j_ebx3267: .space 4
+	copy_loop_eax3268: .space 4
+	copy_loop_ebx3268: .space 4
+	copy_j_eax3268: .space 4
+	copy_j_ebx3268: .space 4
+	copy_loop_eax3269: .space 4
+	copy_loop_ebx3269: .space 4
+	copy_j_eax3269: .space 4
+	copy_j_ebx3269: .space 4
+	copy_loop_eax3270: .space 4
+	copy_loop_ebx3270: .space 4
+	copy_j_eax3270: .space 4
+	copy_j_ebx3270: .space 4
+	copy_loop_eax3271: .space 4
+	copy_loop_ebx3271: .space 4
+	copy_j_eax3271: .space 4
+	copy_j_ebx3271: .space 4
+	copy_loop_eax3272: .space 4
+	copy_loop_ebx3272: .space 4
+	copy_j_eax3272: .space 4
+	copy_j_ebx3272: .space 4
+	copy_loop_eax3273: .space 4
+	copy_loop_ebx3273: .space 4
+	copy_j_eax3273: .space 4
+	copy_j_ebx3273: .space 4
+	copy_loop_eax3274: .space 4
+	copy_loop_ebx3274: .space 4
+	copy_j_eax3274: .space 4
+	copy_j_ebx3274: .space 4
+	copy_loop_eax3275: .space 4
+	copy_loop_ebx3275: .space 4
+	copy_j_eax3275: .space 4
+	copy_j_ebx3275: .space 4
+	copy_loop_eax3276: .space 4
+	copy_loop_ebx3276: .space 4
+	copy_j_eax3276: .space 4
+	copy_j_ebx3276: .space 4
+	copy_loop_eax3277: .space 4
+	copy_loop_ebx3277: .space 4
+	copy_j_eax3277: .space 4
+	copy_j_ebx3277: .space 4
+	copy_loop_eax3278: .space 4
+	copy_loop_ebx3278: .space 4
+	copy_j_eax3278: .space 4
+	copy_j_ebx3278: .space 4
+	copy_loop_eax3279: .space 4
+	copy_loop_ebx3279: .space 4
+	copy_j_eax3279: .space 4
+	copy_j_ebx3279: .space 4
+	copy_loop_eax3280: .space 4
+	copy_loop_ebx3280: .space 4
+	copy_j_eax3280: .space 4
+	copy_j_ebx3280: .space 4
+	copy_loop_eax3281: .space 4
+	copy_loop_ebx3281: .space 4
+	copy_j_eax3281: .space 4
+	copy_j_ebx3281: .space 4
+	copy_loop_eax3282: .space 4
+	copy_loop_ebx3282: .space 4
+	copy_j_eax3282: .space 4
+	copy_j_ebx3282: .space 4
+	copy_loop_eax3283: .space 4
+	copy_loop_ebx3283: .space 4
+	copy_j_eax3283: .space 4
+	copy_j_ebx3283: .space 4
+	copy_loop_eax3284: .space 4
+	copy_loop_ebx3284: .space 4
+	copy_j_eax3284: .space 4
+	copy_j_ebx3284: .space 4
+	copy_loop_eax3285: .space 4
+	copy_loop_ebx3285: .space 4
+	copy_j_eax3285: .space 4
+	copy_j_ebx3285: .space 4
+	copy_loop_eax3286: .space 4
+	copy_loop_ebx3286: .space 4
+	copy_j_eax3286: .space 4
+	copy_j_ebx3286: .space 4
+	copy_loop_eax3287: .space 4
+	copy_loop_ebx3287: .space 4
+	copy_j_eax3287: .space 4
+	copy_j_ebx3287: .space 4
+	copy_loop_eax3288: .space 4
+	copy_loop_ebx3288: .space 4
+	copy_j_eax3288: .space 4
+	copy_j_ebx3288: .space 4
+	copy_loop_eax3289: .space 4
+	copy_loop_ebx3289: .space 4
+	copy_j_eax3289: .space 4
+	copy_j_ebx3289: .space 4
+	copy_loop_eax3290: .space 4
+	copy_loop_ebx3290: .space 4
+	copy_j_eax3290: .space 4
+	copy_j_ebx3290: .space 4
+	copy_loop_eax3291: .space 4
+	copy_loop_ebx3291: .space 4
+	copy_j_eax3291: .space 4
+	copy_j_ebx3291: .space 4
+	copy_loop_eax3292: .space 4
+	copy_loop_ebx3292: .space 4
+	copy_j_eax3292: .space 4
+	copy_j_ebx3292: .space 4
+	copy_loop_eax3293: .space 4
+	copy_loop_ebx3293: .space 4
+	copy_j_eax3293: .space 4
+	copy_j_ebx3293: .space 4
+	copy_loop_eax3294: .space 4
+	copy_loop_ebx3294: .space 4
+	copy_j_eax3294: .space 4
+	copy_j_ebx3294: .space 4
+	copy_loop_eax3295: .space 4
+	copy_loop_ebx3295: .space 4
+	copy_j_eax3295: .space 4
+	copy_j_ebx3295: .space 4
+	copy_loop_eax3296: .space 4
+	copy_loop_ebx3296: .space 4
+	copy_j_eax3296: .space 4
+	copy_j_ebx3296: .space 4
+	copy_loop_eax3297: .space 4
+	copy_loop_ebx3297: .space 4
+	copy_j_eax3297: .space 4
+	copy_j_ebx3297: .space 4
+	copy_loop_eax3298: .space 4
+	copy_loop_ebx3298: .space 4
+	copy_j_eax3298: .space 4
+	copy_j_ebx3298: .space 4
+	copy_loop_eax3299: .space 4
+	copy_loop_ebx3299: .space 4
+	copy_j_eax3299: .space 4
+	copy_j_ebx3299: .space 4
+	copy_loop_eax3300: .space 4
+	copy_loop_ebx3300: .space 4
+	copy_j_eax3300: .space 4
+	copy_j_ebx3300: .space 4
+	copy_loop_eax3301: .space 4
+	copy_loop_ebx3301: .space 4
+	copy_j_eax3301: .space 4
+	copy_j_ebx3301: .space 4
+	copy_loop_eax3302: .space 4
+	copy_loop_ebx3302: .space 4
+	copy_j_eax3302: .space 4
+	copy_j_ebx3302: .space 4
+	copy_loop_eax3303: .space 4
+	copy_loop_ebx3303: .space 4
+	copy_j_eax3303: .space 4
+	copy_j_ebx3303: .space 4
+	copy_loop_eax3304: .space 4
+	copy_loop_ebx3304: .space 4
+	copy_j_eax3304: .space 4
+	copy_j_ebx3304: .space 4
+	copy_loop_eax3305: .space 4
+	copy_loop_ebx3305: .space 4
+	copy_j_eax3305: .space 4
+	copy_j_ebx3305: .space 4
+	copy_loop_eax3306: .space 4
+	copy_loop_ebx3306: .space 4
+	copy_j_eax3306: .space 4
+	copy_j_ebx3306: .space 4
+	copy_loop_eax3307: .space 4
+	copy_loop_ebx3307: .space 4
+	copy_j_eax3307: .space 4
+	copy_j_ebx3307: .space 4
+	copy_loop_eax3308: .space 4
+	copy_loop_ebx3308: .space 4
+	copy_j_eax3308: .space 4
+	copy_j_ebx3308: .space 4
+	copy_loop_eax3309: .space 4
+	copy_loop_ebx3309: .space 4
+	copy_j_eax3309: .space 4
+	copy_j_ebx3309: .space 4
+	copy_loop_eax3310: .space 4
+	copy_loop_ebx3310: .space 4
+	copy_j_eax3310: .space 4
+	copy_j_ebx3310: .space 4
+	copy_loop_eax3311: .space 4
+	copy_loop_ebx3311: .space 4
+	copy_j_eax3311: .space 4
+	copy_j_ebx3311: .space 4
+	copy_loop_eax3312: .space 4
+	copy_loop_ebx3312: .space 4
+	copy_j_eax3312: .space 4
+	copy_j_ebx3312: .space 4
+	copy_loop_eax3313: .space 4
+	copy_loop_ebx3313: .space 4
+	copy_j_eax3313: .space 4
+	copy_j_ebx3313: .space 4
+	copy_loop_eax3314: .space 4
+	copy_loop_ebx3314: .space 4
+	copy_j_eax3314: .space 4
+	copy_j_ebx3314: .space 4
+	copy_loop_eax3315: .space 4
+	copy_loop_ebx3315: .space 4
+	copy_j_eax3315: .space 4
+	copy_j_ebx3315: .space 4
+	copy_loop_eax3316: .space 4
+	copy_loop_ebx3316: .space 4
+	copy_j_eax3316: .space 4
+	copy_j_ebx3316: .space 4
+	copy_loop_eax3317: .space 4
+	copy_loop_ebx3317: .space 4
+	copy_j_eax3317: .space 4
+	copy_j_ebx3317: .space 4
+	copy_loop_eax3318: .space 4
+	copy_loop_ebx3318: .space 4
+	copy_j_eax3318: .space 4
+	copy_j_ebx3318: .space 4
+	copy_loop_eax3319: .space 4
+	copy_loop_ebx3319: .space 4
+	copy_j_eax3319: .space 4
+	copy_j_ebx3319: .space 4
+	copy_loop_eax3320: .space 4
+	copy_loop_ebx3320: .space 4
+	copy_j_eax3320: .space 4
+	copy_j_ebx3320: .space 4
+	copy_loop_eax3321: .space 4
+	copy_loop_ebx3321: .space 4
+	copy_j_eax3321: .space 4
+	copy_j_ebx3321: .space 4
+	copy_loop_eax3322: .space 4
+	copy_loop_ebx3322: .space 4
+	copy_j_eax3322: .space 4
+	copy_j_ebx3322: .space 4
+	copy_loop_eax3323: .space 4
+	copy_loop_ebx3323: .space 4
+	copy_j_eax3323: .space 4
+	copy_j_ebx3323: .space 4
+	copy_loop_eax3324: .space 4
+	copy_loop_ebx3324: .space 4
+	copy_j_eax3324: .space 4
+	copy_j_ebx3324: .space 4
+	copy_loop_eax3325: .space 4
+	copy_loop_ebx3325: .space 4
+	copy_j_eax3325: .space 4
+	copy_j_ebx3325: .space 4
+	copy_loop_eax3326: .space 4
+	copy_loop_ebx3326: .space 4
+	copy_j_eax3326: .space 4
+	copy_j_ebx3326: .space 4
+	copy_loop_eax3327: .space 4
+	copy_loop_ebx3327: .space 4
+	copy_j_eax3327: .space 4
+	copy_j_ebx3327: .space 4
+	copy_loop_eax3328: .space 4
+	copy_loop_ebx3328: .space 4
+	copy_j_eax3328: .space 4
+	copy_j_ebx3328: .space 4
+	copy_loop_eax3329: .space 4
+	copy_loop_ebx3329: .space 4
+	copy_j_eax3329: .space 4
+	copy_j_ebx3329: .space 4
+	copy_loop_eax3330: .space 4
+	copy_loop_ebx3330: .space 4
+	copy_j_eax3330: .space 4
+	copy_j_ebx3330: .space 4
+	copy_loop_eax3331: .space 4
+	copy_loop_ebx3331: .space 4
+	copy_j_eax3331: .space 4
+	copy_j_ebx3331: .space 4
+	copy_loop_eax3332: .space 4
+	copy_loop_ebx3332: .space 4
+	copy_j_eax3332: .space 4
+	copy_j_ebx3332: .space 4
+	copy_loop_eax3333: .space 4
+	copy_loop_ebx3333: .space 4
+	copy_j_eax3333: .space 4
+	copy_j_ebx3333: .space 4
+	copy_loop_eax3334: .space 4
+	copy_loop_ebx3334: .space 4
+	copy_j_eax3334: .space 4
+	copy_j_ebx3334: .space 4
+	copy_loop_eax3335: .space 4
+	copy_loop_ebx3335: .space 4
+	copy_j_eax3335: .space 4
+	copy_j_ebx3335: .space 4
+	copy_loop_eax3336: .space 4
+	copy_loop_ebx3336: .space 4
+	copy_j_eax3336: .space 4
+	copy_j_ebx3336: .space 4
+	copy_loop_eax3337: .space 4
+	copy_loop_ebx3337: .space 4
+	copy_j_eax3337: .space 4
+	copy_j_ebx3337: .space 4
+	copy_loop_eax3338: .space 4
+	copy_loop_ebx3338: .space 4
+	copy_j_eax3338: .space 4
+	copy_j_ebx3338: .space 4
+	copy_loop_eax3339: .space 4
+	copy_loop_ebx3339: .space 4
+	copy_j_eax3339: .space 4
+	copy_j_ebx3339: .space 4
+	copy_loop_eax3340: .space 4
+	copy_loop_ebx3340: .space 4
+	copy_j_eax3340: .space 4
+	copy_j_ebx3340: .space 4
+	copy_loop_eax3341: .space 4
+	copy_loop_ebx3341: .space 4
+	copy_j_eax3341: .space 4
+	copy_j_ebx3341: .space 4
+	copy_loop_eax3342: .space 4
+	copy_loop_ebx3342: .space 4
+	copy_j_eax3342: .space 4
+	copy_j_ebx3342: .space 4
+	copy_loop_eax3343: .space 4
+	copy_loop_ebx3343: .space 4
+	copy_j_eax3343: .space 4
+	copy_j_ebx3343: .space 4
+	copy_loop_eax3344: .space 4
+	copy_loop_ebx3344: .space 4
+	copy_j_eax3344: .space 4
+	copy_j_ebx3344: .space 4
+	copy_loop_eax3345: .space 4
+	copy_loop_ebx3345: .space 4
+	copy_j_eax3345: .space 4
+	copy_j_ebx3345: .space 4
+	copy_loop_eax3346: .space 4
+	copy_loop_ebx3346: .space 4
+	copy_j_eax3346: .space 4
+	copy_j_ebx3346: .space 4
+	copy_loop_eax3347: .space 4
+	copy_loop_ebx3347: .space 4
+	copy_j_eax3347: .space 4
+	copy_j_ebx3347: .space 4
+	copy_loop_eax3348: .space 4
+	copy_loop_ebx3348: .space 4
+	copy_j_eax3348: .space 4
+	copy_j_ebx3348: .space 4
+	copy_loop_eax3349: .space 4
+	copy_loop_ebx3349: .space 4
+	copy_j_eax3349: .space 4
+	copy_j_ebx3349: .space 4
+	copy_loop_eax3350: .space 4
+	copy_loop_ebx3350: .space 4
+	copy_j_eax3350: .space 4
+	copy_j_ebx3350: .space 4
+	copy_loop_eax3351: .space 4
+	copy_loop_ebx3351: .space 4
+	copy_j_eax3351: .space 4
+	copy_j_ebx3351: .space 4
+	copy_loop_eax3352: .space 4
+	copy_loop_ebx3352: .space 4
+	copy_j_eax3352: .space 4
+	copy_j_ebx3352: .space 4
+	copy_loop_eax3353: .space 4
+	copy_loop_ebx3353: .space 4
+	copy_j_eax3353: .space 4
+	copy_j_ebx3353: .space 4
+	copy_loop_eax3354: .space 4
+	copy_loop_ebx3354: .space 4
+	copy_j_eax3354: .space 4
+	copy_j_ebx3354: .space 4
+	copy_loop_eax3355: .space 4
+	copy_loop_ebx3355: .space 4
+	copy_j_eax3355: .space 4
+	copy_j_ebx3355: .space 4
+	copy_loop_eax3356: .space 4
+	copy_loop_ebx3356: .space 4
+	copy_j_eax3356: .space 4
+	copy_j_ebx3356: .space 4
+	copy_loop_eax3357: .space 4
+	copy_loop_ebx3357: .space 4
+	copy_j_eax3357: .space 4
+	copy_j_ebx3357: .space 4
+	copy_loop_eax3358: .space 4
+	copy_loop_ebx3358: .space 4
+	copy_j_eax3358: .space 4
+	copy_j_ebx3358: .space 4
+	copy_loop_eax3359: .space 4
+	copy_loop_ebx3359: .space 4
+	copy_j_eax3359: .space 4
+	copy_j_ebx3359: .space 4
+	copy_loop_eax3360: .space 4
+	copy_loop_ebx3360: .space 4
+	copy_j_eax3360: .space 4
+	copy_j_ebx3360: .space 4
+	copy_loop_eax3361: .space 4
+	copy_loop_ebx3361: .space 4
+	copy_j_eax3361: .space 4
+	copy_j_ebx3361: .space 4
+	copy_loop_eax3362: .space 4
+	copy_loop_ebx3362: .space 4
+	copy_j_eax3362: .space 4
+	copy_j_ebx3362: .space 4
+	copy_loop_eax3363: .space 4
+	copy_loop_ebx3363: .space 4
+	copy_j_eax3363: .space 4
+	copy_j_ebx3363: .space 4
+	copy_loop_eax3364: .space 4
+	copy_loop_ebx3364: .space 4
+	copy_j_eax3364: .space 4
+	copy_j_ebx3364: .space 4
+	copy_loop_eax3365: .space 4
+	copy_loop_ebx3365: .space 4
+	copy_j_eax3365: .space 4
+	copy_j_ebx3365: .space 4
+	copy_loop_eax3366: .space 4
+	copy_loop_ebx3366: .space 4
+	copy_j_eax3366: .space 4
+	copy_j_ebx3366: .space 4
+	copy_loop_eax3367: .space 4
+	copy_loop_ebx3367: .space 4
+	copy_j_eax3367: .space 4
+	copy_j_ebx3367: .space 4
+	copy_loop_eax3368: .space 4
+	copy_loop_ebx3368: .space 4
+	copy_j_eax3368: .space 4
+	copy_j_ebx3368: .space 4
+	copy_loop_eax3369: .space 4
+	copy_loop_ebx3369: .space 4
+	copy_j_eax3369: .space 4
+	copy_j_ebx3369: .space 4
+	copy_loop_eax3370: .space 4
+	copy_loop_ebx3370: .space 4
+	copy_j_eax3370: .space 4
+	copy_j_ebx3370: .space 4
+	copy_loop_eax3371: .space 4
+	copy_loop_ebx3371: .space 4
+	copy_j_eax3371: .space 4
+	copy_j_ebx3371: .space 4
+	copy_loop_eax3372: .space 4
+	copy_loop_ebx3372: .space 4
+	copy_j_eax3372: .space 4
+	copy_j_ebx3372: .space 4
+	copy_loop_eax3373: .space 4
+	copy_loop_ebx3373: .space 4
+	copy_j_eax3373: .space 4
+	copy_j_ebx3373: .space 4
+	copy_loop_eax3374: .space 4
+	copy_loop_ebx3374: .space 4
+	copy_j_eax3374: .space 4
+	copy_j_ebx3374: .space 4
+	copy_loop_eax3375: .space 4
+	copy_loop_ebx3375: .space 4
+	copy_j_eax3375: .space 4
+	copy_j_ebx3375: .space 4
+	copy_loop_eax3376: .space 4
+	copy_loop_ebx3376: .space 4
+	copy_j_eax3376: .space 4
+	copy_j_ebx3376: .space 4
+	copy_loop_eax3377: .space 4
+	copy_loop_ebx3377: .space 4
+	copy_j_eax3377: .space 4
+	copy_j_ebx3377: .space 4
+	copy_loop_eax3378: .space 4
+	copy_loop_ebx3378: .space 4
+	copy_j_eax3378: .space 4
+	copy_j_ebx3378: .space 4
+	copy_loop_eax3379: .space 4
+	copy_loop_ebx3379: .space 4
+	copy_j_eax3379: .space 4
+	copy_j_ebx3379: .space 4
+	copy_loop_eax3380: .space 4
+	copy_loop_ebx3380: .space 4
+	copy_j_eax3380: .space 4
+	copy_j_ebx3380: .space 4
+	copy_loop_eax3381: .space 4
+	copy_loop_ebx3381: .space 4
+	copy_j_eax3381: .space 4
+	copy_j_ebx3381: .space 4
+	copy_loop_eax3382: .space 4
+	copy_loop_ebx3382: .space 4
+	copy_j_eax3382: .space 4
+	copy_j_ebx3382: .space 4
+	copy_loop_eax3383: .space 4
+	copy_loop_ebx3383: .space 4
+	copy_j_eax3383: .space 4
+	copy_j_ebx3383: .space 4
+	copy_loop_eax3384: .space 4
+	copy_loop_ebx3384: .space 4
+	copy_j_eax3384: .space 4
+	copy_j_ebx3384: .space 4
+	copy_loop_eax3385: .space 4
+	copy_loop_ebx3385: .space 4
+	copy_j_eax3385: .space 4
+	copy_j_ebx3385: .space 4
+	copy_loop_eax3386: .space 4
+	copy_loop_ebx3386: .space 4
+	copy_j_eax3386: .space 4
+	copy_j_ebx3386: .space 4
+	copy_loop_eax3387: .space 4
+	copy_loop_ebx3387: .space 4
+	copy_j_eax3387: .space 4
+	copy_j_ebx3387: .space 4
+	copy_loop_eax3388: .space 4
+	copy_loop_ebx3388: .space 4
+	copy_j_eax3388: .space 4
+	copy_j_ebx3388: .space 4
+	copy_loop_eax3389: .space 4
+	copy_loop_ebx3389: .space 4
+	copy_j_eax3389: .space 4
+	copy_j_ebx3389: .space 4
+	copy_loop_eax3390: .space 4
+	copy_loop_ebx3390: .space 4
+	copy_j_eax3390: .space 4
+	copy_j_ebx3390: .space 4
+	copy_loop_eax3391: .space 4
+	copy_loop_ebx3391: .space 4
+	copy_j_eax3391: .space 4
+	copy_j_ebx3391: .space 4
+	copy_loop_eax3392: .space 4
+	copy_loop_ebx3392: .space 4
+	copy_j_eax3392: .space 4
+	copy_j_ebx3392: .space 4
+	copy_loop_eax3393: .space 4
+	copy_loop_ebx3393: .space 4
+	copy_j_eax3393: .space 4
+	copy_j_ebx3393: .space 4
+	copy_loop_eax3394: .space 4
+	copy_loop_ebx3394: .space 4
+	copy_j_eax3394: .space 4
+	copy_j_ebx3394: .space 4
+	copy_loop_eax3395: .space 4
+	copy_loop_ebx3395: .space 4
+	copy_j_eax3395: .space 4
+	copy_j_ebx3395: .space 4
+	copy_loop_eax3396: .space 4
+	copy_loop_ebx3396: .space 4
+	copy_j_eax3396: .space 4
+	copy_j_ebx3396: .space 4
+	copy_loop_eax3397: .space 4
+	copy_loop_ebx3397: .space 4
+	copy_j_eax3397: .space 4
+	copy_j_ebx3397: .space 4
+	copy_loop_eax3398: .space 4
+	copy_loop_ebx3398: .space 4
+	copy_j_eax3398: .space 4
+	copy_j_ebx3398: .space 4
+	copy_loop_eax3399: .space 4
+	copy_loop_ebx3399: .space 4
+	copy_j_eax3399: .space 4
+	copy_j_ebx3399: .space 4
+	copy_loop_eax3400: .space 4
+	copy_loop_ebx3400: .space 4
+	copy_j_eax3400: .space 4
+	copy_j_ebx3400: .space 4
+	copy_loop_eax3401: .space 4
+	copy_loop_ebx3401: .space 4
+	copy_j_eax3401: .space 4
+	copy_j_ebx3401: .space 4
+	copy_loop_eax3402: .space 4
+	copy_loop_ebx3402: .space 4
+	copy_j_eax3402: .space 4
+	copy_j_ebx3402: .space 4
+	copy_loop_eax3403: .space 4
+	copy_loop_ebx3403: .space 4
+	copy_j_eax3403: .space 4
+	copy_j_ebx3403: .space 4
+	copy_loop_eax3404: .space 4
+	copy_loop_ebx3404: .space 4
+	copy_j_eax3404: .space 4
+	copy_j_ebx3404: .space 4
+	copy_loop_eax3405: .space 4
+	copy_loop_ebx3405: .space 4
+	copy_j_eax3405: .space 4
+	copy_j_ebx3405: .space 4
+	copy_loop_eax3406: .space 4
+	copy_loop_ebx3406: .space 4
+	copy_j_eax3406: .space 4
+	copy_j_ebx3406: .space 4
+	copy_loop_eax3407: .space 4
+	copy_loop_ebx3407: .space 4
+	copy_j_eax3407: .space 4
+	copy_j_ebx3407: .space 4
+	copy_loop_eax3408: .space 4
+	copy_loop_ebx3408: .space 4
+	copy_j_eax3408: .space 4
+	copy_j_ebx3408: .space 4
+	copy_loop_eax3409: .space 4
+	copy_loop_ebx3409: .space 4
+	copy_j_eax3409: .space 4
+	copy_j_ebx3409: .space 4
+	copy_loop_eax3410: .space 4
+	copy_loop_ebx3410: .space 4
+	copy_j_eax3410: .space 4
+	copy_j_ebx3410: .space 4
+	copy_loop_eax3411: .space 4
+	copy_loop_ebx3411: .space 4
+	copy_j_eax3411: .space 4
+	copy_j_ebx3411: .space 4
+	copy_loop_eax3412: .space 4
+	copy_loop_ebx3412: .space 4
+	copy_j_eax3412: .space 4
+	copy_j_ebx3412: .space 4
+	copy_loop_eax3413: .space 4
+	copy_loop_ebx3413: .space 4
+	copy_j_eax3413: .space 4
+	copy_j_ebx3413: .space 4
+	copy_loop_eax3414: .space 4
+	copy_loop_ebx3414: .space 4
+	copy_j_eax3414: .space 4
+	copy_j_ebx3414: .space 4
+	copy_loop_eax3415: .space 4
+	copy_loop_ebx3415: .space 4
+	copy_j_eax3415: .space 4
+	copy_j_ebx3415: .space 4
+	copy_loop_eax3416: .space 4
+	copy_loop_ebx3416: .space 4
+	copy_j_eax3416: .space 4
+	copy_j_ebx3416: .space 4
+	copy_loop_eax3417: .space 4
+	copy_loop_ebx3417: .space 4
+	copy_j_eax3417: .space 4
+	copy_j_ebx3417: .space 4
+	copy_loop_eax3418: .space 4
+	copy_loop_ebx3418: .space 4
+	copy_j_eax3418: .space 4
+	copy_j_ebx3418: .space 4
+	copy_loop_eax3419: .space 4
+	copy_loop_ebx3419: .space 4
+	copy_j_eax3419: .space 4
+	copy_j_ebx3419: .space 4
+	copy_loop_eax3420: .space 4
+	copy_loop_ebx3420: .space 4
+	copy_j_eax3420: .space 4
+	copy_j_ebx3420: .space 4
+	copy_loop_eax3421: .space 4
+	copy_loop_ebx3421: .space 4
+	copy_j_eax3421: .space 4
+	copy_j_ebx3421: .space 4
+	copy_loop_eax3422: .space 4
+	copy_loop_ebx3422: .space 4
+	copy_j_eax3422: .space 4
+	copy_j_ebx3422: .space 4
+	copy_loop_eax3423: .space 4
+	copy_loop_ebx3423: .space 4
+	copy_j_eax3423: .space 4
+	copy_j_ebx3423: .space 4
+	copy_loop_eax3424: .space 4
+	copy_loop_ebx3424: .space 4
+	copy_j_eax3424: .space 4
+	copy_j_ebx3424: .space 4
+	copy_loop_eax3425: .space 4
+	copy_loop_ebx3425: .space 4
+	copy_j_eax3425: .space 4
+	copy_j_ebx3425: .space 4
+	copy_loop_eax3426: .space 4
+	copy_loop_ebx3426: .space 4
+	copy_j_eax3426: .space 4
+	copy_j_ebx3426: .space 4
+	copy_loop_eax3427: .space 4
+	copy_loop_ebx3427: .space 4
+	copy_j_eax3427: .space 4
+	copy_j_ebx3427: .space 4
+	copy_loop_eax3428: .space 4
+	copy_loop_ebx3428: .space 4
+	copy_j_eax3428: .space 4
+	copy_j_ebx3428: .space 4
+	copy_loop_eax3429: .space 4
+	copy_loop_ebx3429: .space 4
+	copy_j_eax3429: .space 4
+	copy_j_ebx3429: .space 4
+	copy_loop_eax3430: .space 4
+	copy_loop_ebx3430: .space 4
+	copy_j_eax3430: .space 4
+	copy_j_ebx3430: .space 4
+	copy_loop_eax3431: .space 4
+	copy_loop_ebx3431: .space 4
+	copy_j_eax3431: .space 4
+	copy_j_ebx3431: .space 4
+	copy_loop_eax3432: .space 4
+	copy_loop_ebx3432: .space 4
+	copy_j_eax3432: .space 4
+	copy_j_ebx3432: .space 4
+	copy_loop_eax3433: .space 4
+	copy_loop_ebx3433: .space 4
+	copy_j_eax3433: .space 4
+	copy_j_ebx3433: .space 4
+	copy_loop_eax3434: .space 4
+	copy_loop_ebx3434: .space 4
+	copy_j_eax3434: .space 4
+	copy_j_ebx3434: .space 4
+	copy_loop_eax3435: .space 4
+	copy_loop_ebx3435: .space 4
+	copy_j_eax3435: .space 4
+	copy_j_ebx3435: .space 4
+	copy_loop_eax3436: .space 4
+	copy_loop_ebx3436: .space 4
+	copy_j_eax3436: .space 4
+	copy_j_ebx3436: .space 4
+	copy_loop_eax3437: .space 4
+	copy_loop_ebx3437: .space 4
+	copy_j_eax3437: .space 4
+	copy_j_ebx3437: .space 4
+	copy_loop_eax3438: .space 4
+	copy_loop_ebx3438: .space 4
+	copy_j_eax3438: .space 4
+	copy_j_ebx3438: .space 4
+	copy_loop_eax3439: .space 4
+	copy_loop_ebx3439: .space 4
+	copy_j_eax3439: .space 4
+	copy_j_ebx3439: .space 4
+	copy_loop_eax3440: .space 4
+	copy_loop_ebx3440: .space 4
+	copy_j_eax3440: .space 4
+	copy_j_ebx3440: .space 4
+	copy_loop_eax3441: .space 4
+	copy_loop_ebx3441: .space 4
+	copy_j_eax3441: .space 4
+	copy_j_ebx3441: .space 4
+	copy_loop_eax3442: .space 4
+	copy_loop_ebx3442: .space 4
+	copy_j_eax3442: .space 4
+	copy_j_ebx3442: .space 4
+	copy_loop_eax3443: .space 4
+	copy_loop_ebx3443: .space 4
+	copy_j_eax3443: .space 4
+	copy_j_ebx3443: .space 4
+	copy_loop_eax3444: .space 4
+	copy_loop_ebx3444: .space 4
+	copy_j_eax3444: .space 4
+	copy_j_ebx3444: .space 4
+	copy_loop_eax3445: .space 4
+	copy_loop_ebx3445: .space 4
+	copy_j_eax3445: .space 4
+	copy_j_ebx3445: .space 4
+	copy_loop_eax3446: .space 4
+	copy_loop_ebx3446: .space 4
+	copy_j_eax3446: .space 4
+	copy_j_ebx3446: .space 4
+	copy_loop_eax3447: .space 4
+	copy_loop_ebx3447: .space 4
+	copy_j_eax3447: .space 4
+	copy_j_ebx3447: .space 4
+	copy_loop_eax3448: .space 4
+	copy_loop_ebx3448: .space 4
+	copy_j_eax3448: .space 4
+	copy_j_ebx3448: .space 4
+	copy_loop_eax3449: .space 4
+	copy_loop_ebx3449: .space 4
+	copy_j_eax3449: .space 4
+	copy_j_ebx3449: .space 4
+	copy_loop_eax3450: .space 4
+	copy_loop_ebx3450: .space 4
+	copy_j_eax3450: .space 4
+	copy_j_ebx3450: .space 4
+	copy_loop_eax3451: .space 4
+	copy_loop_ebx3451: .space 4
+	copy_j_eax3451: .space 4
+	copy_j_ebx3451: .space 4
+	copy_loop_eax3452: .space 4
+	copy_loop_ebx3452: .space 4
+	copy_j_eax3452: .space 4
+	copy_j_ebx3452: .space 4
+	copy_loop_eax3453: .space 4
+	copy_loop_ebx3453: .space 4
+	copy_j_eax3453: .space 4
+	copy_j_ebx3453: .space 4
+	copy_loop_eax3454: .space 4
+	copy_loop_ebx3454: .space 4
+	copy_j_eax3454: .space 4
+	copy_j_ebx3454: .space 4
+	copy_loop_eax3455: .space 4
+	copy_loop_ebx3455: .space 4
+	copy_j_eax3455: .space 4
+	copy_j_ebx3455: .space 4
+	copy_loop_eax3456: .space 4
+	copy_loop_ebx3456: .space 4
+	copy_j_eax3456: .space 4
+	copy_j_ebx3456: .space 4
+	copy_loop_eax3457: .space 4
+	copy_loop_ebx3457: .space 4
+	copy_j_eax3457: .space 4
+	copy_j_ebx3457: .space 4
+	copy_loop_eax3458: .space 4
+	copy_loop_ebx3458: .space 4
+	copy_j_eax3458: .space 4
+	copy_j_ebx3458: .space 4
+	copy_loop_eax3459: .space 4
+	copy_loop_ebx3459: .space 4
+	copy_j_eax3459: .space 4
+	copy_j_ebx3459: .space 4
+	copy_loop_eax3460: .space 4
+	copy_loop_ebx3460: .space 4
+	copy_j_eax3460: .space 4
+	copy_j_ebx3460: .space 4
+	copy_loop_eax3461: .space 4
+	copy_loop_ebx3461: .space 4
+	copy_j_eax3461: .space 4
+	copy_j_ebx3461: .space 4
+	copy_loop_eax3462: .space 4
+	copy_loop_ebx3462: .space 4
+	copy_j_eax3462: .space 4
+	copy_j_ebx3462: .space 4
+	copy_loop_eax3463: .space 4
+	copy_loop_ebx3463: .space 4
+	copy_j_eax3463: .space 4
+	copy_j_ebx3463: .space 4
+	copy_loop_eax3464: .space 4
+	copy_loop_ebx3464: .space 4
+	copy_j_eax3464: .space 4
+	copy_j_ebx3464: .space 4
+	copy_loop_eax3465: .space 4
+	copy_loop_ebx3465: .space 4
+	copy_j_eax3465: .space 4
+	copy_j_ebx3465: .space 4
+	copy_loop_eax3466: .space 4
+	copy_loop_ebx3466: .space 4
+	copy_j_eax3466: .space 4
+	copy_j_ebx3466: .space 4
+	copy_loop_eax3467: .space 4
+	copy_loop_ebx3467: .space 4
+	copy_j_eax3467: .space 4
+	copy_j_ebx3467: .space 4
+	copy_loop_eax3468: .space 4
+	copy_loop_ebx3468: .space 4
+	copy_j_eax3468: .space 4
+	copy_j_ebx3468: .space 4
+	copy_loop_eax3469: .space 4
+	copy_loop_ebx3469: .space 4
+	copy_j_eax3469: .space 4
+	copy_j_ebx3469: .space 4
+	copy_loop_eax3470: .space 4
+	copy_loop_ebx3470: .space 4
+	copy_j_eax3470: .space 4
+	copy_j_ebx3470: .space 4
+	copy_loop_eax3471: .space 4
+	copy_loop_ebx3471: .space 4
+	copy_j_eax3471: .space 4
+	copy_j_ebx3471: .space 4
+	copy_loop_eax3472: .space 4
+	copy_loop_ebx3472: .space 4
+	copy_j_eax3472: .space 4
+	copy_j_ebx3472: .space 4
+	copy_loop_eax3473: .space 4
+	copy_loop_ebx3473: .space 4
+	copy_j_eax3473: .space 4
+	copy_j_ebx3473: .space 4
+	copy_loop_eax3474: .space 4
+	copy_loop_ebx3474: .space 4
+	copy_j_eax3474: .space 4
+	copy_j_ebx3474: .space 4
+	copy_loop_eax3475: .space 4
+	copy_loop_ebx3475: .space 4
+	copy_j_eax3475: .space 4
+	copy_j_ebx3475: .space 4
+	copy_loop_eax3476: .space 4
+	copy_loop_ebx3476: .space 4
+	copy_j_eax3476: .space 4
+	copy_j_ebx3476: .space 4
+	copy_loop_eax3477: .space 4
+	copy_loop_ebx3477: .space 4
+	copy_j_eax3477: .space 4
+	copy_j_ebx3477: .space 4
+	copy_loop_eax3478: .space 4
+	copy_loop_ebx3478: .space 4
+	copy_j_eax3478: .space 4
+	copy_j_ebx3478: .space 4
+	copy_loop_eax3479: .space 4
+	copy_loop_ebx3479: .space 4
+	copy_j_eax3479: .space 4
+	copy_j_ebx3479: .space 4
+	copy_loop_eax3480: .space 4
+	copy_loop_ebx3480: .space 4
+	copy_j_eax3480: .space 4
+	copy_j_ebx3480: .space 4
+	copy_loop_eax3481: .space 4
+	copy_loop_ebx3481: .space 4
+	copy_j_eax3481: .space 4
+	copy_j_ebx3481: .space 4
+	copy_loop_eax3482: .space 4
+	copy_loop_ebx3482: .space 4
+	copy_j_eax3482: .space 4
+	copy_j_ebx3482: .space 4
+	copy_loop_eax3483: .space 4
+	copy_loop_ebx3483: .space 4
+	copy_j_eax3483: .space 4
+	copy_j_ebx3483: .space 4
+	copy_loop_eax3484: .space 4
+	copy_loop_ebx3484: .space 4
+	copy_j_eax3484: .space 4
+	copy_j_ebx3484: .space 4
+	copy_loop_eax3485: .space 4
+	copy_loop_ebx3485: .space 4
+	copy_j_eax3485: .space 4
+	copy_j_ebx3485: .space 4
+	copy_loop_eax3486: .space 4
+	copy_loop_ebx3486: .space 4
+	copy_j_eax3486: .space 4
+	copy_j_ebx3486: .space 4
+	copy_loop_eax3487: .space 4
+	copy_loop_ebx3487: .space 4
+	copy_j_eax3487: .space 4
+	copy_j_ebx3487: .space 4
+	copy_loop_eax3488: .space 4
+	copy_loop_ebx3488: .space 4
+	copy_j_eax3488: .space 4
+	copy_j_ebx3488: .space 4
+	copy_loop_eax3489: .space 4
+	copy_loop_ebx3489: .space 4
+	copy_j_eax3489: .space 4
+	copy_j_ebx3489: .space 4
+	copy_loop_eax3490: .space 4
+	copy_loop_ebx3490: .space 4
+	copy_j_eax3490: .space 4
+	copy_j_ebx3490: .space 4
+	copy_loop_eax3491: .space 4
+	copy_loop_ebx3491: .space 4
+	copy_j_eax3491: .space 4
+	copy_j_ebx3491: .space 4
+	copy_loop_eax3492: .space 4
+	copy_loop_ebx3492: .space 4
+	copy_j_eax3492: .space 4
+	copy_j_ebx3492: .space 4
+	copy_loop_eax3493: .space 4
+	copy_loop_ebx3493: .space 4
+	copy_j_eax3493: .space 4
+	copy_j_ebx3493: .space 4
+	copy_loop_eax3494: .space 4
+	copy_loop_ebx3494: .space 4
+	copy_j_eax3494: .space 4
+	copy_j_ebx3494: .space 4
+	copy_loop_eax3495: .space 4
+	copy_loop_ebx3495: .space 4
+	copy_j_eax3495: .space 4
+	copy_j_ebx3495: .space 4
+	copy_loop_eax3496: .space 4
+	copy_loop_ebx3496: .space 4
+	copy_j_eax3496: .space 4
+	copy_j_ebx3496: .space 4
+	copy_loop_eax3497: .space 4
+	copy_loop_ebx3497: .space 4
+	copy_j_eax3497: .space 4
+	copy_j_ebx3497: .space 4
+	copy_loop_eax3498: .space 4
+	copy_loop_ebx3498: .space 4
+	copy_j_eax3498: .space 4
+	copy_j_ebx3498: .space 4
+	copy_loop_eax3499: .space 4
+	copy_loop_ebx3499: .space 4
+	copy_j_eax3499: .space 4
+	copy_j_ebx3499: .space 4
+	copy_loop_eax3500: .space 4
+	copy_loop_ebx3500: .space 4
+	copy_j_eax3500: .space 4
+	copy_j_ebx3500: .space 4
+	copy_loop_eax3501: .space 4
+	copy_loop_ebx3501: .space 4
+	copy_j_eax3501: .space 4
+	copy_j_ebx3501: .space 4
+	copy_loop_eax3502: .space 4
+	copy_loop_ebx3502: .space 4
+	copy_j_eax3502: .space 4
+	copy_j_ebx3502: .space 4
+	copy_loop_eax3503: .space 4
+	copy_loop_ebx3503: .space 4
+	copy_j_eax3503: .space 4
+	copy_j_ebx3503: .space 4
+	copy_loop_eax3504: .space 4
+	copy_loop_ebx3504: .space 4
+	copy_j_eax3504: .space 4
+	copy_j_ebx3504: .space 4
+	copy_loop_eax3505: .space 4
+	copy_loop_ebx3505: .space 4
+	copy_j_eax3505: .space 4
+	copy_j_ebx3505: .space 4
+	copy_loop_eax3506: .space 4
+	copy_loop_ebx3506: .space 4
+	copy_j_eax3506: .space 4
+	copy_j_ebx3506: .space 4
+	copy_loop_eax3507: .space 4
+	copy_loop_ebx3507: .space 4
+	copy_j_eax3507: .space 4
+	copy_j_ebx3507: .space 4
+	copy_loop_eax3508: .space 4
+	copy_loop_ebx3508: .space 4
+	copy_j_eax3508: .space 4
+	copy_j_ebx3508: .space 4
+	copy_loop_eax3509: .space 4
+	copy_loop_ebx3509: .space 4
+	copy_j_eax3509: .space 4
+	copy_j_ebx3509: .space 4
+	copy_loop_eax3510: .space 4
+	copy_loop_ebx3510: .space 4
+	copy_j_eax3510: .space 4
+	copy_j_ebx3510: .space 4
+	copy_loop_eax3511: .space 4
+	copy_loop_ebx3511: .space 4
+	copy_j_eax3511: .space 4
+	copy_j_ebx3511: .space 4
+	copy_loop_eax3512: .space 4
+	copy_loop_ebx3512: .space 4
+	copy_j_eax3512: .space 4
+	copy_j_ebx3512: .space 4
+	copy_loop_eax3513: .space 4
+	copy_loop_ebx3513: .space 4
+	copy_j_eax3513: .space 4
+	copy_j_ebx3513: .space 4
+	copy_loop_eax3514: .space 4
+	copy_loop_ebx3514: .space 4
+	copy_j_eax3514: .space 4
+	copy_j_ebx3514: .space 4
+	copy_loop_eax3515: .space 4
+	copy_loop_ebx3515: .space 4
+	copy_j_eax3515: .space 4
+	copy_j_ebx3515: .space 4
+	copy_loop_eax3516: .space 4
+	copy_loop_ebx3516: .space 4
+	copy_j_eax3516: .space 4
+	copy_j_ebx3516: .space 4
+	copy_loop_eax3517: .space 4
+	copy_loop_ebx3517: .space 4
+	copy_j_eax3517: .space 4
+	copy_j_ebx3517: .space 4
+	copy_loop_eax3518: .space 4
+	copy_loop_ebx3518: .space 4
+	copy_j_eax3518: .space 4
+	copy_j_ebx3518: .space 4
+	copy_loop_eax3519: .space 4
+	copy_loop_ebx3519: .space 4
+	copy_j_eax3519: .space 4
+	copy_j_ebx3519: .space 4
+	copy_loop_eax3520: .space 4
+	copy_loop_ebx3520: .space 4
+	copy_j_eax3520: .space 4
+	copy_j_ebx3520: .space 4
+	copy_loop_eax3521: .space 4
+	copy_loop_ebx3521: .space 4
+	copy_j_eax3521: .space 4
+	copy_j_ebx3521: .space 4
+	copy_loop_eax3522: .space 4
+	copy_loop_ebx3522: .space 4
+	copy_j_eax3522: .space 4
+	copy_j_ebx3522: .space 4
+	copy_loop_eax3523: .space 4
+	copy_loop_ebx3523: .space 4
+	copy_j_eax3523: .space 4
+	copy_j_ebx3523: .space 4
+	copy_loop_eax3524: .space 4
+	copy_loop_ebx3524: .space 4
+	copy_j_eax3524: .space 4
+	copy_j_ebx3524: .space 4
+	copy_loop_eax3525: .space 4
+	copy_loop_ebx3525: .space 4
+	copy_j_eax3525: .space 4
+	copy_j_ebx3525: .space 4
+	copy_loop_eax3526: .space 4
+	copy_loop_ebx3526: .space 4
+	copy_j_eax3526: .space 4
+	copy_j_ebx3526: .space 4
+	copy_loop_eax3527: .space 4
+	copy_loop_ebx3527: .space 4
+	copy_j_eax3527: .space 4
+	copy_j_ebx3527: .space 4
+	copy_loop_eax3528: .space 4
+	copy_loop_ebx3528: .space 4
+	copy_j_eax3528: .space 4
+	copy_j_ebx3528: .space 4
+	copy_loop_eax3529: .space 4
+	copy_loop_ebx3529: .space 4
+	copy_j_eax3529: .space 4
+	copy_j_ebx3529: .space 4
+	copy_loop_eax3530: .space 4
+	copy_loop_ebx3530: .space 4
+	copy_j_eax3530: .space 4
+	copy_j_ebx3530: .space 4
+	copy_loop_eax3531: .space 4
+	copy_loop_ebx3531: .space 4
+	copy_j_eax3531: .space 4
+	copy_j_ebx3531: .space 4
+	copy_loop_eax3532: .space 4
+	copy_loop_ebx3532: .space 4
+	copy_j_eax3532: .space 4
+	copy_j_ebx3532: .space 4
+	copy_loop_eax3533: .space 4
+	copy_loop_ebx3533: .space 4
+	copy_j_eax3533: .space 4
+	copy_j_ebx3533: .space 4
+	copy_loop_eax3534: .space 4
+	copy_loop_ebx3534: .space 4
+	copy_j_eax3534: .space 4
+	copy_j_ebx3534: .space 4
+	copy_loop_eax3535: .space 4
+	copy_loop_ebx3535: .space 4
+	copy_j_eax3535: .space 4
+	copy_j_ebx3535: .space 4
+	copy_loop_eax3536: .space 4
+	copy_loop_ebx3536: .space 4
+	copy_j_eax3536: .space 4
+	copy_j_ebx3536: .space 4
+	copy_loop_eax3537: .space 4
+	copy_loop_ebx3537: .space 4
+	copy_j_eax3537: .space 4
+	copy_j_ebx3537: .space 4
+	copy_loop_eax3538: .space 4
+	copy_loop_ebx3538: .space 4
+	copy_j_eax3538: .space 4
+	copy_j_ebx3538: .space 4
+	copy_loop_eax3539: .space 4
+	copy_loop_ebx3539: .space 4
+	copy_j_eax3539: .space 4
+	copy_j_ebx3539: .space 4
+	copy_loop_eax3540: .space 4
+	copy_loop_ebx3540: .space 4
+	copy_j_eax3540: .space 4
+	copy_j_ebx3540: .space 4
+	copy_loop_eax3541: .space 4
+	copy_loop_ebx3541: .space 4
+	copy_j_eax3541: .space 4
+	copy_j_ebx3541: .space 4
+	copy_loop_eax3542: .space 4
+	copy_loop_ebx3542: .space 4
+	copy_j_eax3542: .space 4
+	copy_j_ebx3542: .space 4
+	copy_loop_eax3543: .space 4
+	copy_loop_ebx3543: .space 4
+	copy_j_eax3543: .space 4
+	copy_j_ebx3543: .space 4
+	copy_loop_eax3544: .space 4
+	copy_loop_ebx3544: .space 4
+	copy_j_eax3544: .space 4
+	copy_j_ebx3544: .space 4
+	copy_loop_eax3545: .space 4
+	copy_loop_ebx3545: .space 4
+	copy_j_eax3545: .space 4
+	copy_j_ebx3545: .space 4
+	copy_loop_eax3546: .space 4
+	copy_loop_ebx3546: .space 4
+	copy_j_eax3546: .space 4
+	copy_j_ebx3546: .space 4
+	copy_loop_eax3547: .space 4
+	copy_loop_ebx3547: .space 4
+	copy_j_eax3547: .space 4
+	copy_j_ebx3547: .space 4
+	copy_loop_eax3548: .space 4
+	copy_loop_ebx3548: .space 4
+	copy_j_eax3548: .space 4
+	copy_j_ebx3548: .space 4
+	copy_loop_eax3549: .space 4
+	copy_loop_ebx3549: .space 4
+	copy_j_eax3549: .space 4
+	copy_j_ebx3549: .space 4
+	copy_loop_eax3550: .space 4
+	copy_loop_ebx3550: .space 4
+	copy_j_eax3550: .space 4
+	copy_j_ebx3550: .space 4
+	copy_loop_eax3551: .space 4
+	copy_loop_ebx3551: .space 4
+	copy_j_eax3551: .space 4
+	copy_j_ebx3551: .space 4
+	copy_loop_eax3552: .space 4
+	copy_loop_ebx3552: .space 4
+	copy_j_eax3552: .space 4
+	copy_j_ebx3552: .space 4
+	copy_loop_eax3553: .space 4
+	copy_loop_ebx3553: .space 4
+	copy_j_eax3553: .space 4
+	copy_j_ebx3553: .space 4
+	copy_loop_eax3554: .space 4
+	copy_loop_ebx3554: .space 4
+	copy_j_eax3554: .space 4
+	copy_j_ebx3554: .space 4
+	copy_loop_eax3555: .space 4
+	copy_loop_ebx3555: .space 4
+	copy_j_eax3555: .space 4
+	copy_j_ebx3555: .space 4
+	copy_loop_eax3556: .space 4
+	copy_loop_ebx3556: .space 4
+	copy_j_eax3556: .space 4
+	copy_j_ebx3556: .space 4
+	copy_loop_eax3557: .space 4
+	copy_loop_ebx3557: .space 4
+	copy_j_eax3557: .space 4
+	copy_j_ebx3557: .space 4
+	copy_loop_eax3558: .space 4
+	copy_loop_ebx3558: .space 4
+	copy_j_eax3558: .space 4
+	copy_j_ebx3558: .space 4
+	copy_loop_eax3559: .space 4
+	copy_loop_ebx3559: .space 4
+	copy_j_eax3559: .space 4
+	copy_j_ebx3559: .space 4
+	copy_loop_eax3560: .space 4
+	copy_loop_ebx3560: .space 4
+	copy_j_eax3560: .space 4
+	copy_j_ebx3560: .space 4
+	copy_loop_eax3561: .space 4
+	copy_loop_ebx3561: .space 4
+	copy_j_eax3561: .space 4
+	copy_j_ebx3561: .space 4
+	copy_loop_eax3562: .space 4
+	copy_loop_ebx3562: .space 4
+	copy_j_eax3562: .space 4
+	copy_j_ebx3562: .space 4
+	copy_loop_eax3563: .space 4
+	copy_loop_ebx3563: .space 4
+	copy_j_eax3563: .space 4
+	copy_j_ebx3563: .space 4
+	copy_loop_eax3564: .space 4
+	copy_loop_ebx3564: .space 4
+	copy_j_eax3564: .space 4
+	copy_j_ebx3564: .space 4
+	copy_loop_eax3565: .space 4
+	copy_loop_ebx3565: .space 4
+	copy_j_eax3565: .space 4
+	copy_j_ebx3565: .space 4
+	copy_loop_eax3566: .space 4
+	copy_loop_ebx3566: .space 4
+	copy_j_eax3566: .space 4
+	copy_j_ebx3566: .space 4
+	copy_loop_eax3567: .space 4
+	copy_loop_ebx3567: .space 4
+	copy_j_eax3567: .space 4
+	copy_j_ebx3567: .space 4
+	copy_loop_eax3568: .space 4
+	copy_loop_ebx3568: .space 4
+	copy_j_eax3568: .space 4
+	copy_j_ebx3568: .space 4
+	copy_loop_eax3569: .space 4
+	copy_loop_ebx3569: .space 4
+	copy_j_eax3569: .space 4
+	copy_j_ebx3569: .space 4
+	copy_loop_eax3570: .space 4
+	copy_loop_ebx3570: .space 4
+	copy_j_eax3570: .space 4
+	copy_j_ebx3570: .space 4
+	copy_loop_eax3571: .space 4
+	copy_loop_ebx3571: .space 4
+	copy_j_eax3571: .space 4
+	copy_j_ebx3571: .space 4
+	copy_loop_eax3572: .space 4
+	copy_loop_ebx3572: .space 4
+	copy_j_eax3572: .space 4
+	copy_j_ebx3572: .space 4
+	copy_loop_eax3573: .space 4
+	copy_loop_ebx3573: .space 4
+	copy_j_eax3573: .space 4
+	copy_j_ebx3573: .space 4
+	copy_loop_eax3574: .space 4
+	copy_loop_ebx3574: .space 4
+	copy_j_eax3574: .space 4
+	copy_j_ebx3574: .space 4
+	copy_loop_eax3575: .space 4
+	copy_loop_ebx3575: .space 4
+	copy_j_eax3575: .space 4
+	copy_j_ebx3575: .space 4
+	copy_loop_eax3576: .space 4
+	copy_loop_ebx3576: .space 4
+	copy_j_eax3576: .space 4
+	copy_j_ebx3576: .space 4
+	copy_loop_eax3577: .space 4
+	copy_loop_ebx3577: .space 4
+	copy_j_eax3577: .space 4
+	copy_j_ebx3577: .space 4
+	copy_loop_eax3578: .space 4
+	copy_loop_ebx3578: .space 4
+	copy_j_eax3578: .space 4
+	copy_j_ebx3578: .space 4
+	copy_loop_eax3579: .space 4
+	copy_loop_ebx3579: .space 4
+	copy_j_eax3579: .space 4
+	copy_j_ebx3579: .space 4
+	copy_loop_eax3580: .space 4
+	copy_loop_ebx3580: .space 4
+	copy_j_eax3580: .space 4
+	copy_j_ebx3580: .space 4
+	copy_loop_eax3581: .space 4
+	copy_loop_ebx3581: .space 4
+	copy_j_eax3581: .space 4
+	copy_j_ebx3581: .space 4
+	copy_loop_eax3582: .space 4
+	copy_loop_ebx3582: .space 4
+	copy_j_eax3582: .space 4
+	copy_j_ebx3582: .space 4
+	copy_loop_eax3583: .space 4
+	copy_loop_ebx3583: .space 4
+	copy_j_eax3583: .space 4
+	copy_j_ebx3583: .space 4
+	copy_loop_eax3584: .space 4
+	copy_loop_ebx3584: .space 4
+	copy_j_eax3584: .space 4
+	copy_j_ebx3584: .space 4
+	copy_loop_eax3585: .space 4
+	copy_loop_ebx3585: .space 4
+	copy_j_eax3585: .space 4
+	copy_j_ebx3585: .space 4
+	copy_loop_eax3586: .space 4
+	copy_loop_ebx3586: .space 4
+	copy_j_eax3586: .space 4
+	copy_j_ebx3586: .space 4
+	copy_loop_eax3587: .space 4
+	copy_loop_ebx3587: .space 4
+	copy_j_eax3587: .space 4
+	copy_j_ebx3587: .space 4
+	copy_loop_eax3588: .space 4
+	copy_loop_ebx3588: .space 4
+	copy_j_eax3588: .space 4
+	copy_j_ebx3588: .space 4
+	copy_loop_eax3589: .space 4
+	copy_loop_ebx3589: .space 4
+	copy_j_eax3589: .space 4
+	copy_j_ebx3589: .space 4
+	copy_loop_eax3590: .space 4
+	copy_loop_ebx3590: .space 4
+	copy_j_eax3590: .space 4
+	copy_j_ebx3590: .space 4
+	copy_loop_eax3591: .space 4
+	copy_loop_ebx3591: .space 4
+	copy_j_eax3591: .space 4
+	copy_j_ebx3591: .space 4
+	copy_loop_eax3592: .space 4
+	copy_loop_ebx3592: .space 4
+	copy_j_eax3592: .space 4
+	copy_j_ebx3592: .space 4
+	copy_loop_eax3593: .space 4
+	copy_loop_ebx3593: .space 4
+	copy_j_eax3593: .space 4
+	copy_j_ebx3593: .space 4
+	copy_loop_eax3594: .space 4
+	copy_loop_ebx3594: .space 4
+	copy_j_eax3594: .space 4
+	copy_j_ebx3594: .space 4
+	copy_loop_eax3595: .space 4
+	copy_loop_ebx3595: .space 4
+	copy_j_eax3595: .space 4
+	copy_j_ebx3595: .space 4
+	copy_loop_eax3596: .space 4
+	copy_loop_ebx3596: .space 4
+	copy_j_eax3596: .space 4
+	copy_j_ebx3596: .space 4
+	copy_loop_eax3597: .space 4
+	copy_loop_ebx3597: .space 4
+	copy_j_eax3597: .space 4
+	copy_j_ebx3597: .space 4
+	copy_loop_eax3598: .space 4
+	copy_loop_ebx3598: .space 4
+	copy_j_eax3598: .space 4
+	copy_j_ebx3598: .space 4
+	copy_loop_eax3599: .space 4
+	copy_loop_ebx3599: .space 4
+	copy_j_eax3599: .space 4
+	copy_j_ebx3599: .space 4
+	copy_loop_eax3600: .space 4
+	copy_loop_ebx3600: .space 4
+	copy_j_eax3600: .space 4
+	copy_j_ebx3600: .space 4
+	copy_loop_eax3601: .space 4
+	copy_loop_ebx3601: .space 4
+	copy_j_eax3601: .space 4
+	copy_j_ebx3601: .space 4
+	copy_loop_eax3602: .space 4
+	copy_loop_ebx3602: .space 4
+	copy_j_eax3602: .space 4
+	copy_j_ebx3602: .space 4
+	copy_loop_eax3603: .space 4
+	copy_loop_ebx3603: .space 4
+	copy_j_eax3603: .space 4
+	copy_j_ebx3603: .space 4
+	copy_loop_eax3604: .space 4
+	copy_loop_ebx3604: .space 4
+	copy_j_eax3604: .space 4
+	copy_j_ebx3604: .space 4
+	copy_loop_eax3605: .space 4
+	copy_loop_ebx3605: .space 4
+	copy_j_eax3605: .space 4
+	copy_j_ebx3605: .space 4
+	copy_loop_eax3606: .space 4
+	copy_loop_ebx3606: .space 4
+	copy_j_eax3606: .space 4
+	copy_j_ebx3606: .space 4
+	copy_loop_eax3607: .space 4
+	copy_loop_ebx3607: .space 4
+	copy_j_eax3607: .space 4
+	copy_j_ebx3607: .space 4
+	copy_loop_eax3608: .space 4
+	copy_loop_ebx3608: .space 4
+	copy_j_eax3608: .space 4
+	copy_j_ebx3608: .space 4
+	copy_loop_eax3609: .space 4
+	copy_loop_ebx3609: .space 4
+	copy_j_eax3609: .space 4
+	copy_j_ebx3609: .space 4
+	copy_loop_eax3610: .space 4
+	copy_loop_ebx3610: .space 4
+	copy_j_eax3610: .space 4
+	copy_j_ebx3610: .space 4
+	copy_loop_eax3611: .space 4
+	copy_loop_ebx3611: .space 4
+	copy_j_eax3611: .space 4
+	copy_j_ebx3611: .space 4
+	copy_loop_eax3612: .space 4
+	copy_loop_ebx3612: .space 4
+	copy_j_eax3612: .space 4
+	copy_j_ebx3612: .space 4
+	copy_loop_eax3613: .space 4
+	copy_loop_ebx3613: .space 4
+	copy_j_eax3613: .space 4
+	copy_j_ebx3613: .space 4
+	copy_loop_eax3614: .space 4
+	copy_loop_ebx3614: .space 4
+	copy_j_eax3614: .space 4
+	copy_j_ebx3614: .space 4
+	copy_loop_eax3615: .space 4
+	copy_loop_ebx3615: .space 4
+	copy_j_eax3615: .space 4
+	copy_j_ebx3615: .space 4
+	copy_loop_eax3616: .space 4
+	copy_loop_ebx3616: .space 4
+	copy_j_eax3616: .space 4
+	copy_j_ebx3616: .space 4
+	copy_loop_eax3617: .space 4
+	copy_loop_ebx3617: .space 4
+	copy_j_eax3617: .space 4
+	copy_j_ebx3617: .space 4
+	copy_loop_eax3618: .space 4
+	copy_loop_ebx3618: .space 4
+	copy_j_eax3618: .space 4
+	copy_j_ebx3618: .space 4
+	copy_loop_eax3619: .space 4
+	copy_loop_ebx3619: .space 4
+	copy_j_eax3619: .space 4
+	copy_j_ebx3619: .space 4
+	copy_loop_eax3620: .space 4
+	copy_loop_ebx3620: .space 4
+	copy_j_eax3620: .space 4
+	copy_j_ebx3620: .space 4
+	copy_loop_eax3621: .space 4
+	copy_loop_ebx3621: .space 4
+	copy_j_eax3621: .space 4
+	copy_j_ebx3621: .space 4
+	copy_loop_eax3622: .space 4
+	copy_loop_ebx3622: .space 4
+	copy_j_eax3622: .space 4
+	copy_j_ebx3622: .space 4
+	copy_loop_eax3623: .space 4
+	copy_loop_ebx3623: .space 4
+	copy_j_eax3623: .space 4
+	copy_j_ebx3623: .space 4
+	copy_loop_eax3624: .space 4
+	copy_loop_ebx3624: .space 4
+	copy_j_eax3624: .space 4
+	copy_j_ebx3624: .space 4
+	copy_loop_eax3625: .space 4
+	copy_loop_ebx3625: .space 4
+	copy_j_eax3625: .space 4
+	copy_j_ebx3625: .space 4
+	copy_loop_eax3626: .space 4
+	copy_loop_ebx3626: .space 4
+	copy_j_eax3626: .space 4
+	copy_j_ebx3626: .space 4
+	copy_loop_eax3627: .space 4
+	copy_loop_ebx3627: .space 4
+	copy_j_eax3627: .space 4
+	copy_j_ebx3627: .space 4
+	copy_loop_eax3628: .space 4
+	copy_loop_ebx3628: .space 4
+	copy_j_eax3628: .space 4
+	copy_j_ebx3628: .space 4
+	copy_loop_eax3629: .space 4
+	copy_loop_ebx3629: .space 4
+	copy_j_eax3629: .space 4
+	copy_j_ebx3629: .space 4
+	copy_loop_eax3630: .space 4
+	copy_loop_ebx3630: .space 4
+	copy_j_eax3630: .space 4
+	copy_j_ebx3630: .space 4
+	copy_loop_eax3631: .space 4
+	copy_loop_ebx3631: .space 4
+	copy_j_eax3631: .space 4
+	copy_j_ebx3631: .space 4
+	copy_loop_eax3632: .space 4
+	copy_loop_ebx3632: .space 4
+	copy_j_eax3632: .space 4
+	copy_j_ebx3632: .space 4
+	copy_loop_eax3633: .space 4
+	copy_loop_ebx3633: .space 4
+	copy_j_eax3633: .space 4
+	copy_j_ebx3633: .space 4
+	copy_loop_eax3634: .space 4
+	copy_loop_ebx3634: .space 4
+	copy_j_eax3634: .space 4
+	copy_j_ebx3634: .space 4
+	copy_loop_eax3635: .space 4
+	copy_loop_ebx3635: .space 4
+	copy_j_eax3635: .space 4
+	copy_j_ebx3635: .space 4
+	copy_loop_eax3636: .space 4
+	copy_loop_ebx3636: .space 4
+	copy_j_eax3636: .space 4
+	copy_j_ebx3636: .space 4
+	copy_loop_eax3637: .space 4
+	copy_loop_ebx3637: .space 4
+	copy_j_eax3637: .space 4
+	copy_j_ebx3637: .space 4
+	copy_loop_eax3638: .space 4
+	copy_loop_ebx3638: .space 4
+	copy_j_eax3638: .space 4
+	copy_j_ebx3638: .space 4
+	copy_loop_eax3639: .space 4
+	copy_loop_ebx3639: .space 4
+	copy_j_eax3639: .space 4
+	copy_j_ebx3639: .space 4
+	copy_loop_eax3640: .space 4
+	copy_loop_ebx3640: .space 4
+	copy_j_eax3640: .space 4
+	copy_j_ebx3640: .space 4
+	copy_loop_eax3641: .space 4
+	copy_loop_ebx3641: .space 4
+	copy_j_eax3641: .space 4
+	copy_j_ebx3641: .space 4
+	copy_loop_eax3642: .space 4
+	copy_loop_ebx3642: .space 4
+	copy_j_eax3642: .space 4
+	copy_j_ebx3642: .space 4
+	copy_loop_eax3643: .space 4
+	copy_loop_ebx3643: .space 4
+	copy_j_eax3643: .space 4
+	copy_j_ebx3643: .space 4
+	copy_loop_eax3644: .space 4
+	copy_loop_ebx3644: .space 4
+	copy_j_eax3644: .space 4
+	copy_j_ebx3644: .space 4
+	copy_loop_eax3645: .space 4
+	copy_loop_ebx3645: .space 4
+	copy_j_eax3645: .space 4
+	copy_j_ebx3645: .space 4
+	copy_loop_eax3646: .space 4
+	copy_loop_ebx3646: .space 4
+	copy_j_eax3646: .space 4
+	copy_j_ebx3646: .space 4
+	copy_loop_eax3647: .space 4
+	copy_loop_ebx3647: .space 4
+	copy_j_eax3647: .space 4
+	copy_j_ebx3647: .space 4
+	copy_loop_eax3648: .space 4
+	copy_loop_ebx3648: .space 4
+	copy_j_eax3648: .space 4
+	copy_j_ebx3648: .space 4
+	copy_loop_eax3649: .space 4
+	copy_loop_ebx3649: .space 4
+	copy_j_eax3649: .space 4
+	copy_j_ebx3649: .space 4
+	copy_loop_eax3650: .space 4
+	copy_loop_ebx3650: .space 4
+	copy_j_eax3650: .space 4
+	copy_j_ebx3650: .space 4
+	copy_loop_eax3651: .space 4
+	copy_loop_ebx3651: .space 4
+	copy_j_eax3651: .space 4
+	copy_j_ebx3651: .space 4
+	copy_loop_eax3652: .space 4
+	copy_loop_ebx3652: .space 4
+	copy_j_eax3652: .space 4
+	copy_j_ebx3652: .space 4
+	copy_loop_eax3653: .space 4
+	copy_loop_ebx3653: .space 4
+	copy_j_eax3653: .space 4
+	copy_j_ebx3653: .space 4
+	copy_loop_eax3654: .space 4
+	copy_loop_ebx3654: .space 4
+	copy_j_eax3654: .space 4
+	copy_j_ebx3654: .space 4
+	copy_loop_eax3655: .space 4
+	copy_loop_ebx3655: .space 4
+	copy_j_eax3655: .space 4
+	copy_j_ebx3655: .space 4
+	copy_loop_eax3656: .space 4
+	copy_loop_ebx3656: .space 4
+	copy_j_eax3656: .space 4
+	copy_j_ebx3656: .space 4
+	copy_loop_eax3657: .space 4
+	copy_loop_ebx3657: .space 4
+	copy_j_eax3657: .space 4
+	copy_j_ebx3657: .space 4
+	copy_loop_eax3658: .space 4
+	copy_loop_ebx3658: .space 4
+	copy_j_eax3658: .space 4
+	copy_j_ebx3658: .space 4
+	copy_loop_eax3659: .space 4
+	copy_loop_ebx3659: .space 4
+	copy_j_eax3659: .space 4
+	copy_j_ebx3659: .space 4
+	copy_loop_eax3660: .space 4
+	copy_loop_ebx3660: .space 4
+	copy_j_eax3660: .space 4
+	copy_j_ebx3660: .space 4
+	copy_loop_eax3661: .space 4
+	copy_loop_ebx3661: .space 4
+	copy_j_eax3661: .space 4
+	copy_j_ebx3661: .space 4
+	copy_loop_eax3662: .space 4
+	copy_loop_ebx3662: .space 4
+	copy_j_eax3662: .space 4
+	copy_j_ebx3662: .space 4
+	copy_loop_eax3663: .space 4
+	copy_loop_ebx3663: .space 4
+	copy_j_eax3663: .space 4
+	copy_j_ebx3663: .space 4
+	copy_loop_eax3664: .space 4
+	copy_loop_ebx3664: .space 4
+	copy_j_eax3664: .space 4
+	copy_j_ebx3664: .space 4
+	copy_loop_eax3665: .space 4
+	copy_loop_ebx3665: .space 4
+	copy_j_eax3665: .space 4
+	copy_j_ebx3665: .space 4
+	copy_loop_eax3666: .space 4
+	copy_loop_ebx3666: .space 4
+	copy_j_eax3666: .space 4
+	copy_j_ebx3666: .space 4
+	copy_loop_eax3667: .space 4
+	copy_loop_ebx3667: .space 4
+	copy_j_eax3667: .space 4
+	copy_j_ebx3667: .space 4
+	copy_loop_eax3668: .space 4
+	copy_loop_ebx3668: .space 4
+	copy_j_eax3668: .space 4
+	copy_j_ebx3668: .space 4
+	copy_loop_eax3669: .space 4
+	copy_loop_ebx3669: .space 4
+	copy_j_eax3669: .space 4
+	copy_j_ebx3669: .space 4
+	copy_loop_eax3670: .space 4
+	copy_loop_ebx3670: .space 4
+	copy_j_eax3670: .space 4
+	copy_j_ebx3670: .space 4
+	copy_loop_eax3671: .space 4
+	copy_loop_ebx3671: .space 4
+	copy_j_eax3671: .space 4
+	copy_j_ebx3671: .space 4
+	copy_loop_eax3672: .space 4
+	copy_loop_ebx3672: .space 4
+	copy_j_eax3672: .space 4
+	copy_j_ebx3672: .space 4
+	copy_loop_eax3673: .space 4
+	copy_loop_ebx3673: .space 4
+	copy_j_eax3673: .space 4
+	copy_j_ebx3673: .space 4
+	copy_loop_eax3674: .space 4
+	copy_loop_ebx3674: .space 4
+	copy_j_eax3674: .space 4
+	copy_j_ebx3674: .space 4
+	copy_loop_eax3675: .space 4
+	copy_loop_ebx3675: .space 4
+	copy_j_eax3675: .space 4
+	copy_j_ebx3675: .space 4
+	copy_loop_eax3676: .space 4
+	copy_loop_ebx3676: .space 4
+	copy_j_eax3676: .space 4
+	copy_j_ebx3676: .space 4
+	copy_loop_eax3677: .space 4
+	copy_loop_ebx3677: .space 4
+	copy_j_eax3677: .space 4
+	copy_j_ebx3677: .space 4
+	copy_loop_eax3678: .space 4
+	copy_loop_ebx3678: .space 4
+	copy_j_eax3678: .space 4
+	copy_j_ebx3678: .space 4
+	copy_loop_eax3679: .space 4
+	copy_loop_ebx3679: .space 4
+	copy_j_eax3679: .space 4
+	copy_j_ebx3679: .space 4
+	copy_loop_eax3680: .space 4
+	copy_loop_ebx3680: .space 4
+	copy_j_eax3680: .space 4
+	copy_j_ebx3680: .space 4
+	copy_loop_eax3681: .space 4
+	copy_loop_ebx3681: .space 4
+	copy_j_eax3681: .space 4
+	copy_j_ebx3681: .space 4
+	copy_loop_eax3682: .space 4
+	copy_loop_ebx3682: .space 4
+	copy_j_eax3682: .space 4
+	copy_j_ebx3682: .space 4
+	copy_loop_eax3683: .space 4
+	copy_loop_ebx3683: .space 4
+	copy_j_eax3683: .space 4
+	copy_j_ebx3683: .space 4
+	copy_loop_eax3684: .space 4
+	copy_loop_ebx3684: .space 4
+	copy_j_eax3684: .space 4
+	copy_j_ebx3684: .space 4
+	copy_loop_eax3685: .space 4
+	copy_loop_ebx3685: .space 4
+	copy_j_eax3685: .space 4
+	copy_j_ebx3685: .space 4
+	copy_loop_eax3686: .space 4
+	copy_loop_ebx3686: .space 4
+	copy_j_eax3686: .space 4
+	copy_j_ebx3686: .space 4
+	copy_loop_eax3687: .space 4
+	copy_loop_ebx3687: .space 4
+	copy_j_eax3687: .space 4
+	copy_j_ebx3687: .space 4
+	copy_loop_eax3688: .space 4
+	copy_loop_ebx3688: .space 4
+	copy_j_eax3688: .space 4
+	copy_j_ebx3688: .space 4
+	copy_loop_eax3689: .space 4
+	copy_loop_ebx3689: .space 4
+	copy_j_eax3689: .space 4
+	copy_j_ebx3689: .space 4
+	copy_loop_eax3690: .space 4
+	copy_loop_ebx3690: .space 4
+	copy_j_eax3690: .space 4
+	copy_j_ebx3690: .space 4
+	copy_loop_eax3691: .space 4
+	copy_loop_ebx3691: .space 4
+	copy_j_eax3691: .space 4
+	copy_j_ebx3691: .space 4
+	copy_loop_eax3692: .space 4
+	copy_loop_ebx3692: .space 4
+	copy_j_eax3692: .space 4
+	copy_j_ebx3692: .space 4
+	copy_loop_eax3693: .space 4
+	copy_loop_ebx3693: .space 4
+	copy_j_eax3693: .space 4
+	copy_j_ebx3693: .space 4
+	copy_loop_eax3694: .space 4
+	copy_loop_ebx3694: .space 4
+	copy_j_eax3694: .space 4
+	copy_j_ebx3694: .space 4
+	copy_loop_eax3695: .space 4
+	copy_loop_ebx3695: .space 4
+	copy_j_eax3695: .space 4
+	copy_j_ebx3695: .space 4
+	copy_loop_eax3696: .space 4
+	copy_loop_ebx3696: .space 4
+	copy_j_eax3696: .space 4
+	copy_j_ebx3696: .space 4
+	copy_loop_eax3697: .space 4
+	copy_loop_ebx3697: .space 4
+	copy_j_eax3697: .space 4
+	copy_j_ebx3697: .space 4
+	copy_loop_eax3698: .space 4
+	copy_loop_ebx3698: .space 4
+	copy_j_eax3698: .space 4
+	copy_j_ebx3698: .space 4
+	copy_loop_eax3699: .space 4
+	copy_loop_ebx3699: .space 4
+	copy_j_eax3699: .space 4
+	copy_j_ebx3699: .space 4
+	copy_loop_eax3700: .space 4
+	copy_loop_ebx3700: .space 4
+	copy_j_eax3700: .space 4
+	copy_j_ebx3700: .space 4
+	copy_loop_eax3701: .space 4
+	copy_loop_ebx3701: .space 4
+	copy_j_eax3701: .space 4
+	copy_j_ebx3701: .space 4
+	copy_loop_eax3702: .space 4
+	copy_loop_ebx3702: .space 4
+	copy_j_eax3702: .space 4
+	copy_j_ebx3702: .space 4
+	copy_loop_eax3703: .space 4
+	copy_loop_ebx3703: .space 4
+	copy_j_eax3703: .space 4
+	copy_j_ebx3703: .space 4
+	copy_loop_eax3704: .space 4
+	copy_loop_ebx3704: .space 4
+	copy_j_eax3704: .space 4
+	copy_j_ebx3704: .space 4
+	copy_loop_eax3705: .space 4
+	copy_loop_ebx3705: .space 4
+	copy_j_eax3705: .space 4
+	copy_j_ebx3705: .space 4
+	copy_loop_eax3706: .space 4
+	copy_loop_ebx3706: .space 4
+	copy_j_eax3706: .space 4
+	copy_j_ebx3706: .space 4
+	copy_loop_eax3707: .space 4
+	copy_loop_ebx3707: .space 4
+	copy_j_eax3707: .space 4
+	copy_j_ebx3707: .space 4
+	copy_loop_eax3708: .space 4
+	copy_loop_ebx3708: .space 4
+	copy_j_eax3708: .space 4
+	copy_j_ebx3708: .space 4
+	copy_loop_eax3709: .space 4
+	copy_loop_ebx3709: .space 4
+	copy_j_eax3709: .space 4
+	copy_j_ebx3709: .space 4
+	copy_loop_eax3710: .space 4
+	copy_loop_ebx3710: .space 4
+	copy_j_eax3710: .space 4
+	copy_j_ebx3710: .space 4
+	copy_loop_eax3711: .space 4
+	copy_loop_ebx3711: .space 4
+	copy_j_eax3711: .space 4
+	copy_j_ebx3711: .space 4
+	copy_loop_eax3712: .space 4
+	copy_loop_ebx3712: .space 4
+	copy_j_eax3712: .space 4
+	copy_j_ebx3712: .space 4
+	copy_loop_eax3713: .space 4
+	copy_loop_ebx3713: .space 4
+	copy_j_eax3713: .space 4
+	copy_j_ebx3713: .space 4
+	copy_loop_eax3714: .space 4
+	copy_loop_ebx3714: .space 4
+	copy_j_eax3714: .space 4
+	copy_j_ebx3714: .space 4
+	copy_loop_eax3715: .space 4
+	copy_loop_ebx3715: .space 4
+	copy_j_eax3715: .space 4
+	copy_j_ebx3715: .space 4
+	copy_loop_eax3716: .space 4
+	copy_loop_ebx3716: .space 4
+	copy_j_eax3716: .space 4
+	copy_j_ebx3716: .space 4
+	copy_loop_eax3717: .space 4
+	copy_loop_ebx3717: .space 4
+	copy_j_eax3717: .space 4
+	copy_j_ebx3717: .space 4
+	copy_loop_eax3718: .space 4
+	copy_loop_ebx3718: .space 4
+	copy_j_eax3718: .space 4
+	copy_j_ebx3718: .space 4
+	copy_loop_eax3719: .space 4
+	copy_loop_ebx3719: .space 4
+	copy_j_eax3719: .space 4
+	copy_j_ebx3719: .space 4
+	copy_loop_eax3720: .space 4
+	copy_loop_ebx3720: .space 4
+	copy_j_eax3720: .space 4
+	copy_j_ebx3720: .space 4
+	copy_loop_eax3721: .space 4
+	copy_loop_ebx3721: .space 4
+	copy_j_eax3721: .space 4
+	copy_j_ebx3721: .space 4
+	copy_loop_eax3722: .space 4
+	copy_loop_ebx3722: .space 4
+	copy_j_eax3722: .space 4
+	copy_j_ebx3722: .space 4
+	copy_loop_eax3723: .space 4
+	copy_loop_ebx3723: .space 4
+	copy_j_eax3723: .space 4
+	copy_j_ebx3723: .space 4
+	copy_loop_eax3724: .space 4
+	copy_loop_ebx3724: .space 4
+	copy_j_eax3724: .space 4
+	copy_j_ebx3724: .space 4
+	copy_loop_eax3725: .space 4
+	copy_loop_ebx3725: .space 4
+	copy_j_eax3725: .space 4
+	copy_j_ebx3725: .space 4
+	copy_loop_eax3726: .space 4
+	copy_loop_ebx3726: .space 4
+	copy_j_eax3726: .space 4
+	copy_j_ebx3726: .space 4
+	copy_loop_eax3727: .space 4
+	copy_loop_ebx3727: .space 4
+	copy_j_eax3727: .space 4
+	copy_j_ebx3727: .space 4
+	copy_loop_eax3728: .space 4
+	copy_loop_ebx3728: .space 4
+	copy_j_eax3728: .space 4
+	copy_j_ebx3728: .space 4
+	copy_loop_eax3729: .space 4
+	copy_loop_ebx3729: .space 4
+	copy_j_eax3729: .space 4
+	copy_j_ebx3729: .space 4
+	copy_loop_eax3730: .space 4
+	copy_loop_ebx3730: .space 4
+	copy_j_eax3730: .space 4
+	copy_j_ebx3730: .space 4
+	copy_loop_eax3731: .space 4
+	copy_loop_ebx3731: .space 4
+	copy_j_eax3731: .space 4
+	copy_j_ebx3731: .space 4
+	copy_loop_eax3732: .space 4
+	copy_loop_ebx3732: .space 4
+	copy_j_eax3732: .space 4
+	copy_j_ebx3732: .space 4
+	copy_loop_eax3733: .space 4
+	copy_loop_ebx3733: .space 4
+	copy_j_eax3733: .space 4
+	copy_j_ebx3733: .space 4
+	copy_loop_eax3734: .space 4
+	copy_loop_ebx3734: .space 4
+	copy_j_eax3734: .space 4
+	copy_j_ebx3734: .space 4
+	copy_loop_eax3735: .space 4
+	copy_loop_ebx3735: .space 4
+	copy_j_eax3735: .space 4
+	copy_j_ebx3735: .space 4
+	copy_loop_eax3736: .space 4
+	copy_loop_ebx3736: .space 4
+	copy_j_eax3736: .space 4
+	copy_j_ebx3736: .space 4
+	copy_loop_eax3737: .space 4
+	copy_loop_ebx3737: .space 4
+	copy_j_eax3737: .space 4
+	copy_j_ebx3737: .space 4
+	copy_loop_eax3738: .space 4
+	copy_loop_ebx3738: .space 4
+	copy_j_eax3738: .space 4
+	copy_j_ebx3738: .space 4
+	copy_loop_eax3739: .space 4
+	copy_loop_ebx3739: .space 4
+	copy_j_eax3739: .space 4
+	copy_j_ebx3739: .space 4
+	copy_loop_eax3740: .space 4
+	copy_loop_ebx3740: .space 4
+	copy_j_eax3740: .space 4
+	copy_j_ebx3740: .space 4
+	copy_loop_eax3741: .space 4
+	copy_loop_ebx3741: .space 4
+	copy_j_eax3741: .space 4
+	copy_j_ebx3741: .space 4
+	copy_loop_eax3742: .space 4
+	copy_loop_ebx3742: .space 4
+	copy_j_eax3742: .space 4
+	copy_j_ebx3742: .space 4
+	copy_loop_eax3743: .space 4
+	copy_loop_ebx3743: .space 4
+	copy_j_eax3743: .space 4
+	copy_j_ebx3743: .space 4
+	copy_loop_eax3744: .space 4
+	copy_loop_ebx3744: .space 4
+	copy_j_eax3744: .space 4
+	copy_j_ebx3744: .space 4
+	copy_loop_eax3745: .space 4
+	copy_loop_ebx3745: .space 4
+	copy_j_eax3745: .space 4
+	copy_j_ebx3745: .space 4
+	copy_loop_eax3746: .space 4
+	copy_loop_ebx3746: .space 4
+	copy_j_eax3746: .space 4
+	copy_j_ebx3746: .space 4
+	copy_loop_eax3747: .space 4
+	copy_loop_ebx3747: .space 4
+	copy_j_eax3747: .space 4
+	copy_j_ebx3747: .space 4
+	copy_loop_eax3748: .space 4
+	copy_loop_ebx3748: .space 4
+	copy_j_eax3748: .space 4
+	copy_j_ebx3748: .space 4
+	copy_loop_eax3749: .space 4
+	copy_loop_ebx3749: .space 4
+	copy_j_eax3749: .space 4
+	copy_j_ebx3749: .space 4
+	copy_loop_eax3750: .space 4
+	copy_loop_ebx3750: .space 4
+	copy_j_eax3750: .space 4
+	copy_j_ebx3750: .space 4
+	copy_loop_eax3751: .space 4
+	copy_loop_ebx3751: .space 4
+	copy_j_eax3751: .space 4
+	copy_j_ebx3751: .space 4
+	copy_loop_eax3752: .space 4
+	copy_loop_ebx3752: .space 4
+	copy_j_eax3752: .space 4
+	copy_j_ebx3752: .space 4
+	copy_loop_eax3753: .space 4
+	copy_loop_ebx3753: .space 4
+	copy_j_eax3753: .space 4
+	copy_j_ebx3753: .space 4
+	copy_loop_eax3754: .space 4
+	copy_loop_ebx3754: .space 4
+	copy_j_eax3754: .space 4
+	copy_j_ebx3754: .space 4
+	copy_loop_eax3755: .space 4
+	copy_loop_ebx3755: .space 4
+	copy_j_eax3755: .space 4
+	copy_j_ebx3755: .space 4
+	copy_loop_eax3756: .space 4
+	copy_loop_ebx3756: .space 4
+	copy_j_eax3756: .space 4
+	copy_j_ebx3756: .space 4
+	copy_loop_eax3757: .space 4
+	copy_loop_ebx3757: .space 4
+	copy_j_eax3757: .space 4
+	copy_j_ebx3757: .space 4
+	copy_loop_eax3758: .space 4
+	copy_loop_ebx3758: .space 4
+	copy_j_eax3758: .space 4
+	copy_j_ebx3758: .space 4
+	copy_loop_eax3759: .space 4
+	copy_loop_ebx3759: .space 4
+	copy_j_eax3759: .space 4
+	copy_j_ebx3759: .space 4
+	copy_loop_eax3760: .space 4
+	copy_loop_ebx3760: .space 4
+	copy_j_eax3760: .space 4
+	copy_j_ebx3760: .space 4
+	copy_loop_eax3761: .space 4
+	copy_loop_ebx3761: .space 4
+	copy_j_eax3761: .space 4
+	copy_j_ebx3761: .space 4
+	copy_loop_eax3762: .space 4
+	copy_loop_ebx3762: .space 4
+	copy_j_eax3762: .space 4
+	copy_j_ebx3762: .space 4
+	copy_loop_eax3763: .space 4
+	copy_loop_ebx3763: .space 4
+	copy_j_eax3763: .space 4
+	copy_j_ebx3763: .space 4
+	copy_loop_eax3764: .space 4
+	copy_loop_ebx3764: .space 4
+	copy_j_eax3764: .space 4
+	copy_j_ebx3764: .space 4
+	copy_loop_eax3765: .space 4
+	copy_loop_ebx3765: .space 4
+	copy_j_eax3765: .space 4
+	copy_j_ebx3765: .space 4
+	copy_loop_eax3766: .space 4
+	copy_loop_ebx3766: .space 4
+	copy_j_eax3766: .space 4
+	copy_j_ebx3766: .space 4
+	copy_loop_eax3767: .space 4
+	copy_loop_ebx3767: .space 4
+	copy_j_eax3767: .space 4
+	copy_j_ebx3767: .space 4
+	copy_loop_eax3768: .space 4
+	copy_loop_ebx3768: .space 4
+	copy_j_eax3768: .space 4
+	copy_j_ebx3768: .space 4
+	copy_loop_eax3769: .space 4
+	copy_loop_ebx3769: .space 4
+	copy_j_eax3769: .space 4
+	copy_j_ebx3769: .space 4
+	copy_loop_eax3770: .space 4
+	copy_loop_ebx3770: .space 4
+	copy_j_eax3770: .space 4
+	copy_j_ebx3770: .space 4
+	copy_loop_eax3771: .space 4
+	copy_loop_ebx3771: .space 4
+	copy_j_eax3771: .space 4
+	copy_j_ebx3771: .space 4
+	copy_loop_eax3772: .space 4
+	copy_loop_ebx3772: .space 4
+	copy_j_eax3772: .space 4
+	copy_j_ebx3772: .space 4
+	copy_loop_eax3773: .space 4
+	copy_loop_ebx3773: .space 4
+	copy_j_eax3773: .space 4
+	copy_j_ebx3773: .space 4
+	copy_loop_eax3774: .space 4
+	copy_loop_ebx3774: .space 4
+	copy_j_eax3774: .space 4
+	copy_j_ebx3774: .space 4
+	copy_loop_eax3775: .space 4
+	copy_loop_ebx3775: .space 4
+	copy_j_eax3775: .space 4
+	copy_j_ebx3775: .space 4
+	copy_loop_eax3776: .space 4
+	copy_loop_ebx3776: .space 4
+	copy_j_eax3776: .space 4
+	copy_j_ebx3776: .space 4
+	copy_loop_eax3777: .space 4
+	copy_loop_ebx3777: .space 4
+	copy_j_eax3777: .space 4
+	copy_j_ebx3777: .space 4
+	copy_loop_eax3778: .space 4
+	copy_loop_ebx3778: .space 4
+	copy_j_eax3778: .space 4
+	copy_j_ebx3778: .space 4
+	copy_loop_eax3779: .space 4
+	copy_loop_ebx3779: .space 4
+	copy_j_eax3779: .space 4
+	copy_j_ebx3779: .space 4
+	copy_loop_eax3780: .space 4
+	copy_loop_ebx3780: .space 4
+	copy_j_eax3780: .space 4
+	copy_j_ebx3780: .space 4
+	copy_loop_eax3781: .space 4
+	copy_loop_ebx3781: .space 4
+	copy_j_eax3781: .space 4
+	copy_j_ebx3781: .space 4
+	copy_loop_eax3782: .space 4
+	copy_loop_ebx3782: .space 4
+	copy_j_eax3782: .space 4
+	copy_j_ebx3782: .space 4
+	copy_loop_eax3783: .space 4
+	copy_loop_ebx3783: .space 4
+	copy_j_eax3783: .space 4
+	copy_j_ebx3783: .space 4
+	copy_loop_eax3784: .space 4
+	copy_loop_ebx3784: .space 4
+	copy_j_eax3784: .space 4
+	copy_j_ebx3784: .space 4
+	copy_loop_eax3785: .space 4
+	copy_loop_ebx3785: .space 4
+	copy_j_eax3785: .space 4
+	copy_j_ebx3785: .space 4
+	copy_loop_eax3786: .space 4
+	copy_loop_ebx3786: .space 4
+	copy_j_eax3786: .space 4
+	copy_j_ebx3786: .space 4
+	copy_loop_eax3787: .space 4
+	copy_loop_ebx3787: .space 4
+	copy_j_eax3787: .space 4
+	copy_j_ebx3787: .space 4
+	copy_loop_eax3788: .space 4
+	copy_loop_ebx3788: .space 4
+	copy_j_eax3788: .space 4
+	copy_j_ebx3788: .space 4
+	copy_loop_eax3789: .space 4
+	copy_loop_ebx3789: .space 4
+	copy_j_eax3789: .space 4
+	copy_j_ebx3789: .space 4
+	copy_loop_eax3790: .space 4
+	copy_loop_ebx3790: .space 4
+	copy_j_eax3790: .space 4
+	copy_j_ebx3790: .space 4
+	copy_loop_eax3791: .space 4
+	copy_loop_ebx3791: .space 4
+	copy_j_eax3791: .space 4
+	copy_j_ebx3791: .space 4
+	copy_loop_eax3792: .space 4
+	copy_loop_ebx3792: .space 4
+	copy_j_eax3792: .space 4
+	copy_j_ebx3792: .space 4
+	copy_loop_eax3793: .space 4
+	copy_loop_ebx3793: .space 4
+	copy_j_eax3793: .space 4
+	copy_j_ebx3793: .space 4
+	copy_loop_eax3794: .space 4
+	copy_loop_ebx3794: .space 4
+	copy_j_eax3794: .space 4
+	copy_j_ebx3794: .space 4
+	copy_loop_eax3795: .space 4
+	copy_loop_ebx3795: .space 4
+	copy_j_eax3795: .space 4
+	copy_j_ebx3795: .space 4
+	copy_loop_eax3796: .space 4
+	copy_loop_ebx3796: .space 4
+	copy_j_eax3796: .space 4
+	copy_j_ebx3796: .space 4
+	copy_loop_eax3797: .space 4
+	copy_loop_ebx3797: .space 4
+	copy_j_eax3797: .space 4
+	copy_j_ebx3797: .space 4
+	copy_loop_eax3798: .space 4
+	copy_loop_ebx3798: .space 4
+	copy_j_eax3798: .space 4
+	copy_j_ebx3798: .space 4
+	copy_loop_eax3799: .space 4
+	copy_loop_ebx3799: .space 4
+	copy_j_eax3799: .space 4
+	copy_j_ebx3799: .space 4
+	copy_loop_eax3800: .space 4
+	copy_loop_ebx3800: .space 4
+	copy_j_eax3800: .space 4
+	copy_j_ebx3800: .space 4
+	copy_loop_eax3801: .space 4
+	copy_loop_ebx3801: .space 4
+	copy_j_eax3801: .space 4
+	copy_j_ebx3801: .space 4
+	copy_loop_eax3802: .space 4
+	copy_loop_ebx3802: .space 4
+	copy_j_eax3802: .space 4
+	copy_j_ebx3802: .space 4
+	copy_loop_eax3803: .space 4
+	copy_loop_ebx3803: .space 4
+	copy_j_eax3803: .space 4
+	copy_j_ebx3803: .space 4
+	copy_loop_eax3804: .space 4
+	copy_loop_ebx3804: .space 4
+	copy_j_eax3804: .space 4
+	copy_j_ebx3804: .space 4
+	copy_loop_eax3805: .space 4
+	copy_loop_ebx3805: .space 4
+	copy_j_eax3805: .space 4
+	copy_j_ebx3805: .space 4
+	copy_loop_eax3806: .space 4
+	copy_loop_ebx3806: .space 4
+	copy_j_eax3806: .space 4
+	copy_j_ebx3806: .space 4
+	copy_loop_eax3807: .space 4
+	copy_loop_ebx3807: .space 4
+	copy_j_eax3807: .space 4
+	copy_j_ebx3807: .space 4
+	copy_loop_eax3808: .space 4
+	copy_loop_ebx3808: .space 4
+	copy_j_eax3808: .space 4
+	copy_j_ebx3808: .space 4
+	copy_loop_eax3809: .space 4
+	copy_loop_ebx3809: .space 4
+	copy_j_eax3809: .space 4
+	copy_j_ebx3809: .space 4
+	copy_loop_eax3810: .space 4
+	copy_loop_ebx3810: .space 4
+	copy_j_eax3810: .space 4
+	copy_j_ebx3810: .space 4
+	copy_loop_eax3811: .space 4
+	copy_loop_ebx3811: .space 4
+	copy_j_eax3811: .space 4
+	copy_j_ebx3811: .space 4
+	copy_loop_eax3812: .space 4
+	copy_loop_ebx3812: .space 4
+	copy_j_eax3812: .space 4
+	copy_j_ebx3812: .space 4
+	copy_loop_eax3813: .space 4
+	copy_loop_ebx3813: .space 4
+	copy_j_eax3813: .space 4
+	copy_j_ebx3813: .space 4
+	copy_loop_eax3814: .space 4
+	copy_loop_ebx3814: .space 4
+	copy_j_eax3814: .space 4
+	copy_j_ebx3814: .space 4
+	copy_loop_eax3815: .space 4
+	copy_loop_ebx3815: .space 4
+	copy_j_eax3815: .space 4
+	copy_j_ebx3815: .space 4
+	copy_loop_eax3816: .space 4
+	copy_loop_ebx3816: .space 4
+	copy_j_eax3816: .space 4
+	copy_j_ebx3816: .space 4
+	copy_loop_eax3817: .space 4
+	copy_loop_ebx3817: .space 4
+	copy_j_eax3817: .space 4
+	copy_j_ebx3817: .space 4
+	copy_loop_eax3818: .space 4
+	copy_loop_ebx3818: .space 4
+	copy_j_eax3818: .space 4
+	copy_j_ebx3818: .space 4
+	copy_loop_eax3819: .space 4
+	copy_loop_ebx3819: .space 4
+	copy_j_eax3819: .space 4
+	copy_j_ebx3819: .space 4
+	copy_loop_eax3820: .space 4
+	copy_loop_ebx3820: .space 4
+	copy_j_eax3820: .space 4
+	copy_j_ebx3820: .space 4
+	copy_loop_eax3821: .space 4
+	copy_loop_ebx3821: .space 4
+	copy_j_eax3821: .space 4
+	copy_j_ebx3821: .space 4
+	copy_loop_eax3822: .space 4
+	copy_loop_ebx3822: .space 4
+	copy_j_eax3822: .space 4
+	copy_j_ebx3822: .space 4
+	copy_loop_eax3823: .space 4
+	copy_loop_ebx3823: .space 4
+	copy_j_eax3823: .space 4
+	copy_j_ebx3823: .space 4
+	copy_loop_eax3824: .space 4
+	copy_loop_ebx3824: .space 4
+	copy_j_eax3824: .space 4
+	copy_j_ebx3824: .space 4
+	copy_loop_eax3825: .space 4
+	copy_loop_ebx3825: .space 4
+	copy_j_eax3825: .space 4
+	copy_j_ebx3825: .space 4
+	copy_loop_eax3826: .space 4
+	copy_loop_ebx3826: .space 4
+	copy_j_eax3826: .space 4
+	copy_j_ebx3826: .space 4
+	copy_loop_eax3827: .space 4
+	copy_loop_ebx3827: .space 4
+	copy_j_eax3827: .space 4
+	copy_j_ebx3827: .space 4
+	copy_loop_eax3828: .space 4
+	copy_loop_ebx3828: .space 4
+	copy_j_eax3828: .space 4
+	copy_j_ebx3828: .space 4
+	copy_loop_eax3829: .space 4
+	copy_loop_ebx3829: .space 4
+	copy_j_eax3829: .space 4
+	copy_j_ebx3829: .space 4
+	copy_loop_eax3830: .space 4
+	copy_loop_ebx3830: .space 4
+	copy_j_eax3830: .space 4
+	copy_j_ebx3830: .space 4
+	copy_loop_eax3831: .space 4
+	copy_loop_ebx3831: .space 4
+	copy_j_eax3831: .space 4
+	copy_j_ebx3831: .space 4
+	copy_loop_eax3832: .space 4
+	copy_loop_ebx3832: .space 4
+	copy_j_eax3832: .space 4
+	copy_j_ebx3832: .space 4
+	copy_loop_eax3833: .space 4
+	copy_loop_ebx3833: .space 4
+	copy_j_eax3833: .space 4
+	copy_j_ebx3833: .space 4
+	copy_loop_eax3834: .space 4
+	copy_loop_ebx3834: .space 4
+	copy_j_eax3834: .space 4
+	copy_j_ebx3834: .space 4
+	copy_loop_eax3835: .space 4
+	copy_loop_ebx3835: .space 4
+	copy_j_eax3835: .space 4
+	copy_j_ebx3835: .space 4
+	copy_loop_eax3836: .space 4
+	copy_loop_ebx3836: .space 4
+	copy_j_eax3836: .space 4
+	copy_j_ebx3836: .space 4
+	copy_loop_eax3837: .space 4
+	copy_loop_ebx3837: .space 4
+	copy_j_eax3837: .space 4
+	copy_j_ebx3837: .space 4
+	copy_loop_eax3838: .space 4
+	copy_loop_ebx3838: .space 4
+	copy_j_eax3838: .space 4
+	copy_j_ebx3838: .space 4
+	copy_loop_eax3839: .space 4
+	copy_loop_ebx3839: .space 4
+	copy_j_eax3839: .space 4
+	copy_j_ebx3839: .space 4
+	copy_loop_eax3840: .space 4
+	copy_loop_ebx3840: .space 4
+	copy_j_eax3840: .space 4
+	copy_j_ebx3840: .space 4
+	copy_loop_eax3841: .space 4
+	copy_loop_ebx3841: .space 4
+	copy_j_eax3841: .space 4
+	copy_j_ebx3841: .space 4
+	copy_loop_eax3842: .space 4
+	copy_loop_ebx3842: .space 4
+	copy_j_eax3842: .space 4
+	copy_j_ebx3842: .space 4
+	copy_loop_eax3843: .space 4
+	copy_loop_ebx3843: .space 4
+	copy_j_eax3843: .space 4
+	copy_j_ebx3843: .space 4
+	copy_loop_eax3844: .space 4
+	copy_loop_ebx3844: .space 4
+	copy_j_eax3844: .space 4
+	copy_j_ebx3844: .space 4
+	copy_loop_eax3845: .space 4
+	copy_loop_ebx3845: .space 4
+	copy_j_eax3845: .space 4
+	copy_j_ebx3845: .space 4
+	copy_loop_eax3846: .space 4
+	copy_loop_ebx3846: .space 4
+	copy_j_eax3846: .space 4
+	copy_j_ebx3846: .space 4
+	copy_loop_eax3847: .space 4
+	copy_loop_ebx3847: .space 4
+	copy_j_eax3847: .space 4
+	copy_j_ebx3847: .space 4
+	copy_loop_eax3848: .space 4
+	copy_loop_ebx3848: .space 4
+	copy_j_eax3848: .space 4
+	copy_j_ebx3848: .space 4
+	copy_loop_eax3849: .space 4
+	copy_loop_ebx3849: .space 4
+	copy_j_eax3849: .space 4
+	copy_j_ebx3849: .space 4
+	copy_loop_eax3850: .space 4
+	copy_loop_ebx3850: .space 4
+	copy_j_eax3850: .space 4
+	copy_j_ebx3850: .space 4
+	copy_loop_eax3851: .space 4
+	copy_loop_ebx3851: .space 4
+	copy_j_eax3851: .space 4
+	copy_j_ebx3851: .space 4
+	copy_loop_eax3852: .space 4
+	copy_loop_ebx3852: .space 4
+	copy_j_eax3852: .space 4
+	copy_j_ebx3852: .space 4
+	copy_loop_eax3853: .space 4
+	copy_loop_ebx3853: .space 4
+	copy_j_eax3853: .space 4
+	copy_j_ebx3853: .space 4
+	copy_loop_eax3854: .space 4
+	copy_loop_ebx3854: .space 4
+	copy_j_eax3854: .space 4
+	copy_j_ebx3854: .space 4
+	copy_loop_eax3855: .space 4
+	copy_loop_ebx3855: .space 4
+	copy_j_eax3855: .space 4
+	copy_j_ebx3855: .space 4
+	copy_loop_eax3856: .space 4
+	copy_loop_ebx3856: .space 4
+	copy_j_eax3856: .space 4
+	copy_j_ebx3856: .space 4
+	copy_loop_eax3857: .space 4
+	copy_loop_ebx3857: .space 4
+	copy_j_eax3857: .space 4
+	copy_j_ebx3857: .space 4
+	copy_loop_eax3858: .space 4
+	copy_loop_ebx3858: .space 4
+	copy_j_eax3858: .space 4
+	copy_j_ebx3858: .space 4
+	copy_loop_eax3859: .space 4
+	copy_loop_ebx3859: .space 4
+	copy_j_eax3859: .space 4
+	copy_j_ebx3859: .space 4
+	copy_loop_eax3860: .space 4
+	copy_loop_ebx3860: .space 4
+	copy_j_eax3860: .space 4
+	copy_j_ebx3860: .space 4
+	copy_loop_eax3861: .space 4
+	copy_loop_ebx3861: .space 4
+	copy_j_eax3861: .space 4
+	copy_j_ebx3861: .space 4
+	copy_loop_eax3862: .space 4
+	copy_loop_ebx3862: .space 4
+	copy_j_eax3862: .space 4
+	copy_j_ebx3862: .space 4
+	copy_loop_eax3863: .space 4
+	copy_loop_ebx3863: .space 4
+	copy_j_eax3863: .space 4
+	copy_j_ebx3863: .space 4
+	copy_loop_eax3864: .space 4
+	copy_loop_ebx3864: .space 4
+	copy_j_eax3864: .space 4
+	copy_j_ebx3864: .space 4
+	copy_loop_eax3865: .space 4
+	copy_loop_ebx3865: .space 4
+	copy_j_eax3865: .space 4
+	copy_j_ebx3865: .space 4
+	copy_loop_eax3866: .space 4
+	copy_loop_ebx3866: .space 4
+	copy_j_eax3866: .space 4
+	copy_j_ebx3866: .space 4
+	copy_loop_eax3867: .space 4
+	copy_loop_ebx3867: .space 4
+	copy_j_eax3867: .space 4
+	copy_j_ebx3867: .space 4
+	copy_loop_eax3868: .space 4
+	copy_loop_ebx3868: .space 4
+	copy_j_eax3868: .space 4
+	copy_j_ebx3868: .space 4
+	copy_loop_eax3869: .space 4
+	copy_loop_ebx3869: .space 4
+	copy_j_eax3869: .space 4
+	copy_j_ebx3869: .space 4
+	copy_loop_eax3870: .space 4
+	copy_loop_ebx3870: .space 4
+	copy_j_eax3870: .space 4
+	copy_j_ebx3870: .space 4
+	copy_loop_eax3871: .space 4
+	copy_loop_ebx3871: .space 4
+	copy_j_eax3871: .space 4
+	copy_j_ebx3871: .space 4
+	copy_loop_eax3872: .space 4
+	copy_loop_ebx3872: .space 4
+	copy_j_eax3872: .space 4
+	copy_j_ebx3872: .space 4
+	copy_loop_eax3873: .space 4
+	copy_loop_ebx3873: .space 4
+	copy_j_eax3873: .space 4
+	copy_j_ebx3873: .space 4
+	copy_loop_eax3874: .space 4
+	copy_loop_ebx3874: .space 4
+	copy_j_eax3874: .space 4
+	copy_j_ebx3874: .space 4
+	copy_loop_eax3875: .space 4
+	copy_loop_ebx3875: .space 4
+	copy_j_eax3875: .space 4
+	copy_j_ebx3875: .space 4
+	copy_loop_eax3876: .space 4
+	copy_loop_ebx3876: .space 4
+	copy_j_eax3876: .space 4
+	copy_j_ebx3876: .space 4
+	copy_loop_eax3877: .space 4
+	copy_loop_ebx3877: .space 4
+	copy_j_eax3877: .space 4
+	copy_j_ebx3877: .space 4
+	copy_loop_eax3878: .space 4
+	copy_loop_ebx3878: .space 4
+	copy_j_eax3878: .space 4
+	copy_j_ebx3878: .space 4
+	copy_loop_eax3879: .space 4
+	copy_loop_ebx3879: .space 4
+	copy_j_eax3879: .space 4
+	copy_j_ebx3879: .space 4
+	copy_loop_eax3880: .space 4
+	copy_loop_ebx3880: .space 4
+	copy_j_eax3880: .space 4
+	copy_j_ebx3880: .space 4
+	copy_loop_eax3881: .space 4
+	copy_loop_ebx3881: .space 4
+	copy_j_eax3881: .space 4
+	copy_j_ebx3881: .space 4
+	copy_loop_eax3882: .space 4
+	copy_loop_ebx3882: .space 4
+	copy_j_eax3882: .space 4
+	copy_j_ebx3882: .space 4
+	copy_loop_eax3883: .space 4
+	copy_loop_ebx3883: .space 4
+	copy_j_eax3883: .space 4
+	copy_j_ebx3883: .space 4
+	copy_loop_eax3884: .space 4
+	copy_loop_ebx3884: .space 4
+	copy_j_eax3884: .space 4
+	copy_j_ebx3884: .space 4
+	copy_loop_eax3885: .space 4
+	copy_loop_ebx3885: .space 4
+	copy_j_eax3885: .space 4
+	copy_j_ebx3885: .space 4
+	copy_loop_eax3886: .space 4
+	copy_loop_ebx3886: .space 4
+	copy_j_eax3886: .space 4
+	copy_j_ebx3886: .space 4
+	copy_loop_eax3887: .space 4
+	copy_loop_ebx3887: .space 4
+	copy_j_eax3887: .space 4
+	copy_j_ebx3887: .space 4
+	copy_loop_eax3888: .space 4
+	copy_loop_ebx3888: .space 4
+	copy_j_eax3888: .space 4
+	copy_j_ebx3888: .space 4
+	copy_loop_eax3889: .space 4
+	copy_loop_ebx3889: .space 4
+	copy_j_eax3889: .space 4
+	copy_j_ebx3889: .space 4
+	copy_loop_eax3890: .space 4
+	copy_loop_ebx3890: .space 4
+	copy_j_eax3890: .space 4
+	copy_j_ebx3890: .space 4
+	copy_loop_eax3891: .space 4
+	copy_loop_ebx3891: .space 4
+	copy_j_eax3891: .space 4
+	copy_j_ebx3891: .space 4
+	copy_loop_eax3892: .space 4
+	copy_loop_ebx3892: .space 4
+	copy_j_eax3892: .space 4
+	copy_j_ebx3892: .space 4
+	copy_loop_eax3893: .space 4
+	copy_loop_ebx3893: .space 4
+	copy_j_eax3893: .space 4
+	copy_j_ebx3893: .space 4
+	copy_loop_eax3894: .space 4
+	copy_loop_ebx3894: .space 4
+	copy_j_eax3894: .space 4
+	copy_j_ebx3894: .space 4
+	copy_loop_eax3895: .space 4
+	copy_loop_ebx3895: .space 4
+	copy_j_eax3895: .space 4
+	copy_j_ebx3895: .space 4
+	copy_loop_eax3896: .space 4
+	copy_loop_ebx3896: .space 4
+	copy_j_eax3896: .space 4
+	copy_j_ebx3896: .space 4
+	copy_loop_eax3897: .space 4
+	copy_loop_ebx3897: .space 4
+	copy_j_eax3897: .space 4
+	copy_j_ebx3897: .space 4
+	copy_loop_eax3898: .space 4
+	copy_loop_ebx3898: .space 4
+	copy_j_eax3898: .space 4
+	copy_j_ebx3898: .space 4
+	copy_loop_eax3899: .space 4
+	copy_loop_ebx3899: .space 4
+	copy_j_eax3899: .space 4
+	copy_j_ebx3899: .space 4
+	copy_loop_eax3900: .space 4
+	copy_loop_ebx3900: .space 4
+	copy_j_eax3900: .space 4
+	copy_j_ebx3900: .space 4
+	copy_loop_eax3901: .space 4
+	copy_loop_ebx3901: .space 4
+	copy_j_eax3901: .space 4
+	copy_j_ebx3901: .space 4
+	copy_loop_eax3902: .space 4
+	copy_loop_ebx3902: .space 4
+	copy_j_eax3902: .space 4
+	copy_j_ebx3902: .space 4
+	copy_loop_eax3903: .space 4
+	copy_loop_ebx3903: .space 4
+	copy_j_eax3903: .space 4
+	copy_j_ebx3903: .space 4
+	copy_loop_eax3904: .space 4
+	copy_loop_ebx3904: .space 4
+	copy_j_eax3904: .space 4
+	copy_j_ebx3904: .space 4
+	copy_loop_eax3905: .space 4
+	copy_loop_ebx3905: .space 4
+	copy_j_eax3905: .space 4
+	copy_j_ebx3905: .space 4
+	copy_loop_eax3906: .space 4
+	copy_loop_ebx3906: .space 4
+	copy_j_eax3906: .space 4
+	copy_j_ebx3906: .space 4
+	copy_loop_eax3907: .space 4
+	copy_loop_ebx3907: .space 4
+	copy_j_eax3907: .space 4
+	copy_j_ebx3907: .space 4
+	copy_loop_eax3908: .space 4
+	copy_loop_ebx3908: .space 4
+	copy_j_eax3908: .space 4
+	copy_j_ebx3908: .space 4
+	copy_loop_eax3909: .space 4
+	copy_loop_ebx3909: .space 4
+	copy_j_eax3909: .space 4
+	copy_j_ebx3909: .space 4
+	copy_loop_eax3910: .space 4
+	copy_loop_ebx3910: .space 4
+	copy_j_eax3910: .space 4
+	copy_j_ebx3910: .space 4
+	copy_loop_eax3911: .space 4
+	copy_loop_ebx3911: .space 4
+	copy_j_eax3911: .space 4
+	copy_j_ebx3911: .space 4
+	copy_loop_eax3912: .space 4
+	copy_loop_ebx3912: .space 4
+	copy_j_eax3912: .space 4
+	copy_j_ebx3912: .space 4
+	copy_loop_eax3913: .space 4
+	copy_loop_ebx3913: .space 4
+	copy_j_eax3913: .space 4
+	copy_j_ebx3913: .space 4
+	copy_loop_eax3914: .space 4
+	copy_loop_ebx3914: .space 4
+	copy_j_eax3914: .space 4
+	copy_j_ebx3914: .space 4
+	copy_loop_eax3915: .space 4
+	copy_loop_ebx3915: .space 4
+	copy_j_eax3915: .space 4
+	copy_j_ebx3915: .space 4
+	copy_loop_eax3916: .space 4
+	copy_loop_ebx3916: .space 4
+	copy_j_eax3916: .space 4
+	copy_j_ebx3916: .space 4
+	copy_loop_eax3917: .space 4
+	copy_loop_ebx3917: .space 4
+	copy_j_eax3917: .space 4
+	copy_j_ebx3917: .space 4
+	copy_loop_eax3918: .space 4
+	copy_loop_ebx3918: .space 4
+	copy_j_eax3918: .space 4
+	copy_j_ebx3918: .space 4
+	copy_loop_eax3919: .space 4
+	copy_loop_ebx3919: .space 4
+	copy_j_eax3919: .space 4
+	copy_j_ebx3919: .space 4
+	copy_loop_eax3920: .space 4
+	copy_loop_ebx3920: .space 4
+	copy_j_eax3920: .space 4
+	copy_j_ebx3920: .space 4
+	copy_loop_eax3921: .space 4
+	copy_loop_ebx3921: .space 4
+	copy_j_eax3921: .space 4
+	copy_j_ebx3921: .space 4
+	copy_loop_eax3922: .space 4
+	copy_loop_ebx3922: .space 4
+	copy_j_eax3922: .space 4
+	copy_j_ebx3922: .space 4
+	copy_loop_eax3923: .space 4
+	copy_loop_ebx3923: .space 4
+	copy_j_eax3923: .space 4
+	copy_j_ebx3923: .space 4
+	copy_loop_eax3924: .space 4
+	copy_loop_ebx3924: .space 4
+	copy_j_eax3924: .space 4
+	copy_j_ebx3924: .space 4
+	copy_loop_eax3925: .space 4
+	copy_loop_ebx3925: .space 4
+	copy_j_eax3925: .space 4
+	copy_j_ebx3925: .space 4
+	copy_loop_eax3926: .space 4
+	copy_loop_ebx3926: .space 4
+	copy_j_eax3926: .space 4
+	copy_j_ebx3926: .space 4
+	copy_loop_eax3927: .space 4
+	copy_loop_ebx3927: .space 4
+	copy_j_eax3927: .space 4
+	copy_j_ebx3927: .space 4
+	copy_loop_eax3928: .space 4
+	copy_loop_ebx3928: .space 4
+	copy_j_eax3928: .space 4
+	copy_j_ebx3928: .space 4
+	copy_loop_eax3929: .space 4
+	copy_loop_ebx3929: .space 4
+	copy_j_eax3929: .space 4
+	copy_j_ebx3929: .space 4
+	copy_loop_eax3930: .space 4
+	copy_loop_ebx3930: .space 4
+	copy_j_eax3930: .space 4
+	copy_j_ebx3930: .space 4
+	copy_loop_eax3931: .space 4
+	copy_loop_ebx3931: .space 4
+	copy_j_eax3931: .space 4
+	copy_j_ebx3931: .space 4
+	copy_loop_eax3932: .space 4
+	copy_loop_ebx3932: .space 4
+	copy_j_eax3932: .space 4
+	copy_j_ebx3932: .space 4
+	copy_loop_eax3933: .space 4
+	copy_loop_ebx3933: .space 4
+	copy_j_eax3933: .space 4
+	copy_j_ebx3933: .space 4
+	copy_loop_eax3934: .space 4
+	copy_loop_ebx3934: .space 4
+	copy_j_eax3934: .space 4
+	copy_j_ebx3934: .space 4
+	copy_loop_eax3935: .space 4
+	copy_loop_ebx3935: .space 4
+	copy_j_eax3935: .space 4
+	copy_j_ebx3935: .space 4
+	copy_loop_eax3936: .space 4
+	copy_loop_ebx3936: .space 4
+	copy_j_eax3936: .space 4
+	copy_j_ebx3936: .space 4
+	copy_loop_eax3937: .space 4
+	copy_loop_ebx3937: .space 4
+	copy_j_eax3937: .space 4
+	copy_j_ebx3937: .space 4
+	copy_loop_eax3938: .space 4
+	copy_loop_ebx3938: .space 4
+	copy_j_eax3938: .space 4
+	copy_j_ebx3938: .space 4
+	copy_loop_eax3939: .space 4
+	copy_loop_ebx3939: .space 4
+	copy_j_eax3939: .space 4
+	copy_j_ebx3939: .space 4
+	copy_loop_eax3940: .space 4
+	copy_loop_ebx3940: .space 4
+	copy_j_eax3940: .space 4
+	copy_j_ebx3940: .space 4
+	copy_loop_eax3941: .space 4
+	copy_loop_ebx3941: .space 4
+	copy_j_eax3941: .space 4
+	copy_j_ebx3941: .space 4
+	copy_loop_eax3942: .space 4
+	copy_loop_ebx3942: .space 4
+	copy_j_eax3942: .space 4
+	copy_j_ebx3942: .space 4
+	copy_loop_eax3943: .space 4
+	copy_loop_ebx3943: .space 4
+	copy_j_eax3943: .space 4
+	copy_j_ebx3943: .space 4
+	copy_loop_eax3944: .space 4
+	copy_loop_ebx3944: .space 4
+	copy_j_eax3944: .space 4
+	copy_j_ebx3944: .space 4
+	copy_loop_eax3945: .space 4
+	copy_loop_ebx3945: .space 4
+	copy_j_eax3945: .space 4
+	copy_j_ebx3945: .space 4
+	copy_loop_eax3946: .space 4
+	copy_loop_ebx3946: .space 4
+	copy_j_eax3946: .space 4
+	copy_j_ebx3946: .space 4
+	copy_loop_eax3947: .space 4
+	copy_loop_ebx3947: .space 4
+	copy_j_eax3947: .space 4
+	copy_j_ebx3947: .space 4
+	copy_loop_eax3948: .space 4
+	copy_loop_ebx3948: .space 4
+	copy_j_eax3948: .space 4
+	copy_j_ebx3948: .space 4
+	copy_loop_eax3949: .space 4
+	copy_loop_ebx3949: .space 4
+	copy_j_eax3949: .space 4
+	copy_j_ebx3949: .space 4
+	copy_loop_eax3950: .space 4
+	copy_loop_ebx3950: .space 4
+	copy_j_eax3950: .space 4
+	copy_j_ebx3950: .space 4
+	copy_loop_eax3951: .space 4
+	copy_loop_ebx3951: .space 4
+	copy_j_eax3951: .space 4
+	copy_j_ebx3951: .space 4
+	copy_loop_eax3952: .space 4
+	copy_loop_ebx3952: .space 4
+	copy_j_eax3952: .space 4
+	copy_j_ebx3952: .space 4
+	copy_loop_eax3953: .space 4
+	copy_loop_ebx3953: .space 4
+	copy_j_eax3953: .space 4
+	copy_j_ebx3953: .space 4
+	copy_loop_eax3954: .space 4
+	copy_loop_ebx3954: .space 4
+	copy_j_eax3954: .space 4
+	copy_j_ebx3954: .space 4
+	copy_loop_eax3955: .space 4
+	copy_loop_ebx3955: .space 4
+	copy_j_eax3955: .space 4
+	copy_j_ebx3955: .space 4
+	copy_loop_eax3956: .space 4
+	copy_loop_ebx3956: .space 4
+	copy_j_eax3956: .space 4
+	copy_j_ebx3956: .space 4
+	copy_loop_eax3957: .space 4
+	copy_loop_ebx3957: .space 4
+	copy_j_eax3957: .space 4
+	copy_j_ebx3957: .space 4
+	copy_loop_eax3958: .space 4
+	copy_loop_ebx3958: .space 4
+	copy_j_eax3958: .space 4
+	copy_j_ebx3958: .space 4
+	copy_loop_eax3959: .space 4
+	copy_loop_ebx3959: .space 4
+	copy_j_eax3959: .space 4
+	copy_j_ebx3959: .space 4
+	copy_loop_eax3960: .space 4
+	copy_loop_ebx3960: .space 4
+	copy_j_eax3960: .space 4
+	copy_j_ebx3960: .space 4
+	copy_loop_eax3961: .space 4
+	copy_loop_ebx3961: .space 4
+	copy_j_eax3961: .space 4
+	copy_j_ebx3961: .space 4
+	copy_loop_eax3962: .space 4
+	copy_loop_ebx3962: .space 4
+	copy_j_eax3962: .space 4
+	copy_j_ebx3962: .space 4
+	copy_loop_eax3963: .space 4
+	copy_loop_ebx3963: .space 4
+	copy_j_eax3963: .space 4
+	copy_j_ebx3963: .space 4
+	copy_loop_eax3964: .space 4
+	copy_loop_ebx3964: .space 4
+	copy_j_eax3964: .space 4
+	copy_j_ebx3964: .space 4
+	copy_loop_eax3965: .space 4
+	copy_loop_ebx3965: .space 4
+	copy_j_eax3965: .space 4
+	copy_j_ebx3965: .space 4
+	copy_loop_eax3966: .space 4
+	copy_loop_ebx3966: .space 4
+	copy_j_eax3966: .space 4
+	copy_j_ebx3966: .space 4
+	copy_loop_eax3967: .space 4
+	copy_loop_ebx3967: .space 4
+	copy_j_eax3967: .space 4
+	copy_j_ebx3967: .space 4
+	copy_loop_eax3968: .space 4
+	copy_loop_ebx3968: .space 4
+	copy_j_eax3968: .space 4
+	copy_j_ebx3968: .space 4
+	copy_loop_eax3969: .space 4
+	copy_loop_ebx3969: .space 4
+	copy_j_eax3969: .space 4
+	copy_j_ebx3969: .space 4
+	copy_loop_eax3970: .space 4
+	copy_loop_ebx3970: .space 4
+	copy_j_eax3970: .space 4
+	copy_j_ebx3970: .space 4
+	copy_loop_eax3971: .space 4
+	copy_loop_ebx3971: .space 4
+	copy_j_eax3971: .space 4
+	copy_j_ebx3971: .space 4
+	copy_loop_eax3972: .space 4
+	copy_loop_ebx3972: .space 4
+	copy_j_eax3972: .space 4
+	copy_j_ebx3972: .space 4
+	copy_loop_eax3973: .space 4
+	copy_loop_ebx3973: .space 4
+	copy_j_eax3973: .space 4
+	copy_j_ebx3973: .space 4
+	copy_loop_eax3974: .space 4
+	copy_loop_ebx3974: .space 4
+	copy_j_eax3974: .space 4
+	copy_j_ebx3974: .space 4
+	copy_loop_eax3975: .space 4
+	copy_loop_ebx3975: .space 4
+	copy_j_eax3975: .space 4
+	copy_j_ebx3975: .space 4
+	copy_loop_eax3976: .space 4
+	copy_loop_ebx3976: .space 4
+	copy_j_eax3976: .space 4
+	copy_j_ebx3976: .space 4
+	copy_loop_eax3977: .space 4
+	copy_loop_ebx3977: .space 4
+	copy_j_eax3977: .space 4
+	copy_j_ebx3977: .space 4
+	copy_loop_eax3978: .space 4
+	copy_loop_ebx3978: .space 4
+	copy_j_eax3978: .space 4
+	copy_j_ebx3978: .space 4
+	copy_loop_eax3979: .space 4
+	copy_loop_ebx3979: .space 4
+	copy_j_eax3979: .space 4
+	copy_j_ebx3979: .space 4
+	copy_loop_eax3980: .space 4
+	copy_loop_ebx3980: .space 4
+	copy_j_eax3980: .space 4
+	copy_j_ebx3980: .space 4
+	copy_loop_eax3981: .space 4
+	copy_loop_ebx3981: .space 4
+	copy_j_eax3981: .space 4
+	copy_j_ebx3981: .space 4
+	copy_loop_eax3982: .space 4
+	copy_loop_ebx3982: .space 4
+	copy_j_eax3982: .space 4
+	copy_j_ebx3982: .space 4
+	copy_loop_eax3983: .space 4
+	copy_loop_ebx3983: .space 4
+	copy_j_eax3983: .space 4
+	copy_j_ebx3983: .space 4
+	copy_loop_eax3984: .space 4
+	copy_loop_ebx3984: .space 4
+	copy_j_eax3984: .space 4
+	copy_j_ebx3984: .space 4
+	copy_loop_eax3985: .space 4
+	copy_loop_ebx3985: .space 4
+	copy_j_eax3985: .space 4
+	copy_j_ebx3985: .space 4
+	copy_loop_eax3986: .space 4
+	copy_loop_ebx3986: .space 4
+	copy_j_eax3986: .space 4
+	copy_j_ebx3986: .space 4
+	copy_loop_eax3987: .space 4
+	copy_loop_ebx3987: .space 4
+	copy_j_eax3987: .space 4
+	copy_j_ebx3987: .space 4
+	copy_loop_eax3988: .space 4
+	copy_loop_ebx3988: .space 4
+	copy_j_eax3988: .space 4
+	copy_j_ebx3988: .space 4
+	copy_loop_eax3989: .space 4
+	copy_loop_ebx3989: .space 4
+	copy_j_eax3989: .space 4
+	copy_j_ebx3989: .space 4
+	copy_loop_eax3990: .space 4
+	copy_loop_ebx3990: .space 4
+	copy_j_eax3990: .space 4
+	copy_j_ebx3990: .space 4
+	copy_loop_eax3991: .space 4
+	copy_loop_ebx3991: .space 4
+	copy_j_eax3991: .space 4
+	copy_j_ebx3991: .space 4
+	copy_loop_eax3992: .space 4
+	copy_loop_ebx3992: .space 4
+	copy_j_eax3992: .space 4
+	copy_j_ebx3992: .space 4
+	copy_loop_eax3993: .space 4
+	copy_loop_ebx3993: .space 4
+	copy_j_eax3993: .space 4
+	copy_j_ebx3993: .space 4
+	copy_loop_eax3994: .space 4
+	copy_loop_ebx3994: .space 4
+	copy_j_eax3994: .space 4
+	copy_j_ebx3994: .space 4
+	copy_loop_eax3995: .space 4
+	copy_loop_ebx3995: .space 4
+	copy_j_eax3995: .space 4
+	copy_j_ebx3995: .space 4
+	copy_loop_eax3996: .space 4
+	copy_loop_ebx3996: .space 4
+	copy_j_eax3996: .space 4
+	copy_j_ebx3996: .space 4
+	copy_loop_eax3997: .space 4
+	copy_loop_ebx3997: .space 4
+	copy_j_eax3997: .space 4
+	copy_j_ebx3997: .space 4
+	copy_loop_eax3998: .space 4
+	copy_loop_ebx3998: .space 4
+	copy_j_eax3998: .space 4
+	copy_j_ebx3998: .space 4
+	copy_loop_eax3999: .space 4
+	copy_loop_ebx3999: .space 4
+	copy_j_eax3999: .space 4
+	copy_j_ebx3999: .space 4
+	copy_loop_eax4000: .space 4
+	copy_loop_ebx4000: .space 4
+	copy_j_eax4000: .space 4
+	copy_j_ebx4000: .space 4
+	copy_push_eax: .space 4
 	copy_dest: .space 4
+	copy_add_dest: .space 4
 	copy_sub_ebp: .space 4
 	copy3_ecx: .space 4
 	old_carry: .space 4
@@ -594,11 +8760,13 @@
 	
 	et_loop:
 	cmpl %eax, %ebx
-	movl %eax, copy_j_eax
-	movl %ebx, copy_j_ebx
+	movl %eax, copy_j_eax0
+	movl %ebx, copy_j_ebx0
 	movl $et_exit, %eax
 	movl $labelj0, %ebx
 	cmova %eax, %ebx
+	movl %eax, copy_push_eax
+	movl %ebx, %eax
 	movl %eax, copy_add_eax
 	movl %ebx, copy_add_ebx
 	movl %ecx, copy_add_ecx
@@ -607,6050 +8775,9 @@
 	movl %edi, copy_add_edi
 	movl %esp, copy_add_esp
 	movl %ebp, copy_add_ebp
-	movl $-4, %edx
-	movl %edx, %eax
-	shrl $0, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 0
-	movl %edx, %eax
-	shrl $1, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 1
-	movl %edx, %eax
-	shrl $2, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 2
-	movl %edx, %eax
-	shrl $3, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 3
-	movl %edx, %eax
-	shrl $4, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 4
-	movl %edx, %eax
-	shrl $5, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 5
-	movl %edx, %eax
-	shrl $6, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 6
-	movl %edx, %eax
-	shrl $7, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 7
-	movl %edx, %eax
-	shrl $8, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 8
-	movl %edx, %eax
-	shrl $9, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 9
-	movl %edx, %eax
-	shrl $10, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 10
-	movl %edx, %eax
-	shrl $11, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 11
-	movl %edx, %eax
-	shrl $12, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 12
-	movl %edx, %eax
-	shrl $13, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 13
-	movl %edx, %eax
-	shrl $14, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 14
-	movl %edx, %eax
-	shrl $15, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 15
-	movl %edx, %eax
-	shrl $16, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 16
-	movl %edx, %eax
-	shrl $17, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 17
-	movl %edx, %eax
-	shrl $18, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 18
-	movl %edx, %eax
-	shrl $19, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 19
-	movl %edx, %eax
-	shrl $20, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 20
-	movl %edx, %eax
-	shrl $21, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 21
-	movl %edx, %eax
-	shrl $22, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 22
-	movl %edx, %eax
-	shrl $23, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 23
-	movl %edx, %eax
-	shrl $24, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 24
-	movl %edx, %eax
-	shrl $25, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 25
-	movl %edx, %eax
-	shrl $26, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 26
-	movl %edx, %eax
-	shrl $27, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 27
-	movl %edx, %eax
-	shrl $28, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 28
-	movl %edx, %eax
-	shrl $29, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 29
-	movl %edx, %eax
-	shrl $30, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 30
-	movl %edx, %eax
-	shrl $31, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, src + 31
-	movl copy_add_esp, %edx
-	movl %edx, %eax
-	shrl $0, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 0
-	movl %edx, %eax
-	shrl $1, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 1
-	movl %edx, %eax
-	shrl $2, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 2
-	movl %edx, %eax
-	shrl $3, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 3
-	movl %edx, %eax
-	shrl $4, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 4
-	movl %edx, %eax
-	shrl $5, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 5
-	movl %edx, %eax
-	shrl $6, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 6
-	movl %edx, %eax
-	shrl $7, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 7
-	movl %edx, %eax
-	shrl $8, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 8
-	movl %edx, %eax
-	shrl $9, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 9
-	movl %edx, %eax
-	shrl $10, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 10
-	movl %edx, %eax
-	shrl $11, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 11
-	movl %edx, %eax
-	shrl $12, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 12
-	movl %edx, %eax
-	shrl $13, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 13
-	movl %edx, %eax
-	shrl $14, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 14
-	movl %edx, %eax
-	shrl $15, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 15
-	movl %edx, %eax
-	shrl $16, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 16
-	movl %edx, %eax
-	shrl $17, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 17
-	movl %edx, %eax
-	shrl $18, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 18
-	movl %edx, %eax
-	shrl $19, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 19
-	movl %edx, %eax
-	shrl $20, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 20
-	movl %edx, %eax
-	shrl $21, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 21
-	movl %edx, %eax
-	shrl $22, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 22
-	movl %edx, %eax
-	shrl $23, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 23
-	movl %edx, %eax
-	shrl $24, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 24
-	movl %edx, %eax
-	shrl $25, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 25
-	movl %edx, %eax
-	shrl $26, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 26
-	movl %edx, %eax
-	shrl $27, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 27
-	movl %edx, %eax
-	shrl $28, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 28
-	movl %edx, %eax
-	shrl $29, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 29
-	movl %edx, %eax
-	shrl $30, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 30
-	movl %edx, %eax
-	shrl $31, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %eax, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl $1, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_edx, %edx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movb %al, dest + 31
-	movl $0, %ecx
-	movzbl dest + 0, %eax
-	movzbl src + 0, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 0, %eax
-	movzbl src + 0, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 0
-	movl copy3_ecx, %ecx
-	movzbl dest + 1, %eax
-	movzbl src + 1, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 1, %eax
-	movzbl src + 1, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 1
-	movl copy3_ecx, %ecx
-	movzbl dest + 2, %eax
-	movzbl src + 2, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 2, %eax
-	movzbl src + 2, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 2
-	movl copy3_ecx, %ecx
-	movzbl dest + 3, %eax
-	movzbl src + 3, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 3, %eax
-	movzbl src + 3, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 3
-	movl copy3_ecx, %ecx
-	movzbl dest + 4, %eax
-	movzbl src + 4, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 4, %eax
-	movzbl src + 4, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 4
-	movl copy3_ecx, %ecx
-	movzbl dest + 5, %eax
-	movzbl src + 5, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 5, %eax
-	movzbl src + 5, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 5
-	movl copy3_ecx, %ecx
-	movzbl dest + 6, %eax
-	movzbl src + 6, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 6, %eax
-	movzbl src + 6, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 6
-	movl copy3_ecx, %ecx
-	movzbl dest + 7, %eax
-	movzbl src + 7, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 7, %eax
-	movzbl src + 7, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 7
-	movl copy3_ecx, %ecx
-	movzbl dest + 8, %eax
-	movzbl src + 8, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 8, %eax
-	movzbl src + 8, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 8
-	movl copy3_ecx, %ecx
-	movzbl dest + 9, %eax
-	movzbl src + 9, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 9, %eax
-	movzbl src + 9, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 9
-	movl copy3_ecx, %ecx
-	movzbl dest + 10, %eax
-	movzbl src + 10, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 10, %eax
-	movzbl src + 10, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 10
-	movl copy3_ecx, %ecx
-	movzbl dest + 11, %eax
-	movzbl src + 11, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 11, %eax
-	movzbl src + 11, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 11
-	movl copy3_ecx, %ecx
-	movzbl dest + 12, %eax
-	movzbl src + 12, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 12, %eax
-	movzbl src + 12, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 12
-	movl copy3_ecx, %ecx
-	movzbl dest + 13, %eax
-	movzbl src + 13, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 13, %eax
-	movzbl src + 13, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 13
-	movl copy3_ecx, %ecx
-	movzbl dest + 14, %eax
-	movzbl src + 14, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 14, %eax
-	movzbl src + 14, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 14
-	movl copy3_ecx, %ecx
-	movzbl dest + 15, %eax
-	movzbl src + 15, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 15, %eax
-	movzbl src + 15, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 15
-	movl copy3_ecx, %ecx
-	movzbl dest + 16, %eax
-	movzbl src + 16, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 16, %eax
-	movzbl src + 16, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 16
-	movl copy3_ecx, %ecx
-	movzbl dest + 17, %eax
-	movzbl src + 17, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 17, %eax
-	movzbl src + 17, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 17
-	movl copy3_ecx, %ecx
-	movzbl dest + 18, %eax
-	movzbl src + 18, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 18, %eax
-	movzbl src + 18, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 18
-	movl copy3_ecx, %ecx
-	movzbl dest + 19, %eax
-	movzbl src + 19, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 19, %eax
-	movzbl src + 19, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 19
-	movl copy3_ecx, %ecx
-	movzbl dest + 20, %eax
-	movzbl src + 20, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 20, %eax
-	movzbl src + 20, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 20
-	movl copy3_ecx, %ecx
-	movzbl dest + 21, %eax
-	movzbl src + 21, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 21, %eax
-	movzbl src + 21, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 21
-	movl copy3_ecx, %ecx
-	movzbl dest + 22, %eax
-	movzbl src + 22, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 22, %eax
-	movzbl src + 22, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 22
-	movl copy3_ecx, %ecx
-	movzbl dest + 23, %eax
-	movzbl src + 23, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 23, %eax
-	movzbl src + 23, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 23
-	movl copy3_ecx, %ecx
-	movzbl dest + 24, %eax
-	movzbl src + 24, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 24, %eax
-	movzbl src + 24, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 24
-	movl copy3_ecx, %ecx
-	movzbl dest + 25, %eax
-	movzbl src + 25, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 25, %eax
-	movzbl src + 25, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 25
-	movl copy3_ecx, %ecx
-	movzbl dest + 26, %eax
-	movzbl src + 26, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 26, %eax
-	movzbl src + 26, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 26
-	movl copy3_ecx, %ecx
-	movzbl dest + 27, %eax
-	movzbl src + 27, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 27, %eax
-	movzbl src + 27, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 27
-	movl copy3_ecx, %ecx
-	movzbl dest + 28, %eax
-	movzbl src + 28, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 28, %eax
-	movzbl src + 28, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 28
-	movl copy3_ecx, %ecx
-	movzbl dest + 29, %eax
-	movzbl src + 29, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 29, %eax
-	movzbl src + 29, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 29
-	movl copy3_ecx, %ecx
-	movzbl dest + 30, %eax
-	movzbl src + 30, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 30, %eax
-	movzbl src + 30, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 30
-	movl copy3_ecx, %ecx
-	movzbl dest + 31, %eax
-	movzbl src + 31, %ebx
-	movl %ecx, old_carry
-	movl table_xor(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %esi
-	movzbl dest + 31, %eax
-	movzbl src + 31, %ebx
-	movl table_and(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movzbl %al, %edx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_and(,%ecx,4), %edi
-	movb (%edi, %esi, 1), %al
-	movzbl %al, %eax
-	movzbl %al, %eax
-	movl copy3_ecx, %ecx
-	movl table_or(,%edx,4), %edi
-	movb (%edi, %eax, 1), %al
-	movzbl %al, %ecx
-	movl %ecx, copy3_ecx
-	movl old_carry, %ecx
-	movl table_xor(,%esi,4), %edi
-	movb (%edi, %ecx, 1), %al
-	movb %al, dest + 31
-	movl copy3_ecx, %ecx
-	movl $0, %edx
-	movzbl dest + 0, %eax
-	shll $0, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 1, %eax
-	shll $1, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 2, %eax
-	shll $2, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 3, %eax
-	shll $3, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 4, %eax
-	shll $4, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 5, %eax
-	shll $5, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 6, %eax
-	shll $6, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 7, %eax
-	shll $7, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 8, %eax
-	shll $8, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 9, %eax
-	shll $9, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 10, %eax
-	shll $10, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 11, %eax
-	shll $11, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 12, %eax
-	shll $12, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 13, %eax
-	shll $13, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 14, %eax
-	shll $14, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 15, %eax
-	shll $15, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 16, %eax
-	shll $16, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 17, %eax
-	shll $17, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 18, %eax
-	shll $18, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 19, %eax
-	shll $19, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 20, %eax
-	shll $20, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 21, %eax
-	shll $21, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 22, %eax
-	shll $22, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 23, %eax
-	shll $23, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 24, %eax
-	shll $24, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 25, %eax
-	shll $25, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 26, %eax
-	shll $26, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 27, %eax
-	shll $27, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 28, %eax
-	shll $28, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 29, %eax
-	shll $29, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 30, %eax
-	shll $30, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movzbl dest + 31, %eax
-	shll $31, %eax
-	movl %eax, copy_eax
-	movl %ebx, copy_ebx
-	movl %ecx, copy_ecx
-	movl %edx, copy_edx
-	movl %esi, copy_esi
-	movl %edi, copy_edi
-	movl %edx, %eax
-	movl %eax, copy_dest
-	movl $0, %ecx
-	movl %eax, src_op
-	movl src_op, %ebx
-	shrl $24, %ebx
-	movl copy_dest, %eax
-	shrl $24, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $16, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $16, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	shrl $8, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	shrl $8, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	shll $8, %ecx
-	movl src_op, %ebx
-	movzbl %bl, %ebx
-	movl copy_dest, %eax
-	movzbl %al, %eax
-	movl table_or(,%eax,4), %edi
-	movb (%edi, %ebx, 1), %al
-	movb %al, %cl
-	movl %ecx, %edx
-	movl copy_eax, %eax
-	movl copy_ebx, %ebx
-	movl copy_ecx, %ecx
-	movl copy_esi, %esi
-	movl copy_edi, %edi
-	movl %edx, %esp
+	movl %esp, %eax
+	movl %eax, copy_add_dest
 	movl copy_add_eax, %eax
-	movl copy_add_ebx, %ebx
-	movl copy_add_ecx, %ecx
-	movl copy_add_edx, %edx
-	movl copy_add_esi, %esi
-	movl copy_add_edi, %edi
-	movl copy_add_ebp, %ebp
-	movl %ebx, 0(%esp)
-	movl copy_j_eax, %eax
-	movl copy_j_ebx, %ebx
-	ret
-labelj0:
-	shll $1, %ebx
-	movl %eax, copy_loop_eax
-	movl $et_loop, %eax
-	movl %eax, copy_add_eax
-	movl %ebx, copy_add_ebx
-	movl %ecx, copy_add_ecx
-	movl %edx, copy_add_edx
-	movl %esi, copy_add_esi
-	movl %edi, copy_add_edi
-	movl %esp, copy_add_esp
-	movl %ebp, copy_add_ebp
 	movl $-4, %edx
 	movl %edx, %eax
 	shrl $0, %eax
@@ -6662,6 +8789,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -6716,6 +8844,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -6770,6 +8899,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -6824,6 +8954,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -6878,6 +9009,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -6932,6 +9064,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -6986,6 +9119,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7040,6 +9174,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7094,6 +9229,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7148,6 +9284,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7202,6 +9339,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7256,6 +9394,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7310,6 +9449,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7364,6 +9504,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7418,6 +9559,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7472,6 +9614,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7526,6 +9669,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7580,6 +9724,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7634,6 +9779,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7688,6 +9834,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7742,6 +9889,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7796,6 +9944,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7850,6 +9999,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7904,6 +10054,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -7958,6 +10109,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8012,6 +10164,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8066,6 +10219,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8120,6 +10274,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8174,6 +10329,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8228,6 +10384,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8282,6 +10439,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8336,6 +10494,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8380,7 +10539,7 @@ labelj0:
 	movl copy_esi, %esi
 	movl copy_edi, %edi
 	movb %al, src + 31
-	movl copy_add_esp, %edx
+	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	movl %eax, copy_eax
@@ -8391,6 +10550,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8445,6 +10605,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8499,6 +10660,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8553,6 +10715,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8607,6 +10770,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8661,6 +10825,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8715,6 +10880,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8769,6 +10935,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8823,6 +10990,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8877,6 +11045,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8931,6 +11100,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -8985,6 +11155,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9039,6 +11210,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9093,6 +11265,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9147,6 +11320,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9201,6 +11375,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9255,6 +11430,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9309,6 +11485,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9363,6 +11540,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9417,6 +11595,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9471,6 +11650,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9525,6 +11705,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9579,6 +11760,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9633,6 +11815,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9687,6 +11870,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9741,6 +11925,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9795,6 +11980,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9849,6 +12035,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9903,6 +12090,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -9957,6 +12145,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -10011,6 +12200,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -10065,6 +12255,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -10985,6 +13176,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11038,6 +13230,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11091,6 +13284,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11144,6 +13338,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11197,6 +13392,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11250,6 +13446,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11303,6 +13500,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11356,6 +13554,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11409,6 +13608,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11462,6 +13662,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11515,6 +13716,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11568,6 +13770,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11621,6 +13824,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11674,6 +13878,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11727,6 +13932,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11780,6 +13986,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11833,6 +14040,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11886,6 +14094,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11939,6 +14148,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -11992,6 +14202,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12045,6 +14256,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12098,6 +14310,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12151,6 +14364,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12204,6 +14418,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12257,6 +14472,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12310,6 +14526,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12363,6 +14580,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12416,6 +14634,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12469,6 +14688,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12522,6 +14742,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12575,6 +14796,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12628,6 +14850,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -12680,10 +14903,6159 @@ labelj0:
 	movl copy_add_edi, %edi
 	movl copy_add_ebp, %ebp
 	movl %eax, 0(%esp)
+	movl copy_push_eax, %eax
+	movl copy_j_eax0, %eax
+	movl copy_j_ebx0, %ebx
+	ret
+labelj0:
+	shll $1, %ebx
+	movl %eax, copy_loop_eax
+	movl $et_loop, %eax
+	movl %eax, copy_push_eax
+	movl %eax, %eax
+	movl %eax, copy_add_eax
+	movl %ebx, copy_add_ebx
+	movl %ecx, copy_add_ecx
+	movl %edx, copy_add_edx
+	movl %esi, copy_add_esi
+	movl %edi, copy_add_edi
+	movl %esp, copy_add_esp
+	movl %ebp, copy_add_ebp
+	movl %esp, %eax
+	movl %eax, copy_add_dest
+	movl copy_add_eax, %eax
+	movl $-4, %edx
+	movl %edx, %eax
+	shrl $0, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 0
+	movl %edx, %eax
+	shrl $1, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 1
+	movl %edx, %eax
+	shrl $2, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 2
+	movl %edx, %eax
+	shrl $3, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 3
+	movl %edx, %eax
+	shrl $4, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 4
+	movl %edx, %eax
+	shrl $5, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 5
+	movl %edx, %eax
+	shrl $6, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 6
+	movl %edx, %eax
+	shrl $7, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 7
+	movl %edx, %eax
+	shrl $8, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 8
+	movl %edx, %eax
+	shrl $9, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 9
+	movl %edx, %eax
+	shrl $10, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 10
+	movl %edx, %eax
+	shrl $11, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 11
+	movl %edx, %eax
+	shrl $12, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 12
+	movl %edx, %eax
+	shrl $13, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 13
+	movl %edx, %eax
+	shrl $14, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 14
+	movl %edx, %eax
+	shrl $15, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 15
+	movl %edx, %eax
+	shrl $16, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 16
+	movl %edx, %eax
+	shrl $17, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 17
+	movl %edx, %eax
+	shrl $18, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 18
+	movl %edx, %eax
+	shrl $19, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 19
+	movl %edx, %eax
+	shrl $20, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 20
+	movl %edx, %eax
+	shrl $21, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 21
+	movl %edx, %eax
+	shrl $22, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 22
+	movl %edx, %eax
+	shrl $23, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 23
+	movl %edx, %eax
+	shrl $24, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 24
+	movl %edx, %eax
+	shrl $25, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 25
+	movl %edx, %eax
+	shrl $26, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 26
+	movl %edx, %eax
+	shrl $27, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 27
+	movl %edx, %eax
+	shrl $28, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 28
+	movl %edx, %eax
+	shrl $29, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 29
+	movl %edx, %eax
+	shrl $30, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 30
+	movl %edx, %eax
+	shrl $31, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, src + 31
+	movl copy_add_dest, %edx
+	movl %edx, %eax
+	shrl $0, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 0
+	movl %edx, %eax
+	shrl $1, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 1
+	movl %edx, %eax
+	shrl $2, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 2
+	movl %edx, %eax
+	shrl $3, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 3
+	movl %edx, %eax
+	shrl $4, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 4
+	movl %edx, %eax
+	shrl $5, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 5
+	movl %edx, %eax
+	shrl $6, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 6
+	movl %edx, %eax
+	shrl $7, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 7
+	movl %edx, %eax
+	shrl $8, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 8
+	movl %edx, %eax
+	shrl $9, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 9
+	movl %edx, %eax
+	shrl $10, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 10
+	movl %edx, %eax
+	shrl $11, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 11
+	movl %edx, %eax
+	shrl $12, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 12
+	movl %edx, %eax
+	shrl $13, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 13
+	movl %edx, %eax
+	shrl $14, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 14
+	movl %edx, %eax
+	shrl $15, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 15
+	movl %edx, %eax
+	shrl $16, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 16
+	movl %edx, %eax
+	shrl $17, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 17
+	movl %edx, %eax
+	shrl $18, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 18
+	movl %edx, %eax
+	shrl $19, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 19
+	movl %edx, %eax
+	shrl $20, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 20
+	movl %edx, %eax
+	shrl $21, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 21
+	movl %edx, %eax
+	shrl $22, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 22
+	movl %edx, %eax
+	shrl $23, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 23
+	movl %edx, %eax
+	shrl $24, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 24
+	movl %edx, %eax
+	shrl $25, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 25
+	movl %edx, %eax
+	shrl $26, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 26
+	movl %edx, %eax
+	shrl $27, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 27
+	movl %edx, %eax
+	shrl $28, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 28
+	movl %edx, %eax
+	shrl $29, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 29
+	movl %edx, %eax
+	shrl $30, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 30
+	movl %edx, %eax
+	shrl $31, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %eax, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl $1, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_edx, %edx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movb %al, dest + 31
+	movl $0, %ecx
+	movzbl dest + 0, %eax
+	movzbl src + 0, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 0, %eax
+	movzbl src + 0, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 0
+	movl copy3_ecx, %ecx
+	movzbl dest + 1, %eax
+	movzbl src + 1, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 1, %eax
+	movzbl src + 1, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 1
+	movl copy3_ecx, %ecx
+	movzbl dest + 2, %eax
+	movzbl src + 2, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 2, %eax
+	movzbl src + 2, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 2
+	movl copy3_ecx, %ecx
+	movzbl dest + 3, %eax
+	movzbl src + 3, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 3, %eax
+	movzbl src + 3, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 3
+	movl copy3_ecx, %ecx
+	movzbl dest + 4, %eax
+	movzbl src + 4, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 4, %eax
+	movzbl src + 4, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 4
+	movl copy3_ecx, %ecx
+	movzbl dest + 5, %eax
+	movzbl src + 5, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 5, %eax
+	movzbl src + 5, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 5
+	movl copy3_ecx, %ecx
+	movzbl dest + 6, %eax
+	movzbl src + 6, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 6, %eax
+	movzbl src + 6, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 6
+	movl copy3_ecx, %ecx
+	movzbl dest + 7, %eax
+	movzbl src + 7, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 7, %eax
+	movzbl src + 7, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 7
+	movl copy3_ecx, %ecx
+	movzbl dest + 8, %eax
+	movzbl src + 8, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 8, %eax
+	movzbl src + 8, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 8
+	movl copy3_ecx, %ecx
+	movzbl dest + 9, %eax
+	movzbl src + 9, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 9, %eax
+	movzbl src + 9, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 9
+	movl copy3_ecx, %ecx
+	movzbl dest + 10, %eax
+	movzbl src + 10, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 10, %eax
+	movzbl src + 10, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 10
+	movl copy3_ecx, %ecx
+	movzbl dest + 11, %eax
+	movzbl src + 11, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 11, %eax
+	movzbl src + 11, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 11
+	movl copy3_ecx, %ecx
+	movzbl dest + 12, %eax
+	movzbl src + 12, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 12, %eax
+	movzbl src + 12, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 12
+	movl copy3_ecx, %ecx
+	movzbl dest + 13, %eax
+	movzbl src + 13, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 13, %eax
+	movzbl src + 13, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 13
+	movl copy3_ecx, %ecx
+	movzbl dest + 14, %eax
+	movzbl src + 14, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 14, %eax
+	movzbl src + 14, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 14
+	movl copy3_ecx, %ecx
+	movzbl dest + 15, %eax
+	movzbl src + 15, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 15, %eax
+	movzbl src + 15, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 15
+	movl copy3_ecx, %ecx
+	movzbl dest + 16, %eax
+	movzbl src + 16, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 16, %eax
+	movzbl src + 16, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 16
+	movl copy3_ecx, %ecx
+	movzbl dest + 17, %eax
+	movzbl src + 17, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 17, %eax
+	movzbl src + 17, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 17
+	movl copy3_ecx, %ecx
+	movzbl dest + 18, %eax
+	movzbl src + 18, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 18, %eax
+	movzbl src + 18, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 18
+	movl copy3_ecx, %ecx
+	movzbl dest + 19, %eax
+	movzbl src + 19, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 19, %eax
+	movzbl src + 19, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 19
+	movl copy3_ecx, %ecx
+	movzbl dest + 20, %eax
+	movzbl src + 20, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 20, %eax
+	movzbl src + 20, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 20
+	movl copy3_ecx, %ecx
+	movzbl dest + 21, %eax
+	movzbl src + 21, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 21, %eax
+	movzbl src + 21, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 21
+	movl copy3_ecx, %ecx
+	movzbl dest + 22, %eax
+	movzbl src + 22, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 22, %eax
+	movzbl src + 22, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 22
+	movl copy3_ecx, %ecx
+	movzbl dest + 23, %eax
+	movzbl src + 23, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 23, %eax
+	movzbl src + 23, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 23
+	movl copy3_ecx, %ecx
+	movzbl dest + 24, %eax
+	movzbl src + 24, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 24, %eax
+	movzbl src + 24, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 24
+	movl copy3_ecx, %ecx
+	movzbl dest + 25, %eax
+	movzbl src + 25, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 25, %eax
+	movzbl src + 25, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 25
+	movl copy3_ecx, %ecx
+	movzbl dest + 26, %eax
+	movzbl src + 26, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 26, %eax
+	movzbl src + 26, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 26
+	movl copy3_ecx, %ecx
+	movzbl dest + 27, %eax
+	movzbl src + 27, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 27, %eax
+	movzbl src + 27, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 27
+	movl copy3_ecx, %ecx
+	movzbl dest + 28, %eax
+	movzbl src + 28, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 28, %eax
+	movzbl src + 28, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 28
+	movl copy3_ecx, %ecx
+	movzbl dest + 29, %eax
+	movzbl src + 29, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 29, %eax
+	movzbl src + 29, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 29
+	movl copy3_ecx, %ecx
+	movzbl dest + 30, %eax
+	movzbl src + 30, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 30, %eax
+	movzbl src + 30, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 30
+	movl copy3_ecx, %ecx
+	movzbl dest + 31, %eax
+	movzbl src + 31, %ebx
+	movl %ecx, old_carry
+	movl table_xor(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %esi
+	movzbl dest + 31, %eax
+	movzbl src + 31, %ebx
+	movl table_and(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movzbl %al, %edx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_and(,%ecx,4), %edi
+	movb (%edi, %esi, 1), %al
+	movzbl %al, %eax
+	movzbl %al, %eax
+	movl copy3_ecx, %ecx
+	movl table_or(,%edx,4), %edi
+	movb (%edi, %eax, 1), %al
+	movzbl %al, %ecx
+	movl %ecx, copy3_ecx
+	movl old_carry, %ecx
+	movl table_xor(,%esi,4), %edi
+	movb (%edi, %ecx, 1), %al
+	movb %al, dest + 31
+	movl copy3_ecx, %ecx
+	movl $0, %edx
+	movzbl dest + 0, %eax
+	shll $0, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 1, %eax
+	shll $1, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 2, %eax
+	shll $2, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 3, %eax
+	shll $3, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 4, %eax
+	shll $4, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 5, %eax
+	shll $5, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 6, %eax
+	shll $6, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 7, %eax
+	shll $7, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 8, %eax
+	shll $8, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 9, %eax
+	shll $9, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 10, %eax
+	shll $10, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 11, %eax
+	shll $11, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 12, %eax
+	shll $12, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 13, %eax
+	shll $13, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 14, %eax
+	shll $14, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 15, %eax
+	shll $15, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 16, %eax
+	shll $16, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 17, %eax
+	shll $17, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 18, %eax
+	shll $18, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 19, %eax
+	shll $19, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 20, %eax
+	shll $20, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 21, %eax
+	shll $21, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 22, %eax
+	shll $22, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 23, %eax
+	shll $23, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 24, %eax
+	shll $24, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 25, %eax
+	shll $25, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 26, %eax
+	shll $26, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 27, %eax
+	shll $27, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 28, %eax
+	shll $28, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 29, %eax
+	shll $29, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 30, %eax
+	shll $30, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movzbl dest + 31, %eax
+	shll $31, %eax
+	movl %eax, copy_eax
+	movl %ebx, copy_ebx
+	movl %ecx, copy_ecx
+	movl %edx, copy_edx
+	movl %esi, copy_esi
+	movl %edi, copy_edi
+	movl %edx, %eax
+	movl %eax, copy_dest
+	movl copy_eax, %eax
+	movl $0, %ecx
+	movl %eax, src_op
+	movl src_op, %ebx
+	shrl $24, %ebx
+	movl copy_dest, %eax
+	shrl $24, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $16, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $16, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	shrl $8, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	shrl $8, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	shll $8, %ecx
+	movl src_op, %ebx
+	movzbl %bl, %ebx
+	movl copy_dest, %eax
+	movzbl %al, %eax
+	movl table_or(,%eax,4), %edi
+	movb (%edi, %ebx, 1), %al
+	movb %al, %cl
+	movl %ecx, %edx
+	movl copy_eax, %eax
+	movl copy_ebx, %ebx
+	movl copy_ecx, %ecx
+	movl copy_esi, %esi
+	movl copy_edi, %edi
+	movl %edx, %esp
+	movl copy_add_eax, %eax
+	movl copy_add_ebx, %ebx
+	movl copy_add_ecx, %ecx
+	movl copy_add_edx, %edx
+	movl copy_add_esi, %esi
+	movl copy_add_edi, %edi
+	movl copy_add_ebp, %ebp
+	movl %eax, 0(%esp)
+	movl copy_push_eax, %eax
 	movl copy_loop_eax, %eax
 	ret
 	
 	et_exit:
+	movl %eax, copy_push_eax
+	movl %ebx, %eax
 	movl %eax, copy_add_eax
 	movl %ebx, copy_add_ebx
 	movl %ecx, copy_add_ecx
@@ -12692,6 +21064,9 @@ labelj0:
 	movl %edi, copy_add_edi
 	movl %esp, copy_add_esp
 	movl %ebp, copy_add_ebp
+	movl %esp, %eax
+	movl %eax, copy_add_dest
+	movl copy_add_eax, %eax
 	movl $-4, %edx
 	movl %edx, %eax
 	shrl $0, %eax
@@ -12703,6 +21078,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -12757,6 +21133,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -12811,6 +21188,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -12865,6 +21243,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -12919,6 +21298,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -12973,6 +21353,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13027,6 +21408,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13081,6 +21463,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13135,6 +21518,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13189,6 +21573,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13243,6 +21628,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13297,6 +21683,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13351,6 +21738,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13405,6 +21793,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13459,6 +21848,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13513,6 +21903,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13567,6 +21958,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13621,6 +22013,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13675,6 +22068,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13729,6 +22123,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13783,6 +22178,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13837,6 +22233,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13891,6 +22288,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13945,6 +22343,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -13999,6 +22398,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14053,6 +22453,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14107,6 +22508,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14161,6 +22563,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14215,6 +22618,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14269,6 +22673,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14323,6 +22728,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14377,6 +22783,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14421,7 +22828,7 @@ labelj0:
 	movl copy_esi, %esi
 	movl copy_edi, %edi
 	movb %al, src + 31
-	movl copy_add_esp, %edx
+	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	movl %eax, copy_eax
@@ -14432,6 +22839,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14486,6 +22894,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14540,6 +22949,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14594,6 +23004,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14648,6 +23059,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14702,6 +23114,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14756,6 +23169,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14810,6 +23224,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14864,6 +23279,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14918,6 +23334,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -14972,6 +23389,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15026,6 +23444,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15080,6 +23499,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15134,6 +23554,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15188,6 +23609,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15242,6 +23664,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15296,6 +23719,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15350,6 +23774,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15404,6 +23829,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15458,6 +23884,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15512,6 +23939,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15566,6 +23994,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15620,6 +24049,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15674,6 +24104,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15728,6 +24159,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15782,6 +24214,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15836,6 +24269,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15890,6 +24324,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15944,6 +24379,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -15998,6 +24434,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -16052,6 +24489,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -16106,6 +24544,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -17026,6 +25465,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17079,6 +25519,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17132,6 +25573,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17185,6 +25627,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17238,6 +25681,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17291,6 +25735,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17344,6 +25789,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17397,6 +25843,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17450,6 +25897,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17503,6 +25951,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17556,6 +26005,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17609,6 +26059,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17662,6 +26113,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17715,6 +26167,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17768,6 +26221,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17821,6 +26275,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17874,6 +26329,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17927,6 +26383,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -17980,6 +26437,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18033,6 +26491,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18086,6 +26545,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18139,6 +26599,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18192,6 +26653,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18245,6 +26707,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18298,6 +26761,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18351,6 +26815,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18404,6 +26869,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18457,6 +26923,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18510,6 +26977,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18563,6 +27031,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18616,6 +27085,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18669,6 +27139,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -18720,7 +27191,10 @@ labelj0:
 	movl copy_add_esi, %esi
 	movl copy_add_edi, %edi
 	movl copy_add_ebp, %ebp
-	movl %ebx, 0(%esp)
+	movl %eax, 0(%esp)
+	movl copy_push_eax, %eax
+	movl %eax, copy_push_eax
+	movl $printf_format, %eax
 	movl %eax, copy_add_eax
 	movl %ebx, copy_add_ebx
 	movl %ecx, copy_add_ecx
@@ -18729,6 +27203,9 @@ labelj0:
 	movl %edi, copy_add_edi
 	movl %esp, copy_add_esp
 	movl %ebp, copy_add_ebp
+	movl %esp, %eax
+	movl %eax, copy_add_dest
+	movl copy_add_eax, %eax
 	movl $-4, %edx
 	movl %edx, %eax
 	shrl $0, %eax
@@ -18740,6 +27217,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -18794,6 +27272,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -18848,6 +27327,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -18902,6 +27382,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -18956,6 +27437,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19010,6 +27492,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19064,6 +27547,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19118,6 +27602,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19172,6 +27657,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19226,6 +27712,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19280,6 +27767,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19334,6 +27822,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19388,6 +27877,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19442,6 +27932,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19496,6 +27987,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19550,6 +28042,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19604,6 +28097,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19658,6 +28152,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19712,6 +28207,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19766,6 +28262,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19820,6 +28317,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19874,6 +28372,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19928,6 +28427,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -19982,6 +28482,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20036,6 +28537,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20090,6 +28592,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20144,6 +28647,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20198,6 +28702,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20252,6 +28757,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20306,6 +28812,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20360,6 +28867,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20414,6 +28922,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20458,7 +28967,7 @@ labelj0:
 	movl copy_esi, %esi
 	movl copy_edi, %edi
 	movb %al, src + 31
-	movl copy_add_esp, %edx
+	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	movl %eax, copy_eax
@@ -20469,6 +28978,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20523,6 +29033,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20577,6 +29088,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20631,6 +29143,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20685,6 +29198,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20739,6 +29253,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20793,6 +29308,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20847,6 +29363,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20901,6 +29418,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -20955,6 +29473,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21009,6 +29528,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21063,6 +29583,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21117,6 +29638,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21171,6 +29693,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21225,6 +29748,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21279,6 +29803,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21333,6 +29858,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21387,6 +29913,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21441,6 +29968,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21495,6 +30023,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21549,6 +30078,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21603,6 +30133,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21657,6 +30188,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21711,6 +30243,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21765,6 +30298,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21819,6 +30353,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21873,6 +30408,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21927,6 +30463,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -21981,6 +30518,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -22035,6 +30573,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -22089,6 +30628,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -22143,6 +30683,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -23063,6 +31604,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23116,6 +31658,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23169,6 +31712,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23222,6 +31766,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23275,6 +31820,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23328,6 +31874,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23381,6 +31928,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23434,6 +31982,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23487,6 +32036,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23540,6 +32090,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23593,6 +32144,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23646,6 +32198,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23699,6 +32252,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23752,6 +32306,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23805,6 +32360,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23858,6 +32414,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23911,6 +32468,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -23964,6 +32522,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24017,6 +32576,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24070,6 +32630,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24123,6 +32684,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24176,6 +32738,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24229,6 +32792,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24282,6 +32846,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24335,6 +32900,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24388,6 +32954,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24441,6 +33008,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24494,6 +33062,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24547,6 +33116,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24600,6 +33170,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24653,6 +33224,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24706,6 +33278,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -24757,7 +33330,8 @@ labelj0:
 	movl copy_add_esi, %esi
 	movl copy_add_edi, %edi
 	movl copy_add_ebp, %ebp
-	movl $printf_format, 0(%esp)
+	movl %eax, 0(%esp)
+	movl copy_push_eax, %eax
 	call printf
 	movl %eax, copy_add_eax
 	movl %ebx, copy_add_ebx
@@ -24767,6 +33341,9 @@ labelj0:
 	movl %edi, copy_add_edi
 	movl %esp, copy_add_esp
 	movl %ebp, copy_add_ebp
+	movl %esp, %eax
+	movl %eax, copy_add_dest
+	movl copy_add_eax, %eax
 	movl $8, %edx
 	movl %edx, %eax
 	shrl $0, %eax
@@ -24778,6 +33355,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -24832,6 +33410,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -24886,6 +33465,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -24940,6 +33520,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -24994,6 +33575,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25048,6 +33630,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25102,6 +33685,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25156,6 +33740,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25210,6 +33795,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25264,6 +33850,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25318,6 +33905,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25372,6 +33960,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25426,6 +34015,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25480,6 +34070,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25534,6 +34125,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25588,6 +34180,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25642,6 +34235,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25696,6 +34290,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25750,6 +34345,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25804,6 +34400,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25858,6 +34455,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25912,6 +34510,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -25966,6 +34565,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26020,6 +34620,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26074,6 +34675,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26128,6 +34730,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26182,6 +34785,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26236,6 +34840,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26290,6 +34895,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26344,6 +34950,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26398,6 +35005,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26452,6 +35060,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26496,7 +35105,7 @@ labelj0:
 	movl copy_esi, %esi
 	movl copy_edi, %edi
 	movb %al, src + 31
-	movl copy_add_esp, %edx
+	movl copy_add_dest, %edx
 	movl %edx, %eax
 	shrl $0, %eax
 	movl %eax, copy_eax
@@ -26507,6 +35116,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26561,6 +35171,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26615,6 +35226,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26669,6 +35281,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26723,6 +35336,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26777,6 +35391,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26831,6 +35446,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26885,6 +35501,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26939,6 +35556,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -26993,6 +35611,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27047,6 +35666,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27101,6 +35721,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27155,6 +35776,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27209,6 +35831,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27263,6 +35886,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27317,6 +35941,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27371,6 +35996,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27425,6 +36051,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27479,6 +36106,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27533,6 +36161,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27587,6 +36216,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27641,6 +36271,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27695,6 +36326,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27749,6 +36381,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27803,6 +36436,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27857,6 +36491,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27911,6 +36546,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -27965,6 +36601,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -28019,6 +36656,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -28073,6 +36711,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -28127,6 +36766,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -28181,6 +36821,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %eax, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl $1, src_op
 	movl src_op, %ebx
@@ -29101,6 +37742,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29154,6 +37796,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29207,6 +37850,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29260,6 +37904,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29313,6 +37958,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29366,6 +38012,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29419,6 +38066,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29472,6 +38120,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29525,6 +38174,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29578,6 +38228,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29631,6 +38282,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29684,6 +38336,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29737,6 +38390,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29790,6 +38444,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29843,6 +38498,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29896,6 +38552,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -29949,6 +38606,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30002,6 +38660,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30055,6 +38714,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30108,6 +38768,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30161,6 +38822,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30214,6 +38876,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30267,6 +38930,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30320,6 +38984,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30373,6 +39038,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30426,6 +39092,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30479,6 +39146,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30532,6 +39200,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30585,6 +39254,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30638,6 +39308,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30691,6 +39362,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30744,6 +39416,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %edx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %eax, src_op
 	movl src_op, %ebx
@@ -30805,6 +39478,7 @@ labelj0:
 	movl %edi, copy_edi
 	movl %ebx, %eax
 	movl %eax, copy_dest
+	movl copy_eax, %eax
 	movl $0, %ecx
 	movl %ebx, %edx
 	movl %edx, %eax

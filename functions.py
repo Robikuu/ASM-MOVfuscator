@@ -17,16 +17,24 @@ def complete_data():
         g.write(f"\tcopy_add_{reg}: .space 4\n")
         g.write(f"\tcopy_mul_{reg}: .space 4\n")
         g.write(f"\tcopy_div_{reg}: .space 4\n")
-        
-    g.write("\tcopy_push_eax: .space 4\n")
-    g.write("\tcopy_pop_eax: .space 4\n")
+        g.write(f"\tcopy_loop_{reg}: .space 4\n")
+        g.write(f"\tcopy_j_{reg}: .space 4\n")
+
     for i in range(40):
         g.write(f"\tcopy_loop_eax{i}: .space 4\n")
         g.write(f"\tcopy_loop_ebx{i}: .space 4\n")
         g.write(f"\tcopy_j_eax{i}: .space 4\n")
         g.write(f"\tcopy_j_ebx{i}: .space 4\n")
 
+    for i in range(2000, 4001):
+        g.write(f"\tcopy_loop_eax{i}: .space 4\n")
+        g.write(f"\tcopy_loop_ebx{i}: .space 4\n")
+        g.write(f"\tcopy_j_eax{i}: .space 4\n")
+        g.write(f"\tcopy_j_ebx{i}: .space 4\n")
+
+    g.write("\tcopy_push_eax: .space 4\n")
     g.write("\tcopy_dest: .space 4\n")
+    g.write("\tcopy_add_dest: .space 4\n")
     g.write("\tcopy_sub_ebp: .space 4\n")
     g.write("\tcopy3_ecx: .space 4\n")
     g.write("\told_carry: .space 4\n")
@@ -286,6 +294,9 @@ def add(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_add_{reg}\n")
 
+    g.write(f"\tmovl {dest}, %eax\n")
+    g.write("\tmovl %eax, copy_add_dest\n")
+    g.write("\tmovl copy_add_eax, %eax\n")
     # extragem bitii din sursa
     g.write(f"\tmovl {src}, %edx\n")
     for i in range(32):
@@ -295,7 +306,7 @@ def add(src, dest):
         g.write(f"\tmovb %al, src + {i}\n")
 
     # extragem bitii din destinatie
-    g.write(f"\tmovl copy_add_{dest[1:]}, %edx\n")
+    g.write(f"\tmovl copy_add_dest, %edx\n")
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")
@@ -472,7 +483,7 @@ def push(dest):
     g.write("\tmovl %eax, copy_push_eax\n")
     g.write(f"\tmovl {dest}, %eax\n")
     add("$-4", "%esp")
-    g.write(f"\tmovl {dest}, 0(%esp)\n")
+    g.write(f"\tmovl %eax, 0(%esp)\n")
     g.write("\tmovl copy_push_eax, %eax\n")
 
 def inc(dest):
@@ -539,3 +550,13 @@ def lea(src, dest):
             add(f"${offset}", dest)
     else:
         g.write(f"\tmovl ${src}, {dest}\n")
+
+def test(src0, src1):
+    g.write("\tmovl %eax, -4(%esp)\n")
+    g.write("\tmovl %ebx, -8(%esp)\n")
+    g.write(f"\tmovl {src0}, %eax\n")
+    g.write(f"\tmovl {src1}, %ebx\n")
+    and_op("%eax","%ebx")
+    g.write("\tcmp $0, %ebx\n")
+    g.write("\tmovl -4(%esp), %eax\n")
+    g.write("\tmovl -8(%esp), %ebx\n")

@@ -55,6 +55,9 @@ for line in fin:
     elif line.startswith("lea"):
         src, dest = re.sub(r"^lea\s+", "", re.split("[#;]", line)[0]).split(",")
         functions.lea(src.strip(), dest.strip())
+    elif line.startswith("test"):
+        src0, src1 = re.sub(r"^testl?\s+", "", re.split("[#;]", line)[0]).split(",")
+        functions.test(src0.strip(), src1.strip())
     elif line.strip().startswith("j"):
         line = re.split("[#;]", line)[0].strip().split()
         if line[0].strip() == "jmp":
