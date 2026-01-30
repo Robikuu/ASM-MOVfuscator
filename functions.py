@@ -20,6 +20,7 @@ def complete_data():
         g.write(f"\tcopy_j_{reg}: .space 4\n")
         g.write(f"\tcopy_loop_{reg}: .space 4\n")
 
+    g.write("\tcopy_dest: .space 4\n")
     g.write("\tcopy_sub_ebp: .space 4\n")
     g.write("\tcopy3_ecx: .space 4\n")
     g.write("\told_carry: .space 4\n")
@@ -49,13 +50,14 @@ def and_op(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
+    g.write(f"\tmovl {dest}, copy_dest\n")
     g.write("\tmovl $0, %ecx\n")
     g.write(f"\tmovl {src}, src_op\n")
     # vom lua cei 4 bytes in ordine inversa pentru a fi mai usor sa concatenam rezultatele
     # extragem byte-ul 3
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $24, %ebx\n") # ebx = col
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tshrl $24, %eax\n") # eax = row
     g.write("\tmovl table_and(,%eax,4), %edi\n")
     g.write("\tmovb (%edi, %ebx, 1), %al\n") # al = valoarea din lookup table
@@ -67,7 +69,7 @@ def and_op(src, dest):
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $16, %ebx\n")
     g.write("\tmovzbl %bl, %ebx\n")
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tshrl $16, %eax\n")
     g.write("\tmovzbl %al, %eax\n")
     g.write("\tmovl table_and(,%eax,4), %edi\n")
@@ -80,7 +82,7 @@ def and_op(src, dest):
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $8, %ebx\n")
     g.write("\tmovzbl %bl, %ebx\n")
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tshrl $8, %eax\n")
     g.write("\tmovzbl %al, %eax\n")
     g.write("\tmovl table_and(,%eax,4), %edi\n")
@@ -92,14 +94,14 @@ def and_op(src, dest):
     # extragem byte-ul 0
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tmovzbl %bl, %ebx\n")
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tmovzbl %al, %eax\n")
     g.write("\tmovl table_and(,%eax,4), %edi\n")
     g.write("\tmovb (%edi, %ebx, 1), %al\n")
 
     g.write("\tmovb %al, %cl\n")
 
-    g.write(f"\tmovl %ecx, %{dest[1:]}\n")
+    g.write(f"\tmovl %ecx, {dest}\n")
     
     # restaurarea registrilor
     for reg in registers:
@@ -111,12 +113,13 @@ def or_op(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
+    g.write(f"\tmovl {dest}, copy_dest\n")
     g.write("\tmovl $0, %ecx\n")
     g.write(f"\tmovl {src}, src_op\n")
     # extragem byte-ul 3
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $24, %ebx\n") 
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tshrl $24, %eax\n")
     g.write("\tmovl table_or(,%eax,4), %edi\n")
     g.write("\tmovb (%edi, %ebx, 1), %al\n")
@@ -128,7 +131,7 @@ def or_op(src, dest):
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $16, %ebx\n")
     g.write("\tmovzbl %bl, %ebx\n") 
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tshrl $16, %eax\n")
     g.write("\tmovzbl %al, %eax\n")
     g.write("\tmovl table_or(,%eax,4), %edi\n")
@@ -141,7 +144,7 @@ def or_op(src, dest):
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $8, %ebx\n")
     g.write("\tmovzbl %bl, %ebx\n")
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tshrl $8, %eax\n")
     g.write("\tmovzbl %al, %eax\n")
     g.write("\tmovl table_or(,%eax,4), %edi\n")
@@ -153,14 +156,14 @@ def or_op(src, dest):
     # extragem byte-ul 0
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tmovzbl %bl, %ebx\n")
-    g.write(f"\tmovl copy_{dest[1:]}, %eax\n")
+    g.write(f"\tmovl copy_dest, %eax\n")
     g.write("\tmovzbl %al, %eax\n")
     g.write("\tmovl table_or(,%eax,4), %edi\n")
     g.write("\tmovb (%edi, %ebx, 1), %al\n")
 
     g.write("\tmovb %al, %cl\n") 
 
-    g.write(f"\tmovl %ecx, %{dest[1:]}\n")
+    g.write(f"\tmovl %ecx, {dest}\n")
     
     # restaurarea registrilor
     for reg in registers:
@@ -185,7 +188,7 @@ def xor_op(src, dest):
         g.write(f"\tmovb %al, src+{i}\n")
 
     # === extragere biti dest ===
-    g.write(f"\tmovl copy_{dest[1:]}, %edx\n")
+    g.write(f"\tmovl copy_dest, %edx\n")
     for i in range(32):
         g.write("\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")
@@ -203,7 +206,7 @@ def xor_op(src, dest):
 
     # === reconstructie rezultat CORECTA ===
     # Resetăm locația de memorie pentru a construi curat
-    g.write(f"\tmovl $0, copy_{dest[1:]}\n")
+    g.write(f"\tmovl $0, copy_dest\n")
 
     # Procesăm pe 4 grupuri de câte 8 biți pentru a nu depăși indexul de 255 al table_or
     for byte_idx in range(4):
@@ -224,10 +227,10 @@ def xor_op(src, dest):
             g.write("\tmovb %al, %cl\n")                # setam LSB în ecx
 
         # scriem octetul format direct în memorie la poziția corespunzătoare
-        g.write(f"\tmovb %cl, copy_{dest[1:]} + {byte_idx}\n")
+        g.write(f"\tmovb %cl, copy_dest + {byte_idx}\n")
 
     # mutăm valoarea finală reconstruită în registrul destinație
-    g.write(f"\tmovl copy_{dest[1:]}, %{dest[1:]}\n")
+    g.write(f"\tmovl copy_dest, %dest\n")
 
     # restaurarea registrilor
     for reg in registers:
@@ -278,7 +281,7 @@ def add(src, dest):
         g.write(f"\tmovb %al, src + {i}\n")
 
     # extragem bitii din destinatie
-    g.write(f"\tmovl copy_add_{dest[1:]}, %edx\n")
+    g.write(f"\tmovl copy_add_dest, %edx\n")
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")
