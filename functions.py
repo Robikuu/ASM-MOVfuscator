@@ -13,13 +13,17 @@ def complete_data():
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi", "ebp", "esp"]
     for reg in registers:
         g.write(f"\tcopy_{reg}: .space 4\n")
-        g.write(f"\tcopy1_{reg}: .space 4\n")
-        g.write(f"\tcopy2_{reg}: .space 4\n")
+        g.write(f"\tcopy_not_{reg}: .space 4\n")
+        g.write(f"\tcopy_add_{reg}: .space 4\n")
+        g.write(f"\tcopy_mul_{reg}: .space 4\n")
+        g.write(f"\tcopy_div_{reg}: .space 4\n")
+        g.write(f"\tcopy_j_{reg}: .space 4\n")
+        g.write(f"\tcopy_loop_{reg}: .space 4\n")
 
+    g.write("\tcopy_sub_ebp: .space 4\n")
     g.write("\tcopy3_ecx: .space 4\n")
     g.write("\told_carry: .space 4\n")
     g.write("\tsrc_op: .space 4\n")
-    g.write("\tsrc_sub: .space 4\n")
     g.write(f"\tsrc: .space 32\n")
     g.write(f"\tdest: .space 32\n")
     g.write("\txor_row_0: .byte 0, 1\n")
@@ -41,11 +45,8 @@ def complete_data():
     g.write("\n.text\n")
 
 def and_op(src, dest):
-    g.write("\tmovl %ebp, copy1_ebp\n")
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
     for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy1_{reg}\n")
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
     g.write("\tmovl $0, %ecx\n")
@@ -105,17 +106,9 @@ def and_op(src, dest):
         if reg != dest[1:]:
             g.write(f"\tmovl copy_{reg}, %{reg}\n")
 
-    for reg in registers:
-        g.write(f"\tmovl copy1_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy_{reg}\n")
-    g.write("\tmovl copy1_ebp, %ebp\n")
-
 def or_op(src, dest):
-    g.write("\tmovl %ebp, copy1_ebp\n")
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
     for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy1_{reg}\n")
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
     g.write("\tmovl $0, %ecx\n")
@@ -174,18 +167,10 @@ def or_op(src, dest):
         if reg != dest[1:]:
             g.write(f"\tmovl copy_{reg}, %{reg}\n")
 
-    for reg in registers:
-        g.write(f"\tmovl copy1_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy_{reg}\n")
-    g.write("\tmovl copy1_ebp, %ebp\n")
-
 def xor_op(src, dest):
     # salvare registre
-    g.write("\tmovl %ebp, copy1_ebp\n")
-    registers = ["eax", "ebx", "ecx", "edx", "edi"]
+    registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
     for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy1_{reg}\n")
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
     g.write("\tmovl $0, %ecx\n")
@@ -217,36 +202,42 @@ def xor_op(src, dest):
         g.write(f"\tmovb %al, dest+{i}\n")
 
     # === reconstructie rezultat CORECTA ===
-    g.write("\tmovl $0, %edx\n")  # edx = 0 inițial
+    # Resetăm locația de memorie pentru a construi curat
+    g.write(f"\tmovl $0, copy_{dest[1:]}\n")
 
-    for i in range(32):
-        g.write(f"\tmovzbl dest+{i}, %eax\n")  # eax = bit i
+    # Procesăm pe 4 grupuri de câte 8 biți pentru a nu depăși indexul de 255 al table_or
+    for byte_idx in range(4):
+        g.write("\tmovl $0, %ecx\n") # ecx va fi byte-ul curent (0-255)
+        
+        for bit_in_byte in range(8):
+            i = byte_idx * 8 + bit_in_byte
+            g.write(f"\tmovzbl dest+{i}, %eax\n") # eax = bit i
 
-        # folosim tabela OR pentru a seta LSB
-        g.write("\tmovl table_or(,%edx,4), %edi\n")  # edi = table_or[edx]
-        g.write("\tmovb (%edi,%eax,1), %al\n")      # al = edx | bit_i
-        g.write("\tmovb %al, %dl\n")                # setam LSB în edx
+            # mutăm bitul pe poziția corectă în interiorul octetului (0-7)
+            if bit_in_byte > 0:
+                g.write(f"\tshll ${bit_in_byte}, %eax\n")
 
-        # mutam edx cu 1 bit la stânga pentru urmatorul bit
-        if i != 31:
-            g.write("\tshll $1, %edx\n")
+            # folosim tabela OR pentru a seta LSB
+            # Acum indexul %ecx este mereu < 256, deci NU mai dă segfault
+            g.write("\tmovl table_or(,%ecx,4), %edi\n") # edi = table_or[ecx]
+            g.write("\tmovb (%edi,%eax,1), %al\n")      # al = ecx | bit_i
+            g.write("\tmovb %al, %cl\n")                # setam LSB în ecx
 
-    g.write(f"\tmovl %edx, {dest}\n")
+        # scriem octetul format direct în memorie la poziția corespunzătoare
+        g.write(f"\tmovb %cl, copy_{dest[1:]} + {byte_idx}\n")
+
+    # mutăm valoarea finală reconstruită în registrul destinație
+    g.write(f"\tmovl copy_{dest[1:]}, %{dest[1:]}\n")
 
     # restaurarea registrilor
     for reg in registers:
         if reg != dest[1:]:
             g.write(f"\tmovl copy_{reg}, %{reg}\n")
 
-    for reg in registers:
-        g.write(f"\tmovl copy1_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy_{reg}\n")
-    g.write("\tmovl copy1_ebp, %ebp\n")
-
 def not_op(dest):
     dest= dest.replace("%", "").strip()
-    g.write("\tmovl %eax, copy_eax\n")
-    g.write("\tmovl %edx, copy_edx\n")
+    g.write("\tmovl %eax, copy_not_eax\n")
+    g.write("\tmovl %edx, copy_not_edx\n")
     
     g.write(f"\tmovl %{dest}, %edx\n")        #se muta valoarea din dest in %edx
     for i in range(32):
@@ -269,17 +260,14 @@ def not_op(dest):
     g.write(f"\tmovl %edx, %{dest}\n")     #se muta valoarea din %edx in dest
     
     if dest != "eax":
-        g.write("\tmovl copy_eax, %eax\n")        #se restaureaza registrul folosit in aceasta functie doar daca nu coincide dest cu eax/edx
+        g.write("\tmovl copy_not_eax, %eax\n")        #se restaureaza registrul folosit in aceasta functie doar daca nu coincide dest cu eax/edx
     if dest != "edx":
-        g.write("\tmovl copy_edx, %edx\n")
+        g.write("\tmovl copy_not_edx, %edx\n")
 
 def add(src, dest):
-    g.write("\tmovl %ebp, copy_ebp\n")
-    registers = ["eax", "ebx", "ecx", "edx", "esi", "edi", "esp"]
+    registers = ["eax", "ebx", "ecx", "edx", "esi", "edi", "esp", "ebp"]
     for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy1_{reg}\n")
-        g.write(f"\tmovl %{reg}, copy_{reg}\n")
+        g.write(f"\tmovl %{reg}, copy_add_{reg}\n")
 
     # extragem bitii din sursa
     g.write(f"\tmovl {src}, %edx\n")
@@ -290,7 +278,7 @@ def add(src, dest):
         g.write(f"\tmovb %al, src + {i}\n")
 
     # extragem bitii din destinatie
-    g.write(f"\tmovl copy_{dest[1:]}, %edx\n")
+    g.write(f"\tmovl copy_add_{dest[1:]}, %edx\n")
     for i in range(32):
         g.write(f"\tmovl %edx, %eax\n")
         g.write(f"\tshrl ${i}, %eax\n")
@@ -350,34 +338,27 @@ def add(src, dest):
     # restaurarea registrilor
     for reg in registers:
         if reg != dest[1:]:
-            g.write(f"\tmovl copy_{reg}, %{reg}\n")
-
-    for reg in registers:
-        g.write(f"\tmovl copy1_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy_{reg}\n")
-    g.write("\tmovl copy_ebp, %ebp\n")
+            g.write(f"\tmovl copy_add_{reg}, %{reg}\n")
 
 def sub(src, dest):
-    g.write(f"\tmovl {src}, src_sub\n")
-    not_op(src)
-    add("$1", src)
-    add(src, dest)
-    g.write(f"\tmovl src_sub, {src}\n")
+    g.write(f"\tmovl %ebp, copy_sub_ebp\n")
+    g.write(f"\tmovl {src}, %ebp\n")
+    not_op("%ebp")
+    add("$1", "%ebp")
+    add("%ebp", dest)
+    g.write(f"\tmovl copy_sub_ebp, %ebp\n")
 
 def mul(src):
-    g.write("\tmovl %ebp, copy2_ebp\n")
-    registers = ["eax", "ebx", "ecx", "esi", "edi"]
+    registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
     for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy2_{reg}\n")
-        g.write(f"\tmovl %{reg}, copy_{reg}\n")
+        g.write(f"\tmovl %{reg}, copy_mul_{reg}\n")
 
     # initializare:
     # %esi = multiplicand (cel care se shifteaza)
     # %edi = multiplicator (cel care se testeaza bit cu bit)
     # %ecx = acumulator (rezultatul sumei)
     g.write(f"\tmovl {src}, %esi\n")
-    g.write("\tmovl copy_eax, %edi\n")
+    g.write("\tmovl copy_mul_eax, %edi\n")
     g.write("\tmovl $0, %ecx\n")
 
     for i in range(32):
@@ -386,7 +367,6 @@ def mul(src):
         if i > 0:
             g.write(f"\tshrl ${i}, %eax\n")
         
-        # and_op va folosi copy_ si copy1_, deci copy2_ ramane neatins
         and_op("$1", "%eax") 
 
         # 2. verificam daca bitul i a fost 1
@@ -401,38 +381,28 @@ def mul(src):
         if i > 0:
             g.write(f"\tshll ${i}, %ebx\n")
     
-        # add va folosi copy_ si copy1_, protejand variabilele noastre din copy2_
         add("%ebx", "%ecx")
         g.write(f"{skip_label}:\n")
 
-    # punem rezultatul in eax inainte de restaurare
     g.write("\tmovl %ecx, %eax\n")
+    g.write("\tmovl $0, %edx\n")
 
+    registers.remove("eax")
+    registers.remove("edx")
     for reg in registers:
-        if reg != "eax":
-            g.write(f"\tmovl copy_{reg}, %{reg}\n")
-
-    for reg in registers:
-        g.write(f"\tmovl copy2_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy_{reg}\n")
-
-    g.write("\tmovl copy2_ebp, %ebp\n")
+        g.write(f"\tmovl copy_mul_{reg}, %{reg}\n")
 
 def div(src):
-    # folosim copy2 pentru a proteja contextul functiei div
-    g.write("\tmovl %ebp, copy2_ebp\n")
     registers = ["eax", "ebx", "ecx", "edx", "esi", "edi"]
     for reg in registers:
-        g.write(f"\tmovl copy_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy2_{reg}\n")
-        g.write(f"\tmovl %{reg}, copy_{reg}\n")
+        g.write(f"\tmovl %{reg}, copy_div_{reg}\n")
 
     # initializare:
     # %esi = deimpartitul (valoarea initiala din eax)
     # %edi = impartitorul (src)
     # %ecx = catul (pleaca de la 0)
     # %edx = restul partial (pleaca de la 0)
-    g.write(f"\tmovl copy_eax, %esi\n")
+    g.write(f"\tmovl copy_div_eax, %esi\n")
     g.write(f"\tmovl {src}, %edi\n")
     g.write("\tmovl $0, %ecx\n")
     g.write("\tmovl $0, %edx\n")
@@ -472,15 +442,10 @@ def div(src):
     g.write("\tmovl %ecx, %eax\n")
 
     # restaurarea registrilor
+    registers.remove("eax")
+    registers.remove("edx")
     for reg in registers:
-        if reg != "eax" and reg != "edx":
-            g.write(f"\tmovl copy_{reg}, %{reg}\n")
-
-    for reg in registers:
-        g.write(f"\tmovl copy2_{reg}, %ebp\n")
-        g.write(f"\tmovl %ebp, copy_{reg}\n")
-
-    g.write("\tmovl copy2_ebp, %ebp\n")
+        g.write(f"\tmovl copy_div_{reg}, %{reg}\n")
 
 def pop(dest):
     g.write(f"\tmovl 0(%esp), {dest}\n")
@@ -500,8 +465,8 @@ def loop(src, loop_counter):
     dec("%ecx\n")
 
     #mutam adresa sursa si adresa de exit
-    g.write(f"\tmovl %eax, copy_eax\n")
-    g.write(f"\tmovl %ebx, copy_ebx\n")
+    g.write(f"\tmovl %eax, copy_loop_eax\n")
+    g.write(f"\tmovl %ebx, copy_loop_ebx\n")
     g.write(f"\tmovl ${src}, %eax\n")
     g.write(f"\tmovl $labell{loop_counter}, %ebx\n")
     
@@ -509,34 +474,34 @@ def loop(src, loop_counter):
     g.write("\tcmovne %eax, %ebx\n")
     push("%ebx")
     
-    g.write(f"\tmovl copy_eax, %eax\n")
-    g.write(f"\tmovl copy_ebx, %ebx\n")
+    g.write(f"\tmovl copy_loop_eax, %eax\n")
+    g.write(f"\tmovl copy_loop_ebx, %ebx\n")
     #restauram registrii
     
     g.write("\tret\n")
     g.write(f"labell{loop_counter}:\n")
 
 def jmp(src): #punem in eax adresa src, dupa o plasam pe stiva si facem jmp folosind ret
-    g.write(f"\tmovl %eax, copy_eax\n")
+    g.write(f"\tmovl %eax, copy_loop_eax\n")
     g.write(f"\tmovl ${src}, %eax\n")
     push("%eax")
     
-    g.write(f"\tmovl copy_eax, %eax\n")
+    g.write(f"\tmovl copy_loop_eax, %eax\n")
     g.write(f"\tret\n")
 
 def j(src, suf, j_counter): #suf = sufixul jmpului conditionat/j_counter=nr de jmpuri conditionate pentru a nu sari la aceasi adresa de memorie in cazul in care exista mai multe
     #copiem registri
-    g.write(f"\tmovl %eax, copy_eax\n")
-    g.write(f"\tmovl %ebx, copy_ebx\n")
+    g.write(f"\tmovl %eax, copy_j_eax\n")
+    g.write(f"\tmovl %ebx, copy_j_ebx\n")
     g.write(f"\tmovl ${src}, %eax\n") #eax are adresa src
     g.write(f"\tmovl $labelj{j_counter}, %ebx\n") #ebx are adresa fix de dupa jmp daca acesta nu indeplineste conditia de jmp
     
     g.write(f"\tcmov{suf} %eax, %ebx\n") #se va muta adresa src (eax) in ebx doar daca conditia de jmp este indeplinita
-    
+
     push("%ebx")
-    
-    g.write(f"\tmovl copy_eax, %eax\n")
-    g.write(f"\tmovl copy_ebx, %ebx\n") #restauram registrii
+
+    g.write(f"\tmovl copy_j_eax, %eax\n")
+    g.write(f"\tmovl copy_j_ebx, %ebx\n") #restauram registrii
     g.write(f"\tret\n")
     g.write(f"labelj{j_counter}:\n")
 
