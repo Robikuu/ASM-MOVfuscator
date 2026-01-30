@@ -1,9 +1,10 @@
 import functions
 import sys
+import re
 
 if len(sys.argv) != 3:
     print("Programul se ruleaza folosind ./main.py [INPUT_FILE] [OUTPUT_FILE]")
-    #sys.exit(1)
+    sys.exit(1)
 
 input = sys.argv[1]
 output = sys.argv[2]
@@ -14,33 +15,48 @@ functions.init(output)
 loop_counter=0
 j_counter=0
 for line in fin:
-    if line.startswith(".text"):
+    line = line.strip()
+    if line.startswith("#") or line.startswith(";"):
+        functions.g.write(f"\t{line}\n")
+    elif line.startswith(".text"):
         functions.complete_data()
-    elif ":" in line and line.split("#")[0].strip()[-1] == ":":
-        functions.g.write(line)
-    elif "add" in line:
-        src, dest = line.split("#")[0].strip(" addl").split(",")
+    elif ":" in line and re.split("[#;]", line)[0].strip()[-1] == ":":
+        functions.g.write(f"\t{line}\n")
+    elif line.startswith("add"):
+        src, dest = re.sub(r"^addl?\s+", "", re.split("[#;]", line)[0]).split(",")
         functions.add(src.strip(), dest.strip())
-    elif "xor" in line:
-        src, dest = line.split("#")[0].strip(" xorl").split(",")
-        functions.operatori_logici(src.strip(), dest.strip(), "table_xor")
-    elif "andl" in line:
-        info=line.replace("andl", "", 1)
-        src, dest=[x.strip() for x in info.split(",")]
-        functions.operatori_logici(src.strip(), dest.strip(), "table_and")
-    elif "orl" in line:
-        info=line.replace("orl", "", 1)
-        src, dest=[x.strip() for x in info.split(",")]
-        functions.operatori_logici(src.strip(), dest.strip(), "table_or")
-    elif "notl" in line:
-        dest = line.split("#")[0].strip().replace("notl", "")
-        functions.not_operator(dest.strip())
-    elif "lea" in line:
-        info=line.split("#")[0].strip().replace("lea", "")
-        base, dest = [x.strip() for x in info.split(',')]
-        functions.lea_operator(base,dest)
+    elif line.startswith("sub"):
+        src, dest = re.sub(r"^subl?\s+", "", re.split("[#;]", line)[0]).split(",")
+        functions.sub(src.strip(), dest.strip())
+    elif line.startswith("mul"):
+        src = re.sub(r"^mull?\s+", "", re.split(r"[#;]", line)[0]).strip()
+        functions.mul(src)
+    elif line.startswith("div"):
+        src = re.sub(r"^divl?\s+", "", re.split(r"[#;]", line)[0]).strip()
+        functions.div(src)
+    elif line.startswith("xor"):
+        src, dest = re.sub(r"^xorl?\s+", "", re.split("[#;]", line)[0]).split(",")
+        functions.xor_op(src.strip(), dest.strip())
+    elif line.startswith("and"):
+        src, dest = re.sub(r"^andl?\s+", "", re.split("[#;]", line)[0]).split(",")
+        functions.and_op(src.strip(), dest.strip())
+    elif line.startswith("or"):
+        src, dest = re.sub(r"^orl?\s+", "", re.split("[#;]", line)[0]).split(",")
+        functions.or_op(src.strip(), dest.strip())
+    elif line.startswith("not"):
+        dest = re.sub(r"^notl?\s+", "", re.split("[#;]", line)[0]).strip()
+        functions.not_op(dest.strip())
+    elif line.startswith("push"):
+        dest = re.sub(r"^pushl?\s+", "", re.split("[#;]", line)[0]).strip()
+        functions.push(dest.strip())
+    elif line.startswith("pop"):
+        dest = re.sub(r"^popl?\s+", "", re.split("[#;]", line)[0]).strip()
+        functions.pop(dest.strip())
+    elif line.startswith("lea"):
+        src, dest = re.sub(r"^lea\s+", "", re.split("[#;]", line)[0]).split(",")
+        functions.lea(src.strip(), dest.strip())
     elif line.strip().startswith("j"):
-        line = line.split("#")[0].strip().split()
+        line = re.split("[#;]", line)[0].strip().split()
         if line[0].strip() == "jmp":
             functions.jmp(line[1])
         else:
@@ -48,11 +64,11 @@ for line in fin:
             functions.j(line[1],suf,j_counter)
             j_counter += 1
     elif "loop" in line:
-        line = line.split("#")[0].strip().split(" ")
+        line = re.split("[#;]", line)[0].strip().split()
         functions.loop(line[1],loop_counter)
         loop_counter += 1
     else:
-        functions.g.write(line)
+        functions.g.write(f"\t{line}\n")
 
 fin.close()
 functions.close()
