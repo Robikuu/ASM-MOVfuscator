@@ -86,8 +86,17 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
  &emsp;  Proiectul elimină instrucțiunile de salt direct (jmp) și salt condiționat (je, jne, jg, etc.) printr-un mecanism de manipulare a registrului EIP: 
  - **JMP**: Este tradus prin push adresa_destinatie urmat de ret. Astfel, procesorul este păcălit să "revină" direct la adresa dorită. 
 
-- **Salturi Condiționate**: Folosesc instrucțiunea cmov (Conditional Move). Se încarcă două adrese posibile (adresa de salt și adresa instrucțiunii următoare), iar cmov selectează una dintre ele în funcție de flag-uri. Rezultatul selectat este pus pe stivă și apelat prin ret, eliminând astfel branching-ul clasic la nivel de cod sursă vizibil. 
+- **Salturi Condiționate**: Folosesc instrucțiunea cmov (Conditional Move). Se încarcă două adrese posibile (adresa de salt și adresa instrucțiunii următoare), iar cmov selectează una dintre ele în funcție de flag-uri. Rezultatul selectat este pus pe stivă și apelat prin ret, eliminând astfel branching-ul clasic la nivel de cod sursă vizibil.
 
 - **Bucle (LOOP)**: Sunt descompuse în decrementări și verificări explicite ale registrului %ecx, folosind același mecanism de push/ret pentru a decide dacă se reia iterația sau se continuă execuția.
 ## Managementul Memoriei 
  &emsp; Transpilatorul alocă automat spațiu în .bss pentru salvarea temporară a registrelor (copy_eax, copy_ebx, etc.) în timpul emulării instrucțiunilor complexe, asigurând că starea procesorului este consistentă între blocurile de cod obfuscat. Această strategie este necesară deoarece fiecare instrucțiune obfuscată poate utiliza registre auxiliare, iar salvarea/restaurarea lor garantează păstrarea semanticii programului original. 
+
+ ## Echipa
+-Dănoiu Antonie - Grupa 141 
+
+-Bădoi Raluca-Maria - Grupa 141 
+
+-Lepădatu Denisa-Gabriela - Grupa 141 
+
+-Tudorache Dumitru Robert - Grupa 141 
