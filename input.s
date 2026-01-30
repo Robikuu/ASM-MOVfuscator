@@ -11,7 +11,7 @@ main:
     movl x, %eax
     movl y, %ebx
 
-    mull %ebx
+    orl %eax, y
 
     pushl %eax
     pushl $printf_format

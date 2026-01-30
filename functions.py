@@ -176,6 +176,7 @@ def xor_op(src, dest):
     for reg in registers:
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
+    g.write(f"\tmovl {dest}, copy_dest\n")
     g.write("\tmovl $0, %ecx\n")
 
     # === extragere biti src ===
