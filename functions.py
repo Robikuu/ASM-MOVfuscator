@@ -52,6 +52,7 @@ def and_op(src, dest):
 
     g.write(f"\tmovl {dest}, %eax\n")
     g.write(f"\tmovl %eax, copy_dest\n")
+    g.write("\tmovl copy_eax, %eax\n")
     g.write("\tmovl $0, %ecx\n")
     g.write(f"\tmovl {src}, src_op\n")
     # vom lua cei 4 bytes in ordine inversa pentru a fi mai usor sa concatenam rezultatele
@@ -115,9 +116,11 @@ def or_op(src, dest):
         g.write(f"\tmovl %{reg}, copy_{reg}\n")
 
     g.write(f"\tmovl {dest}, %eax\n")
-    g.write(f"\tmovl %eax, copy_dest\n")
+    g.write("\tmovl %eax, copy_dest\n")
+    g.write("\tmovl copy_eax, %eax\n")
     g.write("\tmovl $0, %ecx\n")
     g.write(f"\tmovl {src}, src_op\n")
+
     # extragem byte-ul 3
     g.write(f"\tmovl src_op, %ebx\n")
     g.write("\tshrl $24, %ebx\n") 
@@ -180,6 +183,7 @@ def xor_op(src, dest):
 
     g.write(f"\tmovl {dest}, %eax\n")
     g.write(f"\tmovl %eax, copy_dest\n")
+    g.write("\tmovl copy_eax, %eax\n")
     g.write("\tmovl $0, %ecx\n")
 
     # === extragere biti src ===
@@ -469,7 +473,7 @@ def dec(dest):
     add("$-1", dest)
 
 def loop(src, loop_counter):
-    dec("%ecx\n")
+    dec("%ecx")
 
     #mutam adresa sursa si adresa de exit
     g.write(f"\tmovl %eax, copy_loop_eax\n")
