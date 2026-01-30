@@ -82,7 +82,7 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
 - La final, câtul din %ecx este mutat în %eax. 
 
 - Se restaurează regiștrii salvați, păstrând rezultatele în %eax și %edx.
-  ## Control Flow prin Manipularea Stivei
+## Control Flow prin Manipularea Stivei
  &emsp;  Proiectul elimină instrucțiunile de salt direct (jmp) și salt condiționat (je, jne, jg, etc.) printr-un mecanism de manipulare a registrului EIP: 
  - **JMP**: Este tradus prin push adresa_destinatie urmat de ret. Astfel, procesorul este păcălit să "revină" direct la adresa dorită. 
 
@@ -93,10 +93,10 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
  &emsp; Transpilatorul alocă automat spațiu în .bss pentru salvarea temporară a registrelor (copy_eax, copy_ebx, etc.) în timpul emulării instrucțiunilor complexe, asigurând că starea procesorului este consistentă între blocurile de cod obfuscat. Această strategie este necesară deoarece fiecare instrucțiune obfuscată poate utiliza registre auxiliare, iar salvarea/restaurarea lor garantează păstrarea semanticii programului original. 
 
  ## Echipa
--Dănoiu Antonie - Grupa 141 
+- Dănoiu Antonie - Grupa 141
+- Tudorache Dumitru Robert - Grupa 141 
 
--Bădoi Raluca-Maria - Grupa 141 
+- Bădoi Raluca-Maria - Grupa 141 
 
--Lepădatu Denisa-Gabriela - Grupa 141 
+- Lepădatu Denisa-Gabriela - Grupa 141 
 
--Tudorache Dumitru Robert - Grupa 141 
