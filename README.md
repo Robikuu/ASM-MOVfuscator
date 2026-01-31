@@ -6,8 +6,12 @@
 &emsp;  Programul este scris în **Python** și funcționează ca un transpilator. Acesta parsează un fișier intrare .s (Assembly x86), identifică instrucțiunile standard (add, sub, mul, div, and, or, xor, jmp, loop etc.) și le înlocuiește cu blocuri de cod expandate care simulează comportamentul original folosind o logică bazată pe memorie. Scopul este de a elimina dependența de Unitatea Aritmetică și Logică standard a procesorului pentru operațiile matematice și de a înlocui instrucțiunile clasice de salt cu manipulări ale stivei. 
 
 &emsp;  Menționăm faptul că implementarea realizată nu este un movfuscator complet bazat exclusiv pe instrucțiuni MOV, deoarece anumite instrucțiuni fundamentale precum shl, shr, cmp și ret au fost necesare pentru funcționarea corectă a algoritmilor implementați. 
-Instrucțiunile de tip shift (shl/shr) sunt indispensabile pentru extragerea și reconstruirea biților în cadrul operațiilor aritmetice, cmp este necesară pentru realizarea comparațiilor și a controlului condițional, iar ret este utilizată ca mecanism principal pentru implementarea salturilor indirecte prin manipularea stivei. 
-În cadrul proiectului nu am identificat o metodă practică și generală de eliminare completă a acestor instrucțiuni fără a compromite corectitudinea sau fără a introduce o complexitate excesivă. 
+Instrucțiunile de tip shift (shl/shr) sunt indispensabile pentru extragerea și reconstruirea biților în cadrul operațiilor aritmetice, cmp este necesară pentru realizarea comparațiilor și a controlului condițional, iar ret este utilizată ca mecanism principal pentru implementarea salturilor indirecte prin manipularea stivei, el având rolul de a înlocui **mov addr, %eip** din moment ce registrul eip nu poate fi accesat. 
+În cadrul proiectului nu am identificat o metodă practică și generală de eliminare completă a acestor instrucțiuni fără a compromite corectitudinea sau fără a introduce o complexitate excesivă.
+
+## Cum se Folosește
+- Pentru utilizarea transpilatorului se va folosi sintaxa **python3 main.py [SURSĂ] [DESTINAȚIE]**
+- Pentru rularea completă a tuturor fișierelor din **inputs** se va rula **./tester.sh**
 
 ## Detalii Tehnice de Implementare
 ### Eliminarea Operațiilor Logice Standard prin Look-Up Tables 
@@ -42,7 +46,7 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
 -	Se apelează funcția add între %ebp (care conține -src) și dest, realizând efectiv operația dest = dest + (-src). 
 -	La final, se restaurează valoarea originală a registrului %ebp. 
 
-### Înmulțirea (MUL)
+### **Înmulțirea (MUL)**
 #### Emulează comportamentul instrucțiunii hardware mul (înmulțire fără semn) printr-o implementare software a algoritmului "Shift-and-Add". Primește doar operandul sursă (src), deoarece în arhitectura x86 înmulțirea se face implicit cu registrul %eax, iar rezultatul este stocat în perechea %edx:%eax  
  &emsp; **Algoritm**:
 - Salvează starea registrelor curente pentru a nu corupe datele în timpul calculului. 
@@ -60,7 +64,7 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
 - Rezultatul final acumulat în %ecx este mutat în registrul %eax. 
 
 - Restaurează registrele salvate inițial. 
-### Împărțirea (DIV) 
+### **Împărțirea (DIV)** 
 #### Emulează instrucțiunea de împărțire fără semn, implementând algoritmul "Restoring Division" (sau o variantă de Shift-and-Subtract) bit cu bit. Funcția primește un singur parametru src (împărțitorul). Deîmpărțitul este implicit în %eax, iar la final câtul va fi în %eax și restul în %edx. 
  &emsp; **Algoritm**:
 - Se salvează toți regiștrii generali (copy_div_reg). 
@@ -83,7 +87,7 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
 
 - Se restaurează regiștrii salvați, păstrând rezultatele în %eax și %edx.
 ## Control Flow prin Manipularea Stivei
- &emsp;  Proiectul elimină instrucțiunile de salt direct (jmp) și salt condiționat (je, jne, jg, etc.) printr-un mecanism de manipulare a registrului EIP: 
+ &emsp;  Proiectul elimină instrucțiunile de salt direct (jmp) și salt condiționat (je, jne, jg, etc.) printr-un mecanism de manipulare a registrului EIP, deoarece acesta nu poate fi accesat în mod obișnuit: 
  - **JMP**: Este tradus prin push adresa_destinatie urmat de ret. Astfel, procesorul este păcălit să "revină" direct la adresa dorită. 
 
 - **Salturi Condiționate**: Folosesc instrucțiunea cmov (Conditional Move). Se încarcă două adrese posibile (adresa de salt și adresa instrucțiunii următoare), iar cmov selectează una dintre ele în funcție de flag-uri. Rezultatul selectat este pus pe stivă și apelat prin ret, eliminând astfel branching-ul clasic la nivel de cod sursă vizibil.
@@ -98,5 +102,10 @@ Această tehnică permite eliminarea completă a operațiilor logice native și 
 
 - Bădoi Raluca-Maria - Grupa 141 
 
-- Lepădatu Denisa-Gabriela - Grupa 141 
+- Lepădatu Denisa-Gabriela - Grupa 141
 
+## Surse
+- https://github.com/xoreaxeaxeax/movfuscator/tree/master (Original repo)
+- https://youtu.be/R7EEoWg6Ekk?si=atWI11CbvzZb0Lva (MOVfuscator - Christopher Domas)
+- https://youtu.be/1I5ZMmrOfnA?si=1e1nAvcpG0LxymW_ (How Computers Calculate - the ALU)
+- https://gemini.google.com/ (Debugging)
